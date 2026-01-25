@@ -1,0 +1,125 @@
+================================================================================
+INSURANCE CLAIM FORM - SAMPLE DOCUMENT FOR TESTING
+================================================================================
+
+CLAIM INFORMATION
+----------------
+Claim Number: CLM-2024-001234
+Date of Loss: January 15, 2024
+Claim Type: Auto Accident
+Claim Status: New Submission
+
+POLICYHOLDER INFORMATION
+------------------------
+Name: John Michael Davis
+Policy Number: POL-2024-567890
+Phone: (555) 123-4567
+Email: john.davis@email.com
+Address: 123 Maple Drive, Springfield, IL 62701
+
+INCIDENT DETAILS
+----------------
+Location: Intersection of Main Street and Oak Avenue, Springfield, IL 62701
+Date & Time: January 15, 2024 at 2:30 PM
+Vehicle: 2023 Honda Accord
+VIN: 1HGCV1F32PA123456
+License Plate: ABC-1234
+
+ACCIDENT DESCRIPTION
+--------------------
+On January 15, 2024, at approximately 2:30 PM, I was driving my 2023 Honda
+Accord northbound on Main Street approaching the intersection with Oak Avenue.
+The traffic light was green in my direction.
+
+As I entered the intersection, another vehicle (2022 Toyota Camry, License
+Plate XYZ-5678) ran the red light and struck the passenger side of my vehicle
+with significant force.
+
+The impact was severe:
+- The front right passenger door was crushed inward
+- The right front fender sustained major damage
+- The right quarter panel is dented and misaligned
+- The airbags deployed on the passenger side
+- The vehicle sustained frame damage and is currently not drivable
+
+I immediately pulled over and called 911. Emergency medical services arrived
+and provided assistance. Police arrived and filed an incident report
+(Report #2024-45678).
+
+INJURIES
+--------
+Minor injuries sustained:
+- Chest contusion from airbag deployment
+- Neck strain
+- Left arm abrasion
+Treated at Springfield Urgent Care on January 15, 2024
+
+DAMAGES AND COSTS
+-----------------
+Vehicle Repair Estimate (ABC Auto Body Shop):
+  Parts: $5,200.00
+  Labor: $3,000.00
+  Paint and finishing: $300.00
+  Total: $8,500.00
+
+Additional Expenses:
+  Rental vehicle (5 days @ $75/day): $375.00
+  Urgent care medical bill: $450.00
+  Police report copy: $25.00
+
+Total Claim Amount: $9,350.00
+Insurance Deductible: $500.00
+Net Claim Request: $8,850.00
+
+SUPPORTING DOCUMENTATION
+-------------------------
+- Police Report #2024-45678 (official incident report)
+- Repair Estimate from ABC Auto Body Shop (itemized)
+- Photos of vehicle damage (12 photos showing all angles)
+- Medical treatment records from Springfield Urgent Care
+- Rental car receipt and invoice
+- Other driver's insurance information and contact details
+- Witness statements (2 witnesses provided statements)
+- Photos of the accident scene
+
+OTHER DRIVER INFORMATION
+------------------------
+Name: Robert James Thompson
+Vehicle: 2022 Toyota Camry
+License Plate: XYZ-5678
+Insurance: XYZ Insurance Company
+Policy Number: XYZ-POL-654321
+Insurance Adjuster: Margaret Wilson, (555) 987-6543
+
+WITNESS INFORMATION
+-------------------
+Witness 1:
+  Name: Sarah Michelle Johnson
+  Phone: (555) 234-5678
+  Occupation: Teacher
+
+Witness 2:
+  Name: Robert Chen
+  Phone: (555) 345-6789
+  Occupation: Engineer
+
+Both witnesses signed statements confirming that the other vehicle ran the
+red light and was at fault for the accident.
+
+DECLARATION
+-----------
+I certify that the information provided in this claim is true and accurate to
+the best of my knowledge. I understand that providing false information may
+result in denial of the claim and legal prosecution under applicable state
+and federal laws.
+
+The incident occurred as described, and I have provided all relevant
+documentation and evidence in support of this claim.
+
+Signature: John Michael Davis
+Date: January 20, 2024
+
+================================================================================
+This is a sample insurance claim document for testing NLP integration.
+Generated: January 2, 2026
+================================================================================

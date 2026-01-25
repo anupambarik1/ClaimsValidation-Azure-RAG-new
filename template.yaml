@@ -1,0 +1,183 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Claims RAG Bot - Serverless API
+
+Parameters:
+  Environment:
+    Type: String
+    Default: dev
+    AllowedValues:
+      - dev
+      - staging
+      - prod
+  
+  OpenSearchCollectionName:
+    Type: String
+    Default: claims-policies
+    Description: Name for OpenSearch Serverless collection
+
+Resources:
+  # OpenSearch Serverless Collection
+  OpenSearchCollection:
+    Type: AWS::OpenSearchServerless::Collection
+    Properties:
+      Name: !Sub ${OpenSearchCollectionName}-${Environment}
+      Type: VECTORSEARCH
+      Description: Vector database for policy clauses
+
+  # OpenSearch Network Policy
+  OpenSearchNetworkPolicy:
+    Type: AWS::OpenSearchServerless::SecurityPolicy
+    Properties:
+      Name: !Sub ${OpenSearchCollectionName}-network-${Environment}
+      Type: network
+      Policy: !Sub |
+        [
+          {
+            "Rules": [
+              {
+                "ResourceType": "collection",
+                "Resource": ["collection/${OpenSearchCollectionName}-${Environment}"]
+              }
+            ],
+            "AllowFromPublic": true
+          }
+        ]
+
+  # OpenSearch Encryption Policy
+  OpenSearchEncryptionPolicy:
+    Type: AWS::OpenSearchServerless::SecurityPolicy
+    Properties:
+      Name: !Sub ${OpenSearchCollectionName}-encryption-${Environment}
+      Type: encryption
+      Policy: !Sub |
+        {
+          "Rules": [
+            {
+              "ResourceType": "collection",
+              "Resource": ["collection/${OpenSearchCollectionName}-${Environment}"]
+            }
+          ],
+          "AWSOwnedKey": true
+        }
+
+  # OpenSearch Data Access Policy
+  OpenSearchAccessPolicy:
+    Type: AWS::OpenSearchServerless::AccessPolicy
+    Properties:
+      Name: !Sub ${OpenSearchCollectionName}-access-${Environment}
+      Type: data
+      Policy: !Sub |
+        [
+          {
+            "Rules": [
+              {
+                "ResourceType": "collection",
+                "Resource": ["collection/${OpenSearchCollectionName}-${Environment}"],
+                "Permission": ["aoss:*"]
+              },
+              {
+                "ResourceType": "index",
+                "Resource": ["index/${OpenSearchCollectionName}-${Environment}/*"],
+                "Permission": ["aoss:*"]
+              }
+            ],
+            "Principal": ["${ClaimsApiRole.Arn}"]
+          }
+        ]
+
+  # DynamoDB Table for Audit Trail
+  ClaimsAuditTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub ClaimsAuditTrail-${Environment}
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: ClaimId
+          AttributeType: S
+        - AttributeName: Timestamp
+          AttributeType: S
+      KeySchema:
+        - AttributeName: ClaimId
+          KeyType: HASH
+        - AttributeName: Timestamp
+          KeyType: RANGE
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES
+      Tags:
+        - Key: Environment
+          Value: !Ref Environment
+
+  # Lambda Execution Role
+  ClaimsApiRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: ClaimsApiPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - bedrock:InvokeModel
+                Resource: '*'
+              - Effect: Allow
+                Action:
+                  - dynamodb:PutItem
+                  - dynamodb:GetItem
+                  - dynamodb:Query
+                Resource: !GetAtt ClaimsAuditTable.Arn
+              - Effect: Allow
+                Action:
+                  - aoss:*
+                Resource: '*'
+
+  # Lambda Function
+  ClaimsApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub ClaimsRagBot-${Environment}
+      Handler: ClaimsRagBot.Api::ClaimsRagBot.Api.LambdaEntryPoint::FunctionHandlerAsync
+      Runtime: dotnet8
+      CodeUri: ./publish
+      MemorySize: 512
+      Timeout: 30
+      Role: !GetAtt ClaimsApiRole.Arn
+      Environment:
+        Variables:
+          ENVIRONMENT: !Ref Environment
+          AUDIT_TABLE_NAME: !Ref ClaimsAuditTable
+          AWS__OpenSearchEndpoint: !GetAtt OpenSearchCollection.CollectionEndpoint
+          AWS__OpenSearchIndexName: policy-clauses
+      Events:
+        ApiEvent:
+          Type: HttpApi
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+
+Outputs:
+  ApiUrl:
+    Description: API Gateway endpoint URL
+    Value: !Sub https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/
+  
+  AuditTableName:
+    Description: DynamoDB Audit Table Name
+    Value: !Ref ClaimsAuditTable
+  
+  OpenSearchEndpoint:
+    Description: OpenSearch Serverless Collection Endpoint
+    Value: !GetAtt OpenSearchCollection.CollectionEndpoint
+  
+  OpenSearchCollectionArn:
+    Description: OpenSearch Collection ARN
+    Value: !GetAtt OpenSearchCollection.Arn

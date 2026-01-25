@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClaimsRagBot.Core\ClaimsRagBot.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.BedrockRuntime" Version="4.0.14.6" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="4.0.10.8" />
+    <PackageReference Include="AWSSDK.OpenSearchServerless" Version="4.0.6" />
+    <PackageReference Include="AWSSDK.S3" Version="4.0.0" />
+    <PackageReference Include="AWSSDK.Textract" Version="4.0.0" />
+    <PackageReference Include="AWSSDK.Comprehend" Version="4.0.0" />
+    <PackageReference Include="AWSSDK.Rekognition" Version="4.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.2" />
+    <PackageReference Include="OpenSearch.Client" Version="1.8.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

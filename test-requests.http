@@ -1,0 +1,70 @@
+### Test Claim Validation API
+
+### Health Check
+GET https://localhost:5001/api/claims/health
+
+### Motor Insurance - Collision Coverage (Should be Covered)
+POST https://localhost:5001/api/claims/validate
+Content-Type: application/json
+
+{
+  "policyNumber": "POL-12345",
+  "claimDescription": "Car accident - front bumper damage from collision with another vehicle",
+  "claimAmount": 2500,
+  "policyType": "Motor"
+}
+
+### Motor Insurance - Theft (Should be Covered)
+POST https://localhost:5001/api/claims/validate
+Content-Type: application/json
+
+{
+  "policyNumber": "POL-67890",
+  "claimDescription": "Vehicle stolen from parking lot overnight",
+  "claimAmount": 15000,
+  "policyType": "Motor"
+}
+
+### Motor Insurance - Racing (Should be Denied - Exclusion)
+POST https://localhost:5001/api/claims/validate
+Content-Type: application/json
+
+{
+  "policyNumber": "POL-11111",
+  "claimDescription": "Damage from racing event at local track",
+  "claimAmount": 8000,
+  "policyType": "Motor"
+}
+
+### Motor Insurance - High Amount (Should be Manual Review)
+POST https://localhost:5001/api/claims/validate
+Content-Type: application/json
+
+{
+  "policyNumber": "POL-22222",
+  "claimDescription": "Total loss from major collision",
+  "claimAmount": 45000,
+  "policyType": "Motor"
+}
+
+### Motor Insurance - Windshield Repair (Should be Covered)
+POST https://localhost:5001/api/claims/validate
+Content-Type: application/json
+
+{
+  "policyNumber": "POL-33333",
+  "claimDescription": "Windshield cracked from rock on highway",
+  "claimAmount": 350,
+  "policyType": "Motor"
+}
+
+### Health Insurance - Hospital Confinement
+POST https://localhost:5001/api/claims/validate
+Content-Type: application/json
+
+{
+  "policyNumber": "HLT-12345",
+  "claimDescription": "Hospitalized for 5 days due to appendicitis surgery",
+  "claimAmount": 1000,
+  "policyType": "Health"
+}

@@ -1,0 +1,84 @@
+{
+  "testClaims": [
+    {
+      "name": "Motor - Collision Coverage (Low Amount)",
+      "expectedStatus": "Covered",
+      "claim": {
+        "policyNumber": "POL-12345",
+        "claimDescription": "Car accident - front bumper damage from collision with another vehicle",
+        "claimAmount": 2500,
+        "policyType": "Motor"
+      }
+    },
+    {
+      "name": "Motor - Theft (High Amount)",
+      "expectedStatus": "Manual Review",
+      "claim": {
+        "policyNumber": "POL-67890",
+        "claimDescription": "Vehicle stolen from parking lot overnight",
+        "claimAmount": 15000,
+        "policyType": "Motor"
+      }
+    },
+    {
+      "name": "Motor - Racing Exclusion",
+      "expectedStatus": "Not Covered",
+      "claim": {
+        "policyNumber": "POL-11111",
+        "claimDescription": "Damage from participating in illegal street racing",
+        "claimAmount": 8000,
+        "policyType": "Motor"
+      }
+    },
+    {
+      "name": "Motor - DUI Exclusion",
+      "expectedStatus": "Not Covered",
+      "claim": {
+        "policyNumber": "POL-44444",
+        "claimDescription": "Accident while driving under the influence of alcohol",
+        "claimAmount": 12000,
+        "policyType": "Motor"
+      }
+    },
+    {
+      "name": "Motor - Windshield Repair",
+      "expectedStatus": "Covered",
+      "claim": {
+        "policyNumber": "POL-33333",
+        "claimDescription": "Windshield cracked from rock on highway",
+        "claimAmount": 350,
+        "policyType": "Motor"
+      }
+    },
+    {
+      "name": "Motor - Comprehensive Weather Damage",
+      "expectedStatus": "Covered",
+      "claim": {
+        "policyNumber": "POL-55555",
+        "claimDescription": "Hail damage to roof and hood during severe storm",
+        "claimAmount": 3200,
+        "policyType": "Motor"
+      }
+    },
+    {
+      "name": "Health - Hospital Confinement",
+      "expectedStatus": "Covered",
+      "claim": {
+        "policyNumber": "HLT-12345",
+        "claimDescription": "Hospitalized for 5 days due to appendicitis surgery",
+        "claimAmount": 1000,
+        "policyType": "Health"
+      }
+    },
+    {
+      "name": "Health - Pre-existing Condition",
+      "expectedStatus": "Not Covered",
+      "claim": {
+        "policyNumber": "HLT-67890",
+        "claimDescription": "Treatment for diabetes diagnosed before policy start date, policy active for 8 months",
+        "claimAmount": 2000,
+        "policyType": "Health"
+      }
+    }
+  ]
+}

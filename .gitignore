@@ -1,0 +1,13 @@
+bin/
+obj/
+publish/
+*.user
+*.suo
+.vs/
+.vscode/
+*.log
+
+# AWS Credentials - DO NOT COMMIT
+appsettings.Development.json
+appsettings.*.json
+!appsettings.json
