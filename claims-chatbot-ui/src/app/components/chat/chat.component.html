@@ -1,0 +1,85 @@
+<div class="chat-container">
+  <mat-toolbar color="primary" class="chat-header">
+    <mat-icon>smart_toy</mat-icon>
+    <span>Claims Assistant</span>
+    <span class="spacer"></span>
+    <button mat-icon-button (click)="clearChat()" matTooltip="Clear chat">
+      <mat-icon>delete_sweep</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <div class="messages-container" #messagesContainer>
+    @for (message of messages$ | async; track message.id) {
+      <div class="message" [class.user-message]="message.sender === 'user'" [class.bot-message]="message.sender === 'bot'">
+        <div class="message-avatar">
+          <mat-icon>{{ message.sender === 'user' ? 'person' : 'smart_toy' }}</mat-icon>
+        </div>
+        <div class="message-content">
+          <div class="message-header">
+            <span class="message-sender">{{ message.sender === 'user' ? 'You' : 'Assistant' }}</span>
+            <span class="message-time">{{ message.timestamp | date:'short' }}</span>
+          </div>
+          
+          @if (message.type === 'text') {
+            <div class="message-text">{{ message.content }}</div>
+          }
+          
+          @if (message.type === 'document') {
+            <div class="message-document">
+              <mat-icon>description</mat-icon>
+              <span>{{ message.content }}</span>
+            </div>
+          }
+          
+          @if (message.type === 'result' && message.data) {
+            <app-claim-result [result]="message.data"></app-claim-result>
+          }
+        </div>
+      </div>
+    }
+    
+    @if (isLoading) {
+      <div class="message bot-message">
+        <div class="message-avatar">
+          <mat-icon>smart_toy</mat-icon>
+        </div>
+        <div class="message-content">
+          <div class="typing-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="input-container">
+    <mat-tab-group>
+      <mat-tab label="Text Input">
+        <div class="text-input-panel">
+          <mat-form-field appearance="outline" class="message-input">
+            <mat-label>Type a message...</mat-label>
+            <textarea
+              matInput
+              [(ngModel)]="userMessage"
+              (keydown.enter)="handleEnter($event)"
+              rows="2"
+              placeholder="Ask about claims or upload documents..."></textarea>
+          </mat-form-field>
+          <button mat-fab color="primary" (click)="sendMessage()" [disabled]="!userMessage.trim()">
+            <mat-icon>send</mat-icon>
+          </button>
+        </div>
+      </mat-tab>
+      
+      <mat-tab label="Upload Document">
+        <app-document-upload (documentSubmitted)="handleDocumentSubmit($event)"></app-document-upload>
+      </mat-tab>
+      
+      <mat-tab label="Claim Form">
+        <app-claim-form (claimSubmitted)="handleClaimSubmit($event)"></app-claim-form>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

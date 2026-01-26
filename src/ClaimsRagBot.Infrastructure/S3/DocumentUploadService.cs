@@ -21,6 +21,10 @@ public class DocumentUploadService : IDocumentUploadService
         var accessKeyId = configuration["AWS:AccessKeyId"];
         var secretAccessKey = configuration["AWS:SecretAccessKey"];
 
+        accessKeyId = "";
+        secretAccessKey = "";
+
+
         var config = new AmazonS3Config
         {
             RegionEndpoint = regionEndpoint

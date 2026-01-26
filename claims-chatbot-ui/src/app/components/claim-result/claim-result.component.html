@@ -1,0 +1,148 @@
+<div class="claim-result">
+  @if (result.extractionResult) {
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <mat-icon [class.success]="result.validationStatus === 'ReadyForSubmission'" 
+                    [class.warning]="result.validationStatus === 'ReadyForReview'"
+                    [class.error]="result.validationStatus === 'RequiresCorrection'">
+            {{ getStatusIcon() }}
+          </mat-icon>
+          {{ result.validationStatus }}
+        </mat-card-title>
+      </mat-card-header>
+      
+      <mat-card-content>
+        <div class="confidence-section">
+          <h4>Overall Confidence</h4>
+          <div class="confidence-bar">
+            <mat-progress-bar 
+              mode="determinate" 
+              [value]="result.extractionResult.overallConfidence * 100"
+              [class.high]="result.extractionResult.overallConfidence >= 0.85"
+              [class.medium]="result.extractionResult.overallConfidence >= 0.70 && result.extractionResult.overallConfidence < 0.85"
+              [class.low]="result.extractionResult.overallConfidence < 0.70">
+            </mat-progress-bar>
+            <span class="confidence-value">{{ (result.extractionResult.overallConfidence * 100).toFixed(1) }}%</span>
+          </div>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="extracted-data">
+          <h4>Extracted Claim Details</h4>
+          <div class="data-grid">
+            <div class="data-item">
+              <span class="label">Policy Number:</span>
+              <span class="value">{{ result.extractionResult.extractedClaim.policyNumber }}</span>
+              <mat-chip [class.high-confidence]="getFieldConfidence('policyNumber') >= 0.85">
+                {{ (getFieldConfidence('policyNumber') * 100).toFixed(0) }}%
+              </mat-chip>
+            </div>
+
+            <div class="data-item">
+              <span class="label">Policy Type:</span>
+              <span class="value">{{ result.extractionResult.extractedClaim.policyType }}</span>
+              <mat-chip [class.high-confidence]="getFieldConfidence('policyType') >= 0.85">
+                {{ (getFieldConfidence('policyType') * 100).toFixed(0) }}%
+              </mat-chip>
+            </div>
+
+            <div class="data-item">
+              <span class="label">Claim Amount:</span>
+              <span class="value">${{ result.extractionResult.extractedClaim.claimAmount.toLocaleString() }}</span>
+              <mat-chip [class.high-confidence]="getFieldConfidence('claimAmount') >= 0.85">
+                {{ (getFieldConfidence('claimAmount') * 100).toFixed(0) }}%
+              </mat-chip>
+            </div>
+
+            <div class="data-item full-width">
+              <span class="label">Description:</span>
+              <span class="value">{{ result.extractionResult.extractedClaim.claimDescription }}</span>
+              <mat-chip [class.high-confidence]="getFieldConfidence('claimDescription') >= 0.85">
+                {{ (getFieldConfidence('claimDescription') * 100).toFixed(0) }}%
+              </mat-chip>
+            </div>
+          </div>
+        </div>
+
+        @if (result.extractionResult.ambiguousFields.length > 0) {
+          <mat-divider></mat-divider>
+          <div class="ambiguous-fields">
+            <h4>
+              <mat-icon>warning</mat-icon>
+              Fields Requiring Attention
+            </h4>
+            <mat-chip-set>
+              @for (field of result.extractionResult.ambiguousFields; track field) {
+                <mat-chip class="warning-chip">{{ field }}</mat-chip>
+              }
+            </mat-chip-set>
+          </div>
+        }
+
+        <mat-divider></mat-divider>
+
+        <div class="next-action">
+          <h4>Next Action</h4>
+          <p>{{ result.nextAction }}</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  }
+
+  @if (result.isApproved !== undefined) {
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <mat-icon [class.success]="result.isApproved" [class.error]="!result.isApproved">
+            {{ result.isApproved ? 'check_circle' : 'cancel' }}
+          </mat-icon>
+          Claim {{ result.isApproved ? 'Approved' : 'Denied' }}
+        </mat-card-title>
+      </mat-card-header>
+      
+      <mat-card-content>
+        <div class="confidence-section">
+          <h4>Confidence Score</h4>
+          <div class="confidence-bar">
+            <mat-progress-bar 
+              mode="determinate" 
+              [value]="result.confidenceScore * 100"
+              [class.high]="result.confidenceScore >= 0.85">
+            </mat-progress-bar>
+            <span class="confidence-value">{{ (result.confidenceScore * 100).toFixed(1) }}%</span>
+          </div>
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <div class="reasoning">
+          <h4>Reasoning</h4>
+          <p>{{ result.reasoning }}</p>
+        </div>
+
+        @if (result.requiresHumanReview) {
+          <mat-divider></mat-divider>
+          <div class="human-review">
+            <mat-icon>person</mat-icon>
+            <span>This claim requires human review</span>
+          </div>
+        }
+
+        @if (result.matchedClauses && result.matchedClauses.length > 0) {
+          <mat-divider></mat-divider>
+          <div class="matched-clauses">
+            <h4>Matched Policy Clauses</h4>
+            @for (clause of result.matchedClauses; track clause.clauseId) {
+              <div class="clause-item">
+                <span class="similarity">{{ (clause.similarity * 100).toFixed(1) }}% match</span>
+                <p>{{ clause.content }}</p>
+              </div>
+            }
+          </div>
+        }
+      </mat-card-content>
+    </mat-card>
+  }
+</div>

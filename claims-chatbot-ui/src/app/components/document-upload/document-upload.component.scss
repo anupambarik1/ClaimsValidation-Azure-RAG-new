@@ -1,0 +1,108 @@
+.upload-panel {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fafafa;
+
+  &:hover {
+    border-color: #1976d2;
+    background-color: #f5f9ff;
+  }
+
+  &.drag-over {
+    border-color: #1976d2;
+    background-color: #e3f2fd;
+    transform: scale(1.02);
+  }
+}
+
+.drop-zone-content {
+  mat-icon {
+    font-size: 64px;
+    width: 64px;
+    height: 64px;
+    color: #1976d2;
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin: 8px 0;
+    color: #666;
+
+    &.hint {
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    &.formats {
+      font-size: 0.8rem;
+      color: #999;
+      margin-top: 16px;
+    }
+  }
+}
+
+.file-preview {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background-color: white;
+  border-radius: 8px;
+
+  mat-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    color: #1976d2;
+  }
+
+  .file-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
+
+    .file-name {
+      font-weight: 500;
+      color: #333;
+    }
+
+    .file-size {
+      font-size: 0.85rem;
+      color: #999;
+    }
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+mat-progress-bar {
+  margin-top: 16px;
+}

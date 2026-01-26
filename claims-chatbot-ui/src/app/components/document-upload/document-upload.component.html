@@ -1,0 +1,76 @@
+<div class="upload-panel">
+  <div 
+    class="drop-zone"
+    [class.drag-over]="isDragOver"
+    (drop)="onDrop($event)"
+    (dragover)="onDragOver($event)"
+    (dragleave)="onDragLeave($event)"
+    (click)="fileInput.click()">
+    
+    <input 
+      #fileInput 
+      type="file" 
+      accept=".pdf,.jpg,.jpeg,.png"
+      (change)="onFileSelected($event)"
+      style="display: none">
+    
+    @if (!selectedFile) {
+      <div class="drop-zone-content">
+        <mat-icon>cloud_upload</mat-icon>
+        <p>Drag & drop your claim document here</p>
+        <p class="hint">or click to browse</p>
+        <p class="formats">Supported: PDF, JPG, PNG (max 10MB)</p>
+      </div>
+    } @else {
+      <div class="file-preview">
+        <mat-icon>description</mat-icon>
+        <div class="file-info">
+          <span class="file-name">{{ selectedFile.name }}</span>
+          <span class="file-size">{{ formatFileSize(selectedFile.size) }}</span>
+        </div>
+        <button mat-icon-button (click)="removeFile($event)">
+          <mat-icon>close</mat-icon>
+        </button>
+      </div>
+    }
+  </div>
+
+  @if (selectedFile) {
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>Document Type</mat-label>
+      <mat-select [(ngModel)]="documentType">
+        <mat-option value="ClaimForm">Claim Form</mat-option>
+        <mat-option value="PoliceReport">Police Report</mat-option>
+        <mat-option value="RepairEstimate">Repair Estimate</mat-option>
+        <mat-option value="DamagePhotos">Damage Photos</mat-option>
+        <mat-option value="MedicalRecords">Medical Records</mat-option>
+        <mat-option value="Mixed">Mixed Documents</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="full-width">
+      <mat-label>User ID (optional)</mat-label>
+      <input matInput [(ngModel)]="userId" placeholder="Enter user ID">
+    </mat-form-field>
+
+    <div class="actions">
+      <button mat-raised-button (click)="cancel()">Cancel</button>
+      <button 
+        mat-raised-button 
+        color="primary" 
+        (click)="uploadDocument()"
+        [disabled]="isUploading">
+        @if (isUploading) {
+          <mat-spinner diameter="20"></mat-spinner>
+          Processing...
+        } @else {
+          Upload & Process
+        }
+      </button>
+    </div>
+
+    @if (uploadProgress > 0 && uploadProgress < 100) {
+      <mat-progress-bar mode="determinate" [value]="uploadProgress"></mat-progress-bar>
+    }
+  }
+</div>
