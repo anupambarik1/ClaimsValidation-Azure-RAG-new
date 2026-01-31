@@ -33,9 +33,69 @@ public class DocumentExtractionOrchestrator : IDocumentExtractionService
         _s3Bucket = configuration["AWS:S3:DocumentBucket"] ?? throw new InvalidOperationException("AWS:S3:DocumentBucket not configured");
     }
 
+    // Overload that accepts DocumentUploadResult to avoid S3 lookups
+    public async Task<ClaimExtractionResult> ExtractClaimDataAsync(DocumentUploadResult uploadResult, DocumentType documentType)
+    {
+        Console.WriteLine($"[Orchestrator] Starting extraction for document: {uploadResult.DocumentId}, type: {documentType}");
+        Console.WriteLine($"[Orchestrator] Using S3 key from upload result: {uploadResult.S3Key}");
+        
+        try
+        {
+            var s3Key = uploadResult.S3Key;
+            var documentId = uploadResult.DocumentId;
+            
+            // Step 2: Extract text using Textract
+            Console.WriteLine($"[Orchestrator] Step 1: Extracting text with Textract");
+            TextractResult textractResult;
+            
+            if (documentType == DocumentType.ClaimForm || documentType == DocumentType.PoliceReport)
+            {
+                // Use form/table analysis for structured documents
+                textractResult = await _textractService.AnalyzeDocumentAsync(_s3Bucket, s3Key, new[] { "FORMS", "TABLES" });
+            }
+            else
+            {
+                // Use simple text detection for other types
+                textractResult = await _textractService.DetectDocumentTextAsync(_s3Bucket, s3Key);
+            }
+            
+            // Step 3: Extract entities using Comprehend
+            Console.WriteLine($"[Orchestrator] Step 2: Extracting entities with Comprehend");
+            var entities = await _comprehendService.DetectEntitiesAsync(textractResult.ExtractedText);
+            var claimFields = await _comprehendService.ExtractClaimFieldsAsync(textractResult.ExtractedText);
+            
+            // Step 4: Analyze images if present (for damage photos)
+            List<ImageAnalysisResult>? imageAnalysis = null;
+            if (documentType == DocumentType.DamagePhotos && _rekognitionService != null)
+            {
+                Console.WriteLine($"[Orchestrator] Step 3: Analyzing images with Rekognition");
+                imageAnalysis = await _rekognitionService.AnalyzeImagesAsync(_s3Bucket, new List<string> { s3Key });
+            }
+            
+            // Step 5: Use Bedrock Claude to intelligently synthesize all data
+            Console.WriteLine($"[Orchestrator] Step 4: Synthesizing data with Bedrock Claude");
+            var extractedClaim = await SynthesizeClaimDataAsync(textractResult, entities, claimFields, imageAnalysis, documentType);
+            
+            // Step 6: Validate and score confidence
+            Console.WriteLine($"[Orchestrator] Step 5: Validating extracted data");
+            var validationResult = ValidateExtractedData(extractedClaim, textractResult.Confidence);
+            
+            Console.WriteLine($"[Orchestrator] Extraction complete. Overall confidence: {validationResult.OverallConfidence:F2}");
+            
+            return validationResult;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[Orchestrator] Error during extraction: {ex.Message}");
+            throw;
+        }
+    }
+
+    // Legacy method - kept for backward compatibility but uses S3 lookup
     public async Task<ClaimExtractionResult> ExtractClaimDataAsync(string documentId, DocumentType documentType)
     {
         Console.WriteLine($"[Orchestrator] Starting extraction for document: {documentId}, type: {documentType}");
+        Console.WriteLine($"[Orchestrator] WARNING: Using legacy method with S3 lookup - consider passing DocumentUploadResult instead");
         
         try
         {

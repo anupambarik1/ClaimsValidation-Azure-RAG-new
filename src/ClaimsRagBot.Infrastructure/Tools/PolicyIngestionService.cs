@@ -1,5 +1,7 @@
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
+using Amazon.Runtime;
 using ClaimsRagBot.Core.Interfaces;
 using ClaimsRagBot.Infrastructure.Bedrock;
 using ClaimsRagBot.Infrastructure.OpenSearch;
@@ -16,6 +18,8 @@ public class PolicyIngestionService
     private readonly HttpClient _httpClient;
     private readonly string _opensearchEndpoint;
     private readonly string _indexName;
+    private readonly AWSCredentials _credentials;
+    private readonly string _region;
 
     public PolicyIngestionService(IConfiguration configuration, string opensearchEndpoint, string indexName = "policy-clauses")
     {
@@ -23,6 +27,22 @@ public class PolicyIngestionService
         _httpClient = new HttpClient();
         _opensearchEndpoint = opensearchEndpoint;
         _indexName = indexName;
+        _region = configuration["AWS:Region"] ?? "us-east-1";
+        
+        // Get AWS credentials
+        var accessKeyId = configuration["AWS:AccessKeyId"];
+        var secretAccessKey = configuration["AWS:SecretAccessKey"];
+        
+        if (!string.IsNullOrEmpty(accessKeyId) && !string.IsNullOrEmpty(secretAccessKey))
+        {
+            _credentials = new BasicAWSCredentials(accessKeyId, secretAccessKey);
+        }
+        else
+        {
+#pragma warning disable CS0618
+            _credentials = FallbackCredentialsFactory.GetCredentials();
+#pragma warning restore CS0618
+        }
     }
 
     public async Task CreateIndexAsync()
@@ -61,9 +81,14 @@ public class PolicyIngestionService
 
         var requestUri = $"{_opensearchEndpoint}/{_indexName}";
         var jsonContent = JsonSerializer.Serialize(indexMapping);
-        var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
-        var response = await _httpClient.PutAsync(requestUri, content);
+        var request = new HttpRequestMessage(HttpMethod.Put, requestUri)
+        {
+            Content = new StringContent(jsonContent, Encoding.UTF8, "application/json")
+        };
+
+        await SignRequestAsync(request);
+        var response = await _httpClient.SendAsync(request);
         
         if (response.IsSuccessStatusCode)
         {
@@ -98,12 +123,17 @@ public class PolicyIngestionService
                     embedding = embedding
                 };
 
-                // Index document
-                var requestUri = $"{_opensearchEndpoint}/{_indexName}/_doc/{clause.ClauseId}";
+                // Index document - Use POST to auto-generate ID, then update with specific ID
+                var requestUri = $"{_opensearchEndpoint}/{_indexName}/_doc";
                 var jsonContent = JsonSerializer.Serialize(document);
-                var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
-                var response = await _httpClient.PutAsync(requestUri, content);
+                var request = new HttpRequestMessage(HttpMethod.Post, requestUri)
+                {
+                    Content = new StringContent(jsonContent, Encoding.UTF8, "application/json")
+                };
+
+                await SignRequestAsync(request);
+                var response = await _httpClient.SendAsync(request);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -123,6 +153,82 @@ public class PolicyIngestionService
         }
 
         Console.WriteLine($"\nIngestion complete: {successCount}/{clauses.Count} clauses indexed");
+    }
+
+    private async Task SignRequestAsync(HttpRequestMessage request)
+    {
+        var creds = await _credentials.GetCredentialsAsync();
+        var requestDateTime = DateTime.UtcNow;
+        var dateStamp = requestDateTime.ToString("yyyyMMdd");
+        var amzDate = requestDateTime.ToString("yyyyMMddTHHmmssZ");
+        
+        // Read request body
+        var requestBody = string.Empty;
+        if (request.Content != null)
+        {
+            requestBody = await request.Content.ReadAsStringAsync();
+        }
+        
+        var payloadHash = HashSHA256(requestBody);
+        
+        // Create canonical request
+        var canonicalUri = request.RequestUri!.AbsolutePath;
+        var canonicalQuerystring = "";
+        var canonicalHeaders = $"host:{request.RequestUri.Host}\nx-amz-date:{amzDate}\n";
+        var signedHeaders = "host;x-amz-date";
+        
+        var canonicalRequest = $"{request.Method}\n{canonicalUri}\n{canonicalQuerystring}\n{canonicalHeaders}\n{signedHeaders}\n{payloadHash}";
+        
+        // Create string to sign
+        var credentialScope = $"{dateStamp}/{_region}/aoss/aws4_request";
+        var stringToSign = $"AWS4-HMAC-SHA256\n{amzDate}\n{credentialScope}\n{HashSHA256(canonicalRequest)}";
+        
+        // Calculate signature
+        var signingKey = GetSignatureKey(creds.SecretKey, dateStamp, _region, "aoss");
+        var signature = ToHexString(HmacSHA256(signingKey, stringToSign));
+        
+        // Add authorization header
+        var authorizationHeader = $"AWS4-HMAC-SHA256 Credential={creds.AccessKey}/{credentialScope}, SignedHeaders={signedHeaders}, Signature={signature}";
+        
+        request.Headers.TryAddWithoutValidation("Authorization", authorizationHeader);
+        request.Headers.TryAddWithoutValidation("x-amz-date", amzDate);
+        request.Headers.TryAddWithoutValidation("x-amz-content-sha256", payloadHash);
+        
+        if (!string.IsNullOrEmpty(creds.Token))
+        {
+            request.Headers.TryAddWithoutValidation("X-Amz-Security-Token", creds.Token);
+        }
+    }
+    
+    private static string HashSHA256(string text)
+    {
+        var bytes = Encoding.UTF8.GetBytes(text);
+        var hash = SHA256.HashData(bytes);
+        return ToHexString(hash);
+    }
+    
+    private static byte[] HmacSHA256(byte[] key, string data)
+    {
+        var hmac = new HMACSHA256(key);
+        return hmac.ComputeHash(Encoding.UTF8.GetBytes(data));
+    }
+    
+    private static byte[] GetSignatureKey(string key, string dateStamp, string regionName, string serviceName)
+    {
+        var kDate = HmacSHA256(Encoding.UTF8.GetBytes("AWS4" + key), dateStamp);
+        var kRegion = HmacSHA256(kDate, regionName);
+        var kService = HmacSHA256(kRegion, serviceName);
+        return HmacSHA256(kService, "aws4_request");
+    }
+    
+    private static string ToHexString(byte[] bytes)
+    {
+        var builder = new StringBuilder();
+        foreach (var b in bytes)
+        {
+            builder.Append(b.ToString("x2"));
+        }
+        return builder.ToString();
     }
 
     public static List<PolicyClauseDocument> GetSampleMotorPolicyClauses()

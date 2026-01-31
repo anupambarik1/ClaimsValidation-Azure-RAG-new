@@ -170,8 +170,9 @@ public class DocumentsController : ControllerBase
                 docType = DocumentType.ClaimForm;
             }
             
+            // Pass the entire upload result to avoid redundant S3 lookups
             var extractionResult = await _extractionService.ExtractClaimDataAsync(
-                uploadData.DocumentId, 
+                uploadData, 
                 docType);
             
             _logger.LogInformation("Document submitted and extracted: {DocumentId}, confidence: {Confidence:F2}", 

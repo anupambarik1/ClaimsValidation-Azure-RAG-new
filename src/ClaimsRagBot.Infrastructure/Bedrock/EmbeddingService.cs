@@ -21,10 +21,6 @@ public class EmbeddingService : IEmbeddingService
         var accessKeyId = configuration["AWS:AccessKeyId"];
         var secretAccessKey = configuration["AWS:SecretAccessKey"];
 
-        accessKeyId = "";
-        secretAccessKey = "";
-
-
         var config = new AmazonBedrockRuntimeConfig
         {
             RegionEndpoint = regionEndpoint
@@ -44,30 +40,48 @@ public class EmbeddingService : IEmbeddingService
 
     public async Task<float[]> GenerateEmbeddingAsync(string text)
     {
-        var requestBody = new
+        try
         {
-            inputText = text
-        };
+            var requestBody = new
+            {
+                inputText = text
+            };
 
-        var request = new InvokeModelRequest
+            var request = new InvokeModelRequest
+            {
+                ModelId = "amazon.titan-embed-text-v1",
+                Body = new MemoryStream(Encoding.UTF8.GetBytes(JsonSerializer.Serialize(requestBody))),
+                ContentType = "application/json",
+                Accept = "application/json"
+            };
+
+            var response = await _client.InvokeModelAsync(request);
+            
+            using var reader = new StreamReader(response.Body);
+            var responseBody = await reader.ReadToEndAsync();
+            var result = JsonSerializer.Deserialize<EmbeddingResponse>(responseBody);
+
+            if (result?.Embedding == null || result.Embedding.Length == 0)
+            {
+                Console.WriteLine($"⚠️ Warning: Empty embedding returned for text: {text.Substring(0, Math.Min(50, text.Length))}...");
+                Console.WriteLine($"Response: {responseBody}");
+            }
+
+            return result?.Embedding ?? Array.Empty<float>();
+        }
+        catch (Exception ex)
         {
-            ModelId = "amazon.titan-embed-text-v1",
-            Body = new MemoryStream(Encoding.UTF8.GetBytes(JsonSerializer.Serialize(requestBody))),
-            ContentType = "application/json",
-            Accept = "application/json"
-        };
-
-        var response = await _client.InvokeModelAsync(request);
-        
-        using var reader = new StreamReader(response.Body);
-        var responseBody = await reader.ReadToEndAsync();
-        var result = JsonSerializer.Deserialize<EmbeddingResponse>(responseBody);
-
-        return result?.Embedding ?? Array.Empty<float>();
+            Console.WriteLine($"✗ Error generating embedding: {ex.Message}");
+            return Array.Empty<float>();
+        }
     }
 }
 
 internal class EmbeddingResponse
 {
-    public float[] Embedding { get; set; } = Array.Empty<float>();
+    [System.Text.Json.Serialization.JsonPropertyName("embedding")]
+    public float[]? Embedding { get; set; }
+    
+    [System.Text.Json.Serialization.JsonPropertyName("inputTextTokenCount")]
+    public int InputTextTokenCount { get; set; }
 }
