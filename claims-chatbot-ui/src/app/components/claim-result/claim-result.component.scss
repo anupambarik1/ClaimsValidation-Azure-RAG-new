@@ -36,6 +36,9 @@ mat-card {
 .ambiguous-fields,
 .next-action,
 .reasoning,
+.explanation,
+.clause-references,
+.required-documents,
 .matched-clauses {
   margin: 16px 0;
 
@@ -142,7 +145,25 @@ mat-card {
     padding: 12px;
     border-radius: 8px;
     border-left: 4px solid #1976d2;
-    margin: 0;
+    margin: 0 0 16px 0;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    
+    button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      
+      mat-icon {
+        font-size: 20px;
+        width: 20px;
+        height: 20px;
+      }
+    }
   }
 }
 
@@ -160,10 +181,26 @@ mat-card {
   }
 }
 
-.reasoning {
+.reasoning,
+.explanation {
   p {
     line-height: 1.6;
     color: #333;
+  }
+}
+
+.clause-references,
+.required-documents {
+  mat-chip-set {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  mat-chip {
+    background-color: #e3f2fd;
+    color: #1976d2;
   }
 }
 

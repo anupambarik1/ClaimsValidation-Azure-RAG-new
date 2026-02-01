@@ -6,12 +6,47 @@ export interface ClaimRequest {
 }
 
 export interface ClaimDecision {
-  isApproved: boolean;
+  status: string;  // "Covered", "Not Covered", "Manual Review"
+  explanation: string;
+  clauseReferences: string[];
+  requiredDocuments: string[];
   confidenceScore: number;
-  reasoning: string;
-  suggestedAmount?: number;
+}
+
+// Helper properties for UI
+export interface ClaimDecisionUI extends ClaimDecision {
+  isApproved: boolean;
   requiresHumanReview: boolean;
-  matchedClauses: PolicyClause[];
+}
+
+export interface ClaimAuditRecord {
+  claimId: string;
+  timestamp: string;
+  policyNumber: string;
+  claimAmount: number;
+  claimDescription: string;
+  decisionStatus: string;  // "Covered", "Not Covered", "Manual Review"
+  explanation: string;
+  confidenceScore: number;
+  clauseReferences: string[];
+  requiredDocuments: string[];
+  
+  // Additional fields from inserted data
+  claimantName?: string;
+  claimType?: string;
+  incidentDate?: string;
+  reasons?: string[];
+  
+  // Specialist review fields
+  specialistNotes?: string;
+  specialistId?: string;
+  reviewedAt?: string;
+}
+
+export interface ClaimDecisionUpdate {
+  newStatus: string;
+  specialistNotes: string;
+  specialistId: string;
 }
 
 export interface PolicyClause {

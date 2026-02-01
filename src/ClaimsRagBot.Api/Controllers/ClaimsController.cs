@@ -1,4 +1,5 @@
 using ClaimsRagBot.Application.RAG;
+using ClaimsRagBot.Core.Interfaces;
 using ClaimsRagBot.Core.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,13 +14,16 @@ namespace ClaimsRagBot.Api.Controllers;
 public class ClaimsController : ControllerBase
 {
     private readonly ClaimValidationOrchestrator _orchestrator;
+    private readonly IAuditService _auditService;
     private readonly ILogger<ClaimsController> _logger;
 
     public ClaimsController(
         ClaimValidationOrchestrator orchestrator,
+        IAuditService auditService,
         ILogger<ClaimsController> logger)
     {
         _orchestrator = orchestrator;
+        _auditService = auditService;
         _logger = logger;
     }
 
@@ -86,5 +90,158 @@ public class ClaimsController : ControllerBase
     public IActionResult Health()
     {
         return Ok(new { status = "healthy", timestamp = DateTime.UtcNow });
+    }
+
+    /// <summary>
+    /// Search for a claim by Claim ID
+    /// </summary>
+    /// <param name="claimId">The unique claim identifier</param>
+    /// <returns>Claim audit record if found</returns>
+    /// <response code="200">Returns the claim record</response>
+    /// <response code="404">If the claim is not found</response>
+    [HttpGet("search/{claimId}")]
+    [ProducesResponseType(typeof(ClaimAuditRecord), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<ClaimAuditRecord>> SearchByClaimId(string claimId)
+    {
+        try
+        {
+            _logger.LogInformation("Searching for claim: {ClaimId}", claimId);
+            
+            var claim = await _auditService.GetByClaimIdAsync(claimId);
+            
+            if (claim == null)
+            {
+                _logger.LogInformation("Claim not found: {ClaimId}", claimId);
+                return NotFound(new { message = $"Claim {claimId} not found" });
+            }
+
+            return Ok(claim);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error searching for claim {ClaimId}", claimId);
+            return StatusCode(500, new { error = "Error searching for claim", details = ex.Message });
+        }
+    }
+
+    /// <summary>
+    /// Search for claims by Policy Number
+    /// </summary>
+    /// <param name="policyNumber">The policy number</param>
+    /// <returns>List of claims for the policy</returns>
+    /// <response code="200">Returns the list of claims</response>
+    [HttpGet("search/policy/{policyNumber}")]
+    [ProducesResponseType(typeof(List<ClaimAuditRecord>), StatusCodes.Status200OK)]
+    public async Task<ActionResult<List<ClaimAuditRecord>>> SearchByPolicyNumber(string policyNumber)
+    {
+        try
+        {
+            _logger.LogInformation("Searching for claims by policy: {PolicyNumber}", policyNumber);
+            
+            var claims = await _auditService.GetByPolicyNumberAsync(policyNumber);
+            
+            return Ok(claims);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error searching claims for policy {PolicyNumber}", policyNumber);
+            return StatusCode(500, new { error = "Error searching claims", details = ex.Message });
+        }
+    }
+
+    /// <summary>
+    /// Get all claims with optional status filter
+    /// </summary>
+    /// <param name="status">Optional status filter: Covered, Not Covered, or Manual Review</param>
+    /// <returns>List of claims</returns>
+    /// <response code="200">Returns the list of claims</response>
+    [HttpGet("list")]
+    [ProducesResponseType(typeof(List<ClaimAuditRecord>), StatusCodes.Status200OK)]
+    public async Task<ActionResult<List<ClaimAuditRecord>>> GetAllClaims([FromQuery] string? status = null)
+    {
+        try
+        {
+            _logger.LogInformation("Retrieving all claims with status filter: {Status}", status ?? "none");
+            
+            var claims = await _auditService.GetAllClaimsAsync(status);
+            
+            return Ok(claims);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error retrieving all claims");
+            return StatusCode(500, new { error = "Error retrieving claims", details = ex.Message });
+        }
+    }
+
+    /// <summary>
+    /// Get a single claim by ID for detailed review
+    /// </summary>
+    /// <param name="id">The claim ID</param>
+    /// <returns>Claim details</returns>
+    /// <response code="200">Returns the claim details</response>
+    /// <response code="404">If the claim is not found</response>
+    [HttpGet("{id}")]
+    [ProducesResponseType(typeof(ClaimAuditRecord), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<ClaimAuditRecord>> GetClaimById(string id)
+    {
+        try
+        {
+            _logger.LogInformation("Retrieving claim details: {ClaimId}", id);
+            
+            var claim = await _auditService.GetByClaimIdAsync(id);
+            
+            if (claim == null)
+            {
+                return NotFound(new { message = $"Claim {id} not found" });
+            }
+
+            return Ok(claim);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error retrieving claim {ClaimId}", id);
+            return StatusCode(500, new { error = "Error retrieving claim", details = ex.Message });
+        }
+    }
+
+    /// <summary>
+    /// Update a claim decision by specialist
+    /// </summary>
+    /// <param name="id">The claim ID</param>
+    /// <param name="updateRequest">The update request containing new status and notes</param>
+    /// <returns>Success status</returns>
+    /// <response code="200">Returns success message</response>
+    /// <response code="404">If the claim is not found</response>
+    [HttpPut("{id}/decision")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult> UpdateClaimDecision(string id, [FromBody] ClaimDecisionUpdate updateRequest)
+    {
+        try
+        {
+            _logger.LogInformation("Updating claim decision: {ClaimId} by specialist {SpecialistId}", id, updateRequest.SpecialistId);
+            
+            var success = await _auditService.UpdateClaimDecisionAsync(
+                id,
+                updateRequest.NewStatus,
+                updateRequest.SpecialistNotes,
+                updateRequest.SpecialistId
+            );
+
+            if (!success)
+            {
+                return NotFound(new { message = $"Claim {id} not found or update failed" });
+            }
+
+            return Ok(new { message = "Claim decision updated successfully", claimId = id });
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error updating claim {ClaimId}", id);
+            return StatusCode(500, new { error = "Error updating claim", details = ex.Message });
+        }
     }
 }

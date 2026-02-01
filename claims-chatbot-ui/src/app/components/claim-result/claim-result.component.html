@@ -1,5 +1,6 @@
 <div class="claim-result">
-  @if (result.extractionResult) {
+  <!-- Document extraction result -->
+  @if (isDocumentResult && result.extractionResult) {
     <mat-card>
       <mat-card-header>
         <mat-card-title>
@@ -66,7 +67,7 @@
           </div>
         </div>
 
-        @if (result.extractionResult.ambiguousFields.length > 0) {
+        @if (result.extractionResult.ambiguousFields?.length > 0) {
           <mat-divider></mat-divider>
           <div class="ambiguous-fields">
             <h4>
@@ -86,19 +87,35 @@
         <div class="next-action">
           <h4>Next Action</h4>
           <p>{{ result.nextAction }}</p>
+          
+          <div class="action-buttons">
+            @if (canSubmit) {
+              <button mat-raised-button color="primary" (click)="onConfirmAndSubmit()">
+                <mat-icon>check_circle</mat-icon>
+                Confirm & Submit for Validation
+              </button>
+            }
+            <button mat-stroked-button color="accent" (click)="onEditClaim()">
+              <mat-icon>edit</mat-icon>
+              Review & Edit Details
+            </button>
+          </div>
         </div>
       </mat-card-content>
     </mat-card>
   }
 
-  @if (result.isApproved !== undefined) {
+  <!-- Claim validation result -->
+  @if (isClaimDecision) {
     <mat-card>
       <mat-card-header>
         <mat-card-title>
-          <mat-icon [class.success]="result.isApproved" [class.error]="!result.isApproved">
-            {{ result.isApproved ? 'check_circle' : 'cancel' }}
+          <mat-icon [class.success]="result.status === 'Covered'" 
+                    [class.warning]="result.status === 'Manual Review'"
+                    [class.error]="result.status === 'Not Covered'">
+            {{ getStatusIcon() }}
           </mat-icon>
-          Claim {{ result.isApproved ? 'Approved' : 'Denied' }}
+          Claim {{ result.status }}
         </mat-card-title>
       </mat-card-header>
       
@@ -109,20 +126,23 @@
             <mat-progress-bar 
               mode="determinate" 
               [value]="result.confidenceScore * 100"
-              [class.high]="result.confidenceScore >= 0.85">
+              [class.high]="result.confidenceScore >= 0.85"
+              [class.medium]="result.confidenceScore >= 0.70 && result.confidenceScore < 0.85"
+              [class.low]="result.confidenceScore < 0.70">
             </mat-progress-bar>
             <span class="confidence-value">{{ (result.confidenceScore * 100).toFixed(1) }}%</span>
           </div>
         </div>
 
-        <mat-divider></mat-divider>
+        @if (result.explanation) {
+          <mat-divider></mat-divider>
+          <div class="explanation">
+            <h4>Explanation</h4>
+            <p>{{ result.explanation }}</p>
+          </div>
+        }
 
-        <div class="reasoning">
-          <h4>Reasoning</h4>
-          <p>{{ result.reasoning }}</p>
-        </div>
-
-        @if (result.requiresHumanReview) {
+        @if (result.status === 'Manual Review') {
           <mat-divider></mat-divider>
           <div class="human-review">
             <mat-icon>person</mat-icon>
@@ -130,16 +150,27 @@
           </div>
         }
 
-        @if (result.matchedClauses && result.matchedClauses.length > 0) {
+        @if (result.clauseReferences && result.clauseReferences.length > 0) {
           <mat-divider></mat-divider>
-          <div class="matched-clauses">
-            <h4>Matched Policy Clauses</h4>
-            @for (clause of result.matchedClauses; track clause.clauseId) {
-              <div class="clause-item">
-                <span class="similarity">{{ (clause.similarity * 100).toFixed(1) }}% match</span>
-                <p>{{ clause.content }}</p>
-              </div>
-            }
+          <div class="clause-references">
+            <h4>Relevant Policy Clauses</h4>
+            <mat-chip-set>
+              @for (clause of result.clauseReferences; track clause) {
+                <mat-chip>{{ clause }}</mat-chip>
+              }
+            </mat-chip-set>
+          </div>
+        }
+
+        @if (result.requiredDocuments && result.requiredDocuments.length > 0) {
+          <mat-divider></mat-divider>
+          <div class="required-documents">
+            <h4>Required Documents</h4>
+            <mat-chip-set>
+              @for (doc of result.requiredDocuments; track doc) {
+                <mat-chip>{{ doc }}</mat-chip>
+              }
+            </mat-chip-set>
           </div>
         }
       </mat-card-content>

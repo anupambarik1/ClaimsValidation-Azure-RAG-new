@@ -1,0 +1,163 @@
+<div class="claim-detail-container">
+  <div class="header">
+    <button class="back-btn" (click)="goBack()">
+      ← Back to Claims List
+    </button>
+    <h2>Claim Details</h2>
+  </div>
+
+  <div *ngIf="loading" class="loading-spinner">
+    <div class="spinner"></div>
+    <p>Loading claim details...</p>
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <div *ngIf="successMessage" class="success-message">
+    {{ successMessage }}
+  </div>
+
+  <div *ngIf="!loading && claim" class="claim-content">
+    <!-- Claim Information Card -->
+    <div class="info-card">
+      <h3>Claim Information</h3>
+      <div class="info-grid">
+        <div class="info-item">
+          <label>Claim ID:</label>
+          <span class="value claim-id">{{ claim.claimId }}</span>
+        </div>
+        <div class="info-item">
+          <label>Policy Number:</label>
+          <span class="value">{{ claim.policyNumber }}</span>
+        </div>
+        <div class="info-item">
+          <label>Claimant Name:</label>
+          <span class="value">{{ claim.claimantName || 'N/A' }}</span>
+        </div>
+        <div class="info-item">
+          <label>Claim Type:</label>
+          <span class="value">{{ claim.claimType || 'N/A' }}</span>
+        </div>
+        <div class="info-item">
+          <label>Claim Amount:</label>
+          <span class="value">${{ claim.claimAmount.toFixed(2) }}</span>
+        </div>
+        <div class="info-item">
+          <label>Incident Date:</label>
+          <span class="value">{{ claim.incidentDate || 'N/A' }}</span>
+        </div>
+        <div class="info-item">
+          <label>Submission Date:</label>
+          <span class="value">{{ formatDate(claim.timestamp) }}</span>
+        </div>
+        <div class="info-item full-width">
+          <label>Current Status:</label>
+          <span class="status-badge" [ngClass]="getStatusClass(claim.decisionStatus)">
+            {{ claim.decisionStatus }}
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI Decision Card -->
+    <div class="info-card">
+      <h3>AI Validation Result</h3>
+      <div class="decision-section">
+        <div class="info-item full-width">
+          <label>Explanation:</label>
+          <p class="explanation-text">{{ claim.explanation }}</p>
+        </div>
+        <div class="info-item full-width" *ngIf="claim.reasons && claim.reasons.length > 0">
+          <label>Reasons:</label>
+          <ul class="reasons-list">
+            <li *ngFor="let reason of claim.reasons">{{ reason }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Specialist Review Card -->
+    <div class="info-card" *ngIf="claim.specialistId">
+      <h3>Specialist Review</h3>
+      <div class="info-grid">
+        <div class="info-item">
+          <label>Reviewed By:</label>
+          <span class="value">{{ claim.specialistId }}</span>
+        </div>
+        <div class="info-item">
+          <label>Review Date:</label>
+          <span class="value">{{ formatDate(claim.reviewedAt) }}</span>
+        </div>
+        <div class="info-item full-width">
+          <label>Specialist Notes:</label>
+          <p class="notes-text">{{ claim.specialistNotes }}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Specialist Action Section -->
+    <div class="action-card">
+      <div class="action-header">
+        <h3>Specialist Decision</h3>
+        <button 
+          class="action-btn" 
+          (click)="toggleDecisionForm()"
+          *ngIf="!showDecisionForm">
+          {{ claim.specialistId ? 'Update Decision' : 'Make Decision' }}
+        </button>
+      </div>
+
+      <!-- Decision Form -->
+      <div class="decision-form" *ngIf="showDecisionForm">
+        <div class="form-group">
+          <label for="specialistId">Your ID (Specialist):</label>
+          <input 
+            type="text" 
+            id="specialistId" 
+            [(ngModel)]="decisionUpdate.specialistId"
+            placeholder="Enter your specialist ID"
+            class="form-input">
+        </div>
+
+        <div class="form-group">
+          <label for="newStatus">Decision:</label>
+          <select 
+            id="newStatus" 
+            [(ngModel)]="decisionUpdate.newStatus"
+            class="form-select">
+            <option *ngFor="let option of statusOptions" [value]="option.value">
+              {{ option.label }}
+            </option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="specialistNotes">Specialist Notes:</label>
+          <textarea 
+            id="specialistNotes" 
+            [(ngModel)]="decisionUpdate.specialistNotes"
+            placeholder="Enter your detailed notes and reasoning for this decision..."
+            rows="6"
+            class="form-textarea"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button 
+            class="submit-btn" 
+            (click)="submitDecision()"
+            [disabled]="loading">
+            {{ loading ? 'Submitting...' : 'Submit Decision' }}
+          </button>
+          <button 
+            class="cancel-btn" 
+            (click)="cancelDecision()"
+            [disabled]="loading">
+            Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

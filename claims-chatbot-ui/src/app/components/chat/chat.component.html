@@ -32,7 +32,11 @@
           }
           
           @if (message.type === 'result' && message.data) {
-            <app-claim-result [result]="message.data"></app-claim-result>
+            <app-claim-result 
+              [result]="message.data"
+              (confirmAndSubmit)="handleConfirmAndSubmit($event)"
+              (editClaim)="handleEditClaim($event)">
+            </app-claim-result>
           }
         </div>
       </div>
@@ -55,7 +59,7 @@
   </div>
 
   <div class="input-container">
-    <mat-tab-group>
+    <mat-tab-group #tabGroup>
       <mat-tab label="Text Input">
         <div class="text-input-panel">
           <mat-form-field appearance="outline" class="message-input">
@@ -79,6 +83,10 @@
       
       <mat-tab label="Claim Form">
         <app-claim-form (claimSubmitted)="handleClaimSubmit($event)"></app-claim-form>
+      </mat-tab>
+      
+      <mat-tab label="Search Claims">
+        <app-claim-search></app-claim-search>
       </mat-tab>
     </mat-tab-group>
   </div>

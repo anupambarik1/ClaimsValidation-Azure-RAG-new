@@ -110,34 +110,35 @@ export class DocumentUploadComponent {
       { fileName: this.selectedFile.name, documentType: this.documentType }
     );
 
+    // Simulate progress for user feedback
+    const progressInterval = setInterval(() => {
+      if (this.uploadProgress < 90 && this.isUploading) {
+        this.uploadProgress += 10;
+      }
+    }, 500);
+
     this.apiService.submitDocument(
       this.selectedFile,
       this.userId || undefined,
       this.documentType
     ).subscribe({
       next: (response) => {
+        clearInterval(progressInterval);
         this.uploadProgress = 100;
         this.isUploading = false;
         this.documentSubmitted.emit(response);
         this.reset();
       },
       error: (error) => {
+        clearInterval(progressInterval);
         this.isUploading = false;
         this.uploadProgress = 0;
+        const errorMsg = error.error?.details || error.error?.error || error.message || 'Unknown error occurred';
         this.chatService.addBotMessage(
-          `❌ Upload failed: ${error.error?.details || error.message}`
+          `❌ Upload failed: ${errorMsg}`
         );
       }
     });
-
-    // Simulate progress for user feedback
-    const progressInterval = setInterval(() => {
-      if (this.uploadProgress < 90) {
-        this.uploadProgress += 10;
-      } else {
-        clearInterval(progressInterval);
-      }
-    }, 500);
   }
 
   cancel(): void {

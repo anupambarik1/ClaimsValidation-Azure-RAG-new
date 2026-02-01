@@ -1,0 +1,165 @@
+<div class="search-container">
+  <mat-card class="search-card">
+    <mat-card-header>
+      <mat-card-title>
+        <mat-icon>search</mat-icon>
+        Search Claims
+      </mat-card-title>
+    </mat-card-header>
+    
+    <mat-card-content>
+      <!-- Search Type Selection -->
+      <div class="search-type-selection">
+        <mat-radio-group [value]="searchType">
+          <mat-radio-button value="claimId" (click)="onSearchTypeChange('claimId')">Search by Claim ID</mat-radio-button>
+          <mat-radio-button value="policyNumber" (click)="onSearchTypeChange('policyNumber')">Search by Policy Number</mat-radio-button>
+        </mat-radio-group>
+      </div>
+
+      <!-- Search Form -->
+      <form [formGroup]="searchForm" (ngSubmit)="onSearch()" class="search-form">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>{{ searchType === 'claimId' ? 'Claim ID' : 'Policy Number' }}</mat-label>
+          <input 
+            matInput 
+            formControlName="searchValue"
+            [placeholder]="searchType === 'claimId' ? 'Enter claim ID...' : 'Enter policy number...'"
+          >
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+
+        <div class="button-group">
+          <button 
+            mat-raised-button 
+            color="primary" 
+            type="submit"
+            [disabled]="searchForm.invalid || isLoading"
+          >
+            <mat-icon>search</mat-icon>
+            Search
+          </button>
+          <button 
+            mat-button 
+            type="button"
+            (click)="clearResults(); searchForm.reset()"
+            [disabled]="isLoading"
+          >
+            Clear
+          </button>
+        </div>
+      </form>
+
+      <!-- Loading Spinner -->
+      <div *ngIf="isLoading" class="loading-container">
+        <mat-spinner diameter="50"></mat-spinner>
+        <p>Searching...</p>
+      </div>
+
+      <!-- Error Message -->
+      <div *ngIf="errorMessage" class="error-message">
+        <mat-icon>error</mat-icon>
+        {{ errorMessage }}
+      </div>
+
+      <!-- Single Result (Claim ID search) -->
+      <div *ngIf="searchResult && !isLoading" class="result-container">
+        <mat-card class="claim-card">
+          <mat-card-header>
+            <mat-card-title>
+              Claim Details
+            </mat-card-title>
+            <mat-card-subtitle>
+              <mat-chip [color]="getStatusColor(searchResult.decisionStatus)" selected>
+                {{ searchResult.decisionStatus }}
+              </mat-chip>
+            </mat-card-subtitle>
+          </mat-card-header>
+          
+          <mat-card-content>
+            <div class="claim-detail-grid">
+              <div class="detail-row">
+                <span class="label">Claim ID:</span>
+                <span class="value">{{ searchResult.claimId }}</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">Policy Number:</span>
+                <span class="value">{{ searchResult.policyNumber }}</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">Submitted:</span>
+                <span class="value">{{ formatDate(searchResult.timestamp) }}</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">Claim Amount:</span>
+                <span class="value amount">{{ formatCurrency(searchResult.claimAmount) }}</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">Confidence Score:</span>
+                <span class="value">{{ (searchResult.confidenceScore * 100).toFixed(1) }}%</span>
+              </div>
+            </div>
+
+            <div class="description-section">
+              <h4>Description</h4>
+              <p>{{ searchResult.claimDescription }}</p>
+            </div>
+
+            <div class="explanation-section">
+              <h4>Decision Explanation</h4>
+              <p>{{ searchResult.explanation }}</p>
+            </div>
+
+            <div *ngIf="searchResult.clauseReferences.length > 0" class="clause-section">
+              <h4>Referenced Policy Clauses</h4>
+              <mat-chip-listbox>
+                <mat-chip *ngFor="let clause of searchResult.clauseReferences">
+                  {{ clause }}
+                </mat-chip>
+              </mat-chip-listbox>
+            </div>
+
+            <div *ngIf="searchResult.requiredDocuments.length > 0" class="documents-section">
+              <h4>Required Documents</h4>
+              <ul>
+                <li *ngFor="let doc of searchResult.requiredDocuments">{{ doc }}</li>
+              </ul>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <!-- Multiple Results (Policy Number search) -->
+      <div *ngIf="searchResults.length > 0 && !isLoading" class="results-list">
+        <h3>Found {{ searchResults.length }} claim(s)</h3>
+        
+        <mat-card *ngFor="let claim of searchResults" class="claim-card-summary">
+          <mat-card-header>
+            <mat-card-title>
+              {{ claim.claimId }}
+              <mat-chip [color]="getStatusColor(claim.decisionStatus)" selected>
+                {{ claim.decisionStatus }}
+              </mat-chip>
+            </mat-card-title>
+            <mat-card-subtitle>
+              {{ formatDate(claim.timestamp) }}
+            </mat-card-subtitle>
+          </mat-card-header>
+          
+          <mat-card-content>
+            <div class="summary-grid">
+              <div class="summary-item">
+                <span class="label">Amount:</span>
+                <span class="value amount">{{ formatCurrency(claim.claimAmount) }}</span>
+              </div>
+              <div class="summary-item">
+                <span class="label">Confidence:</span>
+                <span class="value">{{ (claim.confidenceScore * 100).toFixed(1) }}%</span>
+              </div>
+            </div>
+            <p class="description">{{ claim.claimDescription }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

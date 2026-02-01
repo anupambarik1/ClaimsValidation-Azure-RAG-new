@@ -95,13 +95,18 @@ Resources:
       AttributeDefinitions:
         - AttributeName: ClaimId
           AttributeType: S
-        - AttributeName: Timestamp
+        - AttributeName: PolicyNumber
           AttributeType: S
       KeySchema:
         - AttributeName: ClaimId
           KeyType: HASH
-        - AttributeName: Timestamp
-          KeyType: RANGE
+      GlobalSecondaryIndexes:
+        - IndexName: PolicyNumberIndex
+          KeySchema:
+            - AttributeName: PolicyNumber
+              KeyType: HASH
+          Projection:
+            ProjectionType: ALL
       StreamSpecification:
         StreamViewType: NEW_AND_OLD_IMAGES
       Tags:

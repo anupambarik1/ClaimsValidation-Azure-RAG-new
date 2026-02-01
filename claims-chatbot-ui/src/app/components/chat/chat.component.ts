@@ -6,15 +6,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { MatTabsModule } from '@angular/material/tabs';
+import { MatTabsModule, MatTabGroup } from '@angular/material/tabs';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ChatService } from '../../services/chat.service';
+import { ClaimDataService } from '../../services/claim-data.service';
 import { ClaimsApiService } from '../../services/claims-api.service';
 import { Observable } from 'rxjs';
 import { ChatMessage, ClaimRequest, SubmitDocumentResponse } from '../../models/claim.model';
 import { DocumentUploadComponent } from '../document-upload/document-upload.component';
 import { ClaimFormComponent } from '../claim-form/claim-form.component';
 import { ClaimResultComponent } from '../claim-result/claim-result.component';
+import { ClaimSearchComponent } from '../claim-search/claim-search.component';
 
 @Component({
   selector: 'app-chat',
@@ -31,13 +33,15 @@ import { ClaimResultComponent } from '../claim-result/claim-result.component';
     MatTooltipModule,
     DocumentUploadComponent,
     ClaimFormComponent,
-    ClaimResultComponent
+    ClaimResultComponent,
+    ClaimSearchComponent
   ],
   templateUrl: './chat.component.html',
   styleUrls: ['./chat.component.scss']
 })
 export class ChatComponent implements AfterViewChecked {
   @ViewChild('messagesContainer') private messagesContainer!: ElementRef;
+  @ViewChild('tabGroup') private tabGroup!: MatTabGroup;
 
   messages$: Observable<ChatMessage[]>;
   userMessage = '';
@@ -46,7 +50,8 @@ export class ChatComponent implements AfterViewChecked {
 
   constructor(
     private chatService: ChatService,
-    private apiService: ClaimsApiService
+    private apiService: ClaimsApiService,
+    private claimDataService: ClaimDataService
   ) {
     this.messages$ = this.chatService.messages$;
   }
@@ -110,21 +115,36 @@ export class ChatComponent implements AfterViewChecked {
     this.apiService.validateClaim(claim).subscribe({
       next: (result) => {
         this.isLoading = false;
-        this.chatService.addBotMessage(
-          `Claim Validation Result:\n\n` +
-          `Decision: ${result.isApproved ? '✅ APPROVED' : '❌ DENIED'}\n` +
-          `Confidence: ${(result.confidenceScore * 100).toFixed(1)}%\n` +
-          `Requires Review: ${result.requiresHumanReview ? 'Yes' : 'No'}\n\n` +
-          `Reasoning:\n${result.reasoning}`,
-          'result',
-          result
-        );
+        
+        // Map backend response to UI-friendly format
+        const isApproved = result.status === 'Covered';
+        const requiresReview = result.status === 'Manual Review';
+        const statusIcon = isApproved ? '✅' : requiresReview ? '⚠️' : '❌';
+        
+        let message = `Claim Validation Result:\n\n` +
+          `Decision: ${statusIcon} ${result.status.toUpperCase()}\n` +
+          `Confidence: ${(result.confidenceScore * 100).toFixed(1)}%\n`;
+        
+        if (result.explanation) {
+          message += `\nExplanation:\n${result.explanation}`;
+        }
+        
+        if (result.clauseReferences && result.clauseReferences.length > 0) {
+          message += `\n\nRelevant Policy Clauses:\n` + result.clauseReferences.map(c => `• ${c}`).join('\n');
+        }
+        
+        if (result.requiredDocuments && result.requiredDocuments.length > 0) {
+          message += `\n\nRequired Documents:\n` + result.requiredDocuments.map(d => `• ${d}`).join('\n');
+        }
+        
+        this.chatService.addBotMessage(message, 'result', result);
         this.shouldScroll = true;
       },
       error: (error) => {
         this.isLoading = false;
+        const errorMsg = error.error?.details || error.error?.error || error.message || 'Unknown error occurred';
         this.chatService.addBotMessage(
-          `❌ Error validating claim: ${error.error?.details || error.message}`,
+          `❌ Error validating claim: ${errorMsg}`,
           'text'
         );
         this.shouldScroll = true;
@@ -134,6 +154,33 @@ export class ChatComponent implements AfterViewChecked {
 
   clearChat(): void {
     this.chatService.clearChat();
+    this.shouldScroll = true;
+  }
+  
+  handleConfirmAndSubmit(claim: ClaimRequest): void {
+    this.chatService.addBotMessage(
+      '✅ Submitting extracted claim for validation...',
+      'text'
+    );
+    this.shouldScroll = true;
+    
+    // Submit the extracted claim for validation
+    this.handleClaimSubmit(claim);
+  }
+  
+  handleEditClaim(claim: ClaimRequest): void {
+    // Set the claim data for the form to pick up
+    this.claimDataService.setClaimToEdit(claim);
+    
+    // Switch to the Claim Form tab (index 2)
+    if (this.tabGroup) {
+      this.tabGroup.selectedIndex = 2;
+    }
+    
+    this.chatService.addBotMessage(
+      '📝 Switched to Claim Form. Please review and edit the extracted details, then submit.',
+      'text'
+    );
     this.shouldScroll = true;
   }
 

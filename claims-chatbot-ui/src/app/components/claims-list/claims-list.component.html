@@ -1,0 +1,85 @@
+<div class="claims-list-container">
+  <div class="header">
+    <h2>Claims Management Dashboard</h2>
+    <div class="filter-section">
+      <label for="statusFilter">Filter by Status:</label>
+      <select 
+        id="statusFilter" 
+        [(ngModel)]="selectedStatus" 
+        (change)="onStatusChange()"
+        class="status-filter">
+        <option *ngFor="let option of statusOptions" [value]="option.value">
+          {{ option.label }}
+        </option>
+      </select>
+      <button class="refresh-btn" (click)="loadClaims()">
+        <span>🔄</span> Refresh
+      </button>
+    </div>
+  </div>
+
+  <div *ngIf="loading" class="loading-spinner">
+    <div class="spinner"></div>
+    <p>Loading claims...</p>
+  </div>
+
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+
+  <div *ngIf="!loading && !errorMessage" class="claims-table-wrapper">
+    <p class="results-count">
+      Showing {{ filteredClaims.length }} of {{ claims.length }} claims
+    </p>
+
+    <table class="claims-table" *ngIf="filteredClaims.length > 0">
+      <thead>
+        <tr>
+          <th>Claim ID</th>
+          <th>Policy Number</th>
+          <th>Claimant Name</th>
+          <th>Claim Type</th>
+          <th>Status</th>
+          <th>Explanation</th>
+          <th>Timestamp</th>
+          <th>Specialist Review</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let claim of filteredClaims" (click)="viewClaimDetails(claim.claimId)" class="claim-row">
+          <td class="claim-id">{{ claim.claimId }}</td>
+          <td>{{ claim.policyNumber }}</td>
+          <td>{{ claim.claimantName || 'N/A' }}</td>
+          <td>{{ claim.claimType || 'N/A' }}</td>
+          <td>
+            <span class="status-badge" [ngClass]="getStatusClass(claim.decisionStatus)">
+              {{ claim.decisionStatus }}
+            </span>
+          </td>
+          <td class="explanation-cell">{{ claim.explanation }}</td>
+          <td>{{ formatDate(claim.timestamp) }}</td>
+          <td class="specialist-review">
+            <span *ngIf="claim.specialistId" class="reviewed-badge">
+              ✓ Reviewed
+            </span>
+            <span *ngIf="!claim.specialistId" class="pending-badge">
+              Pending
+            </span>
+          </td>
+          <td>
+            <button 
+              class="view-btn" 
+              (click)="viewClaimDetails(claim.claimId); $event.stopPropagation()">
+              View Details
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div *ngIf="filteredClaims.length === 0" class="no-results">
+      <p>No claims found matching the selected filter.</p>
+    </div>
+  </div>
+</div>

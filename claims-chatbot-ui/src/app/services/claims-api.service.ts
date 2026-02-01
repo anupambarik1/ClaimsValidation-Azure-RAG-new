@@ -5,10 +5,12 @@ import { environment } from '../../environments/environment';
 import {
   ClaimRequest,
   ClaimDecision,
+  ClaimAuditRecord,
   DocumentUploadResult,
   SubmitDocumentResponse,
   ClaimExtractionResult,
-  DocumentType
+  DocumentType,
+  ClaimDecisionUpdate
 } from '../models/claim.model';
 
 @Injectable({
@@ -58,5 +60,35 @@ export class ClaimsApiService {
   // Delete document
   deleteDocument(documentId: string): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/documents/${documentId}`);
+  }
+
+  // Search for claim by Claim ID
+  searchByClaimId(claimId: string): Observable<ClaimAuditRecord> {
+    return this.http.get<ClaimAuditRecord>(`${this.baseUrl}/claims/search/${claimId}`);
+  }
+
+  // Search for claims by Policy Number
+  searchByPolicyNumber(policyNumber: string): Observable<ClaimAuditRecord[]> {
+    return this.http.get<ClaimAuditRecord[]>(`${this.baseUrl}/claims/search/policy/${policyNumber}`);
+  }
+
+  // Get all claims with optional status filter
+  getAllClaims(status?: string): Observable<ClaimAuditRecord[]> {
+    if (status) {
+      return this.http.get<ClaimAuditRecord[]>(`${this.baseUrl}/claims/list`, {
+        params: { status }
+      });
+    }
+    return this.http.get<ClaimAuditRecord[]>(`${this.baseUrl}/claims/list`);
+  }
+
+  // Get single claim details by ID
+  getClaimById(claimId: string): Observable<ClaimAuditRecord> {
+    return this.http.get<ClaimAuditRecord>(`${this.baseUrl}/claims/${claimId}`);
+  }
+
+  // Update claim decision by specialist
+  updateClaimDecision(claimId: string, update: ClaimDecisionUpdate): Observable<any> {
+    return this.http.put<any>(`${this.baseUrl}/claims/${claimId}/decision`, update);
   }
 }
