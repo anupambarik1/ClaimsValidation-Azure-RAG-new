@@ -1,0 +1,39 @@
+<div class="role-selection-container">
+  <div class="role-selection-card">
+    <h1 class="title">Claims RAG Bot</h1>
+    <p class="subtitle">Select your role to continue</p>
+    
+    <div class="role-options">
+      <div class="role-card claimant-card" (click)="selectRole('claimant')">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" 
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <h2>Claimant</h2>
+        <p>Submit and track your insurance claims</p>
+        <button class="role-btn claimant-btn">Submit Claim</button>
+      </div>
+
+      <div class="role-card specialist-card" (click)="selectRole('specialist')">
+        <div class="icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" 
+               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <polyline points="16 11 18 13 22 9"></polyline>
+          </svg>
+        </div>
+        <h2>Claims Specialist</h2>
+        <p>Review and process insurance claims</p>
+        <button class="role-btn specialist-btn">Claims Dashboard</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Powered by AWS Bedrock & OpenSearch</p>
+    </div>
+  </div>
+</div>
