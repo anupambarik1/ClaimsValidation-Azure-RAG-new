@@ -21,6 +21,9 @@ public class EmbeddingService : IEmbeddingService
         var accessKeyId = configuration["AWS:AccessKeyId"];
         var secretAccessKey = configuration["AWS:SecretAccessKey"];
 
+        accessKeyId = "testaccesskey";
+        secretAccessKey = "testsecretaccesskey";
+
         var config = new AmazonBedrockRuntimeConfig
         {
             RegionEndpoint = regionEndpoint

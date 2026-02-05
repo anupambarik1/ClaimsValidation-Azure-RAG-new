@@ -244,7 +244,7 @@ public class DocumentExtractionOrchestrator : IDocumentExtractionService
 Extract and structure claim information from provided documents.
 Apply domain knowledge to resolve ambiguities.
 Ensure all monetary amounts are in USD without currency symbols.
-Normalize policy types to exactly one of: Motor, Home, Health, Life.
+Normalize policy types to exactly one of: Home, Health, Life.
 Generate detailed claim descriptions from available information.
 Output ONLY valid JSON, no markdown formatting.";
         
@@ -255,7 +255,7 @@ Output ONLY valid JSON, no markdown formatting.";
                 PolicyNumber: "TEMP",
                 ClaimDescription: prompt,
                 ClaimAmount: 0,
-                PolicyType: "Motor"
+                PolicyType: "Life"
             );
             
             // We'll use a custom approach since we need different output format
@@ -294,7 +294,7 @@ Output ONLY valid JSON, no markdown formatting.";
         var lines = prompt.Split('\n');
         var policyNumber = "UNKNOWN";
         var claimAmount = 0m;
-        var policyType = "Motor";
+        var policyType = "Life";
         var description = "";
         
         foreach (var line in lines)
@@ -440,7 +440,7 @@ Output ONLY valid JSON, no markdown formatting.";
         }
         
         // Validate policy type
-        var validTypes = new[] { "Motor", "Home", "Health", "Life" };
+        var validTypes = new[] { "Health", "Life" };
         if (validTypes.Contains(extractedClaim.PolicyType))
         {
             fieldConfidences["policyType"] = 0.95f;
@@ -501,8 +501,8 @@ Output ONLY valid JSON, no markdown formatting.";
         {
             var s3Client = new Amazon.S3.AmazonS3Client(
                 new Amazon.Runtime.BasicAWSCredentials(
-                    _configuration["AWS:AccessKeyId"],
-                    _configuration["AWS:SecretAccessKey"]
+                   "testaccesskey",
+                    "testsecretaccesskey"
                 ),
                 Amazon.RegionEndpoint.GetBySystemName(_configuration["AWS:Region"] ?? "us-east-1")
             );

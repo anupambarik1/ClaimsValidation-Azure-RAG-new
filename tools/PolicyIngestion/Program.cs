@@ -23,12 +23,13 @@ internal class Program
         if (args.Length == 0)
         {
             Console.WriteLine("Usage: dotnet run -- <opensearch-endpoint> [index-name]");
-            Console.WriteLine("Example: dotnet run -- https://abc123.us-east-1.aoss.amazonaws.com policy-clauses");
+            Console.WriteLine("Example: dotnet run --  policy-clauses");
             Console.WriteLine("\nNote: AWS credentials will be loaded from appsettings.json or AWS credential chain");
             return;
         }
 
         var opensearchEndpoint = args[0];
+        opensearchEndpoint = "testopensearchEndpoint";
         var indexName = args.Length > 1 ? args[1] : "policy-clauses";
 
         Console.WriteLine($"OpenSearch Endpoint: {opensearchEndpoint}");
@@ -55,10 +56,10 @@ internal class Program
         await ingestionService.CreateIndexAsync();
         Console.WriteLine();
 
-        // Step 2: Ingest Motor policy clauses
-        Console.WriteLine("Step 2: Ingesting Motor Insurance clauses...");
-        var motorClauses = PolicyIngestionService.GetSampleMotorPolicyClauses();
-        await ingestionService.IngestPolicyClausesAsync(motorClauses);
+        // Step 2: Ingest Life policy clauses
+        Console.WriteLine("Step 2: Ingesting Life Insurance clauses...");
+        var lifeClauses = PolicyIngestionService.GetSampleLifePolicyClauses();
+        await ingestionService.IngestPolicyClausesAsync(lifeClauses);
         Console.WriteLine();
 
         // Step 3: Ingest Health policy clauses
@@ -69,7 +70,7 @@ internal class Program
 
         Console.WriteLine("========================================");
         Console.WriteLine("✓ Policy ingestion completed successfully!");
-        Console.WriteLine($"Total clauses indexed: {motorClauses.Count + healthClauses.Count}");
+        Console.WriteLine($"Total clauses indexed: {lifeClauses.Count + healthClauses.Count}");
         Console.WriteLine("========================================");
         Console.WriteLine("\nNext steps:");
         Console.WriteLine("1. Update appsettings.json with OpenSearch endpoint");

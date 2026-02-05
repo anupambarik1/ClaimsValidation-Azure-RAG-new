@@ -1,11 +1,15 @@
-using System.Net.Http.Headers;
-using System.Text;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+using Amazon;
+using Amazon.Auth.AccessControlPolicy;
 using Amazon.Runtime;
 using ClaimsRagBot.Core.Interfaces;
 using ClaimsRagBot.Core.Models;
 using Microsoft.Extensions.Configuration;
+using OpenSearch.Client;
+using OpenSearch.Net.Auth.AwsSigV4;
+using System.Net.Http.Headers;
+using System.Text;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace ClaimsRagBot.Infrastructure.OpenSearch;
 
@@ -19,27 +23,47 @@ public class RetrievalService : IRetrievalService
 
     public RetrievalService(IConfiguration? configuration = null)
     {
-        _httpClient = new HttpClient();
-        
-        var accessKeyId = configuration?["AWS:AccessKeyId"];
-        var secretAccessKey = configuration?["AWS:SecretAccessKey"];
-        
-        if (!string.IsNullOrEmpty(accessKeyId) && !string.IsNullOrEmpty(secretAccessKey))
+        try
         {
-            _credentials = new BasicAWSCredentials(accessKeyId, secretAccessKey);
-        }
-        else
-        {
-            // Fallback to default credential chain
+            _httpClient = new HttpClient();
+            
+            var accessKeyId = configuration?["AWS:AccessKeyId"];
+            var secretAccessKey = configuration?["AWS:SecretAccessKey"];
+
+            accessKeyId = "testaccesskey";
+            secretAccessKey = "testsecretaccesskey";
+
+            if (!string.IsNullOrEmpty(accessKeyId) && !string.IsNullOrEmpty(secretAccessKey))
+            {
+                _credentials = new BasicAWSCredentials(accessKeyId, secretAccessKey);
+            }
+            else
+            {
+                // Fallback to default credential chain
 #pragma warning disable CS0618 // Type or member is obsolete
-            _credentials = FallbackCredentialsFactory.GetCredentials();
+                _credentials = FallbackCredentialsFactory.GetCredentials();
 #pragma warning restore CS0618 // Type or member is obsolete
+            }
+            
+            // Read from config or use defaults
+            _opensearchEndpoint = configuration?["AWS:OpenSearchEndpoint"] ?? "";
+            _indexName = configuration?["AWS:OpenSearchIndexName"] ?? "policy-clauses";
+
+            _opensearchEndpoint = "testopensearchEndpoint";
+
+
+            _useRealOpenSearch = !string.IsNullOrEmpty(_opensearchEndpoint);
+            
+            Console.WriteLine($"[RetrievalService] Endpoint: {_opensearchEndpoint}");
+            Console.WriteLine($"[RetrievalService] Index: {_indexName}");
+            Console.WriteLine($"[RetrievalService] Using Real OpenSearch: {_useRealOpenSearch}");
         }
-        
-        // Read from config or use defaults
-        _opensearchEndpoint = configuration?["AWS:OpenSearchEndpoint"] ?? "";
-        _indexName = configuration?["AWS:OpenSearchIndexName"] ?? "policy-clauses";
-        _useRealOpenSearch = !string.IsNullOrEmpty(_opensearchEndpoint);
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[RetrievalService] FATAL: Constructor failed - {ex.Message}");
+            Console.WriteLine($"[RetrievalService] Stack: {ex.StackTrace}");
+            throw;
+        }
     }
 
     public async Task<List<PolicyClause>> RetrieveClausesAsync(float[] embedding, string policyType)
@@ -52,49 +76,141 @@ public class RetrievalService : IRetrievalService
 
         try
         {
-            return await QueryOpenSearchAsync(embedding, policyType);
+            Console.WriteLine($"[RetrievalService] Querying OpenSearch for policyType: {policyType}");
+            var result = await QueryOpenSearchAsync(embedding, policyType);
+            Console.WriteLine($"[RetrievalService] ✓ Retrieved {result.Count} clauses from OpenSearch");
+            return result;
+        }
+        catch (HttpRequestException ex)
+        {
+            Console.WriteLine($"[RetrievalService] ✗ HTTP Error: {ex.StatusCode} - {ex.Message}");
+            Console.WriteLine($"[RetrievalService] Falling back to mock data");
+            return await GetMockClausesAsync(policyType);
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"OpenSearch query failed, falling back to mock data: {ex.Message}");
+            Console.WriteLine($"[RetrievalService] ✗ Error: {ex.GetType().Name} - {ex.Message}");
+            Console.WriteLine($"[RetrievalService] Stack: {ex.StackTrace}");
+            Console.WriteLine($"[RetrievalService] Falling back to mock data");
             return await GetMockClausesAsync(policyType);
         }
     }
 
     private async Task<List<PolicyClause>> QueryOpenSearchAsync(float[] embedding, string policyType)
     {
+
+        // 1. Setup the connection for SERVERLESS (must use "aoss")
+        var connection = new AwsSigV4HttpConnection(RegionEndpoint.USEast1, service: "aoss");
+        var settings = new ConnectionSettings(new Uri("testopensearchEndpoint"), connection)
+            .DefaultIndex("policy-clauses");
+
+        var client = new OpenSearchClient(settings);
+
+        // 2. Perform the search using the high-level client
+        var searchResponse = await client.SearchAsync<dynamic>(s => s
+            .Index("policy-clauses")
+            .Size(5)
+            .Query(q => q.MatchAll())
+            .Source(sr => sr
+                .Includes(f => f
+                    .Fields("clauseId", "text", "coverageType", "policyType")
+                )
+            )
+        );
+
+        if (searchResponse.IsValid)
+        {
+            var documents = searchResponse.Documents; // Your results
+
+            foreach (var hit in searchResponse.Hits)
+            {
+                // Access the fields from the dynamic Source object
+                var clauseId = hit.Source["clauseId"];
+                var text = hit.Source["text"];
+                var coverageType = hit.Source["coverageType"];
+                var policyType1 = hit.Source["policyType"];
+
+                // Your logic here (e.g., printing to console or mapping to a list)
+                Console.WriteLine($"ID: {clauseId} | Type: {policyType1}");
+                Console.WriteLine($"Text: {text}");
+                Console.WriteLine(new string('-', 20));
+            }
+
+            return searchResponse?.Hits?
+            .Select((hit, index) => new PolicyClause(
+                ClauseId: hit.Source?["clauseId"] ?? $"UNKNOWN-{index}",
+                Text: hit.Source?["text"] ?? "",
+                CoverageType: hit.Source?["coverageType"] ?? "",
+                Score: hit.Score!=null? (float)hit.Score : 0.0f
+            ))
+            .ToList() ?? new List<PolicyClause>();
+        }
+        else
+        {
+            // If you get a 404 here, double check that _indexName exactly matches your index in AWS
+            Console.WriteLine(searchResponse.DebugInformation);
+        }
+
+
+
+
+        //// 1. Define your Serverless collection details
+        //var endpoint = new Uri("testopensearchEndpoint");
+        //var region = RegionEndpoint.USEast1;
+
+        //// 2. Configure the SigV4 Connection specifically for Serverless
+        //// IMPORTANT: You MUST specify "aoss" as the service name for Serverless collections.
+        //var connection = new AwsSigV4HttpConnection(region, service: "aoss");
+
+        //// 3. Setup Client Settings
+        //var settings = new ConnectionSettings(endpoint, connection)
+        //    .DefaultIndex("bedrock-knowledge-base-default-index")
+        //    .EnableDebugMode(); // Helpful to see signing headers in logs
+
+        //// 4. Instantiate the Client
+        //var client = new OpenSearchClient(settings);
+
+        //// Attempt to list aliases or indices to verify the connection and permissions
+        //var response1 = await client.Cat.IndicesAsync();
+
+
+        //if (response1.IsValid)
+        //{
+        //    Console.WriteLine("Connected successfully!");
+        //}
+        //else
+        //{
+        //    // If this fails with 403, it's a permission/policy issue.
+        //    // If it still fails with 404, check your endpoint URL for typos.
+        //    Console.WriteLine($"Connection failed: {response1.DebugInformation}");
+        //}
+
+
+
+
+
+        // 1. Define your Serverless collection details
+        var endpoint = new Uri("testopensearchEndpoint");
+        var region = RegionEndpoint.USEast1;
+
+        // 2. Configure the SigV4 Connection specifically for Serverless
+        // IMPORTANT: You MUST specify "aoss" as the service name for Serverless collections.
+        var connection1 = new AwsSigV4HttpConnection(region, service: "aoss");
+
+        // 3. Setup Client Settings
+        var settings1 = new ConnectionSettings(endpoint, connection)
+            .DefaultIndex("bedrock-knowledge-base-default-index")
+            .EnableDebugMode(); // Helpful to see signing headers in logs
+
+        // 4. Instantiate the Client
+        var client1 = new OpenSearchClient(settings);
+
         var searchQuery = new
         {
             size = 5,
             query = new
             {
-                @bool = new
-                {
-                    must = new object[]
-                    {
-                        new
-                        {
-                            knn = new
-                            {
-                                embedding = new
-                                {
-                                    vector = embedding,
-                                    k = 5
-                                }
-                            }
-                        }
-                    },
-                    filter = new[]
-                    {
-                        new
-                        {
-                            term = new
-                            {
-                                policyType = policyType.ToLower()
-                            }
-                        }
-                    }
-                }
+                match_all = new { }
             },
             _source = new[] { "clauseId", "text", "coverageType", "policyType" }
         };
@@ -109,10 +225,10 @@ public class RetrievalService : IRetrievalService
         };
 
         // Add AWS SigV4 authentication
-        await SignRequestAsync(request);
+        //await SignRequestAsync(request);
 
         var response = await _httpClient.SendAsync(request);
-        response.EnsureSuccessStatusCode();
+       // response.EnsureSuccessStatusCode();
 
         var responseContent = await response.Content.ReadAsStringAsync();
         var searchResult = JsonSerializer.Deserialize<OpenSearchResponse>(responseContent);
@@ -129,12 +245,104 @@ public class RetrievalService : IRetrievalService
 
     private async Task SignRequestAsync(HttpRequestMessage request)
     {
-        // For OpenSearch Serverless, use AWS SigV4 signing
-        // This is a simplified version - in production use AWS.Signers or similar
         var creds = await _credentials.GetCredentialsAsync();
-        request.Headers.Add("X-Amz-Security-Token", creds.Token);
-        // Note: Full SigV4 implementation would go here
-        // For now, relying on IAM role if running in AWS environment
+        var uri = request.RequestUri!;
+        var region = "us-east-1";
+        var service = "aoss";
+        
+        byte[] contentBytes = Array.Empty<byte>();
+        string contentHash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855";
+        string contentType = "";
+        
+        if (request.Content != null)
+        {
+            contentBytes = await request.Content.ReadAsByteArrayAsync();
+            contentHash = ComputeSha256Hash(contentBytes);
+            contentType = request.Content.Headers.ContentType?.ToString() ?? "application/json";
+        }
+        
+        var now = DateTime.UtcNow;
+        var amzDate = now.ToString("yyyyMMddTHHmmssZ");
+        var dateStamp = now.ToString("yyyyMMdd");
+        
+        request.Headers.Host = uri.Host;
+        request.Headers.TryAddWithoutValidation("X-Amz-Date", amzDate);
+        
+        if (!string.IsNullOrEmpty(creds.Token))
+        {
+            request.Headers.TryAddWithoutValidation("X-Amz-Security-Token", creds.Token);
+        }
+        
+        // Build canonical headers (must be sorted alphabetically)
+        var canonicalHeaders = new StringBuilder();
+        if (!string.IsNullOrEmpty(contentType))
+        {
+            canonicalHeaders.Append($"content-type:{contentType}\n");
+        }
+        canonicalHeaders.Append($"host:{uri.Host}\n");
+        canonicalHeaders.Append($"x-amz-date:{amzDate}\n");
+        if (!string.IsNullOrEmpty(creds.Token))
+        {
+            canonicalHeaders.Append($"x-amz-security-token:{creds.Token}\n");
+        }
+        
+        // Build signed headers list (must match canonical headers, sorted)
+        var signedHeadersList = new List<string>();
+        if (!string.IsNullOrEmpty(contentType))
+        {
+            signedHeadersList.Add("content-type");
+        }
+        signedHeadersList.Add("host");
+        signedHeadersList.Add("x-amz-date");
+        if (!string.IsNullOrEmpty(creds.Token))
+        {
+            signedHeadersList.Add("x-amz-security-token");
+        }
+        var signedHeaders = string.Join(";", signedHeadersList);
+        
+        var canonicalRequest = new StringBuilder();
+        canonicalRequest.Append($"{request.Method.Method}\n");
+        canonicalRequest.Append($"{uri.AbsolutePath}\n");
+        canonicalRequest.Append($"{uri.Query.TrimStart('?')}\n");
+        canonicalRequest.Append(canonicalHeaders.ToString());
+        canonicalRequest.Append($"\n{signedHeaders}\n");
+        canonicalRequest.Append(contentHash);
+        
+        var canonicalRequestHash = ComputeSha256Hash(Encoding.UTF8.GetBytes(canonicalRequest.ToString()));
+        var credentialScope = $"{dateStamp}/{region}/{service}/aws4_request";
+        var stringToSign = $"AWS4-HMAC-SHA256\n{amzDate}\n{credentialScope}\n{canonicalRequestHash}";
+        
+        var signingKey = GetSignatureKey(creds.SecretKey, dateStamp, region, service);
+        var signature = ToHexString(HmacSha256(signingKey, Encoding.UTF8.GetBytes(stringToSign)));
+        
+        var authorizationHeader = $"AWS4-HMAC-SHA256 Credential={creds.AccessKey}/{credentialScope}, SignedHeaders={signedHeaders}, Signature={signature}";
+        request.Headers.TryAddWithoutValidation("Authorization", authorizationHeader);
+    }
+    
+    private static string ComputeSha256Hash(byte[] data)
+    {
+        using var sha256 = System.Security.Cryptography.SHA256.Create();
+        var hash = sha256.ComputeHash(data);
+        return ToHexString(hash);
+    }
+    
+    private static byte[] HmacSha256(byte[] key, byte[] data)
+    {
+        using var hmac = new System.Security.Cryptography.HMACSHA256(key);
+        return hmac.ComputeHash(data);
+    }
+    
+    private static byte[] GetSignatureKey(string key, string dateStamp, string region, string service)
+    {
+        var kDate = HmacSha256(Encoding.UTF8.GetBytes($"AWS4{key}"), Encoding.UTF8.GetBytes(dateStamp));
+        var kRegion = HmacSha256(kDate, Encoding.UTF8.GetBytes(region));
+        var kService = HmacSha256(kRegion, Encoding.UTF8.GetBytes(service));
+        return HmacSha256(kService, Encoding.UTF8.GetBytes("aws4_request"));
+    }
+    
+    private static string ToHexString(byte[] bytes)
+    {
+        return BitConverter.ToString(bytes).Replace("-", "").ToLowerInvariant();
     }
 
     private async Task<List<PolicyClause>> GetMockClausesAsync(string policyType)

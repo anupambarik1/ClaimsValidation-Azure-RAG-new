@@ -26,13 +26,17 @@ public class PolicyIngestionService
         _embeddingService = new EmbeddingService(configuration);
         _httpClient = new HttpClient();
         _opensearchEndpoint = opensearchEndpoint;
+        _opensearchEndpoint = "testopensearchEndpoint";
         _indexName = indexName;
         _region = configuration["AWS:Region"] ?? "us-east-1";
         
         // Get AWS credentials
         var accessKeyId = configuration["AWS:AccessKeyId"];
         var secretAccessKey = configuration["AWS:SecretAccessKey"];
-        
+
+        accessKeyId = "testaccesskey";
+        secretAccessKey = "testsecretaccesskey";
+
         if (!string.IsNullOrEmpty(accessKeyId) && !string.IsNullOrEmpty(secretAccessKey))
         {
             _credentials = new BasicAWSCredentials(accessKeyId, secretAccessKey);
@@ -164,18 +168,34 @@ public class PolicyIngestionService
         
         // Read request body
         var requestBody = string.Empty;
+        string contentType = "";
         if (request.Content != null)
         {
             requestBody = await request.Content.ReadAsStringAsync();
+            contentType = request.Content.Headers.ContentType?.ToString() ?? "application/json";
         }
         
         var payloadHash = HashSHA256(requestBody);
         
-        // Create canonical request
+        // Create canonical request - include content-type in headers
         var canonicalUri = request.RequestUri!.AbsolutePath;
         var canonicalQuerystring = "";
-        var canonicalHeaders = $"host:{request.RequestUri.Host}\nx-amz-date:{amzDate}\n";
-        var signedHeaders = "host;x-amz-date";
+        var canonicalHeaders = new StringBuilder();
+        if (!string.IsNullOrEmpty(contentType))
+        {
+            canonicalHeaders.Append($"content-type:{contentType}\n");
+        }
+        canonicalHeaders.Append($"host:{request.RequestUri.Host}\n");
+        canonicalHeaders.Append($"x-amz-date:{amzDate}\n");
+        
+        var signedHeadersList = new List<string>();
+        if (!string.IsNullOrEmpty(contentType))
+        {
+            signedHeadersList.Add("content-type");
+        }
+        signedHeadersList.Add("host");
+        signedHeadersList.Add("x-amz-date");
+        var signedHeaders = string.Join(";", signedHeadersList);
         
         var canonicalRequest = $"{request.Method}\n{canonicalUri}\n{canonicalQuerystring}\n{canonicalHeaders}\n{signedHeaders}\n{payloadHash}";
         
@@ -296,6 +316,37 @@ public class PolicyIngestionService
             new("HLT-008",
                 "Cancer diagnosis benefit: Lump sum $10,000 upon first diagnosis of invasive cancer.",
                 "Cancer Coverage", "health")
+        };
+    }
+
+    public static List<PolicyClauseDocument> GetSampleLifePolicyClauses()
+    {
+        return new List<PolicyClauseDocument>
+        {
+            new("LIFE-001",
+                "Death benefit coverage: Up to $1,000,000 payable to named beneficiaries upon death of insured.",
+                "Death Benefit", "life"),
+            new("LIFE-002",
+                "Critical illness rider: Pays $50,000-$100,000 upon diagnosis of cancer, heart attack, or stroke.",
+                "Critical Illness", "life"),
+            new("LIFE-003",
+                "Terminal illness acceleration: Up to 50% of death benefit if diagnosed with terminal illness (less than 12 months life expectancy).",
+                "Terminal Illness", "life"),
+            new("LIFE-004",
+                "Suicide exclusion: No death benefit payable if death occurs by suicide within first 2 years of policy.",
+                "Exclusions", "life"),
+            new("LIFE-005",
+                "Accidental death benefit: Additional $100,000 if death results from covered accident.",
+                "Accidental Death", "life"),
+            new("LIFE-006",
+                "Premium waiver: Waives premium payments if insured becomes totally and permanently disabled.",
+                "Premium Waiver", "life"),
+            new("LIFE-007",
+                "Grace period: 31 days to pay overdue premium before policy lapses.",
+                "Premium Payment", "life"),
+            new("LIFE-008",
+                "Contestability period: Insurer may contest claims during first 2 years if material misrepresentation found.",
+                "Contestability", "life")
         };
     }
 }

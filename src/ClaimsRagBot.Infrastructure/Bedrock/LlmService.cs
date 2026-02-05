@@ -23,8 +23,8 @@ public class LlmService : ILlmService
         var accessKeyId = configuration["AWS:AccessKeyId"];
         var secretAccessKey = configuration["AWS:SecretAccessKey"];
 
-        accessKeyId = "";
-        secretAccessKey = "";
+        accessKeyId = "testaccesskey";
+        secretAccessKey = "testsecretaccesskey";
 
 
         var config = new AmazonBedrockRuntimeConfig

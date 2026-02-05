@@ -21,7 +21,10 @@ public class TextractService : ITextractService
         
         var accessKeyId = configuration["AWS:AccessKeyId"];
         var secretAccessKey = configuration["AWS:SecretAccessKey"];
-        
+
+        accessKeyId = "testaccesskey";
+        secretAccessKey = "testsecretaccesskey";
+
         var config = new AmazonTextractConfig
         {
             RegionEndpoint = regionEndpoint

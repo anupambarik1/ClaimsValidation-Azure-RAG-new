@@ -20,7 +20,10 @@ public class RekognitionService : IRekognitionService
         
         var accessKeyId = configuration["AWS:AccessKeyId"];
         var secretAccessKey = configuration["AWS:SecretAccessKey"];
-        
+
+        accessKeyId = "testaccesskey";
+        secretAccessKey = "testsecretaccesskey";
+
         var config = new AmazonRekognitionConfig
         {
             RegionEndpoint = regionEndpoint
