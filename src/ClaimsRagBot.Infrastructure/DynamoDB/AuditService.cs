@@ -22,8 +22,8 @@ public class AuditService : IAuditService
         var accessKeyId = configuration["AWS:AccessKeyId"];
         var secretAccessKey = configuration["AWS:SecretAccessKey"];
 
-        accessKeyId = "testaccesskey";
-        secretAccessKey = "testsecretaccesskey";
+        // accessKeyId = "testaccesskey";
+        // secretAccessKey = "testsecretaccesskey";
 
         var config = new AmazonDynamoDBConfig
         {

@@ -1,3 +1,4 @@
+using Amazon.S3;
 using ClaimsRagBot.Core.Interfaces;
 using ClaimsRagBot.Core.Models;
 using Microsoft.Extensions.Configuration;
@@ -16,6 +17,9 @@ public class DocumentExtractionOrchestrator : IDocumentExtractionService
     private readonly IConfiguration _configuration;
     private readonly string _s3Bucket;
 
+    private readonly string? _accessKeyId;
+    private readonly string? _secretAccessKey;
+
     public DocumentExtractionOrchestrator(
         IDocumentUploadService uploadService,
         ITextractService textractService,
@@ -31,6 +35,9 @@ public class DocumentExtractionOrchestrator : IDocumentExtractionService
         _rekognitionService = rekognitionService;
         _configuration = configuration;
         _s3Bucket = configuration["AWS:S3:DocumentBucket"] ?? throw new InvalidOperationException("AWS:S3:DocumentBucket not configured");
+
+        _accessKeyId = configuration?["AWS:AccessKeyId"] ?? string.Empty;
+        _secretAccessKey = configuration?["AWS:SecretAccessKey"] ?? string.Empty;
     }
 
     // Overload that accepts DocumentUploadResult to avoid S3 lookups
@@ -499,11 +506,11 @@ Output ONLY valid JSON, no markdown formatting.";
         
         try
         {
-            var s3Client = new Amazon.S3.AmazonS3Client(
-                new Amazon.Runtime.BasicAWSCredentials(
-                   "testaccesskey",
-                    "testsecretaccesskey"
-                ),
+            var s3Client = new AmazonS3Client(
+                 new Amazon.Runtime.BasicAWSCredentials(
+                    _accessKeyId,
+                     _secretAccessKey
+                 ),
                 Amazon.RegionEndpoint.GetBySystemName(_configuration["AWS:Region"] ?? "us-east-1")
             );
             

@@ -30,8 +30,8 @@ public class RetrievalService : IRetrievalService
             var accessKeyId = configuration?["AWS:AccessKeyId"];
             var secretAccessKey = configuration?["AWS:SecretAccessKey"];
 
-            accessKeyId = "testaccesskey";
-            secretAccessKey = "testsecretaccesskey";
+            // accessKeyId = "testaccesskey";
+            // secretAccessKey = "testsecretaccesskey";
 
             if (!string.IsNullOrEmpty(accessKeyId) && !string.IsNullOrEmpty(secretAccessKey))
             {

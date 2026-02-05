@@ -22,8 +22,8 @@ public class TextractService : ITextractService
         var accessKeyId = configuration["AWS:AccessKeyId"];
         var secretAccessKey = configuration["AWS:SecretAccessKey"];
 
-        accessKeyId = "testaccesskey";
-        secretAccessKey = "testsecretaccesskey";
+        // accessKeyId = "testaccesskey";
+        // secretAccessKey = "testsecretaccesskey";
 
         var config = new AmazonTextractConfig
         {
@@ -71,7 +71,7 @@ public class TextractService : ITextractService
             Console.WriteLine($"[Textract] Job started with ID: {jobId}");
             
             // Poll for completion
-            GetDocumentAnalysisResponse analysisResponse = null;
+            GetDocumentAnalysisResponse? analysisResponse = null;
             int attempts = 0;
             
             while (attempts < _maxPollingAttempts)
@@ -136,7 +136,7 @@ public class TextractService : ITextractService
             Console.WriteLine($"[Textract] Text detection job started with ID: {jobId}");
             
             // Poll for completion
-            GetDocumentTextDetectionResponse detectionResponse = null;
+            GetDocumentTextDetectionResponse? detectionResponse = null;
             int attempts = 0;
             
             while (attempts < _maxPollingAttempts)
@@ -301,8 +301,8 @@ public class TextractService : ITextractService
         var cells = cellRelationship.Ids
             .Select(id => allBlocks.FirstOrDefault(b => b.Id == id))
             .Where(b => b != null && b.BlockType == BlockType.CELL)
-            .OrderBy(b => b.RowIndex)
-            .ThenBy(b => b.ColumnIndex)
+            .OrderBy(b => b.RowIndex ?? 0)
+            .ThenBy(b => b.ColumnIndex ?? 0)
             .ToList();
         
         var currentRow = new List<string>();
@@ -310,6 +310,8 @@ public class TextractService : ITextractService
         
         foreach (var cell in cells)
         {
+            if (cell == null) continue;
+            
             if (lastRowIndex.HasValue && cell.RowIndex != lastRowIndex)
             {
                 rows.Add(currentRow);

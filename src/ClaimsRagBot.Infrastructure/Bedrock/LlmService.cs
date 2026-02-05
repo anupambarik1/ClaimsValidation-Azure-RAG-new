@@ -23,8 +23,8 @@ public class LlmService : ILlmService
         var accessKeyId = configuration["AWS:AccessKeyId"];
         var secretAccessKey = configuration["AWS:SecretAccessKey"];
 
-        accessKeyId = "testaccesskey";
-        secretAccessKey = "testsecretaccesskey";
+        // accessKeyId = "testaccesskey";
+        // secretAccessKey = "testsecretaccesskey";
 
 
         var config = new AmazonBedrockRuntimeConfig
@@ -72,7 +72,7 @@ You MUST:
 
         var invokeRequest = new InvokeModelRequest
         {
-            ModelId = "us.anthropic.claude-3-5-sonnet-20241022-v2:0",
+            ModelId = "anthropic.claude-3-5-sonnet-20241022-v2:0",
             Body = new MemoryStream(Encoding.UTF8.GetBytes(JsonSerializer.Serialize(requestBody))),
             ContentType = "application/json",
             Accept = "application/json"
