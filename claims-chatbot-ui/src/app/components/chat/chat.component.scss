@@ -14,6 +14,29 @@
   .spacer {
     flex: 1;
   }
+  
+  .pending-claim-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    
+    mat-icon {
+      font-size: 20px;
+      width: 20px;
+      height: 20px;
+    }
+    
+    .finalize-btn {
+      margin-left: 8px;
+      font-size: 0.85rem;
+      height: 32px;
+      line-height: 32px;
+    }
+  }
 }
 
 .messages-container {
@@ -138,6 +161,38 @@
 
   .message-input {
     flex: 1;
+  }
+}
+
+.info-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  color: #666;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 200px;
+  
+  mat-icon {
+    font-size: 48px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    color: #1976d2;
+  }
+  
+  p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    max-width: 500px;
+    
+    &:first-of-type {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #333;
+    }
   }
 }
 

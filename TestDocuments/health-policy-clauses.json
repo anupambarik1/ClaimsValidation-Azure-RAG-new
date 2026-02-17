@@ -1,0 +1,122 @@
+[
+  {
+    "clauseId": "HEALTH-001",
+    "text": "Hospitalization Coverage: The policy covers hospitalization expenses up to $500 per day for a maximum of 365 days per policy year. This includes room charges, ICU charges, nursing care, and medical supplies used during hospitalization. The insured must be admitted for at least 24 hours for coverage to apply.",
+    "coverageType": "Hospitalization",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-002",
+    "text": "Surgical Procedures: Covered surgical procedures are categorized as Minor ($1,000-$3,000), Intermediate ($3,001-$8,000), and Major ($8,001-$25,000). All surgical fees, anesthesia, operating room charges, and post-operative care for 30 days are included. Pre-authorization required for all non-emergency surgeries.",
+    "coverageType": "Surgical",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-003",
+    "text": "Emergency Room Treatment: Emergency room visits are covered at 100% after a $250 copay per visit. Coverage includes physician fees, diagnostic tests, x-rays, laboratory work, and emergency medications administered on-site. If admitted within 24 hours, the copay is waived and applies toward hospitalization deductible.",
+    "coverageType": "Emergency",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-004",
+    "text": "Diagnostic Tests and Laboratory Services: Coverage includes blood tests, urinalysis, imaging (X-rays, CT scans, MRI, ultrasound), EKG, and pathology services at 80% reimbursement after deductible. Maximum annual benefit of $15,000 for diagnostic imaging. Pre-authorization required for MRI and CT scans.",
+    "coverageType": "Diagnostic",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-005",
+    "text": "Prescription Drug Coverage: Tier 1 generic drugs have $10 copay, Tier 2 brand-name drugs have $35 copay, Tier 3 specialty drugs have 30% coinsurance up to $200 maximum. 90-day mail order prescriptions receive 10% discount. Annual maximum benefit: $50,000 per insured person.",
+    "coverageType": "Prescription",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-006",
+    "text": "Pre-Existing Conditions: Conditions diagnosed or treated within 12 months prior to policy effective date are excluded for the first 12 months of coverage. After 12 months of continuous coverage, pre-existing conditions are fully covered subject to all other policy terms and conditions.",
+    "coverageType": "Exclusions",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-007",
+    "text": "Maternity and Childbirth: Normal delivery covered at $8,000 maximum, cesarean section at $15,000 maximum. Prenatal care includes up to 12 doctor visits, ultrasounds, and standard laboratory tests. Postnatal care covered for 6 weeks. Newborn care covered for first 30 days under mother's policy.",
+    "coverageType": "Maternity",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-008",
+    "text": "Ambulance Services: Emergency ambulance transport covered at 100% when medically necessary. Non-emergency ambulance requires pre-authorization and covered at 70%. Air ambulance covered only for life-threatening emergencies in areas without ground ambulance access, maximum $25,000 per transport.",
+    "coverageType": "Ambulance",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-009",
+    "text": "Mental Health and Substance Abuse: Inpatient psychiatric care covered up to 30 days per year at $400 per day. Outpatient therapy covered at $100 per session, maximum 26 sessions per year. Substance abuse rehabilitation covered for one 30-day inpatient program and 52 outpatient sessions per lifetime.",
+    "coverageType": "Mental Health",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-010",
+    "text": "Cancer Treatment: Chemotherapy, radiation therapy, and immunotherapy covered at 90% after deductible. Includes all medications, administration fees, and monitoring tests. Annual maximum benefit: $100,000. Experimental treatments require special approval and covered at 50% up to $50,000.",
+    "coverageType": "Cancer Treatment",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-011",
+    "text": "Dental Coverage (Accidental Only): Dental treatment required due to accidental injury covered at 80% up to $5,000 per incident. Must occur within 72 hours of accident. Includes emergency extractions, crowns, bridges, and implants. Routine dental care and orthodontics are excluded.",
+    "coverageType": "Dental",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-012",
+    "text": "Physical Therapy and Rehabilitation: Medically necessary physical therapy covered at $75 per session, maximum 40 sessions per year. Occupational therapy and speech therapy each covered for 30 sessions per year. Requires physician referral and treatment plan. Home health care covered up to 60 visits per year.",
+    "coverageType": "Rehabilitation",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-013",
+    "text": "Organ Transplants: Covered transplants include heart, liver, kidney, lung, pancreas, and bone marrow. Coverage includes donor expenses, surgery, hospitalization, anti-rejection medications, and follow-up care for 12 months. Lifetime maximum benefit: $500,000. Must be performed at approved transplant center.",
+    "coverageType": "Transplant",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-014",
+    "text": "Preventive Care Services: Annual physical examination, age-appropriate screenings (mammography, colonoscopy, PSA), and immunizations covered at 100% with no copay or deductible. Includes well-child visits, developmental screenings, and routine vaccines. One comprehensive wellness exam per calendar year.",
+    "coverageType": "Preventive",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-015",
+    "text": "Exclusions and Limitations: The following are NOT covered: cosmetic surgery, weight loss programs, fertility treatments, experimental procedures, injuries from illegal activities, self-inflicted injuries, injuries during commission of a crime, and services not deemed medically necessary by our medical review board.",
+    "coverageType": "Exclusions",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-016",
+    "text": "Chronic Disease Management: Coverage for ongoing management of diabetes, hypertension, asthma, and COPD includes quarterly physician visits, monitoring equipment (glucose meters, blood pressure monitors), supplies, and disease-specific medications at standard prescription copays. Diabetic supplies covered at 100% after deductible.",
+    "coverageType": "Chronic Care",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-017",
+    "text": "Second Opinion Coverage: If surgery is recommended, the policy covers a second opinion consultation at 100% with no copay. Must be obtained from a network specialist within 30 days of initial diagnosis. Includes review of medical records, additional diagnostic tests if needed, and written consultation report.",
+    "coverageType": "Second Opinion",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-018",
+    "text": "Home Nursing Care: Skilled nursing care at home covered when medically necessary following hospitalization. Coverage up to 4 hours per day, maximum 60 days per policy year at $150 per visit. Includes wound care, medication administration, and vital sign monitoring. Requires physician certification every 14 days.",
+    "coverageType": "Home Care",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-019",
+    "text": "Medical Equipment and Prosthetics: Durable medical equipment (wheelchairs, walkers, hospital beds) covered at 80% rental or purchase cost. Prosthetic devices covered up to $25,000 per device. Hearing aids covered up to $2,500 per ear every 3 years. Orthotics covered at 50% up to $1,000 per year.",
+    "coverageType": "Medical Equipment",
+    "policyType": "Health"
+  },
+  {
+    "clauseId": "HEALTH-020",
+    "text": "Telemedicine Services: Virtual doctor consultations covered at $25 copay per visit with no visit limit. Available 24/7 for non-emergency medical issues. Includes prescription authorization if medically appropriate. Mental health teletherapy sessions count toward annual mental health visit limits and covered at same rates as in-person visits.",
+    "coverageType": "Telemedicine",
+    "policyType": "Health"
+  }
+]

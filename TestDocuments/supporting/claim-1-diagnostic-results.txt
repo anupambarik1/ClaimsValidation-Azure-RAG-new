@@ -1,0 +1,148 @@
+ST. MARY'S REGIONAL HOSPITAL
+DIAGNOSTIC IMAGING REPORT
+
+Patient Name: Sarah Johnson
+Date of Birth: March 22, 1985
+Medical Record Number: MRN-2024-15678
+Accession Number: RAD-2024-00834
+
+EXAMINATION: CT Abdomen and Pelvis with IV Contrast
+DATE/TIME OF EXAM: January 11, 2024, 1:15 AM
+ORDERING PHYSICIAN: Dr. Michael Chen, MD (Emergency Medicine)
+RADIOLOGIST: Dr. Amanda Foster, MD, Board Certified Radiology
+
+CLINICAL INDICATION
+Right lower quadrant abdominal pain, fever, elevated WBC. Rule out appendicitis.
+
+COMPARISON
+No prior imaging available for comparison.
+
+TECHNIQUE
+Multidetector CT examination of the abdomen and pelvis performed following administration of 100mL intravenous iodinated contrast (Omnipaque 350). Images acquired in portal venous phase. Axial images reconstructed with 2.5mm slice thickness. Coronal and sagittal reformatted images reviewed.
+
+Patient Preparation:
+- Oral contrast: None (acute presentation)
+- IV contrast: 100mL Omnipaque 350 at 3mL/sec
+- Total DLP: 850 mGy-cm
+- Effective dose: ~12 mSv
+
+FINDINGS
+
+APPENDIX: **ABNORMAL**
+- The appendix is visualized in the right lower quadrant
+- Markedly distended and fluid-filled
+- Diameter measures 12mm (normal <6mm)
+- Wall thickness: 3mm (mildly thickened)
+- Enhancement pattern: Diffuse wall enhancement
+- No appendicolith identified
+- Tip located in retrocecal position
+
+PERIAPPENDICEAL REGION: **ABNORMAL**
+- Moderate fat stranding surrounding the appendix
+- Small amount of free fluid in right lower quadrant (approximately 15mL)
+- No discrete abscess or phlegmon identified
+- No free air
+
+CECUM AND TERMINAL ILEUM:
+- Normal caliber and wall thickness
+- No evidence of colitis or enteritis
+- Ileocecal valve appears normal
+
+LIVER:
+- Normal size, contour, and attenuation
+- No focal lesions
+- Portal and hepatic veins patent
+- Gallbladder: Normal, no stones or wall thickening
+
+SPLEEN:
+- Normal size and attenuation
+- No focal lesions
+
+PANCREAS:
+- Normal size and enhancement
+- Pancreatic duct not dilated
+- No peripancreatic fluid
+
+KIDNEYS:
+- Both kidneys normal in size and position
+- Right kidney: 11cm, Left kidney: 10.5cm
+- Normal enhancement, no hydronephrosis
+- No stones or masses
+
+ADRENAL GLANDS:
+- Bilateral adrenal glands normal in size and appearance
+
+BOWEL:
+- Small bowel loops normal in caliber
+- No evidence of obstruction or inflammatory changes
+- Colon: Normal caliber, no masses or wall thickening
+
+VESSELS:
+- Abdominal aorta normal in caliber, no aneurysm
+- IVC patent
+- No enlarged lymph nodes
+
+PELVIS:
+- Uterus: Normal size and position
+- Ovaries: Visualized bilaterally, appear normal
+- No adnexal masses
+- Bladder: Normal, no masses or stones
+- No pelvic free fluid (except RLQ as noted above)
+
+BONES:
+- No acute fractures
+- No destructive osseous lesions
+- Lumbar spine: Age-appropriate
+
+SOFT TISSUES:
+- Abdominal wall: Normal
+- No hernias identified
+
+INCIDENTAL FINDINGS:
+- None
+
+IMPRESSION
+
+1. **ACUTE APPENDICITIS**
+   - Distended appendix (12mm diameter)
+   - Periappendiceal inflammation with fat stranding
+   - Small amount of adjacent free fluid
+   - Findings consistent with acute, uncomplicated appendicitis
+
+2. No evidence of appendiceal perforation or abscess formation at this time
+
+3. No alternative explanation for right lower quadrant pain identified
+
+RECOMMENDATION
+Urgent surgical consultation recommended for appendectomy.
+
+CRITICAL RESULT NOTIFICATION
+This finding was called to Dr. Michael Chen, ED attending physician, at 2:15 AM on January 11, 2024 by Dr. Amanda Foster.
+
+---
+
+ADDENDUM - LABORATORY CORRELATION
+
+Reviewed concurrent laboratory values:
+- WBC: 15,200/μL (elevated, consistent with acute inflammation)
+- Urinalysis: Negative (helps exclude urinary tract pathology)
+
+Clinical-radiologic correlation supports diagnosis of acute appendicitis.
+
+---
+
+Electronically signed by:
+Dr. Amanda Foster, MD
+Board Certified Diagnostic Radiology
+Date/Time: January 11, 2024, 2:10 AM
+
+Reviewed by:
+Dr. Patricia Rodriguez, MD, FACS (General Surgery)
+Date/Time: January 11, 2024, 2:45 AM
+
+---
+ST. MARY'S REGIONAL HOSPITAL
+Department of Radiology
+1500 Medical Center Drive
+Healthcare City, HC 12345
+Radiology Phone: (555) 789-0500

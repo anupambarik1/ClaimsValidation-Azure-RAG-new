@@ -1,0 +1,91 @@
+ST. MARY'S REGIONAL HOSPITAL
+ADMISSION RECORD
+
+Patient Name: Sarah Johnson
+Date of Birth: March 22, 1985
+Medical Record Number: MRN-2024-15678
+Admission Date: January 11, 2024
+Admission Time: 3:20 AM
+
+ADMISSION INFORMATION
+Admitting Diagnosis: Acute Appendicitis
+Admitting Physician: Dr. Patricia Rodriguez, MD, FACS
+Attending Physician: Dr. Michael Chen, MD (Emergency Medicine)
+Service: General Surgery
+
+ADMISSION SOURCE
+Emergency Department - St. Mary's Regional Hospital
+Arrived via: Private vehicle
+Admission Type: Emergency
+
+CHIEF COMPLAINT
+Severe right lower quadrant abdominal pain with nausea and vomiting
+
+HISTORY OF PRESENT ILLNESS
+This is a 38-year-old female who presented to the Emergency Department at 11:45 PM on January 10, 2024, with complaints of severe abdominal pain. Pain began approximately 10:30 PM as generalized abdominal discomfort and progressively localized to the right lower quadrant. Patient reports associated nausea, vomiting (2 episodes), and fever of 101.5°F at home.
+
+PHYSICAL EXAMINATION ON ADMISSION
+Vital Signs:
+- Temperature: 101.8°F (38.8°C)
+- Heart Rate: 98 bpm
+- Blood Pressure: 128/82 mmHg
+- Respiratory Rate: 18 breaths/min
+- Oxygen Saturation: 97% on room air
+
+General: Alert and oriented, in moderate distress due to pain
+Abdomen: Tender to palpation in right lower quadrant, positive McBurney's point tenderness, positive Rovsing's sign, voluntary guarding present, no rebound tenderness
+
+DIAGNOSTIC STUDIES PERFORMED IN ED
+1. Complete Blood Count: WBC 15,200 (elevated, indicating infection)
+2. Urinalysis: Negative for UTI
+3. CT Scan of Abdomen/Pelvis with IV contrast:
+   - Findings: Distended appendix measuring 12mm diameter
+   - Surrounding fat stranding and free fluid
+   - Consistent with acute appendicitis
+
+EMERGENCY DEPARTMENT TREATMENT
+- IV access established (18-gauge left antecubital)
+- Normal saline IV fluids at 125 mL/hour
+- Zofran 4mg IV for nausea
+- Morphine 4mg IV for pain control
+- NPO (nothing by mouth) status ordered
+
+SURGICAL CONSULTATION
+Dr. Patricia Rodriguez consulted at 2:45 AM. Reviewed imaging and examination findings. Recommended urgent appendectomy. Risks, benefits, and alternatives discussed with patient. Patient consented to surgery.
+
+ADMISSION ORDERS
+1. Admit to General Surgery service
+2. NPO
+3. IV Normal Saline at 125 mL/hr
+4. Pain management: Morphine 2-4mg IV q4h PRN
+5. Anti-emetic: Zofran 4mg IV q6h PRN
+6. Prophylactic antibiotics: Ceftriaxone 1g IV
+7. Pre-operative labs: CBC, CMP, PT/INR
+8. Surgical consent obtained
+9. Schedule for OR - urgent case
+
+ALLERGIES
+No Known Drug Allergies (NKDA)
+
+CURRENT MEDICATIONS
+- Oral contraceptives (held on admission)
+- Multivitamin (held on admission)
+
+SOCIAL HISTORY
+Non-smoker, occasional alcohol use, married, works as accountant
+
+SURGICAL PLAN
+Emergency laparoscopic appendectomy scheduled for 6:00 AM, January 11, 2024
+
+CONDITION ON ADMISSION
+Stable but requiring urgent surgical intervention
+
+Admitting Physician Signature: _________________________
+Dr. Patricia Rodriguez, MD, FACS
+Date/Time: January 11, 2024, 3:20 AM
+
+---
+ST. MARY'S REGIONAL HOSPITAL
+1500 Medical Center Drive
+Healthcare City, HC 12345
+Phone: (555) 789-0000

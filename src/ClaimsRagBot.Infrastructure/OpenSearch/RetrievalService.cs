@@ -70,8 +70,9 @@ public class RetrievalService : IRetrievalService
     {
         if (!_useRealOpenSearch)
         {
-            // Fallback to mock data if OpenSearch not configured
-            return await GetMockClausesAsync(policyType);
+            throw new InvalidOperationException(
+                "OpenSearch is not configured. Please set AWS:OpenSearch:Endpoint in appsettings.json and ensure the policy-clauses index is created and populated. " +
+                "Run the PolicyIngestion tool first to populate the index with policy clauses.");
         }
 
         try
@@ -84,15 +85,16 @@ public class RetrievalService : IRetrievalService
         catch (HttpRequestException ex)
         {
             Console.WriteLine($"[RetrievalService] ✗ HTTP Error: {ex.StatusCode} - {ex.Message}");
-            Console.WriteLine($"[RetrievalService] Falling back to mock data");
-            return await GetMockClausesAsync(policyType);
+            throw new InvalidOperationException(
+                $"OpenSearch HTTP request failed: {ex.StatusCode}. Check AWS credentials and endpoint configuration. Error: {ex.Message}", 
+                ex);
         }
         catch (Exception ex)
         {
             Console.WriteLine($"[RetrievalService] ✗ Error: {ex.GetType().Name} - {ex.Message}");
-            Console.WriteLine($"[RetrievalService] Stack: {ex.StackTrace}");
-            Console.WriteLine($"[RetrievalService] Falling back to mock data");
-            return await GetMockClausesAsync(policyType);
+            throw new InvalidOperationException(
+                $"OpenSearch query failed: {ex.Message}. Check connection, credentials, and index schema.", 
+                ex);
         }
     }
 
@@ -343,80 +345,6 @@ public class RetrievalService : IRetrievalService
     private static string ToHexString(byte[] bytes)
     {
         return BitConverter.ToString(bytes).Replace("-", "").ToLowerInvariant();
-    }
-
-    private async Task<List<PolicyClause>> GetMockClausesAsync(string policyType)
-    {
-        await Task.Delay(100); // Simulate network call
-        
-        return policyType.ToLower() switch
-        {
-            "motor" => GetMotorPolicyClauses(),
-            "health" => GetHealthPolicyClauses(),
-            _ => new List<PolicyClause>()
-        };
-    }
-
-    private List<PolicyClause> GetMotorPolicyClauses()
-    {
-        return new List<PolicyClause>
-        {
-            new PolicyClause(
-                ClauseId: "MOT-001",
-                Text: "Collision coverage applies to damage from accidents with other vehicles or objects. Deductible: $500. Maximum coverage: Actual cash value of vehicle.",
-                CoverageType: "Collision",
-                Score: 0.92f
-            ),
-            new PolicyClause(
-                ClauseId: "MOT-002",
-                Text: "Comprehensive coverage includes theft, vandalism, weather damage, and animal collisions. Deductible: $250.",
-                CoverageType: "Comprehensive",
-                Score: 0.88f
-            ),
-            new PolicyClause(
-                ClauseId: "MOT-003",
-                Text: "Liability coverage excludes: intentional damage, racing, driving under influence, or use for commercial delivery without rider.",
-                CoverageType: "Exclusions",
-                Score: 0.85f
-            ),
-            new PolicyClause(
-                ClauseId: "MOT-004",
-                Text: "Towing and rental reimbursement up to $75/day for maximum 10 days following covered loss.",
-                CoverageType: "Additional Benefits",
-                Score: 0.80f
-            ),
-            new PolicyClause(
-                ClauseId: "MOT-005",
-                Text: "Glass damage (windshield, windows) covered with $100 deductible waiver for repair, full deductible for replacement.",
-                CoverageType: "Glass Coverage",
-                Score: 0.78f
-            )
-        };
-    }
-
-    private List<PolicyClause> GetHealthPolicyClauses()
-    {
-        return new List<PolicyClause>
-        {
-            new PolicyClause(
-                ClauseId: "HLT-001",
-                Text: "Hospital confinement benefit: $200 per day for up to 365 days per calendar year.",
-                CoverageType: "Hospital Confinement",
-                Score: 0.90f
-            ),
-            new PolicyClause(
-                ClauseId: "HLT-002",
-                Text: "Surgical procedure benefits based on schedule: minor $500-$1000, major $2000-$5000.",
-                CoverageType: "Surgical",
-                Score: 0.87f
-            ),
-            new PolicyClause(
-                ClauseId: "HLT-003",
-                Text: "Pre-existing conditions excluded for first 12 months of coverage.",
-                CoverageType: "Exclusions",
-                Score: 0.84f
-            )
-        };
     }
 }
 

@@ -1,0 +1,192 @@
+ST. MARY'S REGIONAL HOSPITAL
+ITEMIZED HOSPITAL BILL
+
+Patient Name: Sarah Johnson
+Account Number: 2024-ER-8834
+Medical Record Number: MRN-2024-15678
+Date of Birth: March 22, 1985
+Policy Number: POL-2024-15678
+
+Admission Date: January 11, 2024
+Discharge Date: January 13, 2024
+Length of Stay: 2 days
+
+BILLING SUMMARY
+------------------------------------------------------------------
+EMERGENCY DEPARTMENT SERVICES                        $4,250.00
+SURGICAL SERVICES                                   $12,850.00
+ROOM AND BOARD                                       $3,600.00
+PHARMACY                                             $1,245.00
+LABORATORY                                             $980.00
+RADIOLOGY/IMAGING                                    $2,150.00
+ANESTHESIA                                           $2,400.00
+OPERATING ROOM                                       $4,200.00
+MEDICAL SUPPLIES                                     $1,875.00
+------------------------------------------------------------------
+TOTAL CHARGES                                       $33,550.00
+==================================================================
+
+DETAILED ITEMIZATION
+------------------------------------------------------------------
+
+EMERGENCY DEPARTMENT - January 10-11, 2024
+Description                              Qty    Unit Price    Total
+------------------------------------------------------------------
+ER Facility Fee - Level 4                 1      $2,100.00  $2,100.00
+ER Physician Fee (Dr. Chen)               1        $850.00    $850.00
+IV Insertion and Supplies                 1        $125.00    $125.00
+IV Normal Saline (1000mL)                 2         $45.00     $90.00
+Zofran 4mg IV                            2         $35.00     $70.00
+Morphine 4mg IV                          2         $28.00     $56.00
+Laboratory Services (See Lab Section)     -            -         -
+CT Scan (See Radiology Section)          -            -         -
+ER Nursing Care                          1        $459.00    $459.00
+Medical Supplies - General               1        $250.00    $250.00
+Observation Services                     1        $250.00    $250.00
+------------------------------------------------------------------
+SUBTOTAL EMERGENCY DEPARTMENT                              $4,250.00
+
+
+SURGICAL SERVICES - January 11, 2024
+Description                              Qty    Unit Price    Total
+------------------------------------------------------------------
+Laparoscopic Appendectomy - Surgeon Fee   1     $8,500.00  $8,500.00
+  (Dr. Patricia Rodriguez)
+Assistant Surgeon Fee                     1     $1,200.00  $1,200.00
+  (Dr. James Martinez)
+Surgical Consultation - Pre-op            1       $450.00    $450.00
+Post-operative Care Day 1                 1       $350.00    $350.00
+Post-operative Care Day 2                 1       $350.00    $350.00
+Post-operative Care Day 3                 1       $350.00    $350.00
+Surgical Pathology - Appendix Specimen    1       $650.00    $650.00
+Intraoperative Monitoring                 1     $1,000.00  $1,000.00
+------------------------------------------------------------------
+SUBTOTAL SURGICAL SERVICES                                $12,850.00
+
+
+ANESTHESIA SERVICES - January 11, 2024
+Description                              Qty    Unit Price    Total
+------------------------------------------------------------------
+General Anesthesia (Dr. Kevin Wong)       1     $1,800.00  $1,800.00
+Anesthesia Supplies and Monitoring        1       $400.00    $400.00
+PACU Recovery (2 hours)                   2       $100.00    $200.00
+------------------------------------------------------------------
+SUBTOTAL ANESTHESIA                                        $2,400.00
+
+
+OPERATING ROOM CHARGES - January 11, 2024
+Description                              Qty    Unit Price    Total
+------------------------------------------------------------------
+OR Suite Usage (75 minutes)              1.25   $2,400.00  $3,000.00
+OR Nursing Staff                          1       $650.00    $650.00
+Surgical Instruments - Laparoscopic       1       $550.00    $550.00
+------------------------------------------------------------------
+SUBTOTAL OPERATING ROOM                                    $4,200.00
+
+
+ROOM AND BOARD - January 11-13, 2024
+Description                              Qty    Unit Price    Total
+------------------------------------------------------------------
+Semi-Private Room - Day 1                 1     $1,200.00  $1,200.00
+Semi-Private Room - Day 2                 1     $1,200.00  $1,200.00
+Semi-Private Room - Day 3 (partial)       1     $1,200.00  $1,200.00
+Daily Nursing Care                        3         -         -
+  (Included in room rate)
+------------------------------------------------------------------
+SUBTOTAL ROOM AND BOARD                                    $3,600.00
+
+
+PHARMACY CHARGES
+Description                              Qty    Unit Price    Total
+------------------------------------------------------------------
+IV Antibiotics - Ceftriaxone 1g          6        $85.00    $510.00
+IV Antibiotics - Metronidazole 500mg     6        $45.00    $270.00
+IV Pain Medication - Dilaudid PCA        1       $180.00    $180.00
+  (48-hour rental)
+Dilaudid Injectable                      8        $15.00    $120.00
+Anti-nausea - Zofran 4mg IV             4        $35.00    $140.00
+Discharge Medications:
+  Augmentin 875mg (14 tablets)           1        $45.00     $45.00
+  Norco 5/325mg (28 tablets)             1        $35.00     $35.00
+  Colace 100mg (20 tablets)              1        $12.00     $12.00
+IV Fluids - Normal Saline               12        $28.00    $336.00
+------------------------------------------------------------------
+SUBTOTAL PHARMACY                                          $1,648.00
+
+
+LABORATORY SERVICES
+Description                              Qty    Unit Price    Total
+------------------------------------------------------------------
+Complete Blood Count (CBC)                3        $95.00    $285.00
+Comprehensive Metabolic Panel             2       $120.00    $240.00
+Urinalysis                               1        $45.00     $45.00
+PT/INR (Pre-operative)                   1        $55.00     $55.00
+Blood Culture (Aerobic/Anaerobic)        2       $125.00    $250.00
+Specimen Collection Fee                  8        $15.00    $120.00
+------------------------------------------------------------------
+SUBTOTAL LABORATORY                                          $995.00
+
+
+RADIOLOGY/IMAGING SERVICES
+Description                              Qty    Unit Price    Total
+------------------------------------------------------------------
+CT Scan - Abdomen/Pelvis with Contrast    1     $1,850.00  $1,850.00
+  (Emergency Department)
+Radiologist Interpretation Fee            1       $300.00    $300.00
+------------------------------------------------------------------
+SUBTOTAL RADIOLOGY                                         $2,150.00
+
+
+MEDICAL SUPPLIES
+Description                              Qty    Unit Price    Total
+------------------------------------------------------------------
+Surgical Drapes and Gowns                 1       $185.00    $185.00
+Laparoscopic Instruments - Disposable     1       $650.00    $650.00
+Surgical Staples                          1        $95.00     $95.00
+Wound Dressings                          12        $18.00    $216.00
+IV Catheters and Tubing                   6        $35.00    $210.00
+Patient Care Supplies (Daily)             3        $95.00    $285.00
+Foley Catheter Kit                        1        $45.00     $45.00
+Compression Stockings (DVT Prevention)    1        $65.00     $65.00
+Incentive Spirometer                      1        $28.00     $28.00
+Post-op Surgical Binder                   1        $42.00     $42.00
+Miscellaneous Medical Supplies            1       $225.00    $225.00
+------------------------------------------------------------------
+SUBTOTAL MEDICAL SUPPLIES                                  $2,046.00
+
+
+------------------------------------------------------------------
+TOTAL CHARGES                                             $33,550.00
+==================================================================
+
+INSURANCE INFORMATION
+Primary Insurance: Health Insurance Company
+Policy Number: POL-2024-15678
+Group Number: EMP-2024-ABC
+
+PAYMENT SUMMARY
+Total Charges:                                            $33,550.00
+Insurance Payment (Expected):                             $26,840.00
+Patient Responsibility (Estimated):                        $6,710.00
+
+PAYMENT DUE
+Amount Due from Patient:                                   $6,710.00
+Due Date: February 10, 2024
+
+BILLING INQUIRIES
+St. Mary's Regional Hospital - Patient Billing
+Phone: (555) 789-0300
+Hours: Monday-Friday, 8:00 AM - 5:00 PM
+
+PAYMENT OPTIONS
+- Online: www.stmarysregional.com/billing
+- Phone: (555) 789-0300
+- Mail: St. Mary's Regional Hospital, PO Box 12345, Healthcare City, HC 12345
+
+Tax ID: 98-7654321
+NPI: 1234567890
+
+Statement Date: January 15, 2024
+Invoice Number: INV-2024-8834
+
+Please reference your account number with all payments and correspondence.

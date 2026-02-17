@@ -12,7 +12,7 @@ import { ChatService } from '../../services/chat.service';
 import { ClaimDataService } from '../../services/claim-data.service';
 import { ClaimsApiService } from '../../services/claims-api.service';
 import { Observable } from 'rxjs';
-import { ChatMessage, ClaimRequest, SubmitDocumentResponse } from '../../models/claim.model';
+import { ChatMessage, ClaimRequest, SubmitDocumentResponse, DocumentUploadResult } from '../../models/claim.model';
 import { DocumentUploadComponent } from '../document-upload/document-upload.component';
 import { ClaimFormComponent } from '../claim-form/claim-form.component';
 import { ClaimResultComponent } from '../claim-result/claim-result.component';
@@ -47,6 +47,11 @@ export class ChatComponent implements AfterViewChecked {
   userMessage = '';
   isLoading = false;
   private shouldScroll = false;
+  
+  // Track pending claim and supporting documents
+  pendingClaim: ClaimRequest | null = null;
+  supportingDocuments: string[] = [];
+  awaitingSupportingDocs = false;
 
   constructor(
     private chatService: ChatService,
@@ -91,6 +96,8 @@ export class ChatComponent implements AfterViewChecked {
 
   handleDocumentSubmit(response: SubmitDocumentResponse): void {
     this.isLoading = false;
+    
+    // This only handles claim form extraction
     this.chatService.addBotMessage(
       `Document processed successfully!\n\n` +
       `Validation Status: ${response.validationStatus}\n` +
@@ -98,6 +105,100 @@ export class ChatComponent implements AfterViewChecked {
       `Next Action: ${response.nextAction}`,
       'result',
       response
+    );
+    
+    this.shouldScroll = true;
+  }
+  
+  handleSupportingDocsUpload(docs: DocumentUploadResult[]): void {
+    // Add document IDs to supporting documents list
+    docs.forEach(doc => {
+      if (doc.documentId) {
+        this.supportingDocuments.push(doc.documentId);
+      }
+    });
+    
+    this.chatService.addBotMessage(
+      `📄 ${docs.length} supporting document(s) uploaded successfully!\n\n` +
+      `Total documents: ${this.supportingDocuments.length}\n\n` +
+      `You can upload more documents or click "Finalize Claim" in the header to complete submission.`,
+      'text'
+    );
+    
+    this.shouldScroll = true;
+  }
+  
+  finalizeClaim(): void {
+    if (!this.pendingClaim) {
+      this.chatService.addBotMessage(
+        '❌ No pending claim to finalize. Please submit a claim first.',
+        'text'
+      );
+      return;
+    }
+    
+    this.isLoading = true;
+    this.shouldScroll = true;
+    
+    this.chatService.addUserMessage(
+      `Finalizing claim with ${this.supportingDocuments.length} supporting document(s)...`,
+      'text'
+    );
+    
+    this.apiService.finalizeClaim({
+      claimData: this.pendingClaim,
+      supportingDocumentIds: this.supportingDocuments.length > 0 ? this.supportingDocuments : undefined
+    }).subscribe({
+      next: (result) => {
+        this.isLoading = false;
+        
+        const isApproved = result.status === 'Covered';
+        const requiresReview = result.status === 'Manual Review';
+        const statusIcon = isApproved ? '✅' : requiresReview ? '⚠️' : '❌';
+        
+        let message = `🎉 Claim Finalized!\n\n` +
+          `Decision: ${statusIcon} ${result.status.toUpperCase()}\n` +
+          `Confidence: ${(result.confidenceScore * 100).toFixed(1)}%\n`;
+        
+        if (result.explanation) {
+          message += `\nExplanation:\n${result.explanation}`;
+        }
+        
+        if (result.clauseReferences && result.clauseReferences.length > 0) {
+          message += `\n\nRelevant Policy Clauses:\n` + result.clauseReferences.map(c => `• ${c}`).join('\n');
+        }
+        
+        message += `\n\n✅ Your claim has been submitted and saved in our system.`;
+        
+        this.chatService.addBotMessage(message, 'result', result);
+        
+        // Reset the workflow state
+        this.pendingClaim = null;
+        this.supportingDocuments = [];
+        this.awaitingSupportingDocs = false;
+        
+        this.shouldScroll = true;
+      },
+      error: (error) => {
+        this.isLoading = false;
+        const errorMsg = error.error?.details || error.error?.error || error.message || 'Unknown error occurred';
+        this.chatService.addBotMessage(
+          `❌ Error finalizing claim: ${errorMsg}`,
+          'text'
+        );
+        this.shouldScroll = true;
+      }
+    });
+  }
+  
+  cancelPendingClaim(): void {
+    this.pendingClaim = null;
+    this.supportingDocuments = [];
+    this.awaitingSupportingDocs = false;
+    
+    this.chatService.addBotMessage(
+      '❌ Pending claim cancelled. You can start a new claim submission.',
+      'text'
     );
     this.shouldScroll = true;
   }
@@ -135,6 +236,17 @@ export class ChatComponent implements AfterViewChecked {
         
         if (result.requiredDocuments && result.requiredDocuments.length > 0) {
           message += `\n\nRequired Documents:\n` + result.requiredDocuments.map(d => `• ${d}`).join('\n');
+          
+          // Store claim and ask for supporting documents
+          this.pendingClaim = claim;
+          this.awaitingSupportingDocs = true;
+          this.supportingDocuments = [];
+          
+          message += `\n\n📎 Please upload the required supporting documents using the "Upload Document" tab.\n` +
+                     `Once all documents are uploaded, click "Finalize Claim" to complete the submission.`;
+        } else {
+          // No supporting documents required, claim is complete
+          message += `\n\n✅ No additional documents required. Claim validation is complete.`;
         }
         
         this.chatService.addBotMessage(message, 'result', result);

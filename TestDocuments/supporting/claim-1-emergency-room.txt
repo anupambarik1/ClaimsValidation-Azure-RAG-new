@@ -1,0 +1,63 @@
+HEALTH INSURANCE CLAIM FORM
+
+Claim ID: CLM-2024-ER-8834
+Date of Submission: January 15, 2024
+
+POLICYHOLDER INFORMATION
+Name: Sarah Johnson
+Policy Number: POL-2024-15678
+Date of Birth: March 22, 1985
+Phone: (555) 234-9876
+Email: sarah.johnson@email.com
+
+CLAIM DETAILS
+Type of Claim: Emergency Room Visit
+Policy Type: Health
+Date of Service: January 10, 2024
+Time of Service: 11:45 PM
+
+INCIDENT DESCRIPTION
+I experienced severe abdominal pain and vomiting that started around 10:30 PM on January 10, 2024. The pain was sharp and localized in the lower right abdomen. After the pain intensified and I developed a fever of 101.5°F, my husband drove me to St. Mary's Regional Hospital Emergency Room.
+
+TREATMENT RECEIVED
+Upon arrival at the ER, I was immediately triaged and seen by Dr. Michael Chen. The following services were provided:
+
+1. Initial examination and vital signs check
+2. Blood tests (Complete Blood Count, Metabolic Panel)
+3. Urinalysis to rule out urinary tract infection
+4. CT scan of abdomen and pelvis
+5. IV fluids and anti-nausea medication (Zofran)
+6. Pain management (Morphine 4mg IV)
+
+DIAGNOSIS
+Acute appendicitis was diagnosed based on clinical presentation, elevated white blood cell count (15,200), and CT scan findings showing inflamed appendix with surrounding fluid.
+
+DISPOSITION
+Dr. Chen consulted with the on-call surgeon, Dr. Patricia Rodriguez. I was admitted to the hospital at 3:20 AM on January 11, 2024, for emergency appendectomy. Surgery was performed at 6:00 AM the same morning.
+
+CLAIM AMOUNT
+Emergency Room Services: $4,250.00
+- ER Physician Fee: $850.00
+- Facility Fee: $2,100.00
+- CT Scan: $900.00
+- Laboratory Tests: $250.00
+- Medications: $150.00
+
+SUPPORTING DOCUMENTS ATTACHED
+- Emergency Room Discharge Summary
+- Itemized Bill from St. Mary's Regional Hospital
+- CT Scan Report
+- Laboratory Results
+- Physician's Notes
+
+I certify that the above information is true and accurate to the best of my knowledge.
+
+Signature: Sarah Johnson
+Date: January 15, 2024
+
+HOSPITAL INFORMATION
+St. Mary's Regional Hospital
+1500 Medical Center Drive
+Healthcare City, HC 12345
+Phone: (555) 789-0000
+Tax ID: 98-7654321

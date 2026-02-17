@@ -1,0 +1,78 @@
+HEALTH INSURANCE CLAIM FORM
+
+Claim ID: CLM-2024-SRG-4421
+Date of Submission: February 3, 2024
+
+POLICYHOLDER INFORMATION
+Name: Robert Martinez
+Policy Number: POL-2024-23456
+Date of Birth: July 8, 1972
+Phone: (555) 876-5432
+Email: r.martinez@email.com
+
+CLAIM DETAILS
+Type of Claim: Surgical Procedure - Cholecystectomy (Gallbladder Removal)
+Policy Type: Health
+Date of Service: January 28, 2024
+Procedure Code: CPT 47562
+
+PRE-AUTHORIZATION INFORMATION
+Pre-authorization obtained on January 18, 2024
+Authorization Number: AUTH-2024-9876
+Approved by: Medical Review Board
+
+MEDICAL HISTORY
+I have been experiencing recurrent gallbladder attacks over the past 6 months, with episodes of severe right upper quadrant pain, nausea, and vomiting occurring after eating fatty meals. An ultrasound performed on January 10, 2024, confirmed multiple gallstones (cholelithiasis).
+
+PROCEDURE DETAILS
+Surgeon: Dr. James Patterson, MD, FACS
+Hospital: Mercy General Hospital
+Procedure: Laparoscopic Cholecystectomy
+Surgery Date: January 28, 2024
+Surgery Time: 8:00 AM - 10:30 AM
+Anesthesia: General anesthesia administered by Dr. Lisa Wong, MD
+
+SURGICAL SUMMARY
+The procedure was performed laparoscopically through four small incisions. The gallbladder was successfully removed without complications. No conversion to open surgery was required. Intraoperative cholangiogram was performed and showed no stones in the common bile duct.
+
+POST-OPERATIVE CARE
+- Discharged same day at 4:00 PM
+- Pain management: Prescribed Hydrocodone-Acetaminophen
+- Post-operative visit scheduled for February 5, 2024
+- Return to work clearance expected in 2 weeks
+
+CLAIM AMOUNT BREAKDOWN
+Total Claim Amount: $18,750.00
+
+Surgical Fees:
+- Surgeon's Fee: $8,500.00
+- Assistant Surgeon: $1,200.00
+- Anesthesiologist Fee: $2,100.00
+
+Facility Charges:
+- Operating Room (2.5 hours): $4,200.00
+- Recovery Room: $950.00
+- Medical Supplies: $800.00
+- Medications: $450.00
+- Pathology (gallbladder specimen): $550.00
+
+SUPPORTING DOCUMENTATION
+- Pre-authorization approval letter
+- Operative report dictated by Dr. Patterson
+- Anesthesia record
+- Pathology report
+- Hospital itemized statement
+- Discharge instructions
+- Prescription records
+
+I certify that this claim is accurate and that the procedure was medically necessary as recommended by my treating physician.
+
+Patient Signature: Robert Martinez
+Date: February 3, 2024
+
+PROVIDER INFORMATION
+Mercy General Hospital
+2500 Healthcare Boulevard
+Medical District, MD 23456
+Tax ID: 87-6543210
+NPI: 1234567890

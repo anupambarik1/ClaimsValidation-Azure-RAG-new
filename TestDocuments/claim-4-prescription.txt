@@ -1,0 +1,118 @@
+HEALTH INSURANCE CLAIM FORM
+
+Claim ID: CLM-2024-RX-5512
+Date of Submission: January 20, 2024
+
+POLICYHOLDER INFORMATION
+Name: David Chen
+Policy Number: POL-2024-45678
+Date of Birth: May 3, 1968
+Phone: (555) 567-8901
+Email: david.chen@email.com
+
+CLAIM DETAILS
+Type of Claim: Prescription Medications
+Policy Type: Health
+Service Period: January 1, 2024 - January 31, 2024
+
+PRESCRIBING PHYSICIAN
+Dr. Susan Park, MD
+Cardiology Associates
+500 Heart Health Plaza, Suite 200
+Wellness City, WC 45678
+Phone: (555) 234-5678
+NPI: 1122334455
+
+MEDICAL CONDITION
+I am being treated for the following chronic conditions:
+1. Hypertension (High Blood Pressure) - Diagnosed 2019
+2. Type 2 Diabetes Mellitus - Diagnosed 2020
+3. Hyperlipidemia (High Cholesterol) - Diagnosed 2021
+
+PRESCRIPTION DETAILS
+
+Prescription #1: Lisinopril 20mg
+- Quantity: 90 tablets (3-month supply)
+- Directions: Take one tablet daily for blood pressure control
+- Prescribing Date: January 5, 2024
+- Pharmacy: HealthMart Pharmacy
+- Cost: $45.00
+- Tier: Tier 1 (Generic)
+- Copay Applied: $10.00
+- Claim Amount: $35.00
+
+Prescription #2: Metformin 1000mg
+- Quantity: 180 tablets (3-month supply)
+- Directions: Take one tablet twice daily with meals for diabetes management
+- Prescribing Date: January 5, 2024
+- Pharmacy: HealthMart Pharmacy
+- Cost: $52.00
+- Tier: Tier 1 (Generic)
+- Copay Applied: $10.00
+- Claim Amount: $42.00
+
+Prescription #3: Atorvastatin 40mg
+- Quantity: 90 tablets (3-month supply)
+- Directions: Take one tablet daily at bedtime for cholesterol management
+- Prescribing Date: January 5, 2024
+- Pharmacy: HealthMart Pharmacy
+- Cost: $68.00
+- Tier: Tier 1 (Generic)
+- Copay Applied: $10.00
+- Claim Amount: $58.00
+
+Prescription #4: Aspirin 81mg (Preventive Cardiac Care)
+- Quantity: 90 tablets (3-month supply)
+- Directions: Take one tablet daily for cardiovascular protection
+- Prescribing Date: January 5, 2024
+- Pharmacy: HealthMart Pharmacy
+- Cost: $12.00
+- Tier: Over-the-counter (preventive)
+- Copay Applied: $0.00
+- Claim Amount: $12.00
+
+Prescription #5: Blood Glucose Test Strips
+- Quantity: 300 test strips (3-month supply)
+- Directions: Test blood sugar twice daily before meals
+- Prescribing Date: January 8, 2024
+- Pharmacy: HealthMart Pharmacy
+- Cost: $185.00
+- Tier: Diabetic Supplies
+- Copay Applied: $0.00 (covered 100% after deductible)
+- Claim Amount: $185.00
+
+TOTAL CLAIM AMOUNT
+Total Prescription Cost: $362.00
+Total Patient Copays: $30.00
+Total Insurance Claim: $332.00
+
+PHARMACY INFORMATION
+HealthMart Pharmacy
+125 Main Street
+Wellness City, WC 45678
+Phone: (555) 789-0123
+NPI: 2233445566
+Tax ID: 65-4321098
+
+SUPPORTING DOCUMENTATION
+- Pharmacy receipts (5 prescriptions)
+- Prescription labels showing medication, dosage, and directions
+- Letter of medical necessity from Dr. Susan Park
+- Recent lab results showing:
+  * Blood Pressure: 138/88 mmHg
+  * Hemoglobin A1C: 7.2%
+  * LDL Cholesterol: 142 mg/dL
+  * Fasting Glucose: 145 mg/dL
+
+CHRONIC DISEASE MANAGEMENT
+These medications are part of my ongoing chronic disease management plan. I have been compliant with taking these medications as prescribed and attend regular follow-up appointments every 3 months with Dr. Park to monitor my conditions.
+
+Next scheduled appointment: April 10, 2024
+
+I certify that these prescriptions were filled and paid for as indicated, and that they are medically necessary for the treatment of my diagnosed conditions.
+
+Patient Signature: David Chen
+Date: January 20, 2024
+
+CLINICAL NOTES FROM DR. PARK
+"Patient is doing well on current medication regimen. Blood pressure improved from 152/95 to 138/88. Diabetes control improving with A1C down from 8.1% to 7.2%. Continue current medications. Encouraged diet modification and exercise. RTC in 3 months."

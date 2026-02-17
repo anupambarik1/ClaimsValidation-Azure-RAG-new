@@ -1,0 +1,124 @@
+HEALTH INSURANCE CLAIM FORM
+
+Claim ID: CLM-2024-HOSP-7723
+Date of Submission: February 12, 2024
+
+POLICYHOLDER INFORMATION
+Name: Emily Thompson
+Policy Number: POL-2024-34567
+Date of Birth: November 15, 1990
+Phone: (555) 345-6789
+Email: emily.thompson@email.com
+
+CLAIM DETAILS
+Type of Claim: Hospitalization for Pneumonia
+Policy Type: Health
+Admission Date: February 1, 2024, 2:15 PM
+Discharge Date: February 6, 2024, 11:00 AM
+Total Length of Stay: 5 days
+
+ADMISSION DETAILS
+I was admitted to University Medical Center through the Emergency Department on February 1, 2024, with a diagnosis of community-acquired pneumonia. I had been experiencing high fever (103.2°F), productive cough with green sputum, shortness of breath, and chest pain for 3 days prior to admission.
+
+ATTENDING PHYSICIAN
+Primary: Dr. Amanda Foster, MD (Internal Medicine)
+Consulting: Dr. Richard Lee, MD (Pulmonology)
+
+TREATMENT PROVIDED
+Day 1-2 (ICU):
+- Admitted to Intensive Care Unit due to low oxygen saturation (88% on room air)
+- Oxygen therapy via nasal cannula at 4L/min
+- IV antibiotics: Ceftriaxone 1g every 12 hours, Azithromycin 500mg daily
+- IV fluids for dehydration
+- Continuous pulse oximetry monitoring
+
+Day 3-5 (General Medical Ward):
+- Transferred to general floor as condition improved
+- Continued IV antibiotics
+- Breathing treatments (Albuterol nebulizer) every 4 hours
+- Chest physiotherapy twice daily
+- Daily chest X-rays to monitor progress
+
+DIAGNOSTIC TESTS PERFORMED
+- Chest X-ray (admission, daily x 5)
+- CT scan of chest
+- Complete Blood Count (daily)
+- Comprehensive Metabolic Panel
+- Blood cultures (2 sets)
+- Sputum culture and sensitivity
+- Arterial blood gas analysis
+
+MEDICATIONS ADMINISTERED
+- Ceftriaxone 1g IV twice daily
+- Azithromycin 500mg IV daily
+- Albuterol nebulizer treatments
+- Acetaminophen for fever
+- Guaifenesin for cough
+
+DISCHARGE CONDITION
+Oxygen saturation improved to 95% on room air. Fever resolved. Cough significantly improved. Discharged with 7-day course of oral antibiotics (Levofloxacin 750mg daily) and follow-up appointment scheduled.
+
+CLAIM AMOUNT BREAKDOWN
+Total Claim Amount: $32,450.00
+
+Room and Board:
+- ICU (2 days @ $2,500/day): $5,000.00
+- Semi-private room (3 days @ $750/day): $2,250.00
+
+Medical Services:
+- Physician daily visits (5 days @ $350/day): $1,750.00
+- Pulmonology consultation: $450.00
+- Nursing care: $3,200.00
+
+Diagnostic Imaging:
+- Chest X-rays (6 total): $1,800.00
+- CT scan chest with contrast: $2,400.00
+
+Laboratory Services:
+- Blood tests (multiple panels): $1,850.00
+- Cultures and sensitivity: $650.00
+- Blood gas analysis: $400.00
+
+Medications and Treatments:
+- IV antibiotics (5 days): $2,100.00
+- Respiratory treatments: $1,200.00
+- IV fluids and supplies: $950.00
+
+Therapy Services:
+- Respiratory therapy: $1,800.00
+- Chest physiotherapy: $900.00
+
+Emergency Department:
+- Initial ED evaluation and treatment: $3,250.00
+
+Pharmacy (Discharge):
+- Discharge medications: $350.00
+
+Medical Supplies: $2,300.00
+
+SUPPORTING DOCUMENTS ATTACHED
+- Hospital admission record
+- Daily progress notes (5 days)
+- Discharge summary
+- Complete itemized hospital bill
+- Radiology reports (all imaging)
+- Laboratory results (all tests)
+- Medication administration records
+- Discharge prescriptions
+
+FOLLOW-UP CARE
+Follow-up appointment scheduled with Dr. Foster on February 15, 2024
+Repeat chest X-ray scheduled for February 20, 2024
+
+I certify that all information provided is accurate and complete.
+
+Patient Signature: Emily Thompson
+Date: February 12, 2024
+
+HOSPITAL INFORMATION
+University Medical Center
+3000 University Drive
+Metropolitan City, MC 34567
+Phone: (555) 100-2000
+Tax ID: 76-5432109
+NPI: 9876543210

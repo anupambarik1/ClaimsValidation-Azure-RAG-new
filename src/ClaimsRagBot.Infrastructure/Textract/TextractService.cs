@@ -301,8 +301,8 @@ public class TextractService : ITextractService
         var cells = cellRelationship.Ids
             .Select(id => allBlocks.FirstOrDefault(b => b.Id == id))
             .Where(b => b != null && b.BlockType == BlockType.CELL)
-            .OrderBy(b => b.RowIndex ?? 0)
-            .ThenBy(b => b.ColumnIndex ?? 0)
+            .OrderBy(b => b!.RowIndex ?? 0)
+            .ThenBy(b => b!.ColumnIndex ?? 0)
             .ToList();
         
         var currentRow = new List<string>();

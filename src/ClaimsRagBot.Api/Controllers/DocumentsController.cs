@@ -26,7 +26,7 @@ public class DocumentsController : ControllerBase
         
         _maxFileSizeBytes = long.Parse(configuration["DocumentProcessing:MaxFileSizeMB"] ?? "10") * 1024 * 1024;
         _allowedContentTypes = configuration.GetSection("DocumentProcessing:AllowedContentTypes").Get<string[]>() 
-            ?? new[] { "application/pdf", "image/jpeg", "image/png" };
+            ?? new[] { "application/pdf", "image/jpeg", "image/png", "text/plain" };
     }
 
     /// <summary>
@@ -155,14 +155,34 @@ public class DocumentsController : ControllerBase
     {
         try
         {
-            // Step 1: Upload
-            var uploadResult = await UploadDocument(file, userId);
-            if (uploadResult.Result is not OkObjectResult uploadOk)
+            _logger.LogInformation("Submit document started: {FileName}, Type: {DocumentType}", file?.FileName, documentType);
+
+            // Validate file
+            if (file == null || file.Length == 0)
             {
-                return uploadResult.Result!;
+                return BadRequest(new { error = "No file uploaded" });
             }
             
-            var uploadData = (DocumentUploadResult)uploadOk.Value!;
+            if (file.Length > _maxFileSizeBytes)
+            {
+                return BadRequest(new { error = $"File size exceeds maximum allowed size of {_maxFileSizeBytes / (1024 * 1024)}MB" });
+            }
+            
+            if (!_allowedContentTypes.Contains(file.ContentType))
+            {
+                return BadRequest(new { error = $"File type {file.ContentType} not allowed. Supported types: {string.Join(", ", _allowedContentTypes)}" });
+            }
+
+            var effectiveUserId = userId ?? "anonymous";
+            
+            // Step 1: Upload
+            _logger.LogInformation("Step 1: Uploading document {FileName}", file.FileName);
+            DocumentUploadResult uploadData;
+            using (var stream = file.OpenReadStream())
+            {
+                uploadData = await _uploadService.UploadAsync(stream, file.FileName, file.ContentType, effectiveUserId);
+            }
+            _logger.LogInformation("Upload complete: {DocumentId}", uploadData.DocumentId);
             
             // Step 2: Extract
             if (!Enum.TryParse<DocumentType>(documentType, out var docType))
@@ -170,7 +190,7 @@ public class DocumentsController : ControllerBase
                 docType = DocumentType.ClaimForm;
             }
             
-            // Pass the entire upload result to avoid redundant S3 lookups
+            _logger.LogInformation("Step 2: Extracting claim data from {DocumentId}", uploadData.DocumentId);
             var extractionResult = await _extractionService.ExtractClaimDataAsync(
                 uploadData, 
                 docType);
@@ -187,8 +207,9 @@ public class DocumentsController : ControllerBase
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Error submitting document");
-            return StatusCode(500, new { error = "Failed to submit document", details = ex.Message });
+            _logger.LogError(ex, "Error submitting document: {Message}", ex.Message);
+            _logger.LogError("Stack trace: {StackTrace}", ex.StackTrace);
+            return StatusCode(500, new { error = "Failed to submit document", details = ex.Message, type = ex.GetType().Name });
         }
     }
 

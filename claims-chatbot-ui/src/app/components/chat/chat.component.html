@@ -3,6 +3,20 @@
     <mat-icon>smart_toy</mat-icon>
     <span>Claims Assistant</span>
     <span class="spacer"></span>
+    
+    @if (awaitingSupportingDocs && pendingClaim) {
+      <div class="pending-claim-badge">
+        <mat-icon>pending_actions</mat-icon>
+        <span>{{ supportingDocuments.length }} docs uploaded</span>
+        <button mat-raised-button color="accent" (click)="finalizeClaim()" class="finalize-btn">
+          Finalize Claim
+        </button>
+        <button mat-icon-button (click)="cancelPendingClaim()" matTooltip="Cancel pending claim">
+          <mat-icon>cancel</mat-icon>
+        </button>
+      </div>
+    }
+    
     <button mat-icon-button (click)="clearChat()" matTooltip="Clear chat">
       <mat-icon>delete_sweep</mat-icon>
     </button>
@@ -77,12 +91,30 @@
         </div>
       </mat-tab>
       
-      <mat-tab label="Upload Document">
-        <app-document-upload (documentSubmitted)="handleDocumentSubmit($event)"></app-document-upload>
+      <mat-tab label="Upload Claim Form">
+        <app-document-upload 
+          [mode]="'claim'"
+          (documentSubmitted)="handleDocumentSubmit($event)">
+        </app-document-upload>
       </mat-tab>
       
-      <mat-tab label="Claim Form">
+      <mat-tab label="Manual Claim Entry">
         <app-claim-form (claimSubmitted)="handleClaimSubmit($event)"></app-claim-form>
+      </mat-tab>
+      
+      <mat-tab label="Upload Supporting Docs">
+        @if (!awaitingSupportingDocs) {
+          <div class="info-panel">
+            <mat-icon>info</mat-icon>
+            <p>Upload supporting documents AFTER submitting a claim.</p>
+            <p>First, submit a claim using "Upload Claim Form" or "Manual Claim Entry" tabs.</p>
+          </div>
+        } @else {
+          <app-document-upload 
+            [mode]="'supporting'"
+            (supportingDocsUploaded)="handleSupportingDocsUpload($event)">
+          </app-document-upload>
+        }
       </mat-tab>
       
       <mat-tab label="Search Claims">

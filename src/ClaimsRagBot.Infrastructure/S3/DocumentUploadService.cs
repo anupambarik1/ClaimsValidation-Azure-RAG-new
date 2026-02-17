@@ -94,6 +94,50 @@ public class DocumentUploadService : IDocumentUploadService
         }
     }
 
+    public async Task<DocumentUploadResult> GetDocumentAsync(string documentId)
+    {
+        try
+        {
+            // Search for the document by listing objects with the document ID prefix
+            var listRequest = new ListObjectsV2Request
+            {
+                BucketName = _bucketName,
+                Prefix = _uploadPrefix
+            };
+            
+            var listResponse = await _s3Client.ListObjectsV2Async(listRequest);
+            var matchingObject = listResponse.S3Objects.FirstOrDefault(obj => obj.Key.Contains(documentId));
+            
+            if (matchingObject == null)
+            {
+                throw new FileNotFoundException($"Document {documentId} not found in S3");
+            }
+
+            // Get object metadata
+            var metadataRequest = new GetObjectMetadataRequest
+            {
+                BucketName = _bucketName,
+                Key = matchingObject.Key
+            };
+
+            var metadata = await _s3Client.GetObjectMetadataAsync(metadataRequest);
+
+            return new DocumentUploadResult(
+                DocumentId: documentId,
+                S3Bucket: _bucketName,
+                S3Key: matchingObject.Key,
+                ContentType: metadata.Headers.ContentType,
+                FileSize: metadata.ContentLength,
+                UploadedAt: metadata.LastModified ?? DateTime.UtcNow
+            );
+        }
+        catch (AmazonS3Exception ex)
+        {
+            Console.WriteLine($"[S3] Error getting document metadata: {ex.ErrorCode} - {ex.Message}");
+            throw new Exception($"S3 get document failed: {ex.ErrorCode} - {ex.Message}", ex);
+        }
+    }
+
     public async Task<Stream> DownloadAsync(string documentId)
     {
         try

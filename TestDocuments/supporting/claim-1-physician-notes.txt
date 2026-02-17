@@ -1,0 +1,203 @@
+ST. MARY'S REGIONAL HOSPITAL
+PHYSICIAN TREATMENT NOTES
+
+Patient Name: Sarah Johnson
+MRN: MRN-2024-15678
+Date of Birth: March 22, 1985
+
+===================================================================
+OPERATIVE NOTE
+===================================================================
+
+Date of Surgery: January 11, 2024
+Surgeon: Dr. Patricia Rodriguez, MD, FACS
+Assistant: Dr. James Martinez, MD
+Anesthesiologist: Dr. Kevin Wong, MD
+
+PRE-OPERATIVE DIAGNOSIS
+Acute Appendicitis
+
+POST-OPERATIVE DIAGNOSIS
+Perforated Acute Appendicitis with Small Periappendiceal Abscess
+
+PROCEDURE PERFORMED
+Laparoscopic Appendectomy with Drainage of Periappendiceal Abscess
+
+ANESTHESIA
+General endotracheal anesthesia
+
+ESTIMATED BLOOD LOSS
+Less than 50mL
+
+SPECIMENS
+Appendix sent to pathology
+
+DRAINS
+None
+
+COMPLICATIONS
+None
+
+INDICATIONS FOR SURGERY
+This is a 38-year-old female who presented to the Emergency Department with severe right lower quadrant pain, fever (101.8°F), and leukocytosis (WBC 15,200). CT scan revealed acute appendicitis with periappendiceal inflammation. Patient consented for urgent laparoscopic appendectomy after discussion of risks including bleeding, infection, injury to surrounding structures, conversion to open procedure, and possible need for extended bowel resection.
+
+DESCRIPTION OF PROCEDURE
+Patient brought to operating room and placed in supine position. General anesthesia induced by Dr. Wong without complication. Foley catheter placed. Abdomen prepped and draped in standard sterile fashion.
+
+A 12mm umbilical incision made and Veress needle inserted. Pneumoperitoneum established with CO2 to 15mmHg. 12mm trocar inserted under direct visualization. Camera inserted - initial inspection revealed inflammatory fluid in pelvis.
+
+Two additional 5mm ports placed under direct visualization: one in left lower quadrant and one in suprapubic position. Systematic exploration performed.
+
+INTRAOPERATIVE FINDINGS:
+- Inflamed, edematous appendix in retrocecal position
+- Small perforation at tip of appendix (approximately 3mm)
+- Approximately 20mL purulent fluid in periappendiceal region
+- Small contained abscess around appendix tip
+- No fecal contamination
+- No other intra-abdominal pathology
+
+PROCEDURE DETAILS:
+Appendix mobilized from retrocecal position using gentle blunt and sharp dissection. Mesoappendix divided using LigaSure device with excellent hemostasis. Appendiceal base identified at junction with cecum.
+
+Purulent fluid aspirated using suction. Base of appendix cleared circumferentially. Two Endoloop sutures placed at base of appendix, tied securely. Appendix divided distal to ligatures using cautery scissors. Appendiceal stump inspected - hemostasis adequate, stump appearance satisfactory.
+
+Specimen placed in retrieval bag and removed through umbilical port. Peritoneal cavity irrigated with 2 liters warm normal saline until return clear. All fluid aspirated. Hemostasis confirmed. No drains placed as contamination minimal and well-controlled.
+
+All ports removed under direct visualization. Fascia at umbilical port closed with 0-Vicryl figure-of-eight suture. Skin incisions closed with 4-0 Monocryl subcuticular sutures. Steri-strips and sterile dressings applied.
+
+Patient tolerated procedure well. Transferred to PACU in stable condition. Specimens sent to pathology.
+
+PLAN
+- IV antibiotics: Continue Ceftriaxone and add Metronidazole
+- Pain control: Dilaudid PCA
+- Diet: NPO tonight, advance to clears tomorrow if tolerating
+- Activity: Ambulate tonight with assistance
+- Monitor for signs of infection or complications
+- Anticipated discharge in 48-72 hours if uncomplicated recovery
+
+Surgeon Signature: _________________________
+Dr. Patricia Rodriguez, MD, FACS
+Date/Time: January 11, 2024, 7:30 AM
+
+===================================================================
+POST-OPERATIVE DAY 1 PROGRESS NOTE
+===================================================================
+
+Date: January 11, 2024, 4:00 PM
+Author: Dr. Patricia Rodriguez, MD, FACS
+
+SUBJECTIVE
+Patient reports feeling much better compared to pre-operatively. Pain at incision sites, rates 5/10, well controlled with PCA. Denies nausea, no vomiting. Passing gas. Ambulated twice today with minimal assistance.
+
+OBJECTIVE
+Vital Signs:
+- Temperature: 99.2°F (improved)
+- Heart Rate: 78 bpm
+- Blood Pressure: 118/72 mmHg  
+- Respiratory Rate: 16 breaths/min
+- O2 Saturation: 98% on room air
+
+Physical Exam:
+- General: Alert, comfortable, in no distress
+- Abdomen: Soft, mildly tender at incision sites, no rebound or guarding
+- Incisions: Clean, dry, intact, no erythema or drainage
+- Bowel sounds: Present, hypoactive
+- Output: Foley removed at 2 PM, patient voided 300mL
+
+Labs (Morning):
+- WBC: 12,100 (improving from 15,200)
+- Hemoglobin: 13.2
+- All other values stable
+
+ASSESSMENT
+38-year-old female post-operative day 1 from laparoscopic appendectomy for perforated appendicitis. Doing well, recovery on track.
+
+PLAN
+1. Continue IV antibiotics (Ceftriaxone + Metronidazole)
+2. Advance diet to regular as tolerated
+3. Transition pain control to oral medications (Norco)
+4. Discontinue PCA tonight if tolerating oral meds
+5. Continue ambulation
+6. Repeat CBC in AM
+7. Plan discharge POD #2 if continues to improve
+
+Dr. Patricia Rodriguez, MD, FACS
+Date/Time: January 11, 2024, 4:15 PM
+
+===================================================================
+POST-OPERATIVE DAY 2 PROGRESS NOTE
+===================================================================
+
+Date: January 12, 2024, 9:00 AM
+Author: Dr. James Martinez, MD (Covering for Dr. Rodriguez)
+
+SUBJECTIVE
+Patient feeling significantly improved. Pain minimal, 2-3/10, well controlled with oral Norco. Tolerating regular diet well, good appetite. Passing gas and small bowel movement this morning. Ambulating independently.
+
+OBJECTIVE
+Vital Signs:
+- Temperature: 98.6°F (afebrile)
+- Heart Rate: 72 bpm
+- Blood Pressure: 120/74 mmHg
+- Respiratory Rate: 14 breaths/min
+- O2 Saturation: 99% on room air
+
+Physical Exam:
+- General: Well-appearing, no distress
+- Abdomen: Soft, non-tender except minimal tenderness at incision sites with palpation
+- Incisions: Healing well, no signs of infection
+- Bowel sounds: Normal, active
+
+Labs (Morning):
+- WBC: 9,800 (normalized)
+- Hemoglobin: 13.0
+- Electrolytes: Normal
+
+ASSESSMENT
+POD #2 from laparoscopic appendectomy, excellent recovery
+
+PLAN
+1. Discontinue IV antibiotics, switch to oral Augmentin
+2. Discontinue IV fluids
+3. Continue oral pain management
+4. Discharge tomorrow (POD #3) if remains stable
+5. Discharge planning: medications, wound care instructions, follow-up appointment
+
+Dr. James Martinez, MD
+Date/Time: January 12, 2024, 9:30 AM
+
+===================================================================
+DISCHARGE DAY PROGRESS NOTE
+===================================================================
+
+Date: January 13, 2024, 10:00 AM
+Author: Dr. Patricia Rodriguez, MD, FACS
+
+SUBJECTIVE
+Patient ready for discharge. Minimal pain, well controlled with oral medications. Tolerating regular diet. Having regular bowel movements. Feels ready to go home.
+
+OBJECTIVE
+Vital Signs: All normal
+Physical Exam: Unremarkable, incisions healing well
+
+ASSESSMENT
+POD #3 from laparoscopic appendectomy for perforated appendicitis with uncomplicated recovery. Patient meets all discharge criteria.
+
+DISCHARGE PLAN
+1. Medications prescribed (see discharge summary)
+2. Activity restrictions reviewed
+3. Wound care instructions provided
+4. Warning signs discussed
+5. Follow-up appointment: January 25, 2024 @ 2:00 PM
+6. Return to work note provided (light duty starting January 18)
+7. Patient verbalized understanding of all instructions
+
+DISPOSITION
+Discharge to home with family
+
+Dr. Patricia Rodriguez, MD, FACS
+Date/Time: January 13, 2024, 10:30 AM
+
+===================================================================
+
+All notes reviewed and signed electronically.

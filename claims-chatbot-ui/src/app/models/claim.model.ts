@@ -49,6 +49,12 @@ export interface ClaimDecisionUpdate {
   specialistId: string;
 }
 
+export interface FinalizeClaimRequest {
+  claimData: ClaimRequest;
+  supportingDocumentIds?: string[];
+  notes?: string;
+}
+
 export interface PolicyClause {
   clauseId: string;
   content: string;

@@ -1,0 +1,156 @@
+HEALTH INSURANCE CLAIM FORM
+
+Claim ID: CLM-2024-PT-9334
+Date of Submission: February 18, 2024
+
+POLICYHOLDER INFORMATION
+Name: Jennifer Wilson
+Policy Number: POL-2024-56789
+Date of Birth: August 17, 1982
+Phone: (555) 678-9012
+Email: jennifer.wilson@email.com
+
+CLAIM DETAILS
+Type of Claim: Physical Therapy Services
+Policy Type: Health
+Service Period: January 15, 2024 - February 15, 2024
+Total Sessions: 12
+
+REFERRING PHYSICIAN
+Dr. Mark Stevens, MD - Orthopedic Surgery
+Advanced Orthopedics Center
+750 Joint Care Avenue
+Recovery City, RC 56789
+Phone: (555) 890-1234
+Referral Date: January 10, 2024
+
+DIAGNOSIS AND MEDICAL NECESSITY
+Primary Diagnosis: Right Rotator Cuff Tear (ICD-10: M75.121)
+Secondary Diagnosis: Right Shoulder Impingement Syndrome (ICD-10: M75.41)
+
+INJURY DETAILS
+On December 20, 2023, I slipped on ice in my driveway and fell directly onto my right shoulder. I experienced immediate severe pain and loss of range of motion. MRI performed on December 28, 2023, confirmed a partial thickness tear of the supraspinatus tendon (approximately 40% tear) with associated impingement.
+
+CONSERVATIVE TREATMENT PLAN
+Dr. Stevens recommended a trial of conservative treatment with physical therapy before considering surgical intervention. Treatment goals include:
+1. Reduce pain and inflammation
+2. Restore range of motion
+3. Strengthen rotator cuff muscles
+4. Improve shoulder stability
+5. Return to activities of daily living
+
+PHYSICAL THERAPY PROVIDER
+Motion Restore Physical Therapy
+1200 Rehabilitation Road, Suite 100
+Recovery City, RC 56789
+Phone: (555) 321-4567
+NPI: 3344556677
+
+TREATING PHYSICAL THERAPIST
+Karen Martinez, PT, DPT
+Licensed Physical Therapist
+License #: PT-12345-CA
+
+TREATMENT SESSIONS BREAKDOWN
+
+Week 1 (January 15, 17, 19 - 3 sessions)
+Focus: Pain management, gentle range of motion, patient education
+- Modalities: Ice therapy, electrical stimulation
+- Manual therapy: Gentle joint mobilization
+- Therapeutic exercises: Pendulum exercises, passive range of motion
+Session Cost: $125 each x 3 = $375.00
+
+Week 2 (January 22, 24, 26 - 3 sessions)
+Focus: Progressive range of motion, initial strengthening
+- Modalities: Ultrasound therapy, moist heat
+- Manual therapy: Soft tissue mobilization
+- Exercises: Active-assisted range of motion, isometric strengthening
+Session Cost: $125 each x 3 = $375.00
+
+Week 3 (January 29, 31, February 2 - 3 sessions)
+Focus: Strengthening, functional activities
+- Resistance band exercises for rotator cuff
+- Scapular stabilization exercises
+- Postural training
+Session Cost: $125 each x 3 = $375.00
+
+Week 4 (February 5, 7, 9 - 3 sessions)
+Focus: Advanced strengthening, return to function
+- Progressive resistance exercises
+- Functional movement patterns
+- Sport-specific training (tennis preparation)
+Session Cost: $125 each x 3 = $375.00
+
+PROGRESS SUMMARY
+Initial Assessment (January 15, 2024):
+- Pain Level: 7/10 at rest, 9/10 with movement
+- Range of Motion: Forward flexion 80°, Abduction 70°, External rotation 15°
+- Strength: 2/5 in all planes
+- Function: Unable to lift arm overhead, difficulty with self-care tasks
+
+Current Status (February 15, 2024):
+- Pain Level: 2/10 at rest, 4/10 with resistance
+- Range of Motion: Forward flexion 145°, Abduction 130°, External rotation 60°
+- Strength: 4/5 in all planes
+- Function: Able to perform most daily activities, minimal limitation
+
+TREATMENT OUTCOMES
+Significant improvement demonstrated in:
+✓ Pain reduction of 60%
+✓ Range of motion improved by 80%
+✓ Strength improved from 2/5 to 4/5
+✓ Return to most activities of daily living
+✓ Able to sleep on right side (previously unable)
+
+CLAIM AMOUNT BREAKDOWN
+Total Sessions: 12
+Cost per Session: $125.00
+Total Claim Amount: $1,500.00
+
+Additional Charges:
+- Initial Evaluation (January 15): $175.00
+- Progress Re-evaluation (February 9): $125.00
+
+TOTAL CLAIM AMOUNT: $1,800.00
+
+Policy Coverage: 40 sessions per year at $75 per session
+Expected Reimbursement: $75 x 12 = $900.00
+Patient Responsibility: $900.00
+
+SUPPORTING DOCUMENTATION
+- Physician referral and prescription for physical therapy
+- MRI report showing rotator cuff tear
+- Initial physical therapy evaluation
+- Daily treatment notes (12 sessions)
+- Progress re-evaluation report
+- Home exercise program documentation
+- Functional outcome measures (DASH score)
+- Itemized billing statement
+
+CONTINUATION OF CARE
+Physical therapist recommends 8 additional sessions over the next month to:
+- Continue strengthening program
+- Progress to sport-specific training
+- Ensure long-term stability
+- Prevent re-injury
+
+Follow-up appointment with Dr. Stevens scheduled for February 25, 2024, to assess progress and determine if surgery can be avoided.
+
+HOME EXERCISE PROGRAM
+I have been compliant with my home exercise program, performing prescribed exercises twice daily as instructed. This includes:
+- Pendulum exercises
+- Resistance band exercises for rotator cuff
+- Scapular stabilization exercises
+- Stretching exercises
+
+I certify that all treatment sessions were attended and completed as described, and that physical therapy has been medically necessary and beneficial for my recovery.
+
+Patient Signature: Jennifer Wilson
+Date: February 18, 2024
+
+THERAPIST CERTIFICATION
+I certify that the above treatment was medically necessary and appropriate for the patient's diagnosis and functional limitations.
+
+Physical Therapist Signature: Karen Martinez, PT, DPT
+License: PT-12345-CA
+Date: February 18, 2024

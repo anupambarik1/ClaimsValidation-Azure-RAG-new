@@ -1,0 +1,263 @@
+ST. MARY'S REGIONAL HOSPITAL
+EMERGENCY DEPARTMENT RECORD
+
+Patient Name: Sarah Johnson
+Date of Birth: March 22, 1985
+Medical Record Number: MRN-2024-15678
+Account Number: 2024-ER-8834
+
+EMERGENCY DEPARTMENT VISIT
+Arrival Date/Time: January 10, 2024, 11:45 PM
+Triage Time: January 10, 2024, 11:47 PM
+Physician Evaluation: January 11, 2024, 12:15 AM
+Disposition Time: January 11, 2024, 3:20 AM
+Total ED Time: 3 hours, 35 minutes
+
+TRIAGE ASSESSMENT (11:47 PM)
+Triage Nurse: Jennifer Williams, RN
+Chief Complaint: Severe abdominal pain
+
+Vital Signs:
+- Temperature: 101.5°F (oral)
+- Heart Rate: 102 bpm
+- Blood Pressure: 132/84 mmHg
+- Respiratory Rate: 20 breaths/min
+- Oxygen Saturation: 98% on room air
+- Pain Scale: 9/10
+
+Triage Category: Level 2 - Emergent (seen within 15 minutes)
+
+Patient States: "I have terrible pain in my lower right stomach. It started about an hour ago and keeps getting worse. I've thrown up twice."
+
+EMERGENCY PHYSICIAN EVALUATION
+Attending Physician: Dr. Michael Chen, MD
+Emergency Medicine Board Certified
+
+HISTORY OF PRESENT ILLNESS (12:15 AM)
+38-year-old female presents with acute onset severe right lower quadrant abdominal pain that began approximately 10:30 PM this evening. Pain initially started as generalized periumbilical discomfort but over the past hour has localized to the right lower quadrant. Patient describes pain as sharp, constant, and progressive. Associated symptoms include nausea with two episodes of non-bloody, non-bilious emesis, and subjective fever (measured 101.5°F at home).
+
+Pain Characteristics:
+- Location: Right lower quadrant
+- Onset: Sudden, approximately 1.5 hours ago
+- Character: Sharp, stabbing
+- Radiation: None
+- Severity: 9/10
+- Duration: Constant
+- Exacerbating factors: Movement, coughing, pressure
+- Relieving factors: None, lying still helps minimally
+
+Associated Symptoms:
+- Nausea: Yes
+- Vomiting: Yes (2 episodes)
+- Fever: Yes (101.5°F at home)
+- Loss of appetite: Yes
+- Diarrhea: No
+- Constipation: No
+- Urinary symptoms: No
+- Vaginal bleeding: No
+
+REVIEW OF SYSTEMS
+Constitutional: Fever, chills, denies night sweats
+Cardiovascular: Denies chest pain, palpitations
+Respiratory: Denies shortness of breath, cough
+Gastrointestinal: As per HPI
+Genitourinary: Last menstrual period 2 weeks ago, regular cycles, denies dysuria, hematuria
+All other systems reviewed and negative
+
+PAST MEDICAL HISTORY
+- No significant past medical history
+- No previous surgeries
+- No chronic medical conditions
+
+MEDICATIONS
+- Oral contraceptives (Lo Loestrin Fe)
+- Multivitamin daily
+
+ALLERGIES
+No Known Drug Allergies (NKDA)
+
+SOCIAL HISTORY
+- Tobacco: Never
+- Alcohol: Social, 1-2 drinks per week
+- Illicit drugs: Denies
+- Occupation: Accountant
+- Marital Status: Married
+
+FAMILY HISTORY
+- Mother: Hypertension
+- Father: Type 2 Diabetes
+- No family history of surgical emergencies or GI diseases
+
+PHYSICAL EXAMINATION (12:20 AM)
+
+Vital Signs (Repeat):
+- Temperature: 101.8°F
+- Heart Rate: 98 bpm
+- Blood Pressure: 128/82 mmHg
+- Respiratory Rate: 18 breaths/min
+- Oxygen Saturation: 97% on room air
+- BMI: 23.5 (normal weight)
+
+General Appearance:
+Alert and oriented x3, appears uncomfortable, lying still on stretcher, in acute distress due to pain
+
+HEENT:
+- Head: Normocephalic, atraumatic
+- Eyes: PERRL, EOMI, conjunctivae normal
+- Ears: TMs normal bilaterally
+- Nose: No discharge
+- Throat: Mucous membranes moist, no erythema
+
+Neck:
+Supple, no lymphadenopathy, no thyromegaly, trachea midline
+
+Cardiovascular:
+Regular rate and rhythm, no murmurs, rubs, or gallops, peripheral pulses 2+ bilaterally
+
+Respiratory:
+Clear to auscultation bilaterally, no wheezes, rales, or rhonchi, normal work of breathing
+
+Abdomen: **KEY FINDINGS**
+- Inspection: Flat, no distension, no visible masses
+- Auscultation: Hypoactive bowel sounds
+- Percussion: Tympanic, no shifting dullness
+- Palpation:
+  * Soft in all quadrants except RLQ
+  * SEVERE tenderness in right lower quadrant
+  * McBurney's point: Markedly tender
+  * Rovsing's sign: POSITIVE (pain in RLQ with LLQ palpation)
+  * Psoas sign: Negative
+  * Obturator sign: Negative
+  * Rebound tenderness: Mild voluntary guarding, patient resists testing
+  * No masses palpable
+  * No organomegaly
+
+Musculoskeletal:
+Normal range of motion, no deformities
+
+Skin:
+Warm, dry, no rashes
+
+Neurological:
+Alert and oriented x3, cranial nerves II-XII intact, no focal deficits
+
+EMERGENCY DEPARTMENT COURSE
+
+12:25 AM - Orders Placed:
+1. IV access - 18-gauge left antecubital
+2. IV Normal Saline 1000mL bolus, then 125mL/hr
+3. NPO status
+4. Complete Blood Count (CBC)
+5. Comprehensive Metabolic Panel (CMP)
+6. Urinalysis
+7. Urine pregnancy test
+8. CT Abdomen/Pelvis with IV contrast
+9. Pain management: Morphine 4mg IV
+10. Anti-emetic: Zofran 4mg IV
+
+12:35 AM - Interventions:
+- IV established by Sarah Martinez, RN
+- Normal saline bolus initiated
+- Blood drawn for labs
+- Urine specimen collected
+
+12:45 AM - Medications Administered:
+- Morphine 4mg IV given - patient reports pain decreased to 6/10
+- Zofran 4mg IV given - nausea improved
+
+1:00 AM - Lab Results Received:
+CBC:
+- WBC: 15,200/μL (elevated) ← ABNORMAL
+- Hemoglobin: 13.8 g/dL (normal)
+- Hematocrit: 41% (normal)
+- Platelets: 245,000/μL (normal)
+- Neutrophils: 82% (elevated) ← ABNORMAL
+
+CMP: All values within normal limits
+
+Urinalysis:
+- Color: Yellow, clear
+- Specific gravity: 1.015
+- pH: 6.0
+- Negative for blood, protein, nitrites, leukocyte esterase
+- Microscopic: 0-2 WBC, 0-2 RBC, no bacteria
+
+Urine Pregnancy Test: NEGATIVE
+
+1:15 AM - Patient transported to CT Scanner
+
+1:45 AM - CT Scan Completed
+Patient returned to ED
+
+2:15 AM - CT RESULTS (STAT READ)
+Radiologist: Dr. Amanda Foster, MD
+
+CT ABDOMEN AND PELVIS WITH IV CONTRAST
+
+CLINICAL INDICATION: Right lower quadrant pain, rule out appendicitis
+
+FINDINGS:
+- APPENDIX: Distended and fluid-filled, measuring 12mm in diameter (normal <6mm)
+- Periappendiceal fat stranding present
+- Small amount of free fluid in right lower quadrant
+- Appendicolith not identified
+- No abscess formation
+- Cecum and terminal ileum appear normal
+- No other acute findings in abdomen or pelvis
+- Liver, spleen, pancreas, kidneys: Normal
+- No lymphadenopathy
+- Bladder and uterus: Normal
+
+IMPRESSION: 
+ACUTE APPENDICITIS - Recommend urgent surgical consultation
+
+2:20 AM - Dr. Chen reviews imaging with patient
+- Diagnosis of acute appendicitis explained
+- Need for surgical evaluation discussed
+- Patient agrees to surgical consultation
+
+2:25 AM - Surgical Consult Requested
+- General Surgery paged (Dr. Patricia Rodriguez on call)
+- Patient kept NPO
+- Additional dose of Morphine 2mg IV given for breakthrough pain
+
+2:45 AM - Dr. Rodriguez arrives, evaluates patient
+- Reviews CT imaging
+- Performs abdominal examination
+- Confirms diagnosis of acute appendicitis
+- Recommends urgent appendectomy
+- Discusses risks, benefits, alternatives with patient
+- Patient consents to surgery
+
+3:00 AM - Pre-operative Orders:
+- Admit to General Surgery
+- Pre-op labs: PT/INR added
+- Prophylactic antibiotics: Ceftriaxone 1g IV
+- Schedule for OR - first available (6:00 AM)
+- Consent signed
+
+3:15 AM - Ceftriaxone 1g IV administered
+
+EMERGENCY DEPARTMENT DIAGNOSIS
+1. Acute Appendicitis (confirmed by CT imaging)
+2. Leukocytosis secondary to appendicitis
+
+DISPOSITION
+Admitted to General Surgery for urgent appendectomy
+
+CONDITION ON TRANSFER
+Stable, pain controlled, IV access, NPO
+
+TRANSFER TIME: 3:20 AM to Surgical Floor
+
+Emergency Physician Signature: _________________________
+Dr. Michael Chen, MD
+Emergency Medicine
+Date/Time: January 11, 2024, 3:25 AM
+
+---
+ST. MARY'S REGIONAL HOSPITAL
+Emergency Department
+1500 Medical Center Drive
+Healthcare City, HC 12345
+Emergency Department Phone: (555) 789-0911

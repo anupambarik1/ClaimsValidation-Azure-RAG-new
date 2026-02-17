@@ -208,6 +208,84 @@ public class ClaimsController : ControllerBase
     }
 
     /// <summary>
+    /// Finalize claim validation with supporting documents
+    /// </summary>
+    /// <param name="request">The claim finalization request with claim data and supporting document IDs</param>
+    /// <returns>Final claim decision with comprehensive validation</returns>
+    /// <response code="200">Returns the final claim decision</response>
+    /// <response code="400">If the request is invalid</response>
+    /// <response code="500">If an internal error occurs</response>
+    [HttpPost("finalize")]
+    [ProducesResponseType(typeof(ClaimDecision), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+    public async Task<ActionResult<ClaimDecision>> FinalizeClaim([FromBody] FinalizeClaimRequest request)
+    {
+        try
+        {
+            _logger.LogInformation(
+                "Finalizing claim for policy {PolicyNumber} with {DocumentCount} supporting documents",
+                request.ClaimData.PolicyNumber,
+                request.SupportingDocumentIds?.Count ?? 0
+            );
+
+            ClaimDecision decision;
+
+            // Use holistic validation with supporting documents if available
+            if (request.SupportingDocumentIds != null && request.SupportingDocumentIds.Any())
+            {
+                _logger.LogInformation(
+                    "Processing claim with supporting documents: {Documents}",
+                    string.Join(", ", request.SupportingDocumentIds)
+                );
+                
+                // NEW: AI analyzes claim WITH all supporting documents
+                decision = await _orchestrator.ValidateClaimWithSupportingDocumentsAsync(
+                    request.ClaimData, 
+                    request.SupportingDocumentIds);
+                
+                _logger.LogInformation(
+                    "Claim validated with supporting documents - Status: {Status}, Confidence: {Confidence:F2}",
+                    decision.Status,
+                    decision.ConfidenceScore
+                );
+            }
+            else
+            {
+                // Fallback to standard validation if no supporting documents
+                _logger.LogInformation("No supporting documents provided, using standard validation");
+                decision = await _orchestrator.ValidateClaimAsync(request.ClaimData);
+            }
+
+            _logger.LogInformation(
+                "Claim finalized: {PolicyNumber}, Status: {Status}, Confidence: {Confidence:F2}",
+                request.ClaimData.PolicyNumber,
+                decision.Status,
+                decision.ConfidenceScore
+            );
+
+            return Ok(decision);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error finalizing claim for policy {PolicyNumber}", request.ClaimData.PolicyNumber);
+            
+            var errorMessage = ex.Message;
+            if (ex.InnerException != null)
+            {
+                errorMessage += $" Details: {ex.InnerException.Message}";
+            }
+            
+            return StatusCode(500, new 
+            { 
+                error = "Internal server error during claim finalization",
+                details = errorMessage,
+                timestamp = DateTime.UtcNow
+            });
+        }
+    }
+
+    /// <summary>
     /// Update a claim decision by specialist
     /// </summary>
     /// <param name="id">The claim ID</param>

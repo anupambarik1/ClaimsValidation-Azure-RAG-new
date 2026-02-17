@@ -10,7 +10,8 @@ import {
   SubmitDocumentResponse,
   ClaimExtractionResult,
   DocumentType,
-  ClaimDecisionUpdate
+  ClaimDecisionUpdate,
+  FinalizeClaimRequest
 } from '../models/claim.model';
 
 @Injectable({
@@ -24,6 +25,11 @@ export class ClaimsApiService {
   // Validate claim using RAG
   validateClaim(claim: ClaimRequest): Observable<ClaimDecision> {
     return this.http.post<ClaimDecision>(`${this.baseUrl}/claims/validate`, claim);
+  }
+
+  // Finalize claim with supporting documents
+  finalizeClaim(request: FinalizeClaimRequest): Observable<ClaimDecision> {
+    return this.http.post<ClaimDecision>(`${this.baseUrl}/claims/finalize`, request);
   }
 
   // Upload document only

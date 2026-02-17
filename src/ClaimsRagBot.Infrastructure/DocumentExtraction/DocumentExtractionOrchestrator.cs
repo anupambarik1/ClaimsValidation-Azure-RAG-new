@@ -85,7 +85,7 @@ public class DocumentExtractionOrchestrator : IDocumentExtractionService
             
             // Step 6: Validate and score confidence
             Console.WriteLine($"[Orchestrator] Step 5: Validating extracted data");
-            var validationResult = ValidateExtractedData(extractedClaim, textractResult.Confidence);
+            var validationResult = ValidateExtractedData(extractedClaim, textractResult.Confidence, textractResult.ExtractedText);
             
             Console.WriteLine($"[Orchestrator] Extraction complete. Overall confidence: {validationResult.OverallConfidence:F2}");
             
@@ -102,19 +102,74 @@ public class DocumentExtractionOrchestrator : IDocumentExtractionService
     public async Task<ClaimExtractionResult> ExtractClaimDataAsync(string documentId, DocumentType documentType)
     {
         Console.WriteLine($"[Orchestrator] Starting extraction for document: {documentId}, type: {documentType}");
-        Console.WriteLine($"[Orchestrator] WARNING: Using legacy method with S3 lookup - consider passing DocumentUploadResult instead");
         
         try
         {
-            // Step 1: Verify document exists in S3
+            // Get document metadata
+            var uploadResult = await _uploadService.GetDocumentAsync(documentId);
+            
+            // Use the overload that takes DocumentUploadResult
+            return await ExtractClaimDataAsync(uploadResult, documentType);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[Orchestrator] Error during extraction: {ex.Message}");
+            throw;
+        }
+    }
+
+    /// <summary>
+    /// NEW METHOD: Extract raw text content from supporting documents
+    /// This is for extracting CONTENT, not claim data
+    /// </summary>
+    public async Task<string> ExtractDocumentContentAsync(string documentId)
+    {
+        Console.WriteLine($"[Orchestrator] Extracting content from supporting document: {documentId}");
+        
+        try
+        {
+            // Step 1: Get document metadata from upload service
+            var uploadResult = await _uploadService.GetDocumentAsync(documentId);
+            Console.WriteLine($"[Orchestrator] Retrieved document: {uploadResult.BlobName ?? uploadResult.S3Key}");
+            
+            // Step 2: Extract text using Textract/Document Intelligence
+            TextractResult textractResult;
+            var storageKey = uploadResult.BlobName ?? uploadResult.S3Key ?? throw new InvalidOperationException("No storage key found");
+            var storageLocation = uploadResult.ContainerName ?? uploadResult.S3Bucket ?? _s3Bucket;
+            
+            // Use simple text detection - we just want the content, not structured forms
+            textractResult = await _textractService.DetectDocumentTextAsync(storageLocation, storageKey);
+            
+            Console.WriteLine($"[Orchestrator] Extracted {textractResult.ExtractedText.Length} characters from {documentId}");
+            
+            return textractResult.ExtractedText;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[Orchestrator] Error extracting document content: {ex.Message}");
+            throw new InvalidOperationException($"Failed to extract content from document {documentId}: {ex.Message}", ex);
+        }
+    }
+
+    // Legacy method - kept for backward compatibility but uses Blob/S3 lookup
+    private async Task<ClaimExtractionResult> ExtractClaimDataAsyncLegacy(string documentId, DocumentType documentType)
+    {
+        Console.WriteLine($"[Orchestrator] Starting extraction for document: {documentId}, type: {documentType}");
+        Console.WriteLine($"[Orchestrator] WARNING: Using legacy method with storage lookup - consider passing DocumentUploadResult instead");
+        
+        try
+        {
+            // Step 1: Verify document exists
             var exists = await _uploadService.ExistsAsync(documentId);
             if (!exists)
             {
-                throw new FileNotFoundException($"Document {documentId} not found in S3");
+                throw new FileNotFoundException($"Document {documentId} not found in storage");
             }
             
-            // Get S3 key for the document
-            var s3Key = await GetS3KeyForDocument(documentId);
+            // Get blob/S3 key for the document
+            var uploadResult = await _uploadService.GetDocumentAsync(documentId);
+            var storageKey = uploadResult.BlobName ?? uploadResult.S3Key ?? throw new InvalidOperationException("No storage key found");
+            var storageLocation = uploadResult.ContainerName ?? uploadResult.S3Bucket ?? _s3Bucket;
             
             // Step 2: Extract text using Textract
             Console.WriteLine($"[Orchestrator] Step 1: Extracting text with Textract");
@@ -123,12 +178,12 @@ public class DocumentExtractionOrchestrator : IDocumentExtractionService
             if (documentType == DocumentType.ClaimForm || documentType == DocumentType.PoliceReport)
             {
                 // Use form/table analysis for structured documents
-                textractResult = await _textractService.AnalyzeDocumentAsync(_s3Bucket, s3Key, new[] { "FORMS", "TABLES" });
+                textractResult = await _textractService.AnalyzeDocumentAsync(storageLocation, storageKey, new[] { "FORMS", "TABLES" });
             }
             else
             {
                 // Use simple text detection for other types
-                textractResult = await _textractService.DetectDocumentTextAsync(_s3Bucket, s3Key);
+                textractResult = await _textractService.DetectDocumentTextAsync(storageLocation, storageKey);
             }
             
             // Step 3: Extract entities using Comprehend
@@ -141,7 +196,7 @@ public class DocumentExtractionOrchestrator : IDocumentExtractionService
             if (documentType == DocumentType.DamagePhotos && _rekognitionService != null)
             {
                 Console.WriteLine($"[Orchestrator] Step 3: Analyzing images with Rekognition");
-                imageAnalysis = await _rekognitionService.AnalyzeImagesAsync(_s3Bucket, new List<string> { s3Key });
+                imageAnalysis = await _rekognitionService.AnalyzeImagesAsync(storageLocation, new List<string> { storageKey });
             }
             
             // Step 5: Use Bedrock Claude to intelligently synthesize all data
@@ -150,7 +205,7 @@ public class DocumentExtractionOrchestrator : IDocumentExtractionService
             
             // Step 6: Validate and score confidence
             Console.WriteLine($"[Orchestrator] Step 5: Validating extracted data");
-            var validationResult = ValidateExtractedData(extractedClaim, textractResult.Confidence);
+            var validationResult = ValidateExtractedData(extractedClaim, textractResult.Confidence, textractResult.ExtractedText);
             
             Console.WriteLine($"[Orchestrator] Extraction complete. Overall confidence: {validationResult.OverallConfidence:F2}");
             
@@ -230,7 +285,7 @@ public class DocumentExtractionOrchestrator : IDocumentExtractionService
             allImageAnalysis.Any() ? allImageAnalysis : null, 
             documentType);
         
-        var validationResult = ValidateExtractedData(extractedClaim, combinedTextractResult.Confidence);
+        var validationResult = ValidateExtractedData(extractedClaim, combinedTextractResult.Confidence, combinedTextractResult.ExtractedText);
         
         Console.WriteLine($"[Orchestrator] Multi-document extraction complete. Overall confidence: {validationResult.OverallConfidence:F2}");
         
@@ -246,28 +301,34 @@ public class DocumentExtractionOrchestrator : IDocumentExtractionService
     {
         var prompt = BuildExtractionPrompt(textractResult, entities, claimFields, imageAnalysis, documentType);
         
-        // Use the existing LLM service to extract structured claim data
+        // Enhanced system prompt for better extraction
         var systemPrompt = @"You are an expert insurance claims data extraction system.
-Extract and structure claim information from provided documents.
-Apply domain knowledge to resolve ambiguities.
-Ensure all monetary amounts are in USD without currency symbols.
-Normalize policy types to exactly one of: Home, Health, Life.
-Generate detailed claim descriptions from available information.
-Output ONLY valid JSON, no markdown formatting.";
+
+EXTRACTION RULES:
+1. Look for policy numbers in formats like: POL-YYYY-NNNNN, POLICY#, Policy No., etc.
+2. Extract claim amounts from currency values (look for $, USD, dollar amounts)
+3. Identify policy type from context (Health, Life, Home, Motor, Auto, etc.)
+4. Extract claimant/policyholder names from Person entities
+5. Find dates of loss/incident from Date entities
+6. Generate a concise claim description summarizing the incident
+7. If a field is not found, use null (not empty string or UNKNOWN)
+
+OUTPUT FORMAT (REQUIRED JSON STRUCTURE):
+{
+  PolicyNumber: exact policy number from document or null,
+  PolicyholderName: persons full name or null,
+  PolicyType: Health or Life or Home or Motor or Auto or null,
+  ClaimType: specific claim type like Hospitalization or Accident etc. or null,
+  ClaimAmount: numeric value without currency symbols (0 if not found),
+  ClaimDescription: brief description of the claim,
+  ClaimDate: YYYY-MM-DD format or null
+}
+
+Return ONLY valid JSON with no additional text.";
         
         try
         {
-            // Create a temporary ClaimRequest to leverage existing LLM infrastructure
-            var tempRequest = new ClaimRequest(
-                PolicyNumber: "TEMP",
-                ClaimDescription: prompt,
-                ClaimAmount: 0,
-                PolicyType: "Life"
-            );
-            
-            // We'll use a custom approach since we need different output format
             var response = await CallBedrockForExtractionAsync(prompt, systemPrompt);
-            
             return response;
         }
         catch (Exception ex)
@@ -281,65 +342,251 @@ Output ONLY valid JSON, no markdown formatting.";
                     ? textractResult.ExtractedText.Substring(0, 500) 
                     : textractResult.ExtractedText,
                 ClaimAmount: decimal.TryParse(claimFields.GetValueOrDefault("claimAmount", "0"), out var amt) ? amt : 0,
-                PolicyType: claimFields.GetValueOrDefault("policyType", "Motor")
+                PolicyType: claimFields.GetValueOrDefault("policyType", "Life")
             );
         }
     }
 
     private async Task<ClaimRequest> CallBedrockForExtractionAsync(string prompt, string systemPrompt)
     {
-        // This is a simplified extraction - in production, you'd call Bedrock directly
-        // For now, we'll parse from the available data
+        var maxRetries = int.Parse(_configuration["LLMExtraction:MaxRetries"] ?? "2");
+        var retryDelaySeconds = double.Parse(_configuration["LLMExtraction:RetryDelaySeconds"] ?? "1");
         
-        // Since we don't have direct access to Bedrock invocation with custom prompts in the current LlmService,
-        // we'll construct from Comprehend data as a fallback
-        // In a real implementation, you'd add a method to ILlmService for custom prompts
+        Console.WriteLine($"[Orchestrator] Using LLM for intelligent extraction (max {maxRetries} retries)");
         
-        Console.WriteLine("[Orchestrator] Using fallback extraction from Comprehend data");
+        Exception? lastException = null;
         
-        // Parse the prompt to extract the claim fields that were embedded
-        var lines = prompt.Split('\n');
-        var policyNumber = "UNKNOWN";
-        var claimAmount = 0m;
-        var policyType = "Life";
-        var description = "";
-        
-        foreach (var line in lines)
+        for (int attempt = 1; attempt <= maxRetries; attempt++)
         {
-            if (line.Contains("policyNumber") && line.Contains(":"))
+            try
             {
-                var value = line.Split(':').Last().Trim().Trim('"', ',');
-                if (!string.IsNullOrWhiteSpace(value) && value != "null")
-                    policyNumber = value;
+                Console.WriteLine($"[Orchestrator] Attempt {attempt}/{maxRetries}");
+                
+                // Call LLM with custom extraction prompt
+                var jsonResponse = await _llmService.GenerateResponseAsync(systemPrompt, prompt);
+                
+                // CRITICAL: Log raw response for debugging
+                Console.WriteLine($"[Orchestrator] Raw LLM Response:");
+                Console.WriteLine(jsonResponse.Length > 500 ? jsonResponse.Substring(0, 500) + "..." : jsonResponse);
+                
+                // Validate it's JSON
+                var trimmed = jsonResponse.Trim();
+                if (string.IsNullOrWhiteSpace(trimmed) || !trimmed.StartsWith("{"))
+                {
+                    throw new InvalidOperationException($"LLM returned non-JSON response: {trimmed.Substring(0, Math.Min(100, trimmed.Length))}");
+                }
+                
+                // Parse JSON with error handling
+                ClaimExtractionResponse? extractionResult;
+                try
+                {
+                    extractionResult = JsonSerializer.Deserialize<ClaimExtractionResponse>(jsonResponse, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true,
+                        AllowTrailingCommas = true
+                    });
+                }
+                catch (JsonException jsonEx)
+                {
+                    Console.WriteLine($"[Orchestrator] JSON parsing failed: {jsonEx.Message}");
+                    Console.WriteLine($"[Orchestrator] Error at line {jsonEx.LineNumber}, position {jsonEx.BytePositionInLine}");
+                    throw new InvalidOperationException($"Failed to parse LLM JSON response: {jsonEx.Message}", jsonEx);
+                }
+                
+                if (extractionResult == null)
+                {
+                    throw new InvalidOperationException("Deserialization returned null");
+                }
+                
+                // Validate extracted data
+                var validationErrors = ValidateExtraction(extractionResult);
+                if (validationErrors.Count > 0)
+                {
+                    Console.WriteLine($"[Orchestrator] Validation errors: {string.Join(", ", validationErrors)}");
+                    
+                    // If we have retries left and there are critical errors, retry
+                    if (attempt < maxRetries && HasCriticalErrors(validationErrors))
+                    {
+                        Console.WriteLine($"[Orchestrator] Critical errors found, retrying...");
+                        await Task.Delay(TimeSpan.FromSeconds(retryDelaySeconds * attempt));
+                        continue;
+                    }
+                    
+                    // Non-critical errors or last attempt - proceed with warnings
+                    Console.WriteLine($"[Orchestrator] Proceeding with warnings");
+                }
+                
+                // Success - log what we extracted
+                Console.WriteLine($"[Orchestrator] ✓ Extraction successful:");
+                Console.WriteLine($"  Policy: {MaskSensitiveData(extractionResult.PolicyNumber)}");
+                Console.WriteLine($"  Amount: ${extractionResult.ClaimAmount:N2}");
+                Console.WriteLine($"  Type: {extractionResult.PolicyType ?? "null"}");
+                Console.WriteLine($"  Claimant: {(extractionResult.PolicyholderName != null ? "[present]" : "null")}");
+                
+                return new ClaimRequest(
+                    PolicyNumber: extractionResult.PolicyNumber ?? "UNKNOWN",
+                    ClaimDescription: extractionResult.ClaimDescription ?? "No description available",
+                    ClaimAmount: extractionResult.ClaimAmount,
+                    PolicyType: NormalizePolicyType(extractionResult.PolicyType)
+                );
             }
-            else if (line.Contains("claimAmount") && line.Contains(":"))
+            catch (Exception ex)
             {
-                var value = line.Split(':').Last().Trim().Trim('"', ',');
-                if (decimal.TryParse(value, out var amt))
-                    claimAmount = amt;
-            }
-            else if (line.Contains("policyType") && line.Contains(":"))
-            {
-                var value = line.Split(':').Last().Trim().Trim('"', ',');
-                if (!string.IsNullOrWhiteSpace(value) && value != "null")
-                    policyType = value;
-            }
-            else if (line.Contains("DOCUMENT TEXT") && lines.Length > Array.IndexOf(lines, line) + 1)
-            {
-                var startIndex = Array.IndexOf(lines, line) + 1;
-                var textLines = lines.Skip(startIndex).Take(20).ToList();
-                description = string.Join(" ", textLines).Trim();
-                if (description.Length > 500)
-                    description = description.Substring(0, 500);
+                lastException = ex;
+                Console.WriteLine($"[Orchestrator] Attempt {attempt} failed: {ex.GetType().Name}: {ex.Message}");
+                
+                if (attempt < maxRetries)
+                {
+                    var delay = TimeSpan.FromSeconds(retryDelaySeconds * attempt);
+                    Console.WriteLine($"[Orchestrator] Waiting {delay.TotalSeconds}s before retry...");
+                    await Task.Delay(delay);
+                }
             }
         }
         
+        // All retries failed - use intelligent fallback
+        Console.WriteLine($"[Orchestrator] ⚠ LLM extraction failed after {maxRetries} attempts");
+        Console.WriteLine($"[Orchestrator] Last error: {lastException?.Message}");
+        Console.WriteLine($"[Orchestrator] Attempting fallback extraction from OCR/NER data...");
+        
+        return CreateFallbackExtraction(prompt);
+    }
+    
+    private List<string> ValidateExtraction(ClaimExtractionResponse result)
+    {
+        var errors = new List<string>();
+        var minPolicyLength = int.Parse(_configuration["LLMExtraction:MinPolicyNumberLength"] ?? "3");
+        var maxClaimAmount = decimal.Parse(_configuration["LLMExtraction:MaxClaimAmount"] ?? "10000000");
+        var minDescLength = int.Parse(_configuration["LLMExtraction:MinDescriptionLength"] ?? "10");
+        
+        if (string.IsNullOrWhiteSpace(result.PolicyNumber))
+            errors.Add("PolicyNumber is missing");
+        else if (result.PolicyNumber.Length < minPolicyLength)
+            errors.Add($"PolicyNumber too short: {result.PolicyNumber}");
+        
+        if (result.ClaimAmount <= 0)
+            errors.Add("ClaimAmount is zero or negative");
+        else if (result.ClaimAmount > maxClaimAmount)
+            errors.Add($"ClaimAmount suspiciously high: {result.ClaimAmount}");
+        
+        if (string.IsNullOrWhiteSpace(result.PolicyType))
+            errors.Add("PolicyType is missing");
+        
+        if (string.IsNullOrWhiteSpace(result.ClaimDescription))
+            errors.Add("ClaimDescription is missing");
+        else if (result.ClaimDescription.Length < minDescLength)
+            errors.Add("ClaimDescription too short");
+        
+        return errors;
+    }
+    
+    private bool HasCriticalErrors(List<string> errors)
+    {
+        // Critical errors that should trigger retry
+        return errors.Any(e => 
+            e.Contains("PolicyNumber is missing") || 
+            e.Contains("ClaimAmount is zero"));
+    }
+    
+    private string NormalizePolicyType(string? policyType)
+    {
+        if (string.IsNullOrWhiteSpace(policyType)) return "Life";
+        
+        return policyType.ToLower() switch
+        {
+            "health" or "medical" or "healthcare" => "Health",
+            "life" or "term" or "whole life" => "Life",
+            "home" or "property" or "homeowners" => "Home",
+            "motor" or "auto" or "vehicle" or "car" or "automobile" => "Motor",
+            _ => char.ToUpper(policyType[0]) + policyType.Substring(1).ToLower()
+        };
+    }
+    
+    private string MaskSensitiveData(string? data)
+    {
+        if (string.IsNullOrWhiteSpace(data)) return "null";
+        if (data.Length <= 4) return "***";
+        return $"***{data.Substring(data.Length - 4)}";
+    }
+    
+    private ClaimRequest CreateFallbackExtraction(string prompt)
+    {
+        // Extract from the prompt structure we built
+        var policyNumber = ExtractFieldFromPrompt(prompt, "policyNumber");
+        var claimAmountStr = ExtractFieldFromPrompt(prompt, "claimAmount");
+        var policyType = ExtractFieldFromPrompt(prompt, "policyType");
+        
+        decimal claimAmount = 0;
+        if (!string.IsNullOrEmpty(claimAmountStr))
+        {
+            decimal.TryParse(claimAmountStr.Replace(",", "").Replace("$", ""), out claimAmount);
+        }
+        
+        // Extract description from document text
+        var description = ExtractDescriptionFromPrompt(prompt);
+        
+        Console.WriteLine($"[Orchestrator] Fallback extraction results:");
+        Console.WriteLine($"  Policy: {policyNumber ?? "not found"}");
+        Console.WriteLine($"  Amount: {claimAmount}");
+        Console.WriteLine($"  Type: {policyType ?? "not found"}");
+        
+        var hasValidData = !string.IsNullOrEmpty(policyNumber) || claimAmount > 0;
+        
         return new ClaimRequest(
-            PolicyNumber: policyNumber,
-            ClaimDescription: description,
+            PolicyNumber: policyNumber ?? "PLEASE_VERIFY",
+            ClaimDescription: description ?? "Please review and complete the claim details from the uploaded document.",
             ClaimAmount: claimAmount,
-            PolicyType: policyType
+            PolicyType: policyType ?? "Life"
         );
+    }
+    
+    private string? ExtractFieldFromPrompt(string prompt, string fieldName)
+    {
+        // Look for pattern like "policyNumber: POL-123" in the EXTRACTED CLAIM FIELDS section
+        var pattern = $@"{fieldName}:\s*([^\n]+)";
+        var match = System.Text.RegularExpressions.Regex.Match(prompt, pattern, System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        
+        if (match.Success)
+        {
+            var value = match.Groups[1].Value.Trim();
+            // Filter out "null" string values
+            if (value != "null" && !string.IsNullOrWhiteSpace(value))
+                return value;
+        }
+        
+        return null;
+    }
+    
+    private string? ExtractDescriptionFromPrompt(string prompt)
+    {
+        // Extract from DOCUMENT TEXT section
+        var match = System.Text.RegularExpressions.Regex.Match(
+            prompt,
+            @"=== DOCUMENT TEXT ===\s*([\s\S]+?)(?:===|$)",
+            System.Text.RegularExpressions.RegexOptions.Singleline
+        );
+        
+        if (match.Success)
+        {
+            var text = match.Groups[1].Value.Trim();
+            // Remove "..." if text was truncated
+            text = text.TrimEnd('.').Trim();
+            return text.Length > 500 ? text.Substring(0, 500) : text;
+        }
+        
+        return null;
+    }
+    
+    // Helper class for JSON deserialization
+    internal class ClaimExtractionResponse
+    {
+        public string? PolicyNumber { get; set; }
+        public string? PolicyholderName { get; set; }
+        public string? PolicyType { get; set; }
+        public string? ClaimType { get; set; }
+        public decimal ClaimAmount { get; set; }
+        public string? ClaimDescription { get; set; }
+        public DateTime? ClaimDate { get; set; }
     }
 
     private string BuildExtractionPrompt(
@@ -411,7 +658,7 @@ Output ONLY valid JSON, no markdown formatting.";
         return prompt.ToString();
     }
 
-    private ClaimExtractionResult ValidateExtractedData(ClaimRequest extractedClaim, float textractConfidence)
+    private ClaimExtractionResult ValidateExtractedData(ClaimRequest extractedClaim, float textractConfidence, string? extractedText = null)
     {
         var fieldConfidences = new Dictionary<string, float>();
         var ambiguousFields = new List<string>();
@@ -493,7 +740,8 @@ Output ONLY valid JSON, no markdown formatting.";
             AmbiguousFields: ambiguousFields,
             RawExtractedData: new Dictionary<string, object>
             {
-                ["textractConfidence"] = textractConfidence
+                ["textractConfidence"] = textractConfidence,
+                ["extractedText"] = extractedText ?? extractedClaim.ClaimDescription
             }
         );
     }

@@ -1,0 +1,234 @@
+================================================================================
+                    INSURANCE CLAIM SUBMISSION FORM
+================================================================================
+
+All fields marked with (*) are required
+
+INSTRUCTIONS: Please complete all sections of this form clearly and accurately. 
+Attach all required supporting documentation. Incomplete forms may result in 
+processing delays. For assistance, contact our claims department at 
+1-800-CLAIMS-1.
+
+================================================================================
+SECTION 1: CLAIMANT INFORMATION
+================================================================================
+
+Full Name (*): Sarah Johnson
+
+Date of Birth (*): March 22, 1985
+
+Social Security Number (*): XXX-XX-5678
+
+Mailing Address (*): 1234 Maple Street, Springfield, IL 62701
+
+Phone Number (*): (555) 123-4567
+
+Email Address: sarah.johnson@email.com
+
+
+================================================================================
+SECTION 2: POLICY INFORMATION
+================================================================================
+
+Policy Number (*): POL-2024-15678
+
+Group Number (if applicable): GRP-HEALTH-001
+
+Policy Type (*): 
+    [X] Health Insurance
+    [ ] Life Insurance
+    [ ] Motor/Auto Insurance
+    [ ] Home/Property Insurance
+    [ ] Other: _______________
+
+Policy Effective Date: January 1, 2024
+
+Policyholder Name (if different from claimant): N/A - Same as claimant
+
+
+================================================================================
+SECTION 3: CLAIM DETAILS
+================================================================================
+
+Date of Incident/Service (*): January 10-13, 2024
+
+Location of Incident/Service (*): 
+St. Mary's Regional Hospital
+500 Medical Center Drive
+Springfield, IL 62702
+
+Claim Amount Requested (*): $4,250.00
+
+Detailed Description of Claim (*):
+--------------------------------------------------------------------------------
+
+EMERGENCY APPENDECTOMY SURGERY AND HOSPITALIZATION
+
+On January 10, 2024, at approximately 11:45 PM, I presented to St. Mary's 
+Regional Hospital Emergency Department with severe abdominal pain. After 
+examination and CT scan, I was diagnosed with acute appendicitis requiring 
+emergency surgery.
+
+I underwent emergency laparoscopic appendectomy performed by Dr. Patricia 
+Anderson on January 11, 2024, at 2:45 AM. The surgery was successful with no 
+complications.
+
+I was hospitalized for 3 days (January 11-13, 2024) for post-operative 
+monitoring and recovery. I was discharged on January 13, 2024, in stable 
+condition with instructions for follow-up care.
+
+MEDICAL DETAILS:
+- Emergency Department Visit: January 10, 2024, 11:45 PM - 3:20 AM
+- Diagnosis: Acute appendicitis
+- Procedure: Emergency laparoscopic appendectomy
+- Surgeon: Dr. Patricia Anderson, MD
+- Hospital Stay: 3 days (January 11-13, 2024)
+- Discharge Status: Stable condition, home care instructions provided
+
+FINANCIAL SUMMARY:
+- Total Hospital Charges: $33,550.00
+- Insurance Coverage Requested: $4,250.00 (deductible and co-insurance portion)
+
+--------------------------------------------------------------------------------
+
+
+================================================================================
+SECTION 4: ADDITIONAL INFORMATION
+================================================================================
+
+Have you filed a claim for this incident with any other insurance company?
+    [ ] Yes (Please provide details below)
+    [X] No
+
+If yes, please provide details:
+________________________________________________________________________________
+
+
+Is this claim related to an accident or injury?
+    [ ] Work-related
+    [ ] Auto accident
+    [ ] Other accident
+    [X] Medical condition (non-accident)
+
+
+================================================================================
+SECTION 5: SUPPORTING DOCUMENTS CHECKLIST
+================================================================================
+
+Please attach all applicable documents:
+
+    [X] Hospital Admission Record
+    [X] Discharge Summary
+    [X] Itemized Hospital Bill/Invoice
+    [X] Emergency Department Records
+    [X] Diagnostic Test Results (CT Scan, Labs, etc.)
+    [X] Physician/Surgeon Notes
+    [ ] Police Report (if applicable)
+    [ ] Repair Estimates (for property claims)
+    [ ] Photos/Evidence
+    [ ] Other: _____________________
+
+
+SUPPORTING DOCUMENTS INCLUDED WITH THIS SUBMISSION:
+--------------------------------------------------------------------------------
+1. Hospital Admission Record (claim-1-hospital-admission.pdf)
+2. Discharge Summary (claim-1-discharge-summary.pdf)
+3. Itemized Hospital Bill (claim-1-itemized-bill.pdf)
+4. Emergency Department Records (claim-1-emergency-room.pdf)
+5. Diagnostic Test Results - CT Scan (claim-1-diagnostic-results.pdf)
+6. Physician/Surgeon Operative Notes (claim-1-physician-notes.pdf)
+
+Total Documents Attached: 6 files
+--------------------------------------------------------------------------------
+
+
+================================================================================
+SECTION 6: AUTHORIZATION AND SIGNATURE
+================================================================================
+
+I HEREBY CERTIFY THAT:
+
+1. All information provided in this claim form is true, accurate, and complete 
+   to the best of my knowledge.
+
+2. I authorize the release of any medical or other information necessary to 
+   process this claim.
+
+3. I authorize payment of medical benefits directly to the healthcare 
+   provider(s) named in this claim.
+
+4. I understand that any false or fraudulent claim may result in denial of 
+   benefits and potential legal action.
+
+5. I have read and agree to the terms and conditions of my insurance policy.
+
+6. I understand that submission of this claim does not guarantee approval or 
+   payment.
+
+
+Signature of Claimant (*): ___Sarah Johnson_______________
+
+Date (*): February 15, 2024
+
+Print Name: SARAH JOHNSON
+
+
+================================================================================
+OFFICE USE ONLY
+================================================================================
+
+Claim ID: _________________________
+
+Date Received: ____________________
+
+Received By: ______________________
+
+Initial Review Date: ______________
+
+Assigned Adjuster: ________________
+
+Status: [ ] Approved  [ ] Denied  [ ] Pending Review  [ ] More Info Needed
+
+Notes:
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+
+
+================================================================================
+CLAIMS DEPARTMENT CONTACT INFORMATION
+================================================================================
+
+Phone: 1-800-CLAIMS-1 (1-800-252-4671)
+Fax: 1-800-555-0199
+Email: claims@insurance.com
+Website: www.insurance.com/claims
+Mailing Address: Claims Department
+                 Insurance Company
+                 P.O. Box 12345
+                 Claims Processing Center
+                 Chicago, IL 60601
+
+Business Hours: Monday - Friday, 8:00 AM - 6:00 PM CST
+Emergency Claims: 24/7 Hotline: 1-800-HELP-NOW
+
+
+================================================================================
+PRIVACY NOTICE
+================================================================================
+
+Your privacy is important to us. All information provided will be kept 
+confidential and used solely for the purpose of processing your insurance 
+claim. We comply with all applicable federal and state privacy laws, including 
+HIPAA regulations for health information.
+
+
+================================================================================
+                              END OF FORM
+================================================================================
+
+Form Version: 2024.1
+Document Date: February 15, 2024
+Page 1 of 1
+
+© 2024 Insurance Company. All Rights Reserved.

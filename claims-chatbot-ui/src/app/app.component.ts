@@ -6,7 +6,7 @@ import { filter } from 'rxjs/operators';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink],
+  imports: [CommonModule, RouterOutlet],
   template: `
     <div class="app-container">
       <nav class="app-nav" *ngIf="showNavigation">

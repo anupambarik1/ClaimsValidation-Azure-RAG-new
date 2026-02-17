@@ -1,4 +1,15 @@
 <div class="upload-panel">
+  <div class="mode-indicator">
+    @if (mode === 'claim') {
+      <h3>📋 Upload Claim Form</h3>
+      <p>Upload <strong>ONE</strong> claim form document for automatic data extraction</p>
+    } @else {
+      <h3>📎 Upload Supporting Documents</h3>
+      <p><strong>✓ MULTI-FILE UPLOAD ENABLED:</strong> Select and upload <strong>MULTIPLE</strong> files at once</p>
+      <p style="font-size: 0.9em; color: #666; margin-top: 4px;">Examples: medical records, bills, discharge summaries, diagnostic reports</p>
+    }
+  </div>
+
   <div 
     class="drop-zone"
     [class.drag-over]="isDragOver"
@@ -10,48 +21,49 @@
     <input 
       #fileInput 
       type="file" 
-      accept=".pdf,.jpg,.jpeg,.png"
+      [multiple]="mode === 'supporting'"
+      accept=".pdf,.jpg,.jpeg,.png,.txt"
       (change)="onFileSelected($event)"
       style="display: none">
     
-    @if (!selectedFile) {
+    @if (selectedFiles.length === 0) {
       <div class="drop-zone-content">
         <mat-icon>cloud_upload</mat-icon>
-        <p>Drag & drop your claim document here</p>
-        <p class="hint">or click to browse</p>
-        <p class="formats">Supported: PDF, JPG, PNG (max 10MB)</p>
+        @if (mode === 'claim') {
+          <p>Drag & drop your claim form here</p>
+          <p class="hint">or click to browse (ONE file only)</p>
+        } @else {
+          <p><strong>Drag & drop MULTIPLE supporting documents here</strong></p>
+          <p class="hint">or click to browse and SELECT MULTIPLE FILES</p>
+          <p class="hint" style="color: #2196f3; font-weight: 600;">Ctrl+Click or Shift+Click to select multiple files!</p>
+        }
+        <p class="formats">Supported: PDF, JPG, PNG, TXT (max 10MB each)</p>
       </div>
     } @else {
-      <div class="file-preview">
-        <mat-icon>description</mat-icon>
-        <div class="file-info">
-          <span class="file-name">{{ selectedFile.name }}</span>
-          <span class="file-size">{{ formatFileSize(selectedFile.size) }}</span>
-        </div>
-        <button mat-icon-button (click)="removeFile($event)">
-          <mat-icon>close</mat-icon>
-        </button>
+      <div class="files-list">
+        @for (file of selectedFiles; track file.name; let i = $index) {
+          <div class="file-preview">
+            <mat-icon>description</mat-icon>
+            <div class="file-info">
+              <span class="file-name">{{ file.name }}</span>
+              <span class="file-size">{{ formatFileSize(file.size) }}</span>
+            </div>
+            <button mat-icon-button (click)="removeFile($event, i)">
+              <mat-icon>close</mat-icon>
+            </button>
+          </div>
+        }
       </div>
     }
   </div>
 
-  @if (selectedFile) {
-    <mat-form-field appearance="outline" class="full-width">
-      <mat-label>Document Type</mat-label>
-      <mat-select [(ngModel)]="documentType">
-        <mat-option value="ClaimForm">Claim Form</mat-option>
-        <mat-option value="PoliceReport">Police Report</mat-option>
-        <mat-option value="RepairEstimate">Repair Estimate</mat-option>
-        <mat-option value="DamagePhotos">Damage Photos</mat-option>
-        <mat-option value="MedicalRecords">Medical Records</mat-option>
-        <mat-option value="Mixed">Mixed Documents</mat-option>
-      </mat-select>
-    </mat-form-field>
-
-    <mat-form-field appearance="outline" class="full-width">
-      <mat-label>User ID (optional)</mat-label>
-      <input matInput [(ngModel)]="userId" placeholder="Enter user ID">
-    </mat-form-field>
+  @if (selectedFiles.length > 0) {
+    @if (mode === 'supporting') {
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>User ID (optional)</mat-label>
+        <input matInput [(ngModel)]="userId" placeholder="Enter user ID">
+      </mat-form-field>
+    }
 
     <div class="actions">
       <button mat-raised-button (click)="cancel()">Cancel</button>
@@ -64,7 +76,11 @@
           <mat-spinner diameter="20"></mat-spinner>
           Processing...
         } @else {
-          Upload & Process
+          @if (mode === 'claim') {
+            Extract Claim Data
+          } @else {
+            <strong>Upload {{ selectedFiles.length }} File{{ selectedFiles.length === 1 ? '' : 's' }}</strong>
+          }
         }
       </button>
     </div>
