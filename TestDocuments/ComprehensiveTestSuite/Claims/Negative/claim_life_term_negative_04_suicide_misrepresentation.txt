@@ -1,0 +1,104 @@
+LIFE INSURANCE CLAIM FORM - NEGATIVE TEST CASE #4
+Claim Type: Term Life Insurance - Death Benefit
+Policy Number: TERM-2024-56789
+Claim Number: CLM-LIFE-NEG-004
+
+DECEASED INSURED INFORMATION:
+Name: Jennifer Williams
+Date of Birth: April 8, 1982
+Date of Death: April 1, 2024
+Age at Death: 41 years, 11 months
+Policy Effective Date: February 15, 2024
+Time Between Issue and Death: 45 days
+
+CLAIMANT INFORMATION:
+Name: David Williams
+Relationship to Insured: Spouse (Primary Beneficiary)
+
+POLICY INFORMATION:
+Death Benefit Amount: $500,000.00
+Policy Status: In Force (only 45 days)
+Contestability Period: YES - Within first 2 years
+Last Premium Payment: March 15, 2024
+
+CIRCUMSTANCES OF DEATH:
+Manner of Death: Suicide
+Date of Death: April 1, 2024
+Location: Home residence
+Cause of Death: Intentional drug overdose (opioids and benzodiazepines)
+
+INVESTIGATION FINDINGS:
+1. SUICIDE WITHIN CONTESTABILITY PERIOD: Death occurred 45 days after policy issue. Policy clearly states suicide within first 2 years results in premium refund only, not death benefit.
+
+2. SUICIDE NOTE FOUND: Handwritten note by Jennifer Williams found at scene, confirming intentional act.
+
+3. TOXICOLOGY REPORT: Lethal levels of oxycodone and alprazolam. Medical examiner ruled death as suicide.
+
+4. POLICE REPORT: No evidence of foul play. Ruled self-inflicted death.
+
+5. MENTAL HEALTH HISTORY REVIEW: Investigation revealed:
+   - Hospitalized for suicide attempt 6 months before policy application (November 2023)
+   - Active treatment for severe depression
+   - Multiple psychiatrist visits in 3 months before application
+   - Prescribed antidepressants, anti-anxiety medications
+   - Recent increase in suicidal ideation per medical records
+
+6. APPLICATION MISREPRESENTATION:
+   Application Question 15: "Have you been hospitalized for any reason in the past 5 years?"
+   Jennifer's Answer: NO
+   Truth: YES - Psychiatric hospitalization November 2023 (3 months before application)
+   
+   Application Question 18: "Are you currently under treatment for any mental or nervous disorder?"
+   Jennifer's Answer: NO
+   Truth: YES - Active treatment for major depressive disorder
+   
+   Application Question 19: "Do you take any prescription medications?"
+   Jennifer's Answer: Listed only "allergy medication"
+   Truth: Taking sertraline (antidepressant), alprazolam (anti-anxiety), prescription sleep aids
+
+REQUIRED DOCUMENTS SUBMITTED:
+✓ Death certificate (lists suicide as manner of death)
+✓ Medical examiner's report
+✓ Toxicology report
+✓ Police investigation report
+✓ Suicide note (photocopy)
+✓ Psychiatric hospital records (November 2023)
+✓ Psychiatrist treatment records
+✓ Prescription history
+✓ Primary care physician records
+
+REASON FOR DENIAL:
+1. SUICIDE WITHIN 2-YEAR EXCLUSION PERIOD: Policy provision explicitly states death by suicide within first 2 years results in premium refund only.
+
+2. MATERIAL MISREPRESENTATION ON APPLICATION: Insured deliberately concealed:
+   - Recent psychiatric hospitalization for suicide attempt
+   - Active treatment for severe depression
+   - Multiple prescription psychotropic medications
+   - Ongoing suicidal ideation
+
+3. FRAUD/CONCEALMENT: Evidence suggests Jennifer applied for insurance knowing she had suicidal ideation and concealed this to obtain coverage. Application submitted during active psychiatric treatment.
+
+POLICY LANGUAGE (Suicide Clause):
+"If the insured dies by suicide, while sane or insane, within two years from the policy date, our liability will be limited to a return of premiums paid."
+
+CLAIM STATUS: DENIED
+Denial Reason: Death by suicide within contestability period
+
+REFUND TO BENEFICIARY:
+Total Premiums Paid: $255.00 (3 monthly payments of $85)
+Refund Amount: $255.00
+Death Benefit: $0.00
+
+ADDITIONAL FINDINGS:
+Had death occurred after 2-year contestability period, even by suicide, claim would have been paid. However, material misrepresentation on application would still allow company to rescind policy for fraud.
+
+The concealment of psychiatric hospitalization and active mental health treatment constitutes material misrepresentation. Had company known true health status, policy would have been declined or issued with exclusion/higher premium.
+
+BENEFICIARY NOTIFICATION:
+David Williams notified of denial. Refund of $255.00 processed.
+
+APPEAL RIGHTS:
+Beneficiary may appeal, but suicide exclusion within 2 years is absolute and enforceable in all states. Material misrepresentation provides additional grounds for denial.
+
+LEGAL REVIEW:
+Company legal department reviewed. Denial upheld. Suicide clause enforceable. Material misrepresentation documented.

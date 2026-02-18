@@ -1,0 +1,194 @@
+LIFE INSURANCE CLAIM FORM - POSITIVE TEST CASE #4
+Claim Type: Term Life Insurance - Death Benefit
+Policy Number: TERM-2024-56789
+Insurance Company: SecureLife Term Insurance Company
+Claim Number: CLM-LIFE-004
+Claim Submission Date: November 10, 2024
+
+DECEASED INSURED INFORMATION:
+Full Name: Jennifer Anne Williams
+Date of Birth: April 8, 1982
+Date of Death: November 3, 2024, 12:18 AM
+Age at Death: 42 years, 6 months, 26 days
+Place of Death: Memorial Hospital, 500 Hospital Drive, Springfield, IL 62701
+Cause of Death: Acute Myocardial Infarction (Heart Attack)
+Death Certificate Number: IL-2024-0011345
+Social Security Number: XXX-XX-8234 (last 4 digits)
+Last Known Address: 458 Oak Street, Springfield, IL 62701
+Occupation: Elementary School Teacher
+
+CLAIMANT/BENEFICIARY INFORMATION:
+Full Name: David Michael Williams
+Relationship to Deceased: Spouse (Primary Beneficiary - 100%)
+Date of Birth: June 12, 1980
+Address: 458 Oak Street, Springfield, IL 62701
+Phone: (217) 555-0123
+Email: dwilliams@email.com
+SSN: XXX-XX-7891 (last 4 digits)
+Driver's License: IL D123-4567-8901
+
+POLICY INFORMATION:
+Policy Type: 20-Year Level Term Life Insurance
+Death Benefit Amount: $500,000.00
+Policy Issue Date: February 15, 2024
+Policy Effective Date: February 15, 2024
+Policy Anniversary Date: February 15 (annually)
+Policy Status: In Force - All premiums paid and current
+Monthly Premium: $45.00
+Premium Payment Mode: Electronic bank draft (automatic)
+Last Premium Payment: November 1, 2024 (paid for November 2024)
+Next Premium Due: December 1, 2024 (not applicable - insured deceased)
+Contestability Period: First 2 years (policy within contestability - issued 2/15/2024, death 11/3/2024 = 8.5 months)
+Suicide Exclusion Period: First 2 years (within period but not applicable - death by natural causes)
+
+BENEFICIARY DESIGNATION (on file as of policy issue):
+Primary Beneficiary: David Michael Williams (Spouse) - 100%
+Contingent Beneficiary: Emma Grace Williams (Daughter, age 8) - 100%
+No other beneficiaries listed
+No beneficiary changes since policy issue
+
+POLICY UNDERWRITING HISTORY:
+Application Date: February 1, 2024
+Medical Exam Date: February 5, 2024
+Underwriting Class: Preferred Plus (Best class - non-smoker, excellent health)
+Face Amount: $500,000
+Application Questions: All answered "No" to adverse health history
+Medications Listed on Application: None
+Tobacco Use: No (verified by cotinine test)
+Medical Exam Results: All normal (BP 118/74, height 5'6", weight 145 lbs, BMI 23.4)
+
+CIRCUMSTANCES OF DEATH:
+Date of Incident: November 2, 2024 (Saturday evening)
+Time of Initial Symptoms: Approximately 8:30 PM
+Location of Incident: Home residence, 458 Oak Street, Springfield, IL
+
+TIMELINE OF EVENTS:
+8:30 PM - Jennifer experienced sudden onset severe chest pain (substernal, crushing quality) radiating to left arm and jaw, accompanied by shortness of breath, diaphoresis (sweating), and nausea
+8:45 PM - Husband David called 911
+8:52 PM - EMS arrived on scene, found patient in severe distress, vital signs: BP 160/95, HR 115, RR 24, SpO2 92%
+9:05 PM - Transported to Memorial Hospital Emergency Department by ambulance
+9:12 PM - Arrived at Memorial Hospital ED
+9:15 PM - ED physician evaluation, EKG showed ST-segment elevation (STEMI - ST-Elevation Myocardial Infarction)
+9:25 PM - Cardiology consult (Dr. Robert Hayes), activated cardiac catheterization lab
+9:45 PM - Patient taken to cath lab for emergency angiography
+10:10 PM - Coronary angiography revealed 95% occlusion of proximal left anterior descending (LAD) artery
+10:20 PM - Attempted percutaneous coronary intervention (PCI) with stent placement
+11:15 PM - During procedure, patient developed ventricular fibrillation
+11:16 PM - CPR initiated, defibrillation x 3, ACLS protocol
+11:30 PM - Brief return of spontaneous circulation (ROSC), then recurrent cardiac arrest
+11:45 PM - Continued resuscitation efforts, epinephrine, amiodarone administered
+12:05 AM (Nov 3) - Patient remained in refractory ventricular fibrillation despite maximal interventions
+12:18 AM (Nov 3) - Resuscitation efforts ceased, patient pronounced dead by Dr. Robert Hayes, MD
+
+DEATH CERTIFICATION:
+Immediate Cause of Death: Acute myocardial infarction (heart attack)
+Underlying Cause: Coronary artery disease with thrombotic occlusion of LAD
+Other Contributing Conditions: None
+Manner of Death: Natural
+Autopsy: Performed by Sangamon County Medical Examiner (November 4, 2024)
+Autopsy Findings: Confirmed acute MI with 95% LAD stenosis, acute thrombus, no evidence of trauma, toxicology negative
+
+MEDICAL HISTORY VERIFICATION (Contestability Review):
+Insurer reviewed application against medical records obtained:
+- No prior diagnosis of heart disease (confirmed - no prior cardiology visits)
+- No prior chest pain or cardiac symptoms (confirmed - no documentation found)
+- No family history of premature heart disease reported (confirmed - family history unremarkable)
+- Non-smoker status (confirmed - negative cotinine, no smoking history in medical records)
+- No medications reported (confirmed - no prescription history found)
+- Medical exam normal (confirmed - all parameters within normal limits)
+
+CONCLUSION: No material misrepresentation on application. Sudden cardiac death in previously asymptomatic individual age 42 with undiagnosed coronary artery disease.
+
+CLAIM AMOUNT: $500,000.00 (Full Death Benefit)
+
+REQUIRED DOCUMENTS SUBMITTED:
+✓ Completed Claim for Death Benefits Form (Form LS-100)
+✓ Certified Death Certificate (State of Illinois, Certificate #IL-2024-0011345)
+✓ Original Policy Document (Policy #TERM-2024-56789)
+✓ Claimant's Statement signed by David Williams
+✓ Proof of Identity: Driver's License (David Williams, IL D123-4567-8901)
+✓ Proof of Relationship: Marriage Certificate (Jennifer & David Williams, married 6/15/2008)
+✓ Attending Physician Statement (Dr. Robert Hayes, MD, Cardiologist)
+✓ Complete Hospital Records (Memorial Hospital):
+  - Emergency Department records
+  - Cardiac catheterization lab report
+  - ICU/Critical care notes
+  - Death summary
+✓ Autopsy Report (Sangamon County Medical Examiner, Dr. Patricia Morgan, MD)
+✓ EMS/Ambulance Report (Springfield EMS, Unit 12)
+✓ Cardiology consultation notes (Dr. Robert Hayes)
+✓ EKG tracings showing STEMI
+✓ Angiography images and report
+✓ Toxicology report (negative for drugs/alcohol)
+✓ Proof of premium payment (bank statements showing automatic payments through November 1, 2024)
+
+CONTESTABILITY INVESTIGATION (Required - death within 2 years):
+Investigation Status: COMPLETED (November 15, 2024)
+Investigator: Claims Investigation Unit, SecureLife
+Medical Records Obtained: Complete records from primary care physician (Dr. Susan Chen, MD)
+Investigation Findings:
+- Policy application accurate and complete
+- No undisclosed medical conditions found
+- No evidence of fraud or material misrepresentation
+- Medical exam results verified as accurate
+- No adverse medical history concealed
+- Death from sudden cardiac event (natural cause) - covered under policy
+- Autopsy confirms natural death, no suspicious circumstances
+- No exclusions apply (not suicide, not accident, within coverage)
+
+LEGAL REVIEW:
+Reviewed by: Legal Department, SecureLife Term Insurance
+Conclusion: All legal requirements met for claim payment
+- Valid beneficiary designation
+- No competing claims
+- No liens or assignments on policy
+- Proper proof of death provided
+- Contestability investigation complete with no adverse findings
+
+FINANCIAL VERIFICATION:
+Premium Status: PAID CURRENT through date of death
+Outstanding Loans: None ($0.00)
+Dividends/Cash Value: N/A (term policy)
+Total Amount Payable: $500,000.00 (full face amount)
+
+CLAIM STATUS: APPROVED FOR PAYMENT
+
+APPROVAL RATIONALE:
+1. Valid, in-force term life insurance policy
+2. Death from covered cause (acute myocardial infarction - natural death)
+3. Proper beneficiary designation on file (spouse - 100%)
+4. All premiums paid current through date of death
+5. Complete documentation provided and verified
+6. Contestability investigation completed - no material misrepresentation found
+7. Medical records consistent with sudden cardiac death in previously undiagnosed CAD
+8. Autopsy confirms natural death (acute MI)
+9. No policy exclusions apply (not suicide, not accident, covered cause)
+10. No competing claims or liens
+11. Beneficiary identity and relationship verified
+12. All legal and regulatory requirements satisfied
+
+PAYMENT AUTHORIZATION:
+Approved Amount: $500,000.00
+Payment Method: Lump sum (as requested by beneficiary)
+Payee: David Michael Williams
+Check Mailing Address: 458 Oak Street, Springfield, IL 62701
+Estimated Payment Date: November 25, 2024
+Claim Approval Date: November 18, 2024
+Approved By: Claims Director, SecureLife Term Insurance
+
+TAX REPORTING:
+Form 1099-R will be issued to David Williams for tax year 2024
+Life insurance death benefits are generally income tax-free per IRC Section 101(a)
+
+COMMUNICATION:
+Approval letter sent to David Williams: November 18, 2024
+Payment check issued: November 20, 2024
+Expected delivery: November 25, 2024
+Payment Amount: $500,000.00
+Processing Timeline: 30-45 days from receipt of all documents
+
+SPECIAL CONSIDERATIONS:
+- Within contestability period - requires medical underwriting review
+- Sudden death in young person - standard investigation protocol
+- No red flags in circumstances or documentation
+- Clean application history

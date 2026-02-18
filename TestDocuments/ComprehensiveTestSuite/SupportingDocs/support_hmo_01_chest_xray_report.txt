@@ -1,0 +1,48 @@
+RADIOLOGY REPORT
+City Medical Center - Diagnostic Imaging
+
+Patient: Michael Thompson
+DOB: 05/12/1978
+MRN: CMC-778945
+Exam Date: October 15, 2024
+Exam Time: 19:15
+
+EXAMINATION: Chest X-Ray, PA and Lateral Views
+INDICATION: Cough, fever, shortness of breath, chest pain
+COMPARISON: None available
+
+TECHNIQUE:
+PA and lateral radiographs of the chest were obtained in the emergency department.
+
+FINDINGS:
+
+LUNGS:
+Right Lower Lobe: Dense consolidation present in the right lower lobe with air bronchograms, consistent with pneumonic infiltrate. The infiltrate measures approximately 8 x 6 cm and involves the posterior and lateral segments of the right lower lobe.
+
+Left Lung: Clear, no infiltrates or consolidation identified.
+
+Pleural Spaces: No pleural effusion or pneumothorax. Costophrenic angles are sharp bilaterally.
+
+HEART: Heart size is normal. Cardiomediastinal silhouette is within normal limits.
+
+MEDIASTINUM: Mediastinal contours are normal. No widening or masses.
+
+BONY THORAX: No acute fractures or bony lesions. Osseous structures are intact.
+
+SOFT TISSUES: Soft tissues of the chest wall are unremarkable.
+
+IMPRESSION:
+1. Right lower lobe pneumonia - dense consolidation with air bronchograms
+2. No pleural effusion
+3. No pneumothorax
+4. Normal heart size
+
+RECOMMENDATION:
+Clinical correlation recommended. Follow-up chest X-ray in 4-6 weeks after completion of antibiotic therapy to ensure resolution.
+
+Radiologist: Dr. Jennifer Liu, MD
+Board Certified in Diagnostic Radiology
+License: MD-CA-78234
+Electronically signed: October 15, 2024 19:45
+
+Critical Result: Yes - Pneumonia finding called to ED physician (Dr. Anderson) at 19:20

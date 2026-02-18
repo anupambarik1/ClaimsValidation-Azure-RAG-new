@@ -1,0 +1,71 @@
+CLAIM SUBMISSION FORM - NEGATIVE TEST CASE #2
+Claim Type: Health Insurance - PPO
+Policy Number: PPO-2024-45621
+Claim Number: CLM-PPO-NEG-002
+
+CLAIMANT INFORMATION:
+Name: Sarah Martinez
+Date of Birth: 08/23/1985
+Policy Holder: Sarah Martinez
+Member ID: PPO45621-001
+
+CLAIM DETAILS:
+Date of Service: November 10, 2024
+Provider: Paradise Weight Loss Center
+Provider NPI: 6547893210
+Facility: Caribbean Wellness Resort, Mexico
+Diagnosis Code: E66.01 (Morbid obesity due to excess calories)
+Procedure Codes: 43644 (Laparoscopic gastric bypass), 99223 (Hospital care)
+
+DESCRIPTION OF SERVICE:
+Patient traveled to Mexico for bariatric surgery (gastric bypass) at medical tourism facility. Patient BMI: 38 (below policy threshold of 40 for bariatric coverage). No documented supervised weight loss program participation. Surgery performed at non-US facility.
+
+CLAIM AMOUNT: $18,900.00
+
+ITEMIZED CHARGES:
+- Bariatric surgeon fee: $9,500.00
+- Hospital stay (3 days): $4,200.00
+- Anesthesia: $2,800.00
+- Post-operative care: $1,200.00
+- Medications and supplies: $1,200.00
+TOTAL: $18,900.00
+
+REASON FOR DENIAL:
+1. SERVICES OUTSIDE UNITED STATES: Policy only covers emergency services outside US. Elective surgery in Mexico not covered.
+
+2. NO PRE-AUTHORIZATION: Bariatric surgery requires pre-authorization. None obtained. Pre-auth would have been denied based on criteria below.
+
+3. MEDICAL NECESSITY CRITERIA NOT MET:
+   - BMI 38 (policy requires BMI ≥40 or BMI ≥35 with comorbidities)
+   - No documentation of serious weight-related comorbidities
+   - No evidence of supervised 6-month weight loss program
+   - No psychological evaluation completed
+   - No nutritional counseling documented
+
+4. EXPERIMENTAL/MEDICAL TOURISM: Services obtained at non-accredited foreign facility. Policy excludes experimental or unproven treatments and requires US-accredited facilities.
+
+POLICY VIOLATIONS:
+✗ Services performed outside US (non-emergency)
+✗ No pre-authorization obtained
+✗ BMI below policy threshold (38 vs required 40)
+✗ No supervised weight loss program (6 months required)
+✗ No psychological evaluation
+✗ No nutritional counseling
+✗ Foreign facility not accredited by US standards
+
+CLAIM STATUS: Should be DENIED
+Denial Codes:
+- D1: Services outside US (non-emergency)
+- D2: No pre-authorization
+- D3: Medical necessity criteria not met
+- D4: BMI below policy requirement
+- D5: Required supervised weight loss program not completed
+- D6: Non-accredited facility
+
+MEMBER FINANCIAL RESPONSIBILITY: $18,900.00 (100%)
+
+APPEAL RIGHTS:
+Member may appeal within 180 days. However, fundamental exclusions (out-of-country elective surgery, no pre-auth, criteria not met) make successful appeal unlikely.
+
+NOTES:
+Even if services had been performed in US at in-network facility, claim would still be denied for failure to meet bariatric surgery criteria (BMI threshold, supervised weight loss program, psychological evaluation).

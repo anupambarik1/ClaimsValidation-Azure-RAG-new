@@ -1,0 +1,122 @@
+LIFE INSURANCE CLAIM FORM - NEGATIVE TEST CASE #5
+Claim Type: Whole Life Insurance - Death Benefit
+Policy Number: WHOLE-2024-33421
+Claim Number: CLM-LIFE-NEG-005
+
+DECEASED INSURED INFORMATION:
+Name: Marcus Johnson
+Date of Birth: June 22, 1968
+Date of Death: March 18, 2024
+Age at Death: 55 years
+Policy Effective Date: January 10, 2024
+Time Between Issue and Death: 67 days
+
+CLAIMANT INFORMATION:
+Name: Angela Johnson
+Relationship to Insured: Spouse (Primary Beneficiary)
+Claim Amount: $250,000.00 (Death Benefit)
+
+POLICY INFORMATION:
+Death Benefit: $250,000.00
+Policy Status: Contested
+Cash Value: $0.00 (policy only 67 days old)
+Outstanding Loans: $0.00
+Premiums Paid: $1,275.00 (3 monthly payments)
+
+CIRCUMSTANCES OF DEATH:
+Date of Incident: March 16, 2024
+Manner of Death: Homicide
+Location: Marcus Johnson's residence
+Cause of Death: Multiple gunshot wounds
+
+POLICE INVESTIGATION:
+- Marcus Johnson found dead in home with multiple gunshot wounds
+- 911 call placed by wife Angela Johnson at 11:47 PM
+- Angela Johnson arrested and charged with first-degree murder
+- Evidence includes: gunshot residue on Angela's hands, weapon registered to Angela, life insurance policy application found during search
+- Motive: Financial gain (life insurance proceeds)
+- Angela's statement: Claims self-defense during domestic violence incident
+- No history of domestic violence calls to residence
+- Neighbors reported hearing argument, then gunshots
+- No signs of break-in or third-party involvement
+
+CRIMINAL CHARGES:
+Defendant: Angela Johnson
+Charges: First-degree murder
+Status: Pending trial
+Prosecution Theory: Angela murdered Marcus for $250,000 life insurance proceeds
+Defense Theory: Self-defense during domestic violence
+
+INVESTIGATION FINDINGS:
+1. BENEFICIARY AS PERPETRATOR: Primary beneficiary charged with murdering insured.
+
+2. SUSPICIOUS TIMING: 
+   - Policy issued January 10, 2024
+   - Marcus dead 67 days later
+   - Suspiciously short time between policy issue and death
+
+3. FINANCIAL MOTIVE:
+   - Couple had significant debts ($85,000 credit cards, behind on mortgage)
+   - Angela initiated life insurance application
+   - Policy application submitted just weeks after couple researched "life insurance payouts" online
+
+4. PREMEDITATION EVIDENCE:
+   - Angela purchased handgun 2 weeks before death
+   - Search history showed "how long until life insurance pays" and "contestability period"
+   - Text messages to friend mentioning "things will be better soon"
+
+5. SLAYER STATUTE APPLICABLE: Oregon law (and policy provision) prohibits beneficiary who intentionally causes insured's death from receiving proceeds.
+
+POLICY PROVISION (Slayer Clause):
+"If a beneficiary is convicted of intentionally causing the death of the insured, that beneficiary shall forfeit all rights to policy proceeds. Benefits will be paid to contingent beneficiaries or estate."
+
+ADDITIONAL APPLICATION REVIEW:
+Routine contestability investigation revealed potential issues:
+- Medical records show Marcus treated for stage 2 lung cancer 18 months before application
+- Application Question 12: "Have you ever been diagnosed with or treated for cancer?"
+- Marcus's Answer: NO
+- Truth: YES - Non-small cell lung cancer, completed treatment, in remission
+- Chest X-rays from 16 months ago show cancerous lesion and treatment
+
+REASON FOR DENIAL:
+1. SLAYER STATUTE: Primary beneficiary (Angela Johnson) charged with intentional murder of insured. Under Oregon Slayer Statute and policy provision, beneficiary who murders insured cannot profit from crime.
+
+2. MATERIAL MISREPRESENTATION (Additional Ground): Marcus concealed cancer history on application. Had company known of cancer diagnosis, policy would have been declined or issued with exclusion/rated premium.
+
+3. CONTESTABILITY PERIOD: Death within first 2 years allows full underwriting review. Cancer misrepresentation discovered during investigation.
+
+4. POLICY RESCISSION: Company exercising right to rescind policy ab initio (from the beginning) due to material misrepresentation.
+
+CLAIM STATUS: DENIED
+Primary Denial Reason: Slayer Statute - Beneficiary caused insured's death
+Secondary Denial Reason: Material misrepresentation - Policy rescinded
+
+CONTINGENT BENEFICIARIES:
+Tyler Johnson (son) and Maya Johnson (daughter) would normally receive proceeds, but policy rescinded due to material misrepresentation by insured.
+
+REFUND:
+Premiums Paid: $1,275.00
+Refund To: Estate of Marcus Johnson (not Angela)
+Refund Amount: $1,275.00
+Death Benefit: $0.00
+
+LEGAL PROCEEDINGS:
+- Criminal trial pending against Angela Johnson
+- Civil claim filed by children (Tyler and Maya) challenging denial
+- Company position: Rescission valid regardless of slayer statute
+- Forensic underwriting completed
+- All medical providers contacted and confirmed cancer treatment
+
+ALTERNATIVE SCENARIOS:
+1. If Angela acquitted: Slayer statute would not apply, but material misrepresentation still grounds for rescission.
+2. If Angela convicted: Slayer statute applies, proceeds would go to children, BUT policy still rescinded for fraud.
+3. If no misrepresentation: Slayer statute would apply, Angela denied, children would receive $250,000.
+
+FINAL DETERMINATION: CLAIM DENIED - POLICY RESCINDED
+- No death benefit payable
+- Premium refund of $1,275 to estate (not Angela)
+- Policy void ab initio due to material misrepresentation
+- Slayer statute provides additional grounds for denying Angela's claim
+
+APPEAL RIGHTS:
+Estate may appeal rescission decision. However, cancer diagnosis documented in medical records constitutes clear material misrepresentation. Policy would not have been issued with knowledge of recent cancer.

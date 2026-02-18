@@ -1,0 +1,89 @@
+LIFE INSURANCE CLAIM FORM - POSITIVE TEST CASE #5
+Claim Type: Whole Life Insurance - Accelerated Death Benefit (Terminal Illness)
+Policy Number: WHOLE-2024-33421
+Claim Number: CLM-LIFE-ADB-005
+
+INSURED INFORMATION:
+Name: Marcus Johnson
+Date of Birth: June 22, 1968
+Age: 56 years
+Address: 892 Maple Drive, Portland, OR 97201
+Phone: (503) 555-0198
+Email: mjohnson@email.com
+
+POLICY INFORMATION:
+Death Benefit Amount: $250,000.00
+Policy Effective Date: January 10, 2024
+Policy Status: In Force - All premiums paid to date
+Policy Type: Whole Life with Accelerated Death Benefit Rider
+Cash Value: $8,450.00
+Outstanding Loans: $0.00
+
+CLAIM TYPE: Accelerated Death Benefit - Terminal Illness Rider
+Requested Advance: $187,500.00 (75% of death benefit)
+Remaining Death Benefit: $62,500.00 (to be paid upon death)
+
+TERMINAL ILLNESS INFORMATION:
+Diagnosis: Stage IV Pancreatic Adenocarcinoma with metastases to liver and lungs
+Date of Diagnosis: September 15, 2024
+Treating Physician: Dr. Amanda Foster, Oncologist
+Facility: Oregon Cancer Center
+Physician Certification: Terminal prognosis with life expectancy of 3-6 months
+
+MEDICAL SUMMARY:
+Marcus presented with jaundice, severe abdominal pain, and unexplained weight loss (45 lbs in 3 months). CT scan revealed 6cm mass in pancreatic head with extensive metastases to liver (multiple lesions) and both lungs. Biopsy confirmed adenocarcinoma. TNM Staging: T4 N1 M1 (Stage IV). Oncology consultation determined patient is not candidate for curative surgery or chemotherapy due to extent of disease and poor performance status. Enrolled in hospice care. Prognosis: 3-6 months.
+
+PHYSICIAN CERTIFICATION:
+"In my professional medical opinion, Marcus Johnson has a terminal illness with a life expectancy of less than 12 months. His pancreatic cancer is stage IV with widespread metastatic disease. He is not a candidate for curative treatment. I certify this meets the criteria for terminal illness under the policy's accelerated death benefit rider."
+
+Signed: Dr. Amanda Foster, MD, Board Certified Medical Oncologist
+Date: October 28, 2024
+
+REQUIRED DOCUMENTS SUBMITTED:
+✓ Completed Accelerated Benefit Request Form (Form WL-ADB-100)
+✓ Physician certification of terminal illness
+✓ Complete medical records (oncology)
+✓ Pathology report (biopsy results)
+✓ CT scan reports (showing primary tumor and metastases)
+✓ Oncology consultation notes
+✓ Hospice enrollment documentation
+✓ Attending physician statement
+✓ Copy of policy document
+✓ Government-issued ID (Marcus Johnson)
+
+FINANCIAL VERIFICATION:
+- All premiums paid current through November 2024
+- No outstanding policy loans
+- No liens or assignments on policy
+- Beneficiaries notified of accelerated benefit request
+- Spouse (Angela Johnson) signed consent form
+
+CLAIM AMOUNT REQUESTED: $187,500.00
+(75% of $250,000 death benefit as per rider terms)
+
+EXPECTED OUTCOME: Should be APPROVED
+Rationale:
+- Valid whole life policy with accelerated death benefit rider
+- Terminal illness clearly documented
+- Physician certification confirms life expectancy < 12 months
+- Complete medical documentation supports terminal prognosis
+- Stage IV pancreatic cancer with metastases - universally terminal
+- Hospice enrollment further confirms terminal status
+- All policy requirements met
+- No outstanding loans or liens
+- Beneficiaries properly notified
+- Within rider terms (up to 75% advance)
+
+PAYMENT DETAILS:
+Payee: Marcus Johnson (Insured/Policyholder)
+Payment Method Requested: Electronic transfer to checking account
+Payment Amount: $187,500.00
+Remaining Death Benefit: $62,500.00 (payable to beneficiaries upon death)
+Processing Timeline: 15-20 days (expedited for terminal illness)
+
+TAX REPORTING:
+- Accelerated death benefits for terminal illness generally tax-free under IRC Section 101(g)
+- Form 1099-LTC will be issued
+
+BENEFICIARY NOTIFICATION:
+Primary Beneficiary Angela Johnson (spouse) has been notified and consented to accelerated benefit. Remaining $62,500 death benefit will be payable to her upon insured's death.

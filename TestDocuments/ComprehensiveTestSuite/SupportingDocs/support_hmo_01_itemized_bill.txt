@@ -1,0 +1,125 @@
+ITEMIZED HOSPITAL BILL
+City Medical Center
+1234 Medical Plaza Drive
+Anytown, CA 90210
+Phone: (555) 123-4567
+Federal Tax ID: 95-1234567
+NPI: 1234567890
+
+PATIENT INFORMATION:
+Name: Michael Thompson
+DOB: 05/12/1978
+Patient ID: CMC-778945
+Date of Service: October 15, 2024
+Account Number: INV-2024-778945
+
+INSURANCE INFORMATION:
+Primary Insurance: HealthGuard HMO
+Policy Number: HMO-2024-78945
+Member ID: HMO78945-001
+Group Number: GRP-001
+
+ITEMIZED CHARGES:
+
+EMERGENCY DEPARTMENT SERVICES
+Date: October 15, 2024
+
+1. Emergency Department Visit
+   CPT Code: 99285
+   Description: Emergency dept visit, high complexity
+   Level 5 - High severity presenting problem
+   Quantity: 1
+   Charge: $750.00
+
+DIAGNOSTIC IMAGING
+2. Chest X-Ray, 2 Views (PA and Lateral)
+   CPT Code: 71046
+   Description: Radiologic examination, chest, 2 views
+   Quantity: 1
+   Charge: $285.00
+
+LABORATORY SERVICES
+3. Complete Blood Count (CBC) with Differential
+   CPT Code: 85025
+   Description: Blood count; complete (CBC), automated
+   Quantity: 1
+   Charge: $125.00
+
+4. Blood Culture, Aerobic and Anaerobic
+   CPT Code: 87040
+   Description: Culture, bacterial; blood, aerobic
+   Quantity: 2 sets (4 bottles)
+   Charge: $180.00
+
+PHARMACY/MEDICATIONS
+5. Ceftriaxone 1g IV
+   NDC: 0409-4728-01
+   Description: Antibiotic, intravenous administration
+   Quantity: 1 dose
+   Charge: $145.00
+
+6. Azithromycin 500mg PO
+   NDC: 0069-3060-30
+   Description: Antibiotic, oral
+   Quantity: 1 dose
+   Charge: $25.00
+
+7. Acetaminophen 1000mg PO
+   NDC: 0527-1404-01
+   Description: Antipyretic, oral
+   Quantity: 1 dose
+   Charge: $8.00
+
+8. IV Administration Fee
+   CPT Code: 96365
+   Description: Intravenous infusion, therapeutic
+   Quantity: 1
+   Charge: $132.00
+
+MEDICAL SUPPLIES
+9. IV Start Kit and Catheter
+   Description: 18g IV catheter, tubing, supplies
+   Quantity: 1
+   Charge: $85.00
+
+10. Normal Saline 1000mL IV Fluid
+    Description: IV hydration fluid
+    Quantity: 1 bag
+    Charge: $55.00
+
+11. Oxygen Therapy
+    Description: Oxygen via nasal cannula, 5 hours
+    Quantity: 5 hours
+    Charge: $60.00
+
+                                        TOTAL CHARGES: $1,850.00
+
+PAYMENT INFORMATION:
+Amount Billed to Insurance: $1,850.00
+Patient Responsibility (Estimated): $250.00 (ER Copay)
+
+PAYMENT DUE:
+Copay due at time of service: $250.00
+Payment received: $250.00 (Credit card - Visa ending 4432)
+Balance Due: $0.00
+
+INSURANCE CLAIM:
+Claim submitted to: HealthGuard HMO
+Claim submission date: October 16, 2024
+Claim number: CLM-HMO-001
+
+CODES SUBMITTED TO INSURANCE:
+Primary Diagnosis: J18.9 (Pneumonia, unspecified)
+Secondary Diagnoses: R50.9 (Fever), R06.02 (Shortness of breath)
+Procedure: 99285 (ED visit, high complexity)
+
+Questions about this bill?
+Call our Billing Department: (555) 123-4570
+Monday-Friday, 8:00 AM - 5:00 PM
+
+Pay online at: www.citymedicalcenter.com/billing
+
+Thank you for choosing City Medical Center for your healthcare needs.
+
+Invoice Date: October 16, 2024
+Due Date: Payment made in full

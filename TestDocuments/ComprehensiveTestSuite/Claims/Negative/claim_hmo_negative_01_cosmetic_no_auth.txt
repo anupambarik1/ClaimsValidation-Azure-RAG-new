@@ -1,0 +1,61 @@
+CLAIM SUBMISSION FORM - NEGATIVE TEST CASE #1
+Claim Type: Health Insurance - HMO
+Policy Number: HMO-2024-78945
+Claim Number: CLM-HMO-NEG-001
+
+CLAIMANT INFORMATION:
+Name: Michael Thompson
+Date of Birth: 05/12/1978
+Policy Holder: Michael Thompson
+Member ID: HMO78945-001
+
+CLAIM DETAILS:
+Date of Service: July 20, 2024
+Provider: Dr. plastic Surgery Excellence Center
+Provider NPI: 8765432109
+Facility: Elite Cosmetic Surgery Center (OUT OF NETWORK)
+Diagnosis Code: M95.4 (Deviated nasal septum, acquired)
+Procedure Codes: 30400 (Rhinoplasty, plastic repair), 30520 (Septoplasty)
+
+DESCRIPTION OF SERVICE:
+Patient underwent rhinoplasty (nose job) with septoplasty. Patient reported difficulty breathing through nose and desired cosmetic improvement to nasal appearance. Surgery performed at out-of-network cosmetic surgery center.
+
+CLAIM AMOUNT: $12,500.00
+
+ITEMIZED CHARGES:
+- Surgeon fee (rhinoplasty): $8,000.00
+- Surgeon fee (septoplasty): $2,500.00
+- Anesthesia: $1,200.00
+- Facility fee: $800.00
+TOTAL: $12,500.00
+
+REASON FOR DENIAL:
+1. OUT-OF-NETWORK PROVIDER: Elite Cosmetic Surgery Center is not contracted with HMO network. HMO policy requires all non-emergency services to be performed by in-network providers.
+
+2. NO REFERRAL: Patient did not obtain required referral from primary care physician to specialist. HMO requires referrals for all specialist services.
+
+3. NO PRE-AUTHORIZATION: Surgical procedures require pre-authorization. None was obtained or requested.
+
+4. COSMETIC EXCLUSION: Rhinoplasty is primarily a cosmetic procedure. While septoplasty may be medically necessary, the cosmetic component (rhinoplasty) is specifically excluded under policy.
+
+5. LACK OF MEDICAL NECESSITY DOCUMENTATION: No documentation of failed conservative treatment, breathing studies, or medical necessity for surgical intervention.
+
+POLICY VIOLATIONS:
+✗ Used out-of-network provider (Emergency exception does not apply)
+✗ No PCP referral obtained
+✗ No pre-authorization
+✗ Cosmetic procedure (excluded)
+✗ Inadequate medical necessity documentation
+
+CLAIM STATUS: Should be DENIED
+Denial Codes:
+- D1: Out-of-network provider (non-emergency)
+- D2: No referral obtained
+- D3: No pre-authorization
+- D4: Cosmetic procedure exclusion
+- D5: Medical necessity not established
+
+MEMBER FINANCIAL RESPONSIBILITY: $12,500.00 (100% - member responsible for out-of-network non-covered services)
+
+APPEAL RIGHTS:
+Member may appeal within 180 days. Must provide evidence of medical necessity and explain why out-of-network provider was used.

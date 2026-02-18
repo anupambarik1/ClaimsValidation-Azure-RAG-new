@@ -1,0 +1,374 @@
+ITEMIZED HOSPITAL BILL
+City Medical Center
+1234 Medical Plaza Drive, Springfield, IL 62701
+Phone: (217) 555-4567 | Billing: (217) 555-4570
+Federal Tax ID: 36-1234567
+NPI: 1234567890
+
+STATEMENT DATE: October 16, 2024
+STATEMENT NUMBER: STMT-2024-778945
+ACCOUNT NUMBER: CMC-778945-ED-101524
+
+==============================================================================
+PATIENT INFORMATION:
+==============================================================================
+
+Patient Name: Michael Thompson
+Date of Birth: May 12, 1978
+Age: 46 years
+Address: 742 Oak Avenue
+         Springfield, IL 62704
+Phone: (217) 555-0156
+Email: mthompson@email.com
+Social Security #: XXX-XX-1234 (last 4 digits)
+Medical Record #: CMC-778945
+
+==============================================================================
+INSURANCE INFORMATION:
+==============================================================================
+
+PRIMARY INSURANCE:
+Insurance Company: HealthGuard HMO Insurance
+Policy Number: HMO-2024-78945
+Member ID: HMO78945-001
+Group Number: GRP-001
+Policyholder Name: Michael Thompson (Self)
+Policyholder DOB: May 12, 1978
+Relationship to Patient: Self
+Plan Type: Health Maintenance Organization (HMO)
+
+Insurance Address:
+HealthGuard HMO Claims Department
+P.O. Box 98765
+Chicago, IL 60601
+
+Insurance Phone: 1-800-555-HMOG (4664)
+Claims Submission Fax: 1-800-555-4665
+
+SECONDARY INSURANCE: None
+
+GUARANTOR: Michael Thompson (Same as Patient)
+
+==============================================================================
+SERVICE INFORMATION:
+==============================================================================
+
+Date of Service: October 15, 2024
+Admission Time: 18:45 (6:45 PM)
+Discharge Time: 23:30 (11:30 PM)
+Service Location: Emergency Department
+Admission Type: Emergency
+Discharge Status: Discharged to Home
+
+Attending Physician: Dr. Sarah Anderson, MD
+Physician NPI: 9876543210
+Specialty: Emergency Medicine
+
+Primary Diagnosis: J18.9 - Community-Acquired Pneumonia, Right Lower Lobe
+Secondary Diagnoses: R05 (Cough), R50.9 (Fever), R06.02 (Shortness of Breath)
+
+Treatment Summary: Emergency evaluation and treatment for pneumonia including diagnostic imaging, laboratory testing, IV antibiotics, IV hydration, and oxygen therapy.
+
+==============================================================================
+ITEMIZED CHARGES:
+==============================================================================
+
+LINE  DATE       SERVICE DESCRIPTION                CPT/HCPCS  QTY   CHARGE
+--------------------------------------------------------------------------------
+
+EMERGENCY DEPARTMENT SERVICES:
+
+001   10/15/24   Emergency Department Visit         99285      1     $750.00
+                 Level 5 - High Complexity
+                 High severity presenting problem
+                 Comprehensive history and exam
+                 Medical decision making - high complexity
+                 Time: 4 hours 45 minutes total ED time
+                 
+                 Provider: Dr. Sarah Anderson, MD (NPI: 9876543210)
+                 Diagnosis: J18.9 (Pneumonia)
+
+DIAGNOSTIC IMAGING SERVICES:
+
+002   10/15/24   Chest X-Ray, 2 Views              71046      1     $285.00
+                 PA (Posteroanterior) View
+                 Lateral View
+                 Interpretation and Report Included
+                 
+                 Radiologist: Dr. Jennifer Liu, MD (NPI: 1122334455)
+                 Finding: Right lower lobe pneumonia
+                 Images stored in PACS system
+
+LABORATORY SERVICES:
+
+003   10/15/24   Complete Blood Count (CBC)         85025      1     $125.00
+                 with Automated Differential
+                 Includes: WBC, RBC, Hemoglobin, Hematocrit,
+                 Platelets, MCV, MCH, MCHC, RDW
+                 Manual differential review performed
+                 
+                 Result: WBC 18,500 (Elevated - Infection)
+
+004   10/15/24   Blood Culture                     87040      2     $180.00
+                 Aerobic and Anaerobic
+                 2 Sets (4 bottles total)
+                 Includes: Collection, incubation,
+                 preliminary and final identification
+                 Automated continuous monitoring
+                 
+                 Status: Preliminary negative
+                 Final results pending (48-72 hours)
+
+PHARMACY/MEDICATIONS:
+
+005   10/15/24   Ceftriaxone 1 gram IV             J0696      1     $145.00
+                 Broad-spectrum antibiotic
+                 Intravenous administration
+                 NDC: 0409-4728-01
+                 
+                 Administration time: 19:30
+                 Route: Intravenous over 30 minutes
+
+006   10/15/24   Azithromycin 500mg Oral           J0456      1      $25.00
+                 Macrolide antibiotic
+                 Oral administration
+                 NDC: 0069-3060-30
+                 
+                 Administration time: 19:45
+
+007   10/15/24   Acetaminophen 1000mg Oral         --         1       $8.00
+                 Antipyretic/Analgesic
+                 Over-the-counter medication
+                 NDC: 0527-1404-01
+                 
+                 Administration time: 20:00
+
+INFUSION SERVICES:
+
+008   10/15/24   IV Infusion Therapy               96365      1     $132.00
+                 Therapeutic/Prophylactic
+                 Initial hour
+                 Includes setup, monitoring,
+                 documentation, and supplies
+                 
+                 Medications administered: Ceftriaxone
+                 Nurse: Sarah Kim, RN
+
+MEDICAL SUPPLIES:
+
+009   10/15/24   IV Catheter Insertion Kit         A4657      1      $45.00
+                 18-gauge IV catheter
+                 Includes: catheter, extension tubing,
+                 alcohol prep, tegaderm dressing,
+                 tourniquet, gauze
+                 
+                 Insertion site: Left antecubital vein
+
+010   10/15/24   IV Supplies - General             A4217      1      $40.00
+                 Sterile gloves, syringes, needles,
+                 flushes (saline), adapters, caps
+
+011   10/15/24   Normal Saline 1000mL IV           J7030      1      $55.00
+                 0.9% Sodium Chloride Solution
+                 Intravenous hydration
+                 1 liter bag
+                 
+                 Infusion rate: 1000mL over 1 hour
+
+012   10/15/24   Oxygen Therapy                    E0424      5      $60.00
+                 Supplemental oxygen
+                 Via nasal cannula
+                 2 liters per minute
+                 
+                 Duration: 5 hours (19:00 - 23:30)
+                 Rationale: Hypoxemia (SpO2 89% on RA)
+
+--------------------------------------------------------------------------------
+
+                                           TOTAL CHARGES:    $1,850.00
+
+==============================================================================
+PAYMENT AND ADJUSTMENT SUMMARY:
+==============================================================================
+
+Total Charges:                                               $1,850.00
+
+PATIENT PAYMENTS MADE:
+Date: 10/15/24 - Emergency Room Copay (Per HMO Policy)      ($250.00)
+Payment Method: Credit Card (Visa ending in 4432)
+Authorization Code: 456789
+Processed By: Registration Staff
+
+Subtotal After Patient Payment:                             $1,600.00
+
+INSURANCE PROCESSING:
+Amount Billed to Primary Insurance (HealthGuard HMO):       $1,600.00
+Claim Number: CLM-HMO-001
+Claim Submitted: October 16, 2024
+Claim Status: Pending Insurance Processing
+
+ESTIMATED INSURANCE RESPONSIBILITY:
+(Based on Policy HMO-2024-78945 Benefits)
+
+HMO Negotiated Rate Adjustment: -$0.00 (In-network facility)
+Amount Subject to Deductible: $1,500.00 (Annual deductible not yet met)
+Amount Subject to Coinsurance: $100.00
+Insurance Expected Payment (90% of $100): $90.00
+
+ESTIMATED PATIENT RESPONSIBILITY AFTER INSURANCE:
+ER Copay (Already Paid): $250.00
+Applied to Annual Deductible: $1,500.00
+Coinsurance (10% of $100): $10.00
+Total Estimated Patient Responsibility: $1,760.00
+Less: Payment Already Made: ($250.00)
+Estimated Additional Amount Due: $1,510.00
+
+NOTE: These are estimates based on policy benefits. Actual amounts may vary based on insurance adjudication, deductible status, and out-of-pocket maximum. A final statement will be mailed after insurance processes the claim.
+
+==============================================================================
+BILLING NOTES:
+==============================================================================
+
+• This is an IN-NETWORK facility for HealthGuard HMO
+• Emergency room $250 copay was collected at time of service
+• All services medically necessary for treatment of pneumonia
+• Claim submitted to insurance electronically on October 16, 2024
+• You will receive Explanation of Benefits (EOB) from insurance company
+• After insurance processes claim, you will receive final statement
+• Estimated processing time: 30-45 days
+• This is NOT a bill - this is an itemized statement of charges
+
+INSURANCE AUTHORIZATION:
+• No pre-authorization required for emergency services per HMO policy
+• Emergency services are covered at in-network benefits regardless of facility status
+• All services provided meet medical necessity criteria
+
+==============================================================================
+PAYMENT OPTIONS:
+==============================================================================
+
+PAYMENT METHODS ACCEPTED:
+• Online: www.citymedicalcenter.com/billing (Account#: CMC-778945-ED-101524)
+• Phone: Call (217) 555-4570 (Monday-Friday, 8 AM - 5 PM)
+• Mail: Send check to address at top of statement
+• In Person: Billing Office, Main Lobby, Monday-Friday 8 AM - 4:30 PM
+
+ACCEPTED: Cash, Check, Money Order, Visa, MasterCard, Discover, American Express
+
+PAYMENT PLANS AVAILABLE:
+If you need assistance with payment, we offer interest-free payment plans.
+Call our Financial Counseling Department at (217) 555-4571.
+
+FINANCIAL ASSISTANCE:
+City Medical Center has a Financial Assistance Policy for qualifying patients.
+Applications available online or call (217) 555-4572.
+
+==============================================================================
+INSURANCE CLAIM FILING INFORMATION:
+==============================================================================
+
+CLAIM SUBMITTED TO:
+HealthGuard HMO Claims Department
+Electronic Payer ID: 12345
+Claim Submission Method: Electronic (EDI 837)
+
+CLAIM DETAILS:
+Claim Number: CLM-HMO-001
+Date Submitted: October 16, 2024
+Clearinghouse: Change Healthcare
+Status: Accepted by Clearinghouse
+Expected Processing Time: 30 days
+
+DIAGNOSIS CODES SUBMITTED:
+J18.9 - Pneumonia, unspecified organism (PRIMARY)
+R05 - Cough
+R50.9 - Fever, unspecified
+R06.02 - Shortness of breath
+R07.1 - Chest pain on breathing
+
+PROCEDURE CODES SUBMITTED:
+99285 - Emergency department visit (Level 5)
+71046 - Chest X-ray, 2 views
+85025 - Complete blood count with differential
+87040 - Blood culture
+96365 - IV infusion therapy
+(Plus associated supply codes)
+
+==============================================================================
+QUESTIONS ABOUT YOUR BILL?
+==============================================================================
+
+BILLING DEPARTMENT:
+Phone: (217) 555-4570
+Hours: Monday-Friday, 8:00 AM - 5:00 PM
+Email: billing@citymedicalcenter.com
+
+INSURANCE QUESTIONS:
+Phone: (217) 555-4571
+Hours: Monday-Friday, 8:00 AM - 5:00 PM
+
+PATIENT ACCOUNTS INQUIRIES:
+Phone: (217) 555-4570
+Fax: (217) 555-4573
+
+SEND CORRESPONDENCE TO:
+City Medical Center
+Attention: Patient Accounts
+P.O. Box 5678
+Springfield, IL 62702
+
+==============================================================================
+IMPORTANT REMINDERS:
+==============================================================================
+
+1. KEEP THIS STATEMENT: This itemized bill may be needed for:
+   - Insurance claims submission (if not filed by hospital)
+   - FSA/HSA reimbursement claims
+   - Tax deductions (medical expenses)
+   - Personal health records
+
+2. EXPLANATION OF BENEFITS (EOB):
+   You will receive an EOB from HealthGuard HMO showing:
+   - Amount billed to insurance
+   - Amount paid by insurance
+   - Your financial responsibility
+   - Deductible and out-of-pocket tracking
+
+3. FINAL BILL:
+   After insurance processes claim, we will send you a final bill showing:
+   - Total charges
+   - Insurance payment
+   - Adjustments
+   - Your balance due
+
+4. PAYMENT DEADLINE:
+   Payment is due within 30 days of final statement date
+
+5. MEDICAL RECORDS:
+   To request copies of medical records from this visit:
+   Phone: (217) 555-4580
+   Fax: (217) 555-4581
+   Email: medicalrecords@citymedicalcenter.com
+
+==============================================================================
+THANK YOU FOR CHOOSING CITY MEDICAL CENTER
+==============================================================================
+
+We appreciate the opportunity to care for you. Our mission is to provide
+high-quality, compassionate healthcare to our community.
+
+If you have any questions about the care you received or this statement,
+please do not hesitate to contact us.
+
+For medical questions about your care, please contact:
+Dr. James Wilson (Primary Care Physician)
+Springfield Family Medicine
+Phone: (217) 555-0199
+
+==============================================================================
+
+STATEMENT PREPARED BY: City Medical Center Billing Department
+STATEMENT DATE: October 16, 2024
+PLEASE RETAIN THIS STATEMENT FOR YOUR RECORDS
+
+END OF STATEMENT

@@ -1,0 +1,316 @@
+OPERATIVE REPORT
+
+Liberty Orthopedic Center
+2200 Medical Plaza, Austin, TX 78701
+Phone: (512) 555-7800 | Fax: (512) 555-7801
+NPI: 1234567890
+
+==============================================================================
+PATIENT INFORMATION:
+==============================================================================
+
+Patient Name: Sarah Martinez
+Date of Birth: August 23, 1985
+Age: 40 years
+Gender: Female
+Medical Record Number: LOC-334556
+Account Number: LOC-2024-09-0892
+
+Address: 1456 Maple Drive, Austin, TX 78701
+Phone: (512) 555-0234
+Email: smartinez@email.com
+
+INSURANCE INFORMATION:
+Insurance: Liberty Choice PPO
+Policy Number: PPO-2024-45621
+Member ID: PPO45621-001
+Group Number: GRP-002
+Authorization Number: PA-2024-09876
+
+==============================================================================
+PROCEDURE INFORMATION:
+==============================================================================
+
+Date of Surgery: September 8, 2024
+Admission Date: September 8, 2024, 06:00
+Pre-Op Time: 06:45
+In OR Time: 07:15
+Incision Time: 07:45
+Closure Time: 09:30
+Out of OR Time: 09:45
+Post-Anesthesia Recovery: 09:45 - 11:30
+
+Surgery Type: Inpatient Surgical Procedure
+Procedure Performed: Open Reduction and Internal Fixation (ORIF) of Right Patellar Fracture
+
+CPT CODE: 27524 (Open treatment of patellar fracture, with internal fixation)
+
+SURGEON: Dr. James Mitchell, MD
+License: TX-MD-87654
+NPI: 1987654321
+Specialty: Orthopedic Surgery, Fellowship-Trained in Trauma
+
+ASSISTANT SURGEON: Dr. Rebecca Thompson, MD
+License: TX-MD-99887
+NPI: 1876543210
+Specialty: Orthopedic Surgery
+
+ANESTHESIOLOGIST: Dr. Robert Chen, MD
+License: TX-MD-44556
+NPI: 1765432109
+Specialty: Anesthesiology
+
+ANESTHESIA: General Endotracheal Anesthesia
+ASA Classification: II (Patient with mild systemic disease)
+
+SCRUB NURSE: Jennifer Adams, RN, CNOR
+License: TX-RN-77665
+Circulating Nurse: Michael Santos, RN
+License: TX-RN-88776
+
+SURGICAL TECHNICIAN: David Lee, CST
+License: TX-CST-55443
+
+==============================================================================
+PRE-OPERATIVE DIAGNOSIS:
+==============================================================================
+
+Displaced comminuted fracture of right patella with intra-articular involvement
+ICD-10 Code: S82.001A (Fracture of right patella, initial encounter for closed fracture)
+
+==============================================================================
+POST-OPERATIVE DIAGNOSIS:
+==============================================================================
+
+Displaced comminuted fracture of right patella with intra-articular involvement
+(Same as pre-operative diagnosis - confirmed intra-operatively)
+ICD-10 Code: S82.001A
+
+==============================================================================
+INDICATION FOR SURGERY:
+==============================================================================
+
+Patient is a 40-year-old female who sustained a displaced comminuted fracture of the right patella on September 5, 2024, after falling from her bicycle during recreational riding. Patient presented to the emergency department on the day of injury.
+
+Initial X-rays demonstrated a significantly displaced patellar fracture with multiple fracture fragments and intra-articular extension. The superior and inferior poles of the patella were separated by approximately 8mm, indicating disruption of the knee extensor mechanism.
+
+Given the degree of displacement (>3mm), comminution, and intra-articular involvement, non-operative management was deemed inappropriate. Operative fixation was indicated to restore articular congruity, repair the extensor mechanism, and prevent long-term complications including chronic pain, arthritis, and loss of knee function.
+
+The risks, benefits, and alternatives of surgery were discussed extensively with the patient, including risks of infection, bleeding, nerve injury, hardware failure, malunion/nonunion, stiffness, chronic pain, need for future hardware removal, and post-traumatic arthritis. Patient understood and provided informed consent for the procedure.
+
+Patient was medically cleared by her primary care physician, Dr. James Wilson, and anesthesia evaluation. Pre-operative authorization (PA-2024-09876) was obtained from Liberty Choice PPO.
+
+==============================================================================
+PROCEDURE DESCRIPTION:
+==============================================================================
+
+The patient was brought to the operating room and placed supine on the operating table. General endotracheal anesthesia was induced by Dr. Chen without complication. A Foley catheter was inserted under sterile technique. Sequential compression devices were applied to bilateral lower extremities for DVT prophylaxis. Cefazolin 2 grams IV was administered as surgical antibiotic prophylaxis 30 minutes prior to incision.
+
+The right lower extremity was prepped and draped in the standard sterile orthopedic fashion. A pneumatic tourniquet was placed on the proximal right thigh but was not inflated initially to allow assessment of bleeding and perfusion. The entire right lower extremity was examined under anesthesia, confirming palpable fracture gap and loss of extensor mechanism function.
+
+SURGICAL APPROACH:
+A midline longitudinal incision was made over the anterior aspect of the right knee, centered over the patella, measuring approximately 10 cm in length. The incision was carried down through skin and subcutaneous tissue using electrocautery for hemostasis.
+
+Sharp dissection was performed to identify the fracture site. A large fracture hematoma was evacuated and sent for culture (routine protocol). The fracture fragments were identified, including superior pole, inferior pole, and several small comminuted fragments.
+
+FRACTURE REDUCTION:
+The fracture fragments were carefully cleaned of any interposed soft tissue and blood clot. The articular surface was inspected through the fracture site. Significant comminution of the central patella was noted with 4 main fragments.
+
+Using pointed reduction clamps, the fracture fragments were anatomically reduced. Care was taken to restore the articular surface and maintain patellar height. Multiple fluoroscopic images in AP and lateral views confirmed adequate reduction with <2mm articular step-off.
+
+INTERNAL FIXATION:
+A modified tension band wiring technique was employed for fixation:
+
+1. Two 2.0mm K-wires were drilled parallel to each other from the inferior pole through the superior pole of the patella, achieving bicortical purchase. K-wires were positioned to engage the superior pole cortex. Final positioning confirmed with fluoroscopy.
+
+2. An 18-gauge stainless steel cerclage wire was passed in a figure-of-eight pattern:
+   - Wire passed anterior to the patella
+   - Wire looped around the proximal and distal K-wires
+   - Wire passed through the quadriceps tendon proximally
+   - Wire passed through the patellar ligament distally
+   - Creating a tension band construct
+
+3. The cerclage wire was tightened using wire twisters to achieve compression across the fracture site. Multiple turns were made to secure the construct.
+
+4. K-wire ends were bent 180 degrees and cut short, then buried beneath the wire to prevent migration.
+
+5. Final fluoroscopic images in multiple planes confirmed:
+   - Anatomic reduction maintained
+   - No intra-articular hardware penetration
+   - Adequate K-wire purchase in proximal and distal fragments
+   - Appropriate tension band configuration
+   - Restoration of patellar height (Insall-Salvati ratio: 1.1, normal)
+
+Intra-operative range of motion testing:
+- The knee was flexed from 0 to 90 degrees
+- No loss of fixation or gapping at fracture site
+- Extensor mechanism demonstrated intact continuity
+- Good stability of construct
+
+CLOSURE:
+The tourniquet was not inflated at any point during the procedure as hemostasis was adequate with electrocautery. The wound was thoroughly irrigated with 3 liters of normal saline solution. Retinacular tissues were re-approximated using 2-0 Vicryl suture in interrupted fashion.
+
+The subcutaneous layer was closed with 2-0 Vicryl suture in running fashion. Skin was closed with 3-0 nylon vertical mattress sutures for excellent skin edge approximation. Sterile dressing consisting of Adaptic, 4x4 gauze, ABD pad, and Webril was applied. A knee immobilizer brace was applied with knee in full extension.
+
+SPECIMENS:
+Fracture hematoma sent for aerobic and anaerobic culture (routine protocol)
+
+IMPLANTS USED:
+- Two (2) 2.0mm x 150mm Stainless Steel K-wires
+- One (1) 18-gauge Stainless Steel Cerclage Wire, 60cm length
+
+Manufacturer: Synthes/DePuy
+Lot Numbers: K-wire lot# SS20240815-A, K-wire lot# SS20240815-B, Wire lot# CW18-20240820
+Implant documentation filed per hospital protocol
+Stickers placed in medical record
+
+ESTIMATED BLOOD LOSS: Less than 50 mL
+
+FLUIDS ADMINISTERED: 1200 mL Lactated Ringer's solution
+
+URINE OUTPUT: 200 mL clear yellow urine
+
+DRAINS: None placed
+
+COMPLICATIONS: None
+
+==============================================================================
+FINDINGS:
+==============================================================================
+
+1. Displaced comminuted fracture of right patella with 4 main fragments
+2. Fracture displacement: approximately 8mm between superior and inferior poles
+3. Intra-articular involvement with disruption of articular cartilage
+4. Disruption of medial and lateral retinaculum
+5. Intact quadriceps tendon attachment to superior pole
+6. Intact patellar ligament attachment to inferior pole
+7. No associated ligamentous injuries (ACL/PCL/MCL/LCL intact by exam)
+8. No meniscal injury appreciated
+9. Joint surfaces otherwise appeared healthy without arthritis
+
+==============================================================================
+POST-OPERATIVE PLAN:
+==============================================================================
+
+DISPOSITION:
+Patient transferred to Post-Anesthesia Care Unit (PACU) in stable condition. Vital signs stable. Neurovascular status intact with palpable dorsalis pedis and posterior tibial pulses, normal sensation, and ability to wiggle toes.
+
+PAIN MANAGEMENT:
+- Multimodal pain regimen initiated
+- Patient-controlled analgesia (PCA) with morphine for first 24 hours
+- Transition to oral oxycodone 5-10mg q4-6h PRN
+- Acetaminophen 1000mg PO q6h scheduled
+- Ice therapy to knee
+- Elevation of extremity
+
+ANTIBIOTICS:
+- Cefazolin 1g IV q8h x 24 hours post-op (surgical prophylaxis)
+
+DVT PROPHYLAXIS:
+- Enoxaparin 40mg subcutaneous daily
+- Sequential compression devices while in bed
+- Early mobilization with physical therapy
+
+WOUND CARE:
+- Keep surgical dressing clean and dry
+- Dressing change on post-op day #2
+- Suture removal in 14 days (outpatient)
+
+ACTIVITY:
+- Knee immobilizer to be worn at all times except during physical therapy
+- Weight-bearing: Toe-touch weight-bearing (TTWB) on right lower extremity
+- Crutches for ambulation
+- Physical therapy to begin on post-op day #1
+- No active knee extension exercises for 6 weeks (to protect extensor mechanism)
+- Passive range of motion exercises only initially
+
+DIET:
+- NPO in PACU until fully awake
+- Advance to clear liquids, then regular diet as tolerated
+
+ESTIMATED LENGTH OF STAY:
+2 days (discharge anticipated September 10, 2024)
+
+FOLLOW-UP:
+- Post-operative visit in 10-14 days for wound check and suture removal
+- X-rays at 2 weeks, 6 weeks, 12 weeks to assess healing
+- Progressive physical therapy protocol over 3-6 months
+- Hardware removal may be considered at 12-18 months if symptomatic
+
+PRESCRIPTIONS TO BE GIVEN AT DISCHARGE:
+- Oxycodone 5mg tablets, #40, 1-2 tabs PO q4-6h PRN pain
+- Acetaminophen 500mg tablets, #60, 2 tabs PO q6h PRN pain
+- Docusate sodium 100mg capsules, #30, 1 cap PO BID PRN constipation
+- Enoxaparin 40mg/0.4mL pre-filled syringes, #14, inject subcutaneously daily x 14 days
+
+==============================================================================
+CONDITION AT END OF PROCEDURE:
+==============================================================================
+
+Patient tolerated the procedure well without complications. Transferred to PACU in stable condition. All counts correct (sponge, needle, instrument counts verified x2).
+
+Total Operative Time: 1 hour 45 minutes (Incision to closure)
+Total Anesthesia Time: 2 hours 30 minutes
+Total OR Time: 2 hours 30 minutes
+
+Neurovascular Status: INTACT
+- Motor: Able to wiggle toes, flex/extend ankle
+- Sensory: Intact sensation to light touch in all distributions of right lower extremity
+- Vascular: Dorsalis pedis and posterior tibial pulses 2+ and palpable
+- Capillary refill: <2 seconds
+- Skin: Warm and pink
+
+POST-OPERATIVE DIAGNOSIS (FINAL):
+Displaced comminuted fracture of right patella (S82.001A) - Status post open reduction internal fixation
+
+==============================================================================
+SURGEON'S STATEMENT:
+==============================================================================
+
+This operative procedure was performed for the medically necessary treatment of a displaced comminuted patellar fracture that was not amenable to non-operative treatment. The procedure was performed according to standard orthopedic surgical principles and techniques. Anatomic reduction was achieved and stable fixation was obtained using modified tension band wiring technique, which is the gold standard for this fracture pattern.
+
+The patient tolerated the procedure well without complications. Prognosis for fracture healing and return of knee function is good with appropriate rehabilitation.
+
+Patient will require close follow-up and physical therapy for optimal outcome.
+
+==============================================================================
+SIGNATURES:
+==============================================================================
+
+Dictated by: Dr. James Mitchell, MD
+Date Dictated: September 8, 2024
+Time Dictated: 14:30
+
+Transcribed by: Medical Transcription Services
+Date Transcribed: September 8, 2024
+
+Reviewed and Electronically Signed by:
+Dr. James Mitchell, MD
+Orthopedic Surgery
+License: TX-MD-87654
+NPI: 1987654321
+Date/Time: September 8, 2024 at 15:15
+
+Co-Signature:
+Dr. Rebecca Thompson, MD (Assistant Surgeon)
+License: TX-MD-99887
+Date/Time: September 8, 2024 at 15:20
+
+Anesthesia Sign-Off:
+Dr. Robert Chen, MD
+Anesthesiology
+License: TX-MD-44556
+Date/Time: September 8, 2024 at 10:15
+
+==============================================================================
+
+DISTRIBUTION:
+- Patient Chart (Electronic Medical Record)
+- Liberty Choice PPO (for claim PA-2024-09876)
+- Dr. James Wilson, PCP (notification sent via EMR)
+
+Medical Record Number: LOC-334556
+Report ID: OR-2024-09-0892
+Page 1 of 1
+
+END OF OPERATIVE REPORT

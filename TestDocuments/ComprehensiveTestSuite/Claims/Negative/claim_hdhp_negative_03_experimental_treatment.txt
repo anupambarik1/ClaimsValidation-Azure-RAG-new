@@ -1,0 +1,85 @@
+CLAIM SUBMISSION FORM - NEGATIVE TEST CASE #3
+Claim Type: Health Insurance - HDHP
+Policy Number: HDHP-2024-99132
+Claim Number: CLM-HDHP-NEG-003
+
+CLAIMANT INFORMATION:
+Name: Robert Chen
+Date of Birth: 03/15/1990
+Policy Holder: Robert Chen
+Member ID: HDHP99132-001
+
+CLAIM DETAILS:
+Date of Service: October 5, 2024
+Provider: Alternative Healing Center
+Provider NPI: Not provided
+Facility: Holistic Wellness Institute
+Diagnosis Code: M54.5 (Low back pain)
+Treatment: Experimental stem cell injections, platelet-rich plasma therapy, acupuncture
+
+DESCRIPTION OF SERVICE:
+Patient received experimental stem cell therapy and PRP (platelet-rich plasma) injections for chronic low back pain. Treatment advertised as "cutting-edge regenerative medicine." Also received series of acupuncture treatments (25 sessions).
+
+CLAIM AMOUNT: $35,800.00
+
+ITEMIZED CHARGES:
+- Stem cell therapy (3 injections): $18,000.00
+- PRP therapy (5 injections): $8,500.00
+- Acupuncture (25 sessions @ $180): $4,500.00
+- Consultation fees: $2,800.00
+- Supplements and vitamins: $2,000.00
+TOTAL: $35,800.00
+
+REASON FOR DENIAL:
+1. EXPERIMENTAL TREATMENT: Stem cell therapy for low back pain is considered experimental and investigational. Not FDA-approved for this indication. Policy excludes experimental treatments.
+
+2. ACUPUNCTURE LIMIT EXCEEDED: Policy covers maximum 15 acupuncture visits per year. Claim includes 25 visits (10 sessions over limit).
+
+3. OVER-THE-COUNTER EXCLUSION: Supplements and vitamins are not covered under policy.
+
+4. NO PRE-AUTHORIZATION: Procedures over $10,000 require pre-authorization. None obtained. Pre-auth would have been denied due to experimental nature.
+
+5. LACK OF MEDICAL NECESSITY: No documentation showing failed conservative treatment:
+   - No physical therapy records
+   - No pain management attempts
+   - No imaging studies
+   - No trial of medications
+   - Direct to experimental treatment without standard care
+
+6. PROVIDER CREDENTIALING ISSUES: Facility not credentialed or licensed as medical facility. Provider NPI not provided (red flag).
+
+POLICY VIOLATIONS:
+✗ Experimental/investigational treatment (stem cell for back pain)
+✗ No pre-authorization for high-cost procedure
+✗ Exceeded acupuncture visit limit (25 vs 15 allowed)
+✗ Non-covered items (supplements, vitamins)
+✗ No medical necessity established
+✗ No failed conservative treatment documented
+✗ Provider credentialing questionable
+
+CLAIM STATUS: Should be DENIED
+Denial Codes:
+- D1: Experimental/investigational treatment
+- D2: No pre-authorization obtained
+- D3: Exceeded benefit limit (acupuncture)
+- D4: Non-covered services (supplements)
+- D5: Medical necessity not established
+- D6: Provider credentialing issues
+
+APPROVED AMOUNT: $2,700.00 (15 acupuncture sessions @ $180)
+DENIED AMOUNT: $33,100.00
+
+MEMBER FINANCIAL RESPONSIBILITY:
+- Approved acupuncture (15 sessions): $2,700.00 (subject to deductible and 20% coinsurance)
+- All other charges: $33,100.00 (100% member responsibility - non-covered)
+
+If member has met $3,000 deductible:
+Insurance pays 80% of $2,700 = $2,160.00
+Member pays 20% coinsurance: $540.00
+Member total: $540.00 + $33,100.00 = $33,640.00
+
+APPEAL RIGHTS:
+Member may appeal within 180 days. However, experimental treatment exclusion is absolute. No coverage available for stem cell therapy for this indication.
+
+ADDITIONAL NOTES:
+Recommend member pursue evidence-based treatments: physical therapy, pain management, conventional orthopedic care before considering experimental therapies.

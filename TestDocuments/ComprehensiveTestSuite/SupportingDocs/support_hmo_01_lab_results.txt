@@ -1,0 +1,60 @@
+LABORATORY REPORT
+City Medical Center - Clinical Laboratory
+
+Patient: Michael Thompson
+DOB: 05/12/1978
+MRN: CMC-778945
+Collection Date: October 15, 2024
+Collection Time: 19:00
+Report Date: October 15, 2024 20:15
+
+COMPLETE BLOOD COUNT (CBC) WITH DIFFERENTIAL
+
+TEST                    RESULT          REFERENCE RANGE         FLAG
+------------------------------------------------------------------------
+WBC                     18.5           4.5-11.0 x10³/μL        HIGH
+RBC                     4.85           4.50-5.90 x10⁶/μL       Normal
+Hemoglobin              14.2           13.5-17.5 g/dL          Normal
+Hematocrit              42.8           40.0-52.0 %             Normal
+MCV                     88             80-100 fL               Normal
+MCH                     29.3           27-33 pg                Normal
+MCHC                    33.2           32-36 g/dL              Normal
+Platelets               285            150-400 x10³/μL         Normal
+
+DIFFERENTIAL:
+Neutrophils             82%            40-70%                  HIGH
+Lymphocytes             12%            20-40%                  LOW
+Monocytes               5%             2-10%                   Normal
+Eosinophils             1%             1-4%                    Normal
+Basophils               0%             0-2%                    Normal
+
+Absolute Neutrophils    15,170         1,800-7,800/μL          HIGH
+Absolute Lymphocytes    2,220          1,000-4,800/μL          Normal
+Absolute Monocytes      925            200-1,000/μL            Normal
+
+INTERPRETATION:
+Elevated WBC with left shift (increased neutrophils) consistent with acute bacterial infection. Findings support clinical diagnosis of pneumonia.
+
+BLOOD CULTURE
+
+Specimen Type: Venous blood
+Collection: Two sets collected from separate venipunctures
+Collection Time: 19:05 and 19:10
+Bottle 1 (Aerobic): Received in laboratory
+Bottle 2 (Aerobic): Received in laboratory
+Bottle 3 (Anaerobic): Received in laboratory
+Bottle 4 (Anaerobic): Received in laboratory
+
+PRELIMINARY RESULT (24 hours): No growth to date
+FINAL RESULT: Pending (72 hours)
+
+Status: Cultures incubating at 35°C
+Gram stain: No organisms seen on direct examination
+
+Medical Technologist: Sarah Kim, MT(ASCP)
+Pathologist Review: Dr. Robert Martinez, MD
+Board Certified in Clinical Pathology
+License: MD-CA-99234
+Electronically signed: October 15, 2024 20:15
+
+CRITICAL VALUES: WBC 18.5 called to ED (Dr. Anderson) at 20:20

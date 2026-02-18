@@ -1,0 +1,586 @@
+ANESTHESIA RECORD
+
+Liberty Orthopedic Center
+2200 Medical Plaza, Austin, TX 78701
+Department of Anesthesiology
+Phone: (512) 555-7800 | Fax: (512) 555-7801
+
+==============================================================================
+PATIENT INFORMATION:
+==============================================================================
+
+Patient Name: Sarah Martinez
+Date of Birth: August 23, 1985
+Age: 40 years
+Gender: Female
+Weight: 68 kg (150 lbs)
+Height: 165 cm (5'5")
+BMI: 25.0 (Normal)
+
+Medical Record Number: LOC-334556
+Account Number: LOC-2024-09-0892
+Date of Service: September 8, 2024
+
+Insurance: Liberty Choice PPO
+Policy Number: PPO-2024-45621
+Member ID: PPO45621-001
+Authorization: PA-2024-09876
+
+==============================================================================
+ANESTHESIA PROVIDER INFORMATION:
+==============================================================================
+
+Anesthesiologist: Dr. Robert Chen, MD, FASA
+License: TX-MD-44556
+NPI: 1765432109
+DEA: AC1234567
+Board Certification: American Board of Anesthesiology (2015)
+
+Certified Registered Nurse Anesthetist (CRNA): Patricia O'Brien, CRNA, MSN
+License: TX-CRNA-33445
+NPI: 1654321098
+Anesthesia Group: Austin Anesthesia Associates
+
+Anesthesia Resident: None
+Anesthesia Student: None
+
+==============================================================================
+PROCEDURE INFORMATION:
+==============================================================================
+
+Scheduled Procedure: Open Reduction Internal Fixation (ORIF) Right Patellar Fracture
+CPT Code: 27524
+Anesthesia CPT Code: 01382 (Anesthesia for diagnostic arthroscopic procedures of knee joint; complex)
+Base Units: 5
+Time Units: 5 (150 minutes = 2.5 hours; 30-minute increments)
+Total Anesthesia Units: 10
+
+Surgeon: Dr. James Mitchell, MD
+Surgical Service: Orthopedic Surgery
+Procedure Classification: Elective Inpatient Surgical Procedure
+Surgical Location: Operating Room #3
+
+PRE-OPERATIVE DIAGNOSIS: Displaced comminuted fracture right patella (S82.001A)
+POST-OPERATIVE DIAGNOSIS: Same
+
+==============================================================================
+ANESTHESIA TIMELINE:
+==============================================================================
+
+Pre-Operative Area Arrival: 06:00
+Anesthesia Provider Evaluation: 06:15
+Entered Operating Room: 07:15
+Monitoring Initiated: 07:18
+Anesthesia Start Time: 07:25
+Induction Complete: 07:38
+Surgical Incision Time: 07:45
+Surgery End Time (Closure): 09:30
+Anesthesia End Time: 09:42
+Patient Left OR: 09:45
+PACU Arrival: 09:48
+
+TOTAL ANESTHESIA TIME: 2 hours 17 minutes (137 minutes)
+TOTAL SURGICAL TIME: 1 hour 45 minutes (105 minutes)
+
+==============================================================================
+PRE-ANESTHESIA EVALUATION:
+==============================================================================
+
+Date of Evaluation: September 8, 2024, 06:15
+Location: Pre-Operative Holding Area
+Evaluated By: Dr. Robert Chen, MD
+
+HISTORY OF PRESENT ILLNESS:
+40-year-old female presenting for open reduction internal fixation of displaced right patellar fracture sustained September 5, 2024, in bicycle fall. Patient reports pain controlled with oral analgesics. No neurovascular compromise.
+
+PAST MEDICAL HISTORY:
+- Hypertension (well-controlled on lisinopril)
+- Hyperlipidemia (diet-controlled)
+- No diabetes
+- No cardiac disease
+- No pulmonary disease
+- No renal disease
+- No hepatic disease
+
+PAST SURGICAL HISTORY:
+- Cesarean section (2012) - Spinal anesthesia, no complications
+- Appendectomy (age 16, 2001) - General anesthesia, no complications
+- No history of difficult airway
+- No history of malignant hyperthermia
+- No complications with prior anesthetics
+
+MEDICATIONS:
+- Lisinopril 10mg PO daily (last dose: yesterday, held today per pre-op instructions)
+- Ibuprofen 400mg PRN (last dose: 24 hours ago, discontinued per pre-op instructions)
+- Oxycodone 5mg q6h PRN (last dose: 4 hours ago)
+
+ALLERGIES:
+No Known Drug Allergies (NKDA)
+No Latex Allergy
+
+SOCIAL HISTORY:
+- Non-smoker
+- Alcohol: Occasional social drinking (1-2 drinks per month)
+- No illicit drug use
+- Occupation: Marketing Manager
+- Lives with spouse and two children
+
+FAMILY HISTORY:
+- Mother: Hypertension
+- Father: Type 2 Diabetes
+- No family history of anesthesia complications
+- No family history of malignant hyperthermia
+- No family history of pseudocholinesterase deficiency
+
+REVIEW OF SYSTEMS:
+Cardiovascular: Negative for chest pain, palpitations, edema
+Respiratory: Negative for dyspnea, wheezing, chronic cough
+Gastrointestinal: Negative for nausea, vomiting, reflux
+Neurological: Negative for seizures, stroke, headaches
+Endocrine: Negative for thyroid disease
+Renal: Negative for kidney disease
+
+FUNCTIONAL CAPACITY:
+Able to climb 2 flights of stairs without symptoms
+Exercise regularly (cycling, before injury)
+MET Score: >4 (Good functional capacity)
+
+AIRWAY EXAMINATION:
+Mouth Opening: >3 fingerbreadths (adequate)
+Mallampati Classification: Class II
+Thyromental Distance: >6 cm
+Neck Extension: Full range of motion
+Dentition: Natural teeth, good condition, no loose teeth
+Facial Hair: None
+
+PHYSICAL EXAMINATION:
+General: Alert, oriented, in no acute distress except for knee pain
+HEENT: Normocephalic, atraumatic, airway appears normal
+Neck: Supple, full range of motion, no masses
+Cardiovascular: Regular rate and rhythm, no murmurs
+Lungs: Clear to auscultation bilaterally, no wheezes or rales
+Abdomen: Soft, non-tender, non-distended
+Extremities: Right knee with fracture, immobilized; good pulses bilaterally
+Neurological: Alert and oriented x 3, normal motor and sensory exam
+
+VITAL SIGNS (Pre-Operative):
+Blood Pressure: 128/76 mmHg
+Heart Rate: 72 beats per minute
+Respiratory Rate: 14 breaths per minute
+Temperature: 36.8°C (98.2°F)
+Oxygen Saturation: 99% on room air
+
+LABORATORY VALUES (from September 7, 2024):
+Hemoglobin: 13.5 g/dL (normal)
+Hematocrit: 40.2% (normal)
+Platelets: 245,000/μL (normal)
+WBC: 8.2 K/μL (normal)
+Sodium: 139 mEq/L
+Potassium: 4.1 mEq/L
+Chloride: 102 mEq/L
+CO2: 25 mEq/L
+BUN: 14 mg/dL
+Creatinine: 0.9 mg/dL (eGFR >90)
+Glucose: 95 mg/dL
+INR: 1.0 (normal coagulation)
+PT: 11.2 seconds
+PTT: 28 seconds
+
+ECG (September 7, 2024): Normal sinus rhythm, no acute changes
+Chest X-Ray (September 7, 2024): Clear lungs, normal cardiac silhouette
+
+NPO STATUS:
+Last solid food: September 7, 2024, 20:00 (11 hours prior)
+Last clear liquids: September 8, 2024, 04:00 (3 hours prior)
+NPO Guidelines Met: Yes
+
+INFORMED CONSENT:
+Risks, benefits, and alternatives of anesthesia discussed with patient including:
+- Sore throat, dental injury, nausea/vomiting
+- Aspiration, pneumonia
+- Allergic reaction
+- Cardiovascular complications (MI, arrhythmia)
+- Neurological complications (stroke, nerve injury)
+- Malignant hyperthermia (rare)
+- Death (rare)
+- Need for blood transfusion (very unlikely)
+Patient understands and provides informed consent
+Consent form signed by patient
+
+ASA PHYSICAL STATUS CLASSIFICATION: ASA II
+(Patient with mild systemic disease - hypertension, well-controlled)
+
+ANESTHETIC PLAN:
+- Type: General Endotracheal Anesthesia (GETA)
+- Induction: Propofol, Fentanyl, Rocuronium
+- Maintenance: Sevoflurane, O2/Air mixture
+- Analgesia: Fentanyl, Ketorolac, Local anesthetic infiltration by surgeon
+- Antiemetics: Ondansetron
+- Airway: Endotracheal intubation with direct laryngoscopy
+- Monitors: Standard ASA monitors + arterial line (if needed)
+- IV Access: 18-gauge peripheral IV x 1 (already placed in pre-op)
+- DVT Prophylaxis: Sequential compression devices
+- Antibiotic Prophylaxis: Cefazolin 2g IV (to be given by anesthesia)
+
+SPECIAL CONSIDERATIONS:
+- Hold lisinopril morning of surgery (done)
+- DVT prophylaxis with sequential compression devices
+- Multimodal analgesia plan (opioid-sparing approach)
+- Post-op PCA for first 24 hours
+
+Patient Questions: All questions answered satisfactorily
+
+==============================================================================
+INTRA-OPERATIVE ANESTHESIA RECORD:
+==============================================================================
+
+MONITORS APPLIED (Standard ASA Monitors):
+✓ ECG (Continuous 5-lead)
+✓ Non-invasive blood pressure (NIBP)
+✓ Pulse oximetry (SpO2)
+✓ End-tidal CO2 (EtCO2)
+✓ Inspired oxygen concentration (FiO2)
+✓ Temperature (esophageal)
+✓ Neuromuscular blockade monitor (TOF - train of four)
+
+INTRAVENOUS ACCESS:
+#1: 18-gauge peripheral IV, left forearm (placed in pre-op)
+#2: 20-gauge peripheral IV, left hand (placed in OR at 07:20)
+
+PRE-OXYGENATION:
+100% oxygen via face mask x 3 minutes
+EtO2 > 90% achieved
+
+INDUCTION (07:25):
+- Midazolam 2mg IV (anxiolysis)
+- Fentanyl 100 mcg IV (analgesia)
+- Lidocaine 60 mg IV (airway reflex suppression)
+- Propofol 120 mg IV (induction agent, titrated to effect)
+- Patient lost consciousness smoothly
+
+AIRWAY MANAGEMENT:
+- Mask ventilation: Easy, good chest rise
+- Rocuronium 50mg IV (neuromuscular blockade for intubation)
+- Waited 90 seconds for full relaxation
+- Direct laryngoscopy performed using Macintosh #3 blade
+- Cormack-Lehane Grade: I (excellent view)
+- Endotracheal tube: 7.0mm cuffed ETT
+- Tube depth: 21 cm at teeth
+- Intubation: Atraumatic, first attempt successful
+- Bilateral breath sounds confirmed
+- EtCO2 waveform confirmed (capnography)
+- Tube secured with tape
+
+VENTILATION SETTINGS:
+Mode: Volume Control Ventilation
+Tidal Volume: 450 mL (6-8 mL/kg ideal body weight)
+Respiratory Rate: 12 breaths per minute
+PEEP: 5 cm H2O
+FiO2: 0.4 (40% oxygen)
+Inspiratory:Expiratory Ratio: 1:2
+Peak Inspiratory Pressure: 18-22 cm H2O
+
+MAINTENANCE ANESTHESIA:
+- Sevoflurane: 1.5-2.5% (titrated to maintain MAC 0.8-1.2)
+- Oxygen/Air mixture: FiO2 0.4 (40%)
+- Fentanyl 50 mcg IV boluses (given at 08:15, 08:45, 09:15) - Total: 250 mcg
+- Muscle relaxation: Maintained with rocuronium 10mg at 08:30
+
+ANTIBIOTICS (Surgical Prophylaxis):
+Cefazolin 2 grams IV at 07:15 (30 minutes before incision)
+Re-dosing not required (surgery < 4 hours)
+
+ANTIEMETICS:
+Ondansetron 4mg IV at 09:25 (end of surgery)
+
+ADDITIONAL MEDICATIONS:
+- Ketorolac 30mg IV at 09:20 (NSAID for multimodal analgesia)
+- Acetaminophen 1000mg IV at 09:22 (multimodal analgesia)
+- Dexamethasone 8mg IV at 07:30 (anti-inflammatory, antiemetic)
+
+LOCAL ANESTHETIC (Administered by Surgeon):
+0.25% Bupivacaine 20 mL injected at surgical site for local anesthesia (not administered by anesthesia provider)
+
+==============================================================================
+INTRA-OPERATIVE VITAL SIGNS FLOWSHEET:
+==============================================================================
+
+Time    | BP (mmHg) | HR (bpm) | SpO2(%) | EtCO2 | Temp(°C) | Notes
+--------|-----------|----------|---------|-------|----------|------------------
+07:25   | 130/78    | 74       | 100     | -     | 36.8     | Induction start
+07:30   | 118/72    | 68       | 100     | -     | 36.7     | Pre-intubation
+07:38   | 125/75    | 72       | 100     | 35    | 36.7     | Intubated
+07:45   | 122/70    | 70       | 99      | 36    | 36.6     | Incision
+08:00   | 118/68    | 68       | 99      | 35    | 36.5     | Stable
+08:15   | 128/74    | 74       | 99      | 36    | 36.4     | Fentanyl 50mcg
+08:30   | 120/70    | 70       | 99      | 35    | 36.3     | Rocuronium 10mg
+08:45   | 124/72    | 72       | 99      | 36    | 36.3     | Fentanyl 50mcg
+09:00   | 119/69    | 69       | 99      | 35    | 36.3     | Stable
+09:15   | 126/73    | 73       | 99      | 36    | 36.4     | Fentanyl 50mcg
+09:30   | 122/71    | 71       | 99      | 35    | 36.5     | Closure
+09:42   | 128/76    | 76       | 99      | 38    | 36.7     | Anesthesia end
+
+HEMODYNAMIC STABILITY: Excellent throughout procedure
+No vasopressor or inotrope support required
+No arrhythmias noted
+
+BLOOD LOSS: Estimated < 50 mL (minimal)
+NO blood products transfused
+
+==============================================================================
+FLUID MANAGEMENT:
+==============================================================================
+
+INTRAVENOUS FLUIDS ADMINISTERED:
+- Lactated Ringer's Solution: 1200 mL total
+  * 07:15-08:15: 600 mL (maintenance rate 10 mL/kg/hr)
+  * 08:15-09:45: 600 mL
+
+Total Crystalloid: 1200 mL
+Colloid: None
+Blood Products: None
+
+URINE OUTPUT:
+Foley catheter placed after induction
+Output during case: 200 mL clear yellow urine
+Adequate renal perfusion maintained
+
+==============================================================================
+EMERGENCE AND EXTUBATION:
+==============================================================================
+
+EMERGENCE PROCESS (09:30-09:42):
+- Sevoflurane discontinued at 09:30 (end of closure)
+- 100% oxygen administered
+- Reversal of neuromuscular blockade:
+  * Sugammadex 200mg IV at 09:35 (reversal agent for rocuronium)
+  * Train-of-Four (TOF) ratio: 95% (adequate reversal)
+- Patient spontaneous respirations resumed
+- Suctioning of oropharynx
+- Patient following commands (hand squeeze, eye opening)
+
+EXTUBATION (09:42):
+- Criteria met for extubation:
+  ✓ Following commands
+  ✓ Adequate spontaneous respirations
+  ✓ Tidal volume > 5 mL/kg
+  ✓ Respiratory rate 12-20
+  ✓ SpO2 > 95% on 40% oxygen
+  ✓ Neuromuscular function fully recovered
+  ✓ Protective airway reflexes present
+
+- ETT cuff deflated
+- ETT removed smoothly at 09:42
+- No coughing or laryngospasm
+- Patient placed on oxygen via face mask (6 L/min)
+- SpO2 maintained 99-100%
+
+POST-EXTUBATION ASSESSMENT:
+Mental Status: Awake, alert, oriented to person and place
+Airway: Patent, no stridor
+Breathing: Regular, unlabored, rate 14
+SpO2: 99% on oxygen 6 L/min via face mask
+Hemodynamics: Stable BP 128/76, HR 76
+Pain Level: 5/10 (moderate pain, expected post-op)
+Nausea: None reported
+
+==============================================================================
+TRANSFER TO PACU:
+==============================================================================
+
+Transfer Time: 09:45
+Transfer Mode: Bed
+Oxygen: 6 L/min via face mask
+Monitoring: Continuous pulse oximetry, BP cuff
+
+CONDITION AT TRANSFER:
+Awake, alert, following commands
+Airway patent, breathing spontaneously
+Hemodynamically stable
+Pain controlled (5/10)
+No nausea or vomiting
+
+REPORT GIVEN TO PACU RN: Jennifer Martinez, RN
+- Procedure performed
+- Anesthetic agents used
+- Total fentanyl dose: 250 mcg
+- Antiemetics given: Ondansetron 4mg, Dexamethasone 8mg
+- Analgesics given: Ketorolac 30mg IV, Acetaminophen 1000mg IV
+- Fluids: 1200 mL LR
+- UOP: 200 mL
+- EBL: <50 mL
+- Complications: None
+- Plan: PCA morphine for pain management
+
+==============================================================================
+ANESTHESIA COMPLICATIONS:
+==============================================================================
+
+INTRA-OPERATIVE COMPLICATIONS: None
+
+No hypotension requiring vasopressors
+No hypertension
+No tachycardia or bradycardia
+No arrhythmias
+No hypoxemia
+No bronchospasm
+No laryngospasm
+No difficult airway
+No dental injury
+No aspiration
+No allergic reactions
+No awareness/recall reported
+No malignant hyperthermia
+No blood transfusion required
+
+==============================================================================
+POST-ANESTHESIA CARE UNIT (PACU) COURSE:
+==============================================================================
+
+PACU ARRIVAL: 09:48
+PACU Nurse: Jennifer Martinez, RN
+
+INITIAL PACU VITAL SIGNS (09:50):
+BP: 130/78 mmHg
+HR: 76 bpm
+RR: 14 breaths/min
+SpO2: 99% on oxygen 4 L/min via nasal cannula
+Temperature: 36.7°C
+Pain: 6/10
+
+PAIN MANAGEMENT IN PACU:
+- PCA Morphine initiated at 10:00
+  * Demand dose: 1 mg
+  * Lockout interval: 10 minutes
+  * No continuous infusion
+  * 4-hour maximum: 20 mg
+- Ice pack applied to right knee
+- Elevation of right lower extremity
+
+PACU COURSE:
+10:00 - PCA started, patient using appropriately
+10:15 - Pain 4/10, vital signs stable
+10:30 - Pain 3/10, tolerating ice to knee
+10:45 - Drinking clear liquids without nausea
+11:00 - Pain 3/10, fully awake and alert
+11:15 - Meeting discharge criteria
+
+PACU DISCHARGE TIME: 11:30 (PACU stay: 102 minutes)
+
+ALDRETE SCORE AT DISCHARGE FROM PACU: 10/10
+- Activity: 2 (moves all extremities on command)
+- Respiration: 2 (able to breathe deeply and cough)
+- Circulation: 2 (BP ± 20% of pre-op)
+- Consciousness: 2 (fully awake)
+- SpO2: 2 (SpO2 > 92% on room air)
+
+DISPOSITION: Transferred to inpatient orthopedic floor (Room 412)
+CONDITION: Stable, pain controlled
+
+==============================================================================
+POST-OPERATIVE ORDERS:
+==============================================================================
+
+PAIN MANAGEMENT:
+- PCA Morphine: Continue (settings as above)
+- Transition to oral pain medications on post-op day #1
+- Acetaminophen 1000mg PO q6h scheduled
+- Ibuprofen 400mg PO q8h (if no contraindications)
+
+NAUSEA/VOMITING:
+- Ondansetron 4mg IV/PO q6h PRN nausea
+
+MONITORING:
+- Vital signs q4h
+- Neurovascular checks q2h x 24 hours
+- Incentive spirometry q2h while awake
+
+ACTIVITY:
+- Bed rest with bathroom privileges
+- Physical therapy consultation
+
+DIET:
+- Regular diet as tolerated
+
+DVT PROPHYLAXIS:
+- Enoxaparin 40mg subcutaneous daily
+- Sequential compression devices
+- Early mobilization
+
+FOLLOW-UP:
+Anesthesia follow-up on post-op day #1
+Call anesthesia if any concerns: (512) 555-7802
+
+==============================================================================
+BILLING INFORMATION:
+==============================================================================
+
+ANESTHESIA CPT CODE: 01382
+Anesthesia for diagnostic arthroscopic procedures of knee joint; complex
+
+BASE UNITS: 5
+TIME UNITS: 5 (137 minutes total anesthesia time, rounded to 150 min = 5 units @ 30-min increments)
+TOTAL ANESTHESIA UNITS: 10
+
+MODIFIER: None (no unusual circumstances)
+
+PHYSICAL STATUS MODIFIER: P2 (ASA II - mild systemic disease)
+
+ANESTHESIA CHARGES:
+Professional Fee: $2,250.00
+(Calculation: 10 units × $225 per unit)
+
+ADDITIONAL CHARGES:
+Post-operative pain management consultation: Included in surgical anesthesia
+
+Insurance Authorization: PA-2024-09876
+Expected Coverage: 85% (in-network PPO)
+Patient Responsibility: 15% coinsurance = $337.50
+
+==============================================================================
+ANESTHESIA QUALITY METRICS:
+==============================================================================
+
+✓ Pre-operative evaluation completed
+✓ Informed consent obtained
+✓ Appropriate ASA classification
+✓ NPO guidelines followed
+✓ Antibiotic prophylaxis within 60 minutes of incision
+✓ Appropriate anesthetic technique
+✓ Standard monitoring applied
+✓ No intra-operative complications
+✓ Appropriate emergence and extubation
+✓ Safe transfer to PACU
+✓ Adequate post-operative pain control
+✓ No PACU complications
+✓ Documentation complete
+
+==============================================================================
+SIGNATURES:
+==============================================================================
+
+Anesthesia Record Completed By:
+Dr. Robert Chen, MD, FASA
+Board Certified Anesthesiologist
+License: TX-MD-44556
+NPI: 1765432109
+DEA: AC1234567
+
+Electronically Signed: September 8, 2024 at 12:15
+
+Supervising CRNA:
+Patricia O'Brien, CRNA, MSN
+License: TX-CRNA-33445
+NPI: 1654321098
+
+Electronically Signed: September 8, 2024 at 12:10
+
+==============================================================================
+
+This anesthesia record is a true and accurate account of anesthesia services provided.
+
+Medical Record Number: LOC-334556
+Account Number: LOC-2024-09-0892
+Insurance Authorization: PA-2024-09876
+
+END OF ANESTHESIA RECORD

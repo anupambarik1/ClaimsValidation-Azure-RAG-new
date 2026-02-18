@@ -1,0 +1,142 @@
+ITEMIZED FACILITY BILL
+
+American Health Endoscopy Center
+1800 Medical Drive, Chicago, IL 60611
+Billing: (312) 555-BILL (2455) | Tax ID: 36-9876543 | NPI: 1234567800
+
+STATEMENT DATE: August 28, 2024
+ACCOUNT #: AHEC-2024-08-556677
+
+PATIENT: Robert Chen | DOB: 3/15/1990 | MRN: AHEC-556677
+Address: 2847 Riverside Drive, Chicago, IL 60614
+Phone: (312) 555-0287
+
+INSURANCE: American Health Savings Plan (HDHP)
+Policy: HDHP-2024-99132 | Member ID: HDHP99132-001
+Authorization: PA-HDHP-08192024 (APPROVED)
+
+SERVICE DATE: August 22, 2024
+Procedure: Upper GI Endoscopy with Biopsies
+Diagnosis: K21.9 (GERD), R13.10 (Dysphagia)
+CPT: 43235
+
+===========================================================================
+ITEMIZED CHARGES:
+===========================================================================
+
+PROFESSIONAL FEES:
+
+001  08/22/24  GI Endoscopy - Professional Fee    43235    1    $850.00
+              Dr. Emily Rodriguez, MD (NPI: 1564738291)
+              Upper endoscopy with biopsies
+              Includes: Pre-procedure evaluation,
+              procedure performance, interpretation,
+              post-procedure monitoring
+
+FACILITY FEES:
+
+002  08/22/24  Endoscopy Suite Use                --       1    $650.00
+              Procedure room, equipment, monitoring
+
+003  08/22/24  Endoscopy Equipment                --       1    $180.00
+              Video gastroscope (Olympus GIF-H190)
+              Light source, processor, recording
+
+004  08/22/24  Recovery Room Services             --       1    $120.00
+              Post-procedure monitoring (45 min)
+              Nursing care, vital signs, discharge
+
+ANESTHESIA:
+
+005  08/22/24  Conscious Sedation                 00740    1    $350.00
+              Dr. Michael Park, MD (NPI: 1765432100)
+              Midazolam 3mg IV, Fentanyl 75mcg IV
+              Monitoring, reversal agents available
+
+SUPPLIES & MEDICATIONS:
+
+006  08/22/24  Biopsy Forceps (Disposable)        --       4     $240.00
+              Single-use biopsy forceps (4 used)
+
+007  08/22/24  IV Supplies & Medications          --       1      $85.00
+              IV catheter, fluids, medications
+              Syringes, gloves, supplies
+
+008  08/22/24  Specimen Containers                --       4      $20.00
+              Formalin jars for tissue specimens
+
+PATHOLOGY:
+
+009  08/22/24  Pathology - Tissue Analysis        88305    4    $250.00
+              Chicago Pathology Associates
+              4 specimens (esophagus, GE junction,
+              antrum, body) - surgical path Level IV
+              Includes: Giemsa stain for H. pylori
+
+---------------------------------------------------------------------------
+                                        TOTAL CHARGES:    $2,745.00
+
+===========================================================================
+INSURANCE PROCESSING:
+===========================================================================
+
+TOTAL CHARGES:                                            $2,745.00
+HDHP NETWORK DISCOUNT:                                    ($345.00)
+ALLOWED AMOUNT (Contracted Rate):                         $2,400.00
+
+PATIENT DEDUCTIBLE:
+Annual Deductible: $3,000
+Deductible Met Before This Service: $2,100
+Remaining Deductible: $900
+APPLIED TO DEDUCTIBLE:                                    $900.00
+
+AMOUNT AFTER DEDUCTIBLE:                                  $1,500.00
+
+INSURANCE COVERAGE (80% after deductible):                $1,200.00
+PATIENT COINSURANCE (20%):                                $300.00
+
+===========================================================================
+PAYMENT SUMMARY:
+===========================================================================
+
+TOTAL ALLOWED AMOUNT:                                     $2,400.00
+APPLIED TO DEDUCTIBLE (Patient):                          $900.00
+PATIENT COINSURANCE (20%):                                $300.00
+TOTAL PATIENT RESPONSIBILITY:                             $1,200.00
+INSURANCE PAYMENT (Expected):                             $1,200.00
+
+HSA ELIGIBLE: YES - Patient may use Health Savings Account funds
+
+OUT-OF-POCKET TRACKING:
+Previous OOP: $2,100 | This Service: $1,200 | Total YTD: $3,300
+OOP Maximum: $7,000 | Remaining to Max: $3,700
+
+===========================================================================
+CLAIM STATUS:
+===========================================================================
+
+Claim Submitted: August 28, 2024 (Electronic - EDI 837)
+Claim Number: CLM-HDHP-003
+Authorization: PA-HDHP-08192024
+Payer ID: 67890
+Status: Submitted - Pending processing (30-45 days)
+
+This is an itemized statement. After insurance processes the claim,
+you will receive an Explanation of Benefits (EOB) and final bill.
+
+===========================================================================
+PAYMENT OPTIONS:
+===========================================================================
+
+DO NOT PAY until you receive your final bill after insurance processing.
+
+When final bill is received:
+• Online: www.ahendocenter.com/billing
+• Phone: (312) 555-BILL (2455)
+• Mail: American Health Endoscopy Center, PO Box 8899, Chicago, IL 60680
+
+Payment plans available. Financial assistance available for qualifying patients.
+
+Questions: Billing Department (312) 555-2455, M-F 8 AM - 5 PM
+
+END OF STATEMENT

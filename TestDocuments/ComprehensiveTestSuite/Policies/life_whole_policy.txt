@@ -1,0 +1,127 @@
+LEGACY WHOLE LIFE INSURANCE POLICY
+Policy Number: WHOLE-2024-33421
+Policyholder: Marcus Johnson
+Insured: Marcus Johnson
+Effective Date: January 10, 2024
+Policy Type: Whole Life Insurance with Cash Value
+
+COVERAGE AMOUNT: $250,000
+Monthly Premium: $425.00 (Guaranteed level for life)
+Policy Type: Participating Whole Life
+Beneficiaries:
+  - Primary: Angela Johnson (spouse) - 100%
+  - Contingent: Tyler Johnson (son), Maya Johnson (daughter) - 50% each
+
+DEATH BENEFIT:
+Base Death Benefit: $250,000
+Accumulated Dividends: Added to death benefit
+Cash Value: Accumulates over time (not added to death benefit)
+Guaranteed Death Benefit: Never decreases
+
+CASH VALUE ACCUMULATION:
+- Begins accumulating after first year
+- Guaranteed minimum interest: 3% annually
+- Current credited rate: 4.5% annually
+- Tax-deferred growth
+- Available for loans or withdrawals
+
+LOAN PROVISIONS:
+- Can borrow up to 90% of cash value
+- Interest rate: 5% annually
+- No credit check or approval needed
+- Loan reduces death benefit if unpaid
+- Interest can be paid or added to loan balance
+
+DIVIDEND OPTIONS (Non-Guaranteed):
+1. Cash payment
+2. Premium reduction
+3. Purchase paid-up additional insurance
+4. Accumulate at interest
+5. Repay policy loans
+
+PAID-UP INSURANCE OPTION:
+- After 10 years, can stop paying premiums
+- Policy remains in force with reduced death benefit
+- Based on accumulated cash value
+
+ACCELERATED DEATH BENEFIT RIDERS:
+Terminal Illness Rider:
+- Available if life expectancy < 12 months
+- Access up to 90% of death benefit
+- No additional premium
+
+Chronic Illness Rider:
+- Available if unable to perform 2 of 6 ADLs for 90+ days
+- Monthly benefit up to 2% of death benefit
+- Maximum 50% of death benefit over lifetime
+
+Long-Term Care Rider:
+- Qualified long-term care expenses
+- Up to $5,000 per month
+- Reduces death benefit dollar-for-dollar
+
+EXCLUSIONS:
+- Suicide within first 2 years: Premium refund only
+- After 2 years: Incontestable
+
+PREMIUM PAYMENT:
+- Guaranteed never to increase
+- Grace period: 31 days
+- If premium not paid: Cash value can maintain policy
+- Automatic premium loan option available
+
+WAIVER OF PREMIUM RIDER:
+- If totally disabled for 6+ months before age 65
+- Company waives premiums during disability
+- Policy continues with full benefits
+- Must provide proof of disability annually
+- Additional premium: $15/month
+
+ACCIDENTAL DEATH BENEFIT RIDER:
+- Additional $250,000 if death by accident before age 70
+- Accident must occur and death result within 180 days
+- Excludes: Aviation (non-commercial), war, suicide, illegal activities
+- Additional premium: $25/month
+
+CLAIM REQUIREMENTS - STANDARD DEATH CLAIM:
+- Certified death certificate (original)
+- Completed claimant's statement
+- Policy document (original)
+- Proof of beneficiary identity
+- Attending physician's statement
+
+CLAIM REQUIREMENTS - ACCELERATED BENEFITS:
+Terminal Illness:
+- Physician certification of terminal condition
+- Life expectancy statement
+- Complete medical records
+- Attending physician statement
+
+Chronic Illness:
+- Assessment by licensed healthcare practitioner
+- Plan of care
+- Proof of inability to perform ADLs
+- Medical records documenting condition
+
+Long-Term Care:
+- Certification of care need
+- Itemized bills for LTC services
+- Plan of care from licensed practitioner
+- Receipts for expenses
+
+CLAIM PAYMENT:
+- Standard processing: 30-45 days
+- Expedited processing available for terminal illness
+- Payment options: Lump sum, installments, life income, interest option
+- Cash value paid with death benefit if no loans outstanding
+
+NON-FORFEITURE OPTIONS:
+If policy lapses:
+1. Cash surrender value
+2. Reduced paid-up insurance
+3. Extended term insurance
+
+POLICY EXCHANGE:
+- Can exchange for different policy type within first 2 years
+- No medical underwriting required
+- Cash value transfers to new policy

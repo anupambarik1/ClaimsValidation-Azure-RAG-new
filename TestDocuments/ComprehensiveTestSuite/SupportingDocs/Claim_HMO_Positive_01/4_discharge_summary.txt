@@ -1,0 +1,363 @@
+DISCHARGE SUMMARY
+City Medical Center
+Emergency Department
+1234 Medical Plaza Drive, Springfield, IL 62701
+Phone: (217) 555-4567
+
+PATIENT INFORMATION:
+Name: Michael Thompson
+Date of Birth: May 12, 1978
+Age: 46 years
+Gender: Male
+MRN: CMC-778945
+Address: 742 Oak Avenue, Springfield, IL 62704
+Phone: (217) 555-0156
+Email: mthompson@email.com
+
+INSURANCE:
+HealthGuard HMO
+Policy Number: HMO-2024-78945
+Member ID: HMO78945-001
+Emergency Room Copay: $250.00 (Paid)
+
+VISIT INFORMATION:
+Admission Date/Time: October 15, 2024 at 18:45
+Discharge Date/Time: October 15, 2024 at 23:30
+Length of Stay: 4 hours 45 minutes
+Visit Type: Emergency Department
+Disposition: Discharged to Home
+
+ATTENDING PHYSICIAN: Dr. Sarah Anderson, MD (Emergency Medicine)
+PRIMARY CARE PHYSICIAN: Dr. James Wilson, MD
+
+==============================================================================
+FINAL DIAGNOSES:
+==============================================================================
+
+PRIMARY DIAGNOSIS:
+1. Community-Acquired Pneumonia, Right Lower Lobe (J18.9)
+   - Confirmed by chest X-ray showing infiltrate with air bronchograms
+   - Supported by elevated WBC (18,500) with left shift
+   - Clinical presentation consistent with bacterial pneumonia
+
+SECONDARY DIAGNOSES:
+2. Hypoxemia, resolved with supplemental oxygen (R09.02)
+3. Fever secondary to pneumonia (R50.9)
+4. Acute cough (R05)
+5. Pleuritic chest pain (R07.1)
+6. Tachycardia, resolved (R00.0)
+
+CHRONIC CONDITIONS:
+- Essential Hypertension, controlled (I10)
+
+==============================================================================
+HOSPITAL COURSE SUMMARY:
+==============================================================================
+
+PRESENTATION:
+Mr. Michael Thompson is a 46-year-old male with history of hypertension who presented to the City Medical Center Emergency Department on October 15, 2024 with a 4-day history of progressive respiratory symptoms. Chief complaints included productive cough with purulent sputum, high fever (measured at home up to 103°F), shortness of breath, and right-sided pleuritic chest pain.
+
+INITIAL ASSESSMENT:
+Upon arrival at 18:45, patient appeared ill and was in moderate respiratory distress. Initial vital signs were concerning:
+- Temperature: 103.2°F (significant fever)
+- Heart Rate: 118 bpm (tachycardia)
+- Respiratory Rate: 28 breaths/minute (tachypnea)
+- Oxygen Saturation: 89% on room air (hypoxemia)
+- Blood Pressure: 145/88 mmHg (elevated, likely due to pain/stress)
+
+PHYSICAL EXAMINATION FINDINGS:
+- Respiratory: Decreased breath sounds right lower lobe, crackles on auscultation, dullness to percussion
+- Cardiovascular: Tachycardic but regular rhythm
+- General: Ill-appearing, diaphoretic, speaking in short sentences
+
+DIAGNOSTIC WORKUP:
+
+Chest X-Ray (PA and Lateral - 19:15):
+- Right lower lobe consolidation approximately 8 x 6 cm
+- Air bronchograms present
+- Consistent with lobar pneumonia
+- No pleural effusion or pneumothorax
+
+Laboratory Studies (19:00):
+- WBC: 18.5 x10³/μL (markedly elevated)
+- Neutrophils: 82% with left shift
+- Absolute neutrophil count: 15,170/μL
+- Hemoglobin and platelets: Normal
+- Blood cultures: Drawn (2 sets), preliminary negative
+
+ASSESSMENT:
+Community-acquired pneumonia (CAP), right lower lobe, likely bacterial etiology based on:
+- Acute onset with productive cough and high fever
+- Lobar consolidation on imaging
+- Elevated WBC with left shift indicating bacterial infection
+- Clinical severity (hypoxemia, tachypnea, tachycardia)
+
+TREATMENT PROVIDED IN EMERGENCY DEPARTMENT:
+
+Oxygen Therapy:
+- Initiated 2L via nasal cannula
+- Oxygen saturation improved from 89% to 95%
+- Continued throughout ED stay
+
+Intravenous Access:
+- 18-gauge IV catheter placed in left antecubital vein
+- Normal saline 1000mL IV bolus administered for hydration
+
+Antibiotic Therapy (Initiated in ED):
+- Ceftriaxone 1 gram IV at 19:30 (broad-spectrum coverage)
+- Azithromycin 500mg PO at 19:45 (atypical coverage)
+- Rationale: Empiric therapy for community-acquired pneumonia per IDSA/ATS guidelines
+
+Antipyretic Therapy:
+- Acetaminophen 1000mg PO at 20:00
+- Temperature decreased from 103.2°F to 100.8°F by discharge
+
+Monitoring:
+- Continuous pulse oximetry
+- Cardiac monitoring (due to tachycardia)
+- Serial vital sign assessments every hour
+
+CLINICAL RESPONSE:
+Patient demonstrated good response to therapy:
+- Improved respiratory status (RR decreased from 28 to 20)
+- Oxygen saturation maintained at 96% on 2L
+- Fever curve trending down
+- Tachycardia resolved (HR decreased to 98 bpm)
+- Patient able to ambulate without distress
+- Tolerating oral intake and medications
+
+DISPOSITION DECISION:
+Based on clinical improvement, hemodynamic stability, and ability to tolerate oral antibiotics, patient deemed appropriate for outpatient management. CURB-65 score calculated: 0 points (low risk, suitable for outpatient treatment).
+
+CURB-65 Scoring:
+- Confusion: No (0 points)
+- Urea: Not checked, but patient well-hydrated
+- Respiratory Rate: 20 at discharge (<30) (0 points)
+- Blood Pressure: Stable (0 points)
+- Age: 46 years (<65) (0 points)
+Total: 0 points = Low risk, outpatient treatment appropriate
+
+CONDITION AT DISCHARGE: Improved, stable for home care
+
+==============================================================================
+DISCHARGE MEDICATIONS:
+==============================================================================
+
+NEW MEDICATIONS:
+
+1. AZITHROMYCIN (Zithromax) 500mg Tablets
+   Indication: Treatment of community-acquired pneumonia
+   Directions: Take ONE (1) tablet by mouth ONCE daily for 5 days
+   Quantity Prescribed: 5 tablets
+   Refills: None
+   Notes: Take with or without food. Complete full course even if feeling better.
+   
+2. ACETAMINOPHEN (Tylenol) 650mg Tablets
+   Indication: Fever reduction and pain relief
+   Directions: Take ONE to TWO (1-2) tablets by mouth EVERY 6 HOURS as needed for fever or pain
+   Maximum Dose: Do not exceed 4000mg (6 tablets) in 24 hours
+   Quantity Prescribed: 30 tablets
+   Refills: None
+   Notes: Avoid alcohol while taking this medication.
+
+CONTINUE HOME MEDICATIONS:
+
+3. LISINOPRIL 10mg Tablets
+   Indication: Blood pressure control (hypertension)
+   Directions: Take ONE (1) tablet by mouth ONCE daily
+   Continue taking as prescribed
+   Refills: As previously prescribed
+
+==============================================================================
+DISCHARGE INSTRUCTIONS:
+==============================================================================
+
+ACTIVITY:
+- Rest at home for the next few days
+- Avoid strenuous physical activity until fully recovered
+- May gradually resume normal activities as energy level improves
+- Do NOT return to work until you have been fever-free for at least 24 hours
+- Avoid exposure to others who are sick
+
+DIET:
+- Drink plenty of fluids: Aim for 8-10 glasses of water per day
+- Eat regular, balanced meals as tolerated
+- Increase intake of fruits and vegetables
+- NO ALCOHOL while taking antibiotics and until fully recovered
+
+RESPIRATORY CARE:
+- Use a humidifier in your bedroom if available
+- Practice deep breathing exercises every 2 hours while awake
+- Cover your mouth when coughing (use elbow, not hands)
+- Wash hands frequently with soap and water
+
+MEDICATIONS - IMPORTANT:
+- Take azithromycin (antibiotic) at the same time each day
+- COMPLETE THE FULL 5-DAY COURSE even if you start feeling better
+- Stopping antibiotics early can lead to treatment failure and antibiotic resistance
+- Use acetaminophen for fever - fever should improve within 48-72 hours
+- Continue your blood pressure medication (lisinopril) as usual
+- Do not take any new over-the-counter medications without checking with your doctor
+
+INFECTION CONTROL:
+- Wash hands frequently, especially before eating and after coughing
+- Cover coughs and sneezes with tissue or elbow
+- Dispose of tissues immediately
+- Do not share cups, utensils, or personal items
+- Keep distance from others until fever-free for 24 hours
+
+EXPECTED RECOVERY:
+- Fever should improve within 48-72 hours
+- Cough may persist for 2-3 weeks but should gradually improve
+- Energy level should return to normal within 7-10 days
+- Complete recovery typically takes 2-3 weeks
+
+==============================================================================
+FOLLOW-UP CARE:
+==============================================================================
+
+PRIMARY CARE FOLLOW-UP:
+Appointment Scheduled: October 18, 2024 at 10:00 AM
+Provider: Dr. James Wilson, MD
+Location: Springfield Family Medicine, 567 Health Plaza, Suite 200
+Phone: (217) 555-0199
+Purpose: Reassess pneumonia, check clinical improvement, review chest X-ray results
+
+CHEST X-RAY FOLLOW-UP:
+- Repeat chest X-ray recommended in 4-6 weeks (approximately November 15-30, 2024)
+- Purpose: Confirm complete resolution of pneumonia
+- To exclude underlying mass or structural abnormality
+- Can be ordered by Dr. Wilson at follow-up visit
+
+BLOOD CULTURE FOLLOW-UP:
+- Final results will be available in 48-72 hours
+- Dr. Wilson's office will be notified if cultures become positive
+- Antibiotic therapy may be adjusted based on culture results if needed
+
+==============================================================================
+RETURN TO EMERGENCY DEPARTMENT IMMEDIATELY IF YOU EXPERIENCE:
+==============================================================================
+
+⚠️ URGENT - CALL 911 OR RETURN TO ER IF:
+- Severe difficulty breathing or shortness of breath at rest
+- Chest pain that is severe or getting worse
+- Confusion, disorientation, or difficulty staying awake
+- Bluish color of lips, face, or fingernails (cyanosis)
+- Coughing up blood or blood-tinged sputum
+- High fever (>103°F) that doesn't respond to acetaminophen
+- Inability to keep down fluids or medications (persistent vomiting)
+- Severe dizziness or fainting
+- Rapid heartbeat that doesn't slow down with rest
+
+☎️ CALL DR. WILSON'S OFFICE (217-555-0199) IF:
+- Fever persists beyond 72 hours despite antibiotics
+- Cough is getting worse instead of better
+- New symptoms develop (rash, severe diarrhea, etc.)
+- Unable to tolerate oral antibiotics (nausea, vomiting)
+- No improvement in symptoms after 48-72 hours on antibiotics
+- Any questions or concerns about your recovery
+
+==============================================================================
+PATIENT EDUCATION PROVIDED AND UNDERSTOOD:
+==============================================================================
+
+✓ Nature and cause of pneumonia explained
+✓ Importance of completing full antibiotic course discussed
+✓ Warning signs requiring immediate medical attention reviewed
+✓ Expected timeline for recovery discussed (7-10 days)
+✓ Infection control measures explained
+✓ Importance of follow-up care emphasized
+✓ Medication instructions reviewed in detail
+✓ Activity and dietary recommendations discussed
+✓ Return-to-work criteria explained (fever-free for 24 hours)
+✓ Questions answered to patient's satisfaction
+
+Patient verbally confirmed understanding of all discharge instructions and had no additional questions at time of discharge. Patient provided with written copy of these instructions for reference at home.
+
+==============================================================================
+PRESCRIPTIONS PROVIDED:
+==============================================================================
+
+Prescription #1: Azithromycin 500mg - 5 tablets
+Prescription #2: Acetaminophen 650mg - 30 tablets
+
+Prescriptions were electronically sent to: CVS Pharmacy, 890 Main Street, Springfield, IL
+Phone: (217) 555-0177
+
+Patient instructed to pick up prescriptions tonight or first thing tomorrow morning.
+
+==============================================================================
+PROCEDURE AND BILLING CODES:
+==============================================================================
+
+PROCEDURE CODES (CPT):
+99285 - Emergency Department Visit, High Severity (Level 5)
+71046 - Chest X-Ray, 2 Views (PA and Lateral)
+85025 - Complete Blood Count with Automated Differential
+87040 - Culture, Bacterial; Blood, Aerobic and Anaerobic
+96365 - Intravenous Infusion, Therapeutic/Prophylactic
+
+DIAGNOSIS CODES (ICD-10):
+J18.9 - Pneumonia, Unspecified Organism (PRIMARY)
+R05 - Cough
+R50.9 - Fever, Unspecified
+R06.02 - Shortness of Breath
+R07.1 - Chest Pain on Breathing
+I10 - Essential Hypertension
+
+==============================================================================
+CLINICAL SUMMARY FOR PRIMARY CARE PHYSICIAN:
+==============================================================================
+
+Dr. Wilson,
+
+Your patient Michael Thompson was seen in our ED today with community-acquired pneumonia, right lower lobe. Chest X-ray confirmed lobar pneumonia, and labs showed leukocytosis (WBC 18.5) with left shift. Blood cultures were drawn and are pending.
+
+Treatment initiated: Ceftriaxone 1g IV x 1 and azithromycin 500mg PO x 1 in ED. Discharged on 5-day course of oral azithromycin. Patient responded well to initial therapy with improvement in hypoxemia and vital signs.
+
+He is scheduled to see you on October 18, 2024 at 10:00 AM for follow-up. Recommend repeat chest X-ray in 4-6 weeks to document resolution. Blood culture results will be sent to your office.
+
+Please call with any questions: (217) 555-4567
+
+Best regards,
+Dr. Sarah Anderson
+
+==============================================================================
+ATTENDING PHYSICIAN SIGNATURE:
+==============================================================================
+
+Attending Physician: Dr. Sarah Anderson, MD
+Board Certified Emergency Medicine
+American Board of Emergency Medicine
+License: IL-MD-45678
+NPI: 9876543210
+DEA: AA1234567
+
+Electronically Signed: October 15, 2024 at 23:35
+
+Discharge Summary Completed By: Dr. Sarah Anderson, MD
+Transcription/Documentation: October 15, 2024 at 23:40
+
+Report Status: FINAL
+Distribution: Patient (copy given), Dr. James Wilson (PCP), Medical Records
+
+==============================================================================
+DISCHARGE CHECKLIST COMPLETED:
+==============================================================================
+
+✓ Patient clinically stable for discharge
+✓ Vital signs stable and documented
+✓ Discharge medications prescribed and reviewed
+✓ Follow-up appointment scheduled
+✓ Discharge instructions provided in writing
+✓ Patient education completed and documented
+✓ Warning signs reviewed
+✓ Patient has transportation home (wife present)
+✓ Patient has access to pharmacy
+✓ Patient verbalized understanding of all instructions
+✓ Medical record documentation complete
+✓ Billing codes submitted
+
+Patient departed ED at 23:30 in stable condition, ambulatory, accompanied by spouse.
+
+END OF DISCHARGE SUMMARY

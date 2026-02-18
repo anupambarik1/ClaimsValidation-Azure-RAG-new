@@ -1,0 +1,581 @@
+HOSPITAL DISCHARGE SUMMARY
+
+Liberty Orthopedic Center
+2200 Medical Plaza, Austin, TX 78701
+Phone: (512) 555-7800 | Fax: (512) 555-7801
+
+==============================================================================
+PATIENT INFORMATION:
+==============================================================================
+
+Patient Name: Sarah Martinez
+Date of Birth: August 23, 1985
+Age: 40 years
+Gender: Female
+Medical Record Number: LOC-334556
+Account Number: LOC-2024-09-0892
+
+Address: 1456 Maple Drive, Austin, TX 78701
+Phone: (512) 555-0234
+Email: smartinez@email.com
+
+Insurance: Liberty Choice PPO
+Policy Number: PPO-2024-45621
+Member ID: PPO45621-001
+Authorization: PA-2024-09876
+
+==============================================================================
+ADMISSION AND DISCHARGE INFORMATION:
+==============================================================================
+
+Admission Date: September 8, 2024
+Admission Time: 06:00
+Discharge Date: September 10, 2024
+Discharge Time: 14:30
+Length of Stay: 2 days (inpatient)
+
+Admission Type: Elective Surgical Admission
+Admission Source: Pre-scheduled surgical admission
+Discharge Disposition: Home
+Discharge Condition: Stable, improved
+
+==============================================================================
+ATTENDING PHYSICIAN AND CARE TEAM:
+==============================================================================
+
+Attending Surgeon: Dr. James Mitchell, MD
+Specialty: Orthopedic Surgery
+License: TX-MD-87654
+NPI: 1987654321
+
+Primary Care Physician: Dr. James Wilson, MD
+PCP Contact: (512) 555-0199
+
+Consulting Physicians: None required
+
+Nursing Staff: Orthopedic Floor Nurses (4th Floor)
+Physical Therapy: Austin PT Services
+Case Manager: Rebecca Adams, RN, CCM
+
+==============================================================================
+ADMITTING DIAGNOSIS:
+==============================================================================
+
+Displaced comminuted fracture of right patella
+ICD-10 Code: S82.001A (Fracture of right patella, initial encounter for closed fracture)
+
+Mechanism of Injury: Fall from bicycle on September 5, 2024
+
+==============================================================================
+DISCHARGE DIAGNOSIS:
+==============================================================================
+
+PRIMARY DIAGNOSIS:
+Status post open reduction internal fixation (ORIF) of right patellar fracture
+ICD-10 Code: S82.001D (Fracture of right patella, subsequent encounter for closed fracture with routine healing)
+
+SECONDARY DIAGNOSES:
+1. Hypertension, controlled (I10)
+2. Hyperlipidemia (E78.5)
+3. Post-operative pain, acute (G89.18)
+
+==============================================================================
+PROCEDURES PERFORMED:
+==============================================================================
+
+Date of Surgery: September 8, 2024
+
+PRIMARY PROCEDURE:
+Open reduction and internal fixation (ORIF) of right patellar fracture using modified tension band wiring technique
+
+CPT Code: 27524 (Open treatment of patellar fracture, with internal fixation)
+
+Surgeon: Dr. James Mitchell, MD
+Assistant: Dr. Rebecca Thompson, MD
+Anesthesia: General endotracheal anesthesia
+Anesthesiologist: Dr. Robert Chen, MD
+Surgery Duration: 1 hour 45 minutes
+Complications: None
+
+FIXATION HARDWARE:
+- Two 2.0mm stainless steel K-wires
+- One 18-gauge stainless steel cerclage wire (figure-of-eight configuration)
+- Modified tension band construct
+
+SURGICAL OUTCOME: Excellent anatomic reduction achieved, stable fixation
+
+==============================================================================
+HOSPITAL COURSE:
+==============================================================================
+
+BRIEF SUMMARY:
+Ms. Martinez is a 40-year-old female who sustained a displaced comminuted fracture of the right patella after falling from her bicycle on September 5, 2024. She initially presented to the emergency department where the diagnosis was confirmed with X-rays. Due to significant displacement (>8mm) and intra-articular involvement, operative fixation was indicated. Pre-authorization was obtained from insurance. Patient was admitted on September 8, 2024, for elective ORIF procedure.
+
+DAY 1 - SEPTEMBER 8, 2024 (Surgery Day):
+• Patient arrived at 06:00 for pre-operative preparation
+• Pre-operative labs, X-rays, and anesthesia evaluation completed
+• Surgery performed 07:45-09:30 without complications
+• Excellent anatomic reduction achieved with stable fixation
+• Transferred to PACU at 09:45, stable and alert
+• PACU course uncomplicated, pain controlled with PCA morphine
+• Transferred to orthopedic inpatient floor (Room 412) at 11:30
+• Post-operative pain managed with PCA morphine
+• Diet advanced from clear liquids to regular diet as tolerated
+• Foley catheter discontinued in evening, patient voiding without difficulty
+• Neurovascular checks q2h - all normal (dorsalis pedis pulse 2+, sensation intact, able to move toes)
+• Overnight vital signs stable
+• Pain adequately controlled (3-4/10 with PCA)
+
+DAY 2 - SEPTEMBER 9, 2024 (Post-Op Day #1):
+• Morning rounds: Patient feeling well, minimal nausea
+• PCA discontinued at 08:00, transitioned to oral pain medications
+• Pain managed with oxycodone 5-10mg PO q4-6h PRN and acetaminophen 1000mg PO q6h
+• Physical therapy evaluation completed at 10:00
+  - Instructed on crutch ambulation (toe-touch weight-bearing only)
+  - Taught transfer techniques (bed to chair)
+  - Emphasized importance of knee immobilizer compliance
+  - Patient demonstrated safe ambulation with crutches
+  - Patient independent with transfers
+• Occupational therapy consulted: No issues with ADLs
+• Wound check: Surgical dressing clean, dry, intact - no drainage or bleeding
+• Ice therapy to knee every 2 hours
+• Sequential compression devices continued for DVT prophylaxis
+• Enoxaparin 40mg subcutaneous injection given for DVT prophylaxis
+• IV antibiotics (cefazolin) discontinued after 24 hours per protocol
+• IV fluids discontinued, patient tolerating PO intake well
+• IV access removed (no longer needed)
+• Pain well-controlled on oral regimen (3/10)
+• Vital signs stable, afebrile
+• Meeting discharge criteria, but kept overnight per routine for 2-day post-op stay
+
+DAY 3 - SEPTEMBER 10, 2024 (Post-Op Day #2, Discharge Day):
+• Morning rounds: Patient ready for discharge
+• Ambulating well with crutches, toe-touch weight-bearing on right leg
+• Pain well-controlled with oral medications (2-3/10)
+• Surgical incision clean and dry, no signs of infection
+• Neurovascular status intact
+• Discharge education completed with patient and spouse
+• Prescriptions written and reviewed
+• Follow-up appointments scheduled
+• DME (durable medical equipment) arrangements confirmed: Crutches provided
+• Home health not required (patient has adequate support at home)
+• Physical therapy outpatient referral provided
+• Discharged home at 14:30 in stable condition with spouse
+
+==============================================================================
+VITAL SIGNS SUMMARY:
+==============================================================================
+
+ADMISSION VITALS (September 8, 06:00):
+BP: 128/76 mmHg | HR: 72 bpm | RR: 14/min | Temp: 36.8°C | SpO2: 99% RA
+
+DISCHARGE VITALS (September 10, 14:00):
+BP: 124/74 mmHg | HR: 70 bpm | RR: 14/min | Temp: 36.7°C | SpO2: 98% RA
+
+Patient remained hemodynamically stable throughout hospitalization.
+No fever, no tachycardia, no respiratory distress at any time.
+
+==============================================================================
+LABORATORY AND IMAGING RESULTS:
+==============================================================================
+
+PRE-OPERATIVE LABS (September 7, 2024):
+Hemoglobin: 13.5 g/dL (normal)
+Hematocrit: 40.2%
+Platelets: 245,000/μL
+WBC: 8.2 K/μL (normal)
+Creatinine: 0.9 mg/dL (normal renal function)
+INR: 1.0 (normal coagulation)
+
+POST-OPERATIVE LABS (September 9, 2024):
+Hemoglobin: 12.8 g/dL (stable, minimal blood loss)
+Hematocrit: 38.5%
+WBC: 10.1 K/μL (mild elevation, expected post-op)
+
+IMAGING:
+Pre-operative X-ray (September 8): Displaced comminuted patellar fracture, 8mm displacement
+Post-operative X-ray (September 8): Excellent anatomic reduction, hardware in good position
+No intra-articular hardware penetration, patellar height restored (Insall-Salvati ratio 1.1)
+
+==============================================================================
+MEDICATIONS DURING HOSPITALIZATION:
+==============================================================================
+
+PAIN MANAGEMENT:
+• Morphine PCA (September 8-9)
+• Oxycodone 5-10mg PO q4-6h PRN (September 9-10)
+• Acetaminophen 1000mg PO q6h scheduled
+• Ice therapy
+
+ANTIBIOTIC PROPHYLAXIS:
+• Cefazolin 2g IV pre-op, then 1g IV q8h x 24 hours (discontinued September 9)
+
+DVT PROPHYLAXIS:
+• Enoxaparin 40mg subcutaneous daily
+• Sequential compression devices
+
+GASTROINTESTINAL:
+• Docusate sodium 100mg PO BID (stool softener)
+
+HOME MEDICATIONS HELD:
+• Lisinopril 10mg PO daily - HELD pre-operatively, RESUMED post-op
+
+==============================================================================
+DISCHARGE MEDICATIONS:
+==============================================================================
+
+1. OXYCODONE 5mg Tablets
+   Sig: Take 1-2 tablets by mouth every 4-6 hours as needed for pain
+   Quantity: 40 tablets
+   Refills: 0 (zero)
+   Note: May cause drowsiness. Do not drive or operate machinery. Do not drink alcohol.
+
+2. ACETAMINOPHEN 500mg Tablets
+   Sig: Take 2 tablets (1000mg) by mouth every 6 hours as needed for pain
+   Quantity: 60 tablets
+   Refills: 0
+   Note: Do not exceed 4000mg (8 tablets) in 24 hours. Avoid other products containing acetaminophen.
+
+3. DOCUSATE SODIUM 100mg Capsules (Colace)
+   Sig: Take 1 capsule by mouth twice daily as needed for constipation
+   Quantity: 30 capsules
+   Refills: 0
+   Note: Stool softener to prevent constipation from pain medication.
+
+4. ENOXAPARIN 40mg/0.4mL Pre-filled Syringes (Lovenox)
+   Sig: Inject 40mg (one syringe) subcutaneously once daily for 14 days
+   Quantity: 14 pre-filled syringes
+   Refills: 0
+   Note: Blood thinner to prevent blood clots. Inject into abdomen or thigh. Rotate sites.
+   Duration: 14 days total (started September 8, continue through September 21)
+
+5. LISINOPRIL 10mg Tablets
+   Sig: Take 1 tablet by mouth once daily
+   RESUME HOME MEDICATION (Continue as previously prescribed)
+   Note: For blood pressure control.
+
+MEDICATION RECONCILIATION COMPLETED: All home medications reviewed.
+
+==============================================================================
+DISCHARGE INSTRUCTIONS:
+==============================================================================
+
+ACTIVITY RESTRICTIONS:
+✓ WEIGHT-BEARING: Toe-touch weight-bearing (TTWB) on right leg only
+  - Use crutches at all times for ambulation
+  - May place toes on ground for balance only (no weight through leg)
+  - Do NOT put full weight on right leg for 6 weeks
+
+✓ KNEE IMMOBILIZER: Wear at all times (24/7) except when doing PT exercises
+  - Remove only for showering (sit while showering)
+  - Remove only for physical therapy exercises as instructed
+  - Sleep with immobilizer on
+  - Duration: 6 weeks minimum
+
+✓ RANGE OF MOTION:
+  - Passive range of motion exercises only for first 6 weeks
+  - Do NOT actively extend (straighten) your knee for 6 weeks
+  - Follow physical therapy instructions carefully
+  - Gradual progression per PT protocol
+
+✓ GENERAL ACTIVITY:
+  - No driving while taking narcotics (oxycodone)
+  - No driving with right knee immobilizer (affects braking ability)
+  - Elevate right leg above heart level when sitting or lying down
+  - Use ice packs 20 minutes every 2-3 hours to reduce swelling
+  - Avoid prolonged standing
+  - No running, jumping, or sports for at least 4-6 months
+
+WOUND CARE:
+✓ Keep surgical dressing clean, dry, and intact
+✓ Do NOT remove dressing until follow-up appointment (unless instructed by surgeon)
+✓ May shower on September 12 (4 days post-op):
+  - Cover dressing with waterproof barrier (plastic wrap and tape)
+  - No soaking in bathtub, pool, or hot tub until sutures removed
+  - Pat area dry after showering
+✓ Watch for signs of infection (see below)
+✓ Surgical sutures will be removed at 2-week follow-up visit
+
+PAIN MANAGEMENT:
+✓ Take pain medications as prescribed
+✓ Stay ahead of pain - don't wait until pain is severe
+✓ Use ice therapy regularly
+✓ Elevate leg to reduce swelling and pain
+✓ Gradual transition from oxycodone to acetaminophen as pain improves
+
+DVT PREVENTION:
+✓ Continue enoxaparin (Lovenox) injections daily for 14 days
+✓ Perform ankle pumps (flex and point foot) 10 times every hour while awake
+✓ Wiggle toes frequently
+✓ Early mobilization with crutches
+✓ Stay well hydrated
+
+DIET:
+✓ Resume regular diet
+✓ Increase fiber intake while taking narcotic pain medication
+✓ Drink plenty of water (8 glasses per day)
+✓ Prune juice may help prevent constipation
+
+==============================================================================
+WARNING SIGNS - CALL SURGEON IMMEDIATELY IF:
+==============================================================================
+
+INFECTION SIGNS:
+❗ Fever >101.5°F (38.6°C)
+❗ Redness spreading from incision
+❗ Increased swelling, warmth at surgical site
+❗ Drainage or pus from incision
+❗ Foul odor from wound
+❗ Red streaking on skin
+
+CIRCULATION PROBLEMS:
+❗ Cold or blue toes
+❗ Numbness or tingling that worsens
+❗ Loss of sensation in foot
+❗ Inability to move toes
+
+BLOOD CLOT SIGNS (DVT/PE):
+❗ Severe calf pain or swelling
+❗ Sudden chest pain
+❗ Shortness of breath
+❗ Coughing up blood
+
+HARDWARE PROBLEMS:
+❗ Sudden increase in knee pain
+❗ Feeling or hearing a "pop" in knee
+❗ Loss of ability to extend leg
+❗ Visible hardware protruding through skin
+
+OTHER CONCERNS:
+❗ Uncontrolled pain despite medication
+❗ Severe nausea or vomiting
+❗ Unable to tolerate oral intake
+❗ Difficulty urinating
+❗ Allergic reaction to medications (rash, hives, difficulty breathing)
+
+EMERGENCY: Call 911 for chest pain, difficulty breathing, or severe bleeding
+
+SURGEON CONTACT: Dr. James Mitchell - (512) 555-7800 (24/7 answering service available)
+
+==============================================================================
+FOLLOW-UP APPOINTMENTS:
+==============================================================================
+
+1. WOUND CHECK AND SUTURE REMOVAL:
+   Provider: Dr. James Mitchell, MD (Orthopedic Surgery)
+   Date: September 22, 2024 (12 days post-op)
+   Time: 10:00 AM
+   Location: Liberty Orthopedic Center, 2200 Medical Plaza, Austin, TX
+   Phone: (512) 555-7800
+   Purpose: Wound inspection, suture removal, post-op X-rays
+   
+2. 6-WEEK FOLLOW-UP:
+   Provider: Dr. James Mitchell, MD
+   Date: October 20, 2024
+   Time: 2:00 PM
+   Same location
+   Purpose: Assess healing, X-rays, discuss advancing weight-bearing and PT progression
+
+3. PRIMARY CARE PHYSICIAN:
+   Provider: Dr. James Wilson, MD
+   Schedule appointment within 2-3 weeks for general follow-up
+   Phone: (512) 555-0199
+   Purpose: Blood pressure management, medication review
+
+4. PHYSICAL THERAPY:
+   Start Date: September 16, 2024 (1 week post-discharge)
+   Provider: Austin PT Services (in-network PPO provider)
+   Location: 3400 Therapy Lane, Austin, TX 78702
+   Phone: (512) 555-PT-CARE (782-273)
+   Referral: Provided, authorization pending from insurance
+   Frequency: 2-3 times per week for 8-12 weeks
+   
+   First PT Appointment: September 16, 2024 at 9:00 AM (ALREADY SCHEDULED)
+
+IMPORTANT: Keep all follow-up appointments. Call if you need to reschedule.
+
+==============================================================================
+PHYSICAL THERAPY PLAN:
+==============================================================================
+
+PHASE 1 (Weeks 1-6): Protection and Early Mobilization
+- Passive range of motion exercises only
+- Patellar mobilization
+- Quad sets (gentle muscle activation)
+- Straight leg raises (with knee immobilizer)
+- Ankle pumps and foot exercises
+- Ice and elevation
+- Gait training with crutches (TTWB)
+- NO active knee extension
+
+PHASE 2 (Weeks 6-12): Progressive Strengthening
+- Advance weight-bearing as tolerated per surgeon approval
+- Active range of motion exercises
+- Progressive resistance exercises
+- Proprioception training
+- Wean from crutches to cane to full weight-bearing
+
+PHASE 3 (Weeks 12+): Advanced Strengthening and Return to Activity
+- Sport-specific training (if applicable)
+- Running progression
+- Return to cycling
+- Full functional recovery
+
+Total PT duration: 3-6 months depending on progress
+
+==============================================================================
+DURABLE MEDICAL EQUIPMENT (DME):
+==============================================================================
+
+EQUIPMENT PROVIDED AT DISCHARGE:
+✓ Crutches (aluminum adjustable) - Patient owns, may keep
+✓ Knee Immobilizer - Patient owns, may keep
+✓ Ice bags/cold therapy system - Instructed to use at home
+
+EQUIPMENT NOT REQUIRED:
+- Wheelchair (patient ambulating well with crutches)
+- Hospital bed (not necessary)
+- Shower chair (recommended but not provided)
+
+RECOMMENDATIONS:
+- Consider purchasing shower chair for safety (available at pharmacies)
+- Elevated toilet seat may be helpful (optional)
+
+==============================================================================
+WORK/SCHOOL STATUS:
+==============================================================================
+
+RETURN TO WORK: 
+Patient occupation: Marketing Manager (desk job)
+Return to work date: Approximately 2-4 weeks post-op (early October 2024)
+May return to sedentary work sooner if able to manage pain and keep leg elevated
+Restrictions: No driving until off narcotics and able to ambulate without immobilizer
+
+DISABILITY PAPERWORK:
+Short-term disability forms completed and provided to patient
+Expected duration of disability: 4-8 weeks
+
+==============================================================================
+HOME HEALTH SERVICES:
+==============================================================================
+
+Home health services: NOT REQUIRED
+Patient has adequate support at home (spouse present)
+Patient independent with crutch ambulation
+Patient able to perform self-care activities
+
+If needs change, contact surgeon's office for home health referral.
+
+==============================================================================
+INSURANCE AND BILLING:
+==============================================================================
+
+Insurance: Liberty Choice PPO
+Policy Number: PPO-2024-45621
+Prior Authorization: PA-2024-09876 (approved)
+Claim Number: CLM-PPO-002
+
+ESTIMATED CHARGES:
+Total Hospital Charges: $18,750.00
+Insurance Coverage: 85% (in-network PPO benefit)
+Estimated Insurance Payment: $15,937.50
+Patient Responsibility (15% coinsurance): $2,812.50
+
+Note: Deductible already met. Patient will receive itemized bill and Explanation of Benefits (EOB) from insurance company. Payment arrangements available through billing department.
+
+Billing Questions: (512) 555-7810
+
+==============================================================================
+PATIENT EDUCATION PROVIDED:
+==============================================================================
+
+✓ Post-operative wound care instructions
+✓ Pain management strategies
+✓ DVT prevention and recognition
+✓ Enoxaparin (Lovenox) injection technique (patient demonstrated correctly)
+✓ Crutch walking and safety
+✓ Activity restrictions and precautions
+✓ Warning signs requiring immediate attention
+✓ Importance of physical therapy compliance
+✓ Medication side effects and precautions
+✓ Follow-up appointment schedule
+
+EDUCATIONAL MATERIALS GIVEN:
+- Written discharge instructions (copy provided)
+- Medication list with instructions
+- Physical therapy exercises handout
+- DVT prevention information
+- Enoxaparin injection guide
+- Emergency contact numbers
+
+PATIENT UNDERSTANDING:
+Patient and spouse verbalize understanding of all discharge instructions.
+All questions answered satisfactorily.
+Patient demonstrates safe crutch ambulation and Lovenox injection technique.
+
+==============================================================================
+DISCHARGE SUMMARY:
+==============================================================================
+
+Ms. Sarah Martinez is a 40-year-old female who underwent successful open reduction and internal fixation of a displaced comminuted right patellar fracture on September 8, 2024. The surgical procedure was performed without complications, and excellent anatomic reduction was achieved. Her post-operative course was uncomplicated with good pain control and no signs of infection or neurovascular compromise. She was discharged home on post-operative day #2 in stable condition with appropriate pain medications, DVT prophylaxis, activity restrictions, and follow-up arrangements.
+
+PROGNOSIS: Good to excellent for complete fracture healing and return to pre-injury activity level with adherence to rehabilitation protocol.
+
+FOLLOW-UP CARE: Patient to follow up with orthopedic surgeon in 12 days for wound check and suture removal, continue physical therapy for 3-6 months, and maintain activity restrictions as outlined.
+
+==============================================================================
+DISCHARGE CONDITION:
+==============================================================================
+
+Condition at Discharge: STABLE, IMPROVED
+
+Mental Status: Alert and oriented x 3
+Cardiovascular: Stable, normal sinus rhythm
+Respiratory: Clear lungs, normal respirations
+Gastrointestinal: Tolerating regular diet
+Genitourinary: Voiding normally
+Musculoskeletal: Post-op day #2 from right patella ORIF, stable fixation
+Neurological: Intact, no deficits
+Surgical Wound: Clean, dry, intact dressing, no signs of infection
+Pain: Well-controlled (2-3/10) on oral medications
+Mobility: Ambulating with crutches, TTWB right leg, requires knee immobilizer
+
+FUNCTIONAL STATUS: Independent with transfers, ambulation with assistive device
+SAFETY: Discharge with spouse, safe home environment confirmed
+
+DISPOSITION: Home with family support
+
+==============================================================================
+DISCHARGE PREPARED BY:
+==============================================================================
+
+Dictated by: Dr. James Mitchell, MD
+Date Dictated: September 10, 2024
+Time Dictated: 15:30
+
+Reviewed and Electronically Signed by:
+Dr. James Mitchell, MD
+Orthopedic Surgery
+License: TX-MD-87654
+NPI: 1987654321
+Date/Time: September 10, 2024 at 16:15
+
+Case Manager: Rebecca Adams, RN, CCM
+Discharge Nurse: Michelle Carter, RN
+
+==============================================================================
+DISTRIBUTION:
+==============================================================================
+
+✓ Patient (copy provided at discharge)
+✓ Dr. James Wilson (Primary Care Physician) - Via EMR
+✓ Austin PT Services (Physical Therapy) - Via secure fax
+✓ Liberty Choice PPO Insurance - For claim processing
+✓ Patient Medical Record (Electronic Health Record)
+
+Medical Record Number: LOC-334556
+Account Number: LOC-2024-09-0892
+Admission Date: September 8, 2024
+Discharge Date: September 10, 2024
+
+END OF DISCHARGE SUMMARY

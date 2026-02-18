@@ -1,0 +1,168 @@
+CLAIM SUBMISSION FORM - POSITIVE TEST CASE #2
+Claim Type: Health Insurance - Liberty Choice PPO
+Policy Number: PPO-2024-45621
+Policy Holder: Sarah Martinez
+Policy Effective Date: March 1, 2024
+Claim Number: CLM-PPO-002
+
+POLICYHOLDER INFORMATION:
+Full Name: Sarah Martinez
+Date of Birth: August 23, 1985
+Age: 40 years
+Gender: Female
+Address: 1456 Maple Drive, Austin, TX 78701
+Phone: (512) 555-0234
+Email: smartinez@email.com
+SSN: XXX-XX-5678 (last 4 digits)
+Member ID: PPO45621-001
+Group Number: GRP-002
+Relationship to Patient: Self (Primary Policyholder)
+
+POLICY COVERAGE:
+Insurance Company: Liberty Choice PPO
+Policy Type: Preferred Provider Organization (PPO)
+Annual Deductible (In-Network): $1,000 individual / $2,000 family
+Deductible Status: $1,000 met (as of September 2024)
+Out-of-Pocket Maximum (In-Network): $5,000 individual / $10,000 family
+Out-of-Pocket Used: $2,850 (as of this claim)
+In-Network Coverage: 85% after deductible for major surgical procedures
+Out-of-Network Coverage: 60% after deductible
+
+CLAIM DETAILS:
+Date of Service: September 8, 2024
+Admission Date: September 8, 2024
+Discharge Date: September 10, 2024
+Length of Stay: 2 days (inpatient)
+Provider: Dr. James Mitchell, MD, Orthopedic Surgeon
+Provider License: TX-MD-87654
+Provider NPI: 1987654321
+Provider Address: Liberty Orthopedic Center, 2200 Medical Plaza, Austin, TX 78701
+Provider Phone: (512) 555-7800
+Facility: Liberty Orthopedic Center (In-Network Tier 1)
+Facility NPI: 1234567890
+Primary Diagnosis Code: S82.001A (Fracture of right patella, initial encounter for closed fracture)
+Secondary Diagnosis: W19.XXXA (Unspecified fall, initial encounter)
+Procedure Codes: 
+  - 27524 (Open treatment of patellar fracture, with internal fixation)
+  - 99223 (Initial hospital care, per day, high complexity)
+  - 99232 (Subsequent hospital care, per day)
+  - 99238 (Hospital discharge day management)
+
+
+DESCRIPTION OF SERVICE:
+Patient Sarah Martinez sustained a displaced fracture of the right patella (kneecap) on September 5, 2024, after falling from her bicycle during recreational riding. Initial emergency department evaluation and X-rays confirmed a comminuted patellar fracture with significant displacement. Conservative treatment (casting) was deemed inappropriate due to the nature of the fracture. Patient was referred to orthopedic surgery.
+
+On September 8, 2024, patient underwent open reduction and internal fixation (ORIF) of right patellar fracture at Liberty Orthopedic Center (in-network facility). Surgery performed by Dr. James Mitchell, orthopedic surgeon. Procedure involved surgical incision, fracture reduction, and placement of internal fixation hardware (tension band wiring technique with K-wires and cerclage wire).
+
+Surgery was performed under general anesthesia and lasted approximately 2 hours. Patient tolerated procedure well. Post-operative course was uncomplicated. Patient remained hospitalized for 2 days for pain management, wound monitoring, and physical therapy consultation. Discharged home on September 10, 2024, with crutches, pain medication, and physical therapy prescription. Follow-up scheduled.
+
+PRE-AUTHORIZATION:
+Pre-authorization Number: PA-2024-09876
+Authorization Date: September 6, 2024
+Authorized Procedure: Open reduction internal fixation of patellar fracture
+Authorized Facility: Liberty Orthopedic Center
+Authorized Provider: Dr. James Mitchell
+Authorization Status: APPROVED
+Authorization Valid Through: September 30, 2024
+
+NETWORK STATUS:
+Provider Network Status: IN-NETWORK (Tier 1)
+Facility Network Status: IN-NETWORK (Tier 1)
+Surgeon Status: IN-NETWORK
+Anesthesiologist Status: IN-NETWORK
+Benefits Applied: In-Network PPO benefits (85% coverage after deductible)
+
+CLAIM AMOUNT: $18,750.00
+
+ITEMIZED CHARGES:
+1. Orthopedic Surgeon Professional Fee (Dr. Mitchell): $6,500.00
+   - CPT 27524 (ORIF patellar fracture)
+2. Anesthesia Services (Dr. Robert Chen, MD): $2,250.00
+   - CPT 01382 (Anesthesia for knee surgery)
+   - Time: 2.5 hours
+3. Operating Room Facility Fees: $4,800.00
+   - OR time: 2 hours
+   - Equipment and supplies
+4. Hospital Inpatient Room Charges: $3,600.00
+   - Day 1: September 8, 2024 - $1,800
+   - Day 2: September 9, 2024 - $1,800
+5. Medical Supplies and Orthopedic Implants: $1,200.00
+   - K-wires (2)
+   - Cerclage wire
+   - Surgical instruments and disposables
+6. Post-operative Care and Monitoring: $400.00
+   - Nursing care
+   - Vital signs monitoring
+   - Pain management
+
+TOTAL CHARGES: $18,750.00
+
+EXPECTED COVERAGE CALCULATION:
+Total Charges: $18,750.00
+Annual Deductible (In-Network): $1,000.00
+Deductible Status: Already met prior to this claim
+Amount Subject to Coinsurance: $18,750.00
+
+Insurance Coverage (85% for major surgery, in-network): 
+  85% of $18,750.00 = $15,937.50
+
+Patient Coinsurance (15%):
+  15% of $18,750.00 = $2,812.50
+
+FINANCIAL SUMMARY:
+Total Claim Amount: $18,750.00
+Insurance Expected Payment: $15,937.50
+Patient Responsibility (Coinsurance 15%): $2,812.50
+Patient Out-of-Pocket Running Total: $2,812.50 (well within $5,000 OOP max)
+
+SUPPORTING DOCUMENTS INCLUDED:
+✓ Pre-authorization approval letter (PA-2024-09876, dated September 6, 2024)
+✓ Surgical operative report with full procedure details
+✓ Anesthesia records showing time and medications used
+✓ Hospital admission records (September 8, 2024)
+✓ Daily progress notes (September 8-9, 2024)
+✓ Hospital discharge summary (September 10, 2024)
+✓ X-ray reports (pre-operative and post-operative images)
+✓ Physical therapy evaluation and prescription
+✓ Itemized hospital bill with CPT codes
+✓ Prescriptions for post-operative pain management
+
+MEDICAL NECESSITY JUSTIFICATION:
+This surgical procedure was medically necessary due to:
+1. Displaced comminuted patellar fracture requiring surgical intervention
+2. Conservative treatment (casting) contraindicated due to fracture displacement
+3. Risk of permanent disability, chronic pain, and arthritis if not surgically repaired
+4. Standard of care for this type of fracture is operative fixation
+5. Surgery performed by in-network orthopedic surgeon at approved facility
+6. Pre-authorization obtained prior to procedure
+
+CLAIM STATUS: Should be APPROVED - All criteria met:
+✓ Pre-authorization obtained and documented (PA-2024-09876)
+✓ In-network provider (Dr. Mitchell) and facility (Liberty Orthopedic Center)
+✓ Medically necessary procedure per orthopedic standards
+✓ Proper ICD-10 and CPT coding
+✓ Complete documentation submitted
+✓ Within policy coverage limits (major surgery - 85% coverage)
+✓ Claim submitted within 45 days of service date
+✓ Annual deductible already met
+✓ Patient within out-of-pocket maximum
+
+ADDITIONAL INFORMATION:
+Submitting Provider: Liberty Orthopedic Center Billing Department
+Submission Date: September 25, 2024
+Submission Method: Electronic claim via clearinghouse
+Contact for Questions: (512) 555-7801 (Billing Department)
+
+PATIENT AUTHORIZATION:
+I hereby authorize payment of medical benefits to Liberty Orthopedic Center and Dr. James Mitchell for services rendered. I authorize release of medical information necessary to process this claim.
+
+Patient Signature: Sarah Martinez (Electronic authorization on file)
+Date: September 10, 2024
+
+PROVIDER CERTIFICATION:
+I certify that the services listed above were medically necessary and provided as described.
+
+Provider Signature: Dr. James Mitchell, MD (Electronic signature)
+Date: September 10, 2024
+License: TX-MD-87654
+NPI: 1987654321

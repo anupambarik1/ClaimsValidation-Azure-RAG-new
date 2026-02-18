@@ -1,0 +1,89 @@
+ENDOSCOPY OPERATIVE REPORT
+
+American Health Endoscopy Center
+1800 Medical Drive, Chicago, IL 60611
+Phone: (312) 555-ENDO (3636) | NPI: 1234567800
+
+Patient: Robert Chen | DOB: 3/15/1990 | Age: 34 | MRN: AHEC-556677
+Date of Procedure: August 22, 2024 | Start: 09:15 | End: 09:45
+Procedure: Esophagogastroduodenoscopy (EGD) with Biopsies
+
+ENDOSCOPIST: Dr. Emily Rodriguez, MD, FACG | NPI: 1564738291
+ANESTHESIA: Dr. Michael Park, MD | Conscious Sedation
+NURSE: Jennifer Martinez, RN, CGRN
+
+INDICATIONS:
+34-year-old male with 6-month history of persistent gastroesophageal reflux symptoms including:
+- Severe heartburn and regurgitation despite omeprazole 40mg daily
+- Progressive dysphagia to solids (3-month duration)
+- Non-cardiac chest pain
+- Failed conservative management
+
+Endoscopy indicated to evaluate for:
+- Barrett's esophagus
+- Esophageal stricture
+- Esophagitis severity
+- Hiatal hernia
+- H. pylori gastritis
+- Malignancy
+
+MEDICATIONS:
+Midazolam 3mg IV | Fentanyl 75 mcg IV | Lidocaine spray 10% (topical)
+Patient tolerated conscious sedation well. Vital signs stable throughout.
+
+PROCEDURE:
+Upper endoscopy performed using Olympus GIF-H190 video gastroscope after informed consent obtained. Passed through oropharynx without difficulty.
+
+FINDINGS:
+
+ESOPHAGUS:
+- Distal esophagus: Moderate erythema and linear erosions consistent with Los Angeles Grade B esophagitis
+- Multiple erosions in distal 5cm of esophagus
+- Z-line irregular at 38cm from incisors
+- NO Barrett's esophagus identified (no salmon-colored mucosa, no intestinal metaplasia on visual inspection)
+- NO masses, polyps, or malignancy
+- NO strictures or narrowing
+- NO varices
+
+GASTROESOPHAGEAL JUNCTION: Located at 38cm | Small hiatal hernia (2cm) present
+
+STOMACH:
+- Fundus: Normal, no lesions
+- Body: Mild erythema, no ulcers
+- Antrum: Mild gastritis, no erosions or ulcers
+- NO masses or polyps
+- Pylorus: Normal
+
+DUODENUM:
+- Bulb: Normal, no ulcers
+- Second portion: Normal
+
+BIOPSIES TAKEN:
+1. Distal esophagus (5cm above GE junction) - 2 specimens
+2. Gastroesophageal junction (Z-line) - 2 specimens  
+3. Stomach antrum - 2 specimens
+4. Stomach body - 2 specimens
+Total: 8 tissue specimens sent to pathology in formalin
+
+IMPRESSION:
+1. Los Angeles Grade B erosive esophagitis (moderate)
+2. Small hiatal hernia (2cm sliding type)
+3. Mild gastritis
+4. NO Barrett's esophagus
+5. NO strictures, masses, or malignancy
+
+RECOMMENDATION:
+- Increase PPI to twice daily (omeprazole 40mg BID)
+- Add H2-blocker at bedtime (famotidine 20mg)
+- Continue lifestyle modifications
+- Await pathology results (rule out H. pylori, intestinal metaplasia)
+- Repeat endoscopy in 8-12 weeks if symptoms persist after therapy escalation
+- Follow-up clinic visit in 2 weeks to review pathology
+
+COMPLICATIONS: None
+PATIENT TOLERANCE: Excellent
+DISPOSITION: Discharged to home in stable condition with spouse
+FOLLOW-UP: Clinic appointment 9/5/2024 at 2:00 PM
+
+Electronically signed: Dr. Emily Rodriguez, MD, FACG
+Date/Time: 8/22/2024 10:15 | License: IL-MD-34567 | NPI: 1564738291

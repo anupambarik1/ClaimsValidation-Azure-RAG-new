@@ -1,0 +1,140 @@
+CLAIM SUBMISSION FORM - COMPLEX TEST CASE #2
+Claim Type: Health Insurance - PPO (Out-of-Network Emergency)
+Policy Number: PPO-2024-45621
+Claim Number: CLM-PPO-COMPLEX-002
+
+CLAIMANT INFORMATION:
+Name: Sarah Martinez
+Date of Birth: 08/23/1985
+Policy Holder: Sarah Martinez
+Member ID: PPO45621-001
+
+CLAIM DETAILS:
+Date of Incident: October 22, 2024, 2:30 AM
+Date of Service: October 22-25, 2024 (3-day admission)
+Provider: Dr. Michael Stevens, Emergency Medicine
+Facility: Rural County Hospital (OUT-OF-NETWORK)
+Location: Remote rural area, 180 miles from home
+Diagnosis Code: S06.2X1A (Diffuse traumatic brain injury with loss of consciousness)
+Procedure Codes: 99285 (Emergency dept, high complexity), 99232 (Hospital care), 70450 (CT head)
+
+DESCRIPTION OF SERVICE:
+Sarah was on vacation in remote rural area when involved in serious car accident at 2:30 AM. Nearest hospital was Rural County Hospital, 15 miles away (out-of-network). Suffered traumatic brain injury, facial lacerations, and fractured ribs. Treated in ER, admitted to ICU. Due to severity and remote location, transfer to in-network facility not medically appropriate for 48 hours. Transferred to in-network facility on day 3.
+
+CLAIM AMOUNT: $67,850.00
+
+ITEMIZED CHARGES:
+OUT-OF-NETWORK FACILITY (Oct 22-24):
+- Emergency room (trauma level): $8,500.00
+- CT scan (head, with contrast): $4,200.00
+- ICU (2 days @ $5,500/day): $11,000.00
+- Neurosurgery consultation: $2,800.00
+- Facial laceration repair: $3,150.00
+- X-rays (chest, ribs): $1,200.00
+- Medications and supplies: $4,500.00
+- Ambulance (accident scene to hospital): $2,500.00
+Subtotal Out-of-Network: $38,850.00
+
+IN-NETWORK FACILITY (Oct 24-25):
+- Air ambulance transfer: $15,000.00
+- Step-down unit (1 day): $4,000.00
+- Neurology follow-up: $1,500.00
+- Discharge planning: $1,000.00
+Subtotal In-Network: $21,500.00
+
+TOTAL CLAIM: $67,850.00
+
+COMPLEXITY FACTORS:
+1. EMERGENCY OUT-OF-NETWORK EXCEPTION: True medical emergency in remote area. PPO policy covers emergency care at in-network rates regardless of network status.
+
+2. BALANCE BILLING PROTECTION: No Surprises Act applies. Patient protected from balance billing by out-of-network emergency providers.
+
+3. AIR AMBULANCE COVERAGE: Medically necessary air transport from rural hospital to trauma center. Subject to medical necessity review.
+
+4. SPLIT CLAIM: Services at two different facilities with different network statuses.
+
+5. COORDINATION WITH AUTO INSURANCE: Car accident - may have auto insurance medical payments or PIP coverage that should pay first.
+
+AUTO INSURANCE INFORMATION:
+Policy: State Farm Auto Insurance
+Policy Number: AUTO-558-9923-A
+Medical Payments Coverage: $5,000.00
+PIP Coverage: Not applicable (traditional tort state)
+Auto Insurance Paid: $5,000.00 (maximum medical payments)
+EOB from auto insurance received
+
+EXPECTED COVERAGE CALCULATION:
+
+OUT-OF-NETWORK EMERGENCY (Covered at In-Network Rate):
+Charges: $38,850.00
+PPO negotiated equivalent rate: $28,200.00
+Applied to deductible: $1,000.00 (in-network deductible - now met)
+Remaining: $27,200.00
+Insurance pays 85%: $23,120.00
+Patient coinsurance (15%): $4,080.00
+
+IN-NETWORK SERVICES:
+Charges: $21,500.00
+PPO negotiated rate: $18,500.00
+Deductible already met: $0.00
+Insurance pays 85%: $15,725.00
+Patient coinsurance (15%): $2,775.00
+
+AUTO INSURANCE COORDINATION:
+Auto insurance paid: $5,000.00 (applied to patient responsibility)
+
+PATIENT RESPONSIBILITY BEFORE AUTO:
+Deductible: $1,000.00
+Out-of-network coinsurance: $4,080.00
+In-network coinsurance: $2,775.00
+Subtotal: $7,855.00
+
+PATIENT RESPONSIBILITY AFTER AUTO:
+$7,855.00 - $5,000.00 (auto insurance) = $2,855.00
+
+INSURANCE PAYMENTS:
+PPO payment (out-of-network emergency): $23,120.00
+PPO payment (in-network): $15,725.00
+Auto insurance: $5,000.00
+Total insurance: $43,845.00
+Patient final responsibility: $2,855.00
+
+SUPPORTING DOCUMENTS REQUIRED:
+✓ Police accident report
+✓ 911 call logs and dispatch records
+✓ Emergency room records (initial presentation)
+✓ CT scan and radiology reports
+✓ ICU daily progress notes
+✓ Neurosurgery consultation report
+✓ Operative report (facial repair)
+✓ Transfer records and medical necessity documentation
+✓ Air ambulance flight record and medical necessity
+✓ In-network facility records
+✓ Auto insurance EOB showing $5,000 payment
+✓ Documentation of emergency nature and remote location
+
+PRE-AUTHORIZATION:
+Not required for emergency services. Retrospective review conducted for air ambulance medical necessity.
+
+CLAIM STATUS: Should be APPROVED (Complex Processing)
+- True emergency qualifies for in-network rate at out-of-network facility
+- No Surprises Act protections apply
+- Balance billing prohibited
+- Auto insurance properly coordinated
+- Air ambulance medically necessary (remote location, TBI, neurosurgery needs)
+- Documentation supports emergency nature
+- Transfer to in-network facility when medically stable
+
+SPECIAL PROCESSING NOTES:
+1. Verify emergency nature (life-threatening TBI)
+2. Confirm no in-network facility within reasonable distance
+3. Review air ambulance medical necessity (approved - remote location + neurosurgical needs)
+4. Coordinate auto insurance payment
+5. Protect patient from balance billing
+6. Apply emergency out-of-network exception
+7. Process out-of-network at in-network benefit level
+
+REGULATORY COMPLIANCE:
+- No Surprises Act: Patient protected from surprise bills
+- Emergency Medical Treatment and Labor Act (EMTALA): Required stabilization
+- Out-of-network emergency exception properly applied

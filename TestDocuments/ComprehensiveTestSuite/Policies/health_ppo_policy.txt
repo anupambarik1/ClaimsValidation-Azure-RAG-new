@@ -1,0 +1,84 @@
+LIBERTY CHOICE PPO INSURANCE POLICY
+Policy Number: PPO-2024-45621
+Policyholder: Sarah Martinez
+Effective Date: March 1, 2024
+Policy Type: Preferred Provider Organization (PPO)
+
+COVERAGE DETAILS:
+Annual Deductible: 
+  - In-Network: $1,000 per individual / $2,000 per family
+  - Out-of-Network: $2,500 per individual / $5,000 per family
+Out-of-Pocket Maximum:
+  - In-Network: $5,000 per individual / $10,000 per family
+  - Out-of-Network: $10,000 per individual / $20,000 per family
+
+PRIMARY CARE SERVICES (In-Network):
+- Office visits: $20 copay
+- Preventive care: 100% covered
+- Annual wellness exam: 100% covered
+- Immunizations: 100% covered
+- Lab work: 90% covered after deductible
+
+PRIMARY CARE SERVICES (Out-of-Network):
+- Office visits: 60% covered after deductible
+- Lab work: 60% covered after deductible
+
+SPECIALIST SERVICES:
+- In-Network: $40 copay (no referral needed)
+- Out-of-Network: 60% covered after deductible
+- Diagnostic imaging (MRI, CT): 80% in-network, 60% out-of-network after deductible
+
+HOSPITALIZATION:
+- Inpatient (In-Network): 85% covered after deductible
+- Inpatient (Out-of-Network): 60% covered after deductible
+- Emergency room: $500 copay (waived if admitted), covered at in-network rate
+- Ambulance: 100% covered for emergency
+- Surgical procedures: 85% in-network after deductible
+
+SURGICAL BENEFIT SCHEDULE (In-Network):
+- Outpatient minor surgery: 85% after deductible
+- Inpatient moderate surgery: 85% after deductible
+- Major surgical procedures: 85% after deductible
+- Reconstructive surgery (medically necessary): 85% after deductible
+
+PRESCRIPTION DRUGS (In-Network):
+- Generic: $15 copay
+- Preferred brand: $50 copay
+- Non-preferred brand: $90 copay
+- Specialty medications: 25% coinsurance (max $250)
+
+MATERNITY CARE:
+- Prenatal care: $20 copay per visit (in-network)
+- Delivery: 85% covered after deductible
+- Postpartum care: $20 copay per visit
+
+MENTAL HEALTH & SUBSTANCE ABUSE:
+- Outpatient therapy: $30 copay (in-network)
+- Inpatient treatment: 80% covered after deductible
+- Substance abuse rehabilitation: 80% covered (30-day limit per year)
+
+DURABLE MEDICAL EQUIPMENT:
+- Wheelchairs, walkers, crutches: 80% covered after deductible
+- Home oxygen equipment: 80% covered after deductible
+- CPAP machines: 80% covered after deductible
+
+EXCLUSIONS:
+- Cosmetic surgery (except post-mastectomy reconstruction)
+- Weight loss programs
+- Infertility treatments
+- Experimental or investigational procedures
+- Services not medically necessary
+
+PRE-AUTHORIZATION REQUIREMENTS:
+- All inpatient admissions (except emergency)
+- Outpatient surgeries over $5,000
+- MRI, CT, PET scans
+- Durable medical equipment over $500
+- Home health care
+- Failure to obtain pre-authorization may result in 50% reduction in benefits
+
+CLAIMS SUBMISSION:
+- Submit within 120 days of service
+- Include itemized bills, explanation of medical necessity
+- Out-of-network claims require submission by member
+- Appeals accepted within 180 days of denial

@@ -1,0 +1,90 @@
+AMERICAN HEALTH SAVINGS PLAN (HIGH DEDUCTIBLE)
+Policy Number: HDHP-2024-99132
+Policyholder: Robert Chen
+Effective Date: January 1, 2024
+Policy Type: High Deductible Health Plan (HDHP) with HSA
+
+COVERAGE DETAILS:
+Annual Deductible: $3,000 per individual / $6,000 per family
+Out-of-Pocket Maximum: $7,000 per individual / $14,000 per family
+HSA Contribution Limit: $4,150 individual / $8,300 family
+Coinsurance: 80% after deductible (member pays 20%)
+
+PREVENTIVE CARE (No Deductible):
+- Annual physical exam: 100% covered
+- Immunizations: 100% covered
+- Well-child visits: 100% covered
+- Cancer screenings: 100% covered
+- Mammograms: 100% covered
+
+PRIMARY CARE (After Deductible):
+- Office visits: 80% covered after deductible
+- Urgent care: 80% covered after deductible
+- Lab tests: 80% covered after deductible
+- X-rays: 80% covered after deductible
+
+SPECIALIST CARE (After Deductible):
+- Specialist consultation: 80% covered after deductible
+- Diagnostic tests: 80% covered after deductible
+- MRI/CT scans: 80% covered after deductible
+- Physical therapy: 80% covered after deductible
+
+HOSPITALIZATION (After Deductible):
+- Emergency room: 80% covered after deductible
+- Inpatient hospital: 80% covered after deductible
+- Ambulance: 80% covered after deductible
+- Surgery: 80% covered after deductible
+- Anesthesia: 80% covered after deductible
+
+SURGICAL PROCEDURES (After Deductible):
+- All surgical procedures: 80% covered after deductible
+- No benefit schedule tiers - all covered at same rate
+- Pre-authorization required for procedures over $10,000
+
+PRESCRIPTION DRUGS (After Deductible):
+- All medications: 80% covered after deductible until out-of-pocket max
+- No copays - subject to deductible first
+- Preventive medications: 100% covered (no deductible)
+
+MATERNITY CARE:
+- Prenatal visits: 80% covered after deductible
+- Delivery: 80% covered after deductible
+- Postpartum care: 80% covered after deductible
+
+MENTAL HEALTH:
+- Outpatient therapy: 80% covered after deductible
+- Inpatient psychiatric: 80% covered after deductible
+
+CHIROPRACTIC & ALTERNATIVE CARE:
+- Chiropractic: 80% covered after deductible (20 visits per year max)
+- Acupuncture: 80% covered after deductible (15 visits per year max)
+
+DURABLE MEDICAL EQUIPMENT:
+- All DME: 80% covered after deductible
+- Prosthetics: 80% covered after deductible
+
+EXCLUSIONS:
+- Cosmetic procedures
+- Weight loss surgery (unless medically necessary BMI >40)
+- Experimental treatments
+- Infertility treatments
+- Dental and vision (separate policies required)
+
+PRE-AUTHORIZATION:
+Required for:
+- All inpatient hospital admissions
+- Surgeries with estimated cost over $10,000
+- MRI, CT, PET scans
+- Home health care
+- Durable medical equipment over $1,000
+- Failure to obtain pre-auth results in denial
+
+TELEHEALTH SERVICES:
+- Virtual doctor visits: 80% covered after deductible
+- Mental health telehealth: 80% covered after deductible
+
+CLAIMS SUBMISSION:
+- Submit within 90 days of service date
+- Include itemized statement and diagnosis codes
+- EOB mailed within 30 days of processing
+- Appeals within 180 days

@@ -1,0 +1,189 @@
+ATTENDING PHYSICIAN STATEMENT
+For Life Insurance Claim
+
+SecureLife Term Insurance Company
+Claims Department
+P.O. Box 12345, Hartford, CT 06120
+
+Policy Number: TERM-2024-56789
+Insured: Jennifer Anne Williams | DOB: 4/8/1982 | Deceased: 11/3/2024
+Claimant: David Michael Williams (Spouse)
+
+PHYSICIAN INFORMATION:
+Name: Robert Hayes, MD, FACC
+Specialty: Cardiology (Board Certified)
+License: IL-MD-56789
+NPI: 1234567899
+Address: Memorial Hospital Cardiology Department
+         500 Hospital Drive, Suite 300
+         Springfield, IL 62701
+Phone: (217) 555-HEART (43278)
+Fax: (217) 555-4329
+
+RELATIONSHIP TO PATIENT:
+☐ Primary Care Physician
+☑ Specialist (Cardiology - Attending physician during hospital event)
+☐ Consulting Physician
+
+First Saw Patient: November 2, 2024
+Last Saw Patient: November 3, 2024, 12:18 AM (time of death)
+Total Number of Visits: One emergency encounter
+
+PATIENT MEDICAL HISTORY:
+To the best of my knowledge based on emergency records and brief history:
+
+Prior Cardiac History: 
+NONE documented. Patient had no known history of heart disease, chest pain, or cardiac symptoms prior to this acute event.
+
+Known Risk Factors:
+Age: 42 years (premature for cardiac disease in females typically)
+Family History: Not obtained during emergency (unknown)
+Smoking: Non-smoker per emergency intake
+Hypertension: No documented history
+Diabetes: No documented history
+Hyperlipidemia: Unknown - no prior labs available
+Obesity: No - BMI approximately 23 (normal weight)
+
+Prior Medications: 
+NONE documented in emergency records related to cardiac conditions
+
+Prior Cardiac Testing:
+NONE documented. No prior EKGs, stress tests, or cardiac imaging on file at our institution.
+
+CIRCUMSTANCES OF DEATH:
+
+Date/Time of Onset: November 2, 2024, approximately 8:30 PM
+Location: Patient's home (458 Oak Street, Springfield, IL)
+
+Initial Symptoms:
+Patient experienced sudden onset severe substernal chest pain described as crushing/pressure quality, radiating to left arm and jaw. Associated symptoms included shortness of breath, diaphoresis (profuse sweating), nausea, and sense of impending doom.
+
+Emergency Response:
+911 called at 8:45 PM. EMS arrived 8:52 PM. Patient transported to Memorial Hospital Emergency Department, arriving at 9:12 PM.
+
+Emergency Department Evaluation:
+Initial vital signs: BP 160/95, HR 115, RR 24, SpO2 92% on room air, Temp 98.2°F
+Patient in acute distress with ongoing chest pain
+12-lead EKG performed at 9:16 PM showed:
+- ST-segment elevation in leads V1-V4 (anterior wall STEMI)
+- Hyperacute T waves
+- Diagnostic for acute ST-elevation myocardial infarction
+
+Laboratory Results:
+Troponin I: 2.5 ng/mL (highly elevated - confirms MI)
+CK-MB: Elevated
+BNP: Elevated
+Other labs: CBC, BMP within normal limits
+
+I was consulted as attending cardiologist at 9:25 PM. I evaluated patient and reviewed EKG confirming acute anterior wall STEMI.
+
+TREATMENT PROVIDED:
+
+Emergency Medications:
+- Aspirin 325mg PO (chewed)
+- Ticagrelor 180mg PO loading dose
+- Heparin bolus IV followed by drip
+- Nitroglycerin sublingual (limited due to BP)
+- Morphine IV for pain
+- Oxygen via nasal cannula
+
+Cardiac Catheterization:
+Patient taken emergently to cardiac catheterization laboratory at 9:45 PM.
+
+Findings:
+- Left main coronary artery: 30% stenosis
+- Left anterior descending (LAD): 95% occlusion at proximal segment with acute thrombus
+- Left circumflex: 40% stenosis
+- Right coronary artery: 50% diffuse disease
+
+Intervention Attempted:
+- Attempted percutaneous coronary intervention (PCI) to LAD
+- Wire successfully crossed lesion
+- Balloon angioplasty performed
+- During intervention at 11:15 PM, patient developed ventricular fibrillation
+
+CARDIAC ARREST AND RESUSCITATION:
+
+11:15 PM - Ventricular fibrillation on monitor
+11:16 PM - CPR initiated immediately
+           Defibrillation x 3 (200J, 300J, 360J)
+           ACLS protocol followed
+11:30 PM - Brief return of spontaneous circulation (ROSC)
+           Then recurrent ventricular fibrillation
+           Continued CPR
+           
+Medications administered during code:
+- Epinephrine 1mg IV q3-5 minutes (total 6 doses)
+- Amiodarone 300mg IV bolus, then 150mg IV
+- Sodium bicarbonate
+- Calcium chloride
+- Multiple defibrillation attempts (>10 shocks)
+
+11:45 PM - Patient remained in refractory ventricular fibrillation
+           Continued maximal resuscitation efforts
+           Considered ECMO but patient condition deteriorated rapidly
+
+12:05 AM (Nov 3) - After 50 minutes of continuous ACLS, no sustained ROSC achieved
+12:18 AM (Nov 3) - Resuscitation efforts ceased per ACLS termination criteria
+                   Patient pronounced dead
+
+Time of Death: November 3, 2024, 12:18 AM
+
+CAUSE OF DEATH:
+
+Immediate Cause: Acute Myocardial Infarction (Heart Attack)
+Underlying Cause: Atherosclerotic Coronary Artery Disease with Acute Thrombotic Occlusion
+Mechanism: Ventricular Fibrillation (Fatal Arrhythmia)
+
+MANNER OF DEATH: NATURAL
+
+OPINION:
+Jennifer Williams suffered a sudden, unexpected acute myocardial infarction (heart attack) caused by severe blockage in her left anterior descending coronary artery. This was a large anterior wall MI affecting a significant portion of her heart muscle.
+
+Despite rapid recognition, immediate transport to hospital, prompt diagnosis, and emergent cardiac catheterization with attempted intervention, as well as prolonged and aggressive resuscitation efforts following cardiac arrest, the patient could not be saved.
+
+This represents a tragic case of sudden cardiac death from coronary artery disease in a relatively young woman with no known prior cardiac history. The severity and location of the arterial blockage, combined with the resulting ventricular arrhythmia, proved fatal despite all appropriate medical interventions.
+
+The death was entirely of natural causes from cardiovascular disease.
+
+PROGNOSIS BEFORE EVENT:
+Unknown. Patient had no documented cardiac disease and no symptoms prior to this acute event based on available information.
+
+DISABILITY:
+N/A - Patient died during acute event.
+
+ADDITIONAL INFORMATION:
+Autopsy was performed by Sangamon County Medical Examiner (Dr. Patricia Morgan, MD) on November 4, 2024. Autopsy findings confirmed acute myocardial infarction with severe coronary atherosclerosis and acute coronary thrombosis. Manner of death certified as natural.
+
+RECORDS ATTACHED:
+☑ Emergency Department Record
+☑ Cardiac Catheterization Report
+☑ EKG showing STEMI
+☑ Laboratory Results
+☑ Death Summary
+☑ Code Blue Documentation
+
+AUTHORIZATION:
+I authorize the release of this medical information to SecureLife Term Insurance Company for the purpose of processing the life insurance death claim for Jennifer Anne Williams (Policy #TERM-2024-56789).
+
+This information is accurate to the best of my knowledge and based on my direct involvement in the patient's care as attending cardiologist during this fatal cardiac event.
+
+PHYSICIAN CERTIFICATION:
+I hereby certify that I attended the above-named patient during the illness which resulted in death, and that the information provided herein is true and accurate to the best of my knowledge.
+
+Signature: ___[Electronic Signature Applied]___
+Name: Robert Hayes, MD, FACC
+License: IL-MD-56789
+NPI: 1234567899
+Date: November 8, 2024
+Time: 3:45 PM
+
+Contact Information:
+Memorial Hospital Cardiology
+500 Hospital Drive, Suite 300
+Springfield, IL 62701
+Phone: (217) 555-4278
+Fax: (217) 555-4329
+Email: rhayes@memorialhospital.org
+
+END OF ATTENDING PHYSICIAN STATEMENT

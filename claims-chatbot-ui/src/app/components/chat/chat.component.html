@@ -1,4 +1,5 @@
 <div class="chat-container">
+  <!-- Header Bar -->
   <mat-toolbar color="primary" class="chat-header">
     <mat-icon>smart_toy</mat-icon>
     <span>Claims Assistant</span>
@@ -22,7 +23,75 @@
     </button>
   </mat-toolbar>
 
-  <div class="messages-container" #messagesContainer>
+  <!-- Main Content Area - Split Vertically -->
+  <div class="main-content">
+    <!-- Left Panel - Input Section -->
+    <div class="left-panel">
+      <div class="panel-header">
+        <mat-icon>edit_note</mat-icon>
+        <h3>Submit Claim</h3>
+      </div>
+      
+      <div class="input-container">
+        <mat-tab-group #tabGroup>
+          <mat-tab label="Text Input">
+            <div class="text-input-panel">
+              <mat-form-field appearance="outline" class="message-input">
+                <mat-label>Type a message...</mat-label>
+                <textarea
+                  matInput
+                  [(ngModel)]="userMessage"
+                  (keydown.enter)="handleEnter($event)"
+                  rows="2"
+                  placeholder="Ask about claims or upload documents..."></textarea>
+              </mat-form-field>
+              <button mat-fab color="primary" (click)="sendMessage()" [disabled]="!userMessage.trim()">
+                <mat-icon>send</mat-icon>
+              </button>
+            </div>
+          </mat-tab>
+          
+          <mat-tab label="Upload Claim Form">
+            <app-document-upload 
+              [mode]="'claim'"
+              (documentSubmitted)="handleDocumentSubmit($event)">
+            </app-document-upload>
+          </mat-tab>
+          
+          <mat-tab label="Manual Claim Entry">
+            <app-claim-form (claimSubmitted)="handleClaimSubmit($event)"></app-claim-form>
+          </mat-tab>
+          
+          <mat-tab label="Upload Supporting Docs">
+            @if (!awaitingSupportingDocs) {
+              <div class="info-panel">
+                <mat-icon>info</mat-icon>
+                <p>Upload supporting documents AFTER submitting a claim.</p>
+                <p>First, submit a claim using "Upload Claim Form" or "Manual Claim Entry" tabs.</p>
+              </div>
+            } @else {
+              <app-document-upload 
+                [mode]="'supporting'"
+                (supportingDocsUploaded)="handleSupportingDocsUpload($event)">
+              </app-document-upload>
+            }
+          </mat-tab>
+          
+          <mat-tab label="Search Claims">
+            <app-claim-search></app-claim-search>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+    </div>
+
+    <!-- Right Panel - Messages/Results Section -->
+    <div class="right-panel">
+      <div class="panel-header">
+        <mat-icon>chat_bubble</mat-icon>
+        <h3>Processing & Results</h3>
+      </div>
+      
+      <div class="messages-container" #messagesContainer>
     @for (message of messages$ | async; track message.id) {
       <div class="message" [class.user-message]="message.sender === 'user'" [class.bot-message]="message.sender === 'bot'">
         <div class="message-avatar">
@@ -70,56 +139,7 @@
         </div>
       </div>
     }
-  </div>
-
-  <div class="input-container">
-    <mat-tab-group #tabGroup>
-      <mat-tab label="Text Input">
-        <div class="text-input-panel">
-          <mat-form-field appearance="outline" class="message-input">
-            <mat-label>Type a message...</mat-label>
-            <textarea
-              matInput
-              [(ngModel)]="userMessage"
-              (keydown.enter)="handleEnter($event)"
-              rows="2"
-              placeholder="Ask about claims or upload documents..."></textarea>
-          </mat-form-field>
-          <button mat-fab color="primary" (click)="sendMessage()" [disabled]="!userMessage.trim()">
-            <mat-icon>send</mat-icon>
-          </button>
-        </div>
-      </mat-tab>
-      
-      <mat-tab label="Upload Claim Form">
-        <app-document-upload 
-          [mode]="'claim'"
-          (documentSubmitted)="handleDocumentSubmit($event)">
-        </app-document-upload>
-      </mat-tab>
-      
-      <mat-tab label="Manual Claim Entry">
-        <app-claim-form (claimSubmitted)="handleClaimSubmit($event)"></app-claim-form>
-      </mat-tab>
-      
-      <mat-tab label="Upload Supporting Docs">
-        @if (!awaitingSupportingDocs) {
-          <div class="info-panel">
-            <mat-icon>info</mat-icon>
-            <p>Upload supporting documents AFTER submitting a claim.</p>
-            <p>First, submit a claim using "Upload Claim Form" or "Manual Claim Entry" tabs.</p>
-          </div>
-        } @else {
-          <app-document-upload 
-            [mode]="'supporting'"
-            (supportingDocsUploaded)="handleSupportingDocsUpload($event)">
-          </app-document-upload>
-        }
-      </mat-tab>
-      
-      <mat-tab label="Search Claims">
-        <app-claim-search></app-claim-search>
-      </mat-tab>
-    </mat-tab-group>
+      </div>
+    </div>
   </div>
 </div>

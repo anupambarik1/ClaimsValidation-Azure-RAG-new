@@ -1,0 +1,92 @@
+CLAIM SUBMISSION FORM - POSITIVE TEST CASE #1
+Claim Type: Health Insurance - HMO
+Policy Number: HMO-2024-78945
+Claim Number: CLM-HMO-001
+
+POLICY INFORMATION (Must Match Loaded Policy):
+Policy Type: HealthGuard HMO Insurance Policy
+Policyholder Name: Michael Thompson
+Policy Number: HMO-2024-78945
+Policy Effective Date: January 1, 2024
+Annual Deductible: $1,500 per individual
+Out-of-Pocket Maximum: $6,000 per individual
+Emergency Room Copay: $250 (waived if admitted)
+Hospitalization Coverage: 90% after deductible
+
+CLAIMANT INFORMATION:
+Name: Michael Thompson
+Date of Birth: May 12, 1978
+Age: 46 years
+Address: 742 Oak Avenue, Springfield, IL 62704
+Phone: (217) 555-0156
+Email: mthompson@email.com
+Policy Holder: Michael Thompson (Self)
+Member ID: HMO78945-001
+Relationship to Policyholder: Self
+
+CLAIM DETAILS:
+Date of Service: October 15, 2024
+Time of Service: 18:45 - 23:30
+Provider: Dr. Sarah Anderson, MD (Emergency Medicine)
+Provider NPI: 1234567890
+Facility: City Medical Center (In-Network HMO Facility)
+Facility Address: 1234 Medical Plaza Drive, Springfield, IL 62701
+Diagnosis Code: J18.9 (Pneumonia, unspecified organism)
+Procedure Codes: 99285 (Emergency department visit, high complexity)
+
+DESCRIPTION OF SERVICE:
+Michael Thompson presented to City Medical Center Emergency Department on October 15, 2024 at 6:45 PM with severe cough, high fever (103.2°F), shortness of breath, and pleuritic chest pain. Patient had been experiencing symptoms for 4 days with progressive worsening. Chest X-ray confirmed right lower lobe pneumonia with infiltrate. Received IV ceftriaxone 1g and oral azithromycin 500mg, IV fluids, and antipyretics. Oxygen saturation improved from 89% to 96% with supplemental oxygen. Discharged same evening at 11:30 PM with oral antibiotics and follow-up instructions.
+
+CLAIM AMOUNT: $1,850.00
+
+ITEMIZED CHARGES:
+- Emergency department visit (99285, Level 5): $750.00
+- Chest X-ray, 2 views (71046): $285.00
+- Complete blood count with differential (85025): $125.00
+- Blood culture, aerobic and anaerobic (87040): $180.00
+- IV antibiotic administration (96365): $310.00
+- IV fluids (normal saline 1000mL): $200.00
+TOTAL CHARGES: $1,850.00
+
+POLICY BENEFIT CALCULATION (Per HMO-2024-78945):
+Emergency Room: $250 copay (NOT waived - patient discharged, not admitted)
+Remaining after copay: $1,600.00
+Annual deductible: $1,500 (patient status: NOT yet met for year)
+Applied to deductible: $1,500.00
+Remaining after deductible: $100.00
+Hospitalization/ER coverage: 90% after deductible
+Insurance pays (90% of $100): $90.00
+Patient coinsurance (10% of $100): $10.00
+
+PATIENT FINANCIAL RESPONSIBILITY:
+ER Copay: $250.00
+Applied to Deductible: $1,500.00
+Coinsurance (10%): $10.00
+TOTAL Patient Pays: $1,760.00
+
+INSURANCE PAYMENT: $90.00
+
+SUPPORTING DOCUMENTS INCLUDED (in folder Claim_HMO_Positive_01):
+✓ 1_emergency_room_record.txt - Complete ER visit documentation
+✓ 2_chest_xray_report.txt - Radiology report showing RLL pneumonia
+✓ 3_lab_results.txt - CBC and blood culture results
+✓ 4_discharge_summary.txt - Discharge instructions and medications
+✓ 5_itemized_bill.txt - Detailed billing with CPT codes
+✓ 6_prescription_record.txt - Discharge prescriptions
+
+PRE-AUTHORIZATION:
+Not required for emergency services per HMO policy
+
+NETWORK STATUS:
+✓ VERIFIED IN-NETWORK: City Medical Center is contracted HealthGuard HMO facility
+✓ Dr. Sarah Anderson is in-network emergency medicine physician
+
+CLAIM STATUS: Should be APPROVED
+Rationale:
+- Emergency service (covered under policy emergency provisions)
+- In-network HMO facility and provider
+- Medically necessary treatment for pneumonia
+- Proper diagnosis and procedure coding
+- All required documentation present
+- Filed within 90-day claim submission requirement (filed 30 days post-service)
+- Meets policy coverage criteria for emergency room services

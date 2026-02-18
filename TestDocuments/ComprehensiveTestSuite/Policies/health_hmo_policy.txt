@@ -1,0 +1,71 @@
+HEALTHGUARD HMO INSURANCE POLICY
+Policy Number: HMO-2024-78945
+Policyholder: Michael Thompson
+Effective Date: January 1, 2024
+Policy Type: Health Maintenance Organization (HMO)
+
+COVERAGE DETAILS:
+Annual Deductible: $1,500 per individual / $3,000 per family
+Out-of-Pocket Maximum: $6,000 per individual / $12,000 per family
+Primary Care Copay: $25
+Specialist Copay: $50
+Emergency Room: $250 copay (waived if admitted)
+
+PRIMARY CARE SERVICES:
+- Office visits: $25 copay, unlimited visits
+- Preventive care: 100% covered, no copay
+- Annual physical exam: 100% covered
+- Immunizations: 100% covered
+- Lab work (in-network): 100% covered after deductible
+
+SPECIALIST SERVICES:
+- Specialist consultation: $50 copay (referral required)
+- Diagnostic tests: 80% covered after deductible
+- X-rays and imaging: 80% covered after deductible
+- Physical therapy: $35 copay, maximum 30 visits per year
+
+HOSPITALIZATION:
+- Inpatient hospital stay: 90% covered after deductible
+- Emergency room: $250 copay, waived if admitted
+- Ambulance: 100% covered for emergency
+- Surgery (inpatient): 90% covered after deductible
+
+SURGICAL PROCEDURES BENEFIT SCHEDULE:
+- Minor surgery ($1,000 - $3,000): 90% after deductible
+- Intermediate surgery ($3,001 - $8,000): 90% after deductible
+- Major surgery ($8,001 - $25,000): 90% after deductible
+- Complex surgery (over $25,000): 85% after deductible
+
+PRESCRIPTION DRUGS:
+- Generic: $10 copay
+- Preferred brand: $40 copay
+- Non-preferred brand: $75 copay
+- Specialty drugs: 20% coinsurance, max $200 per prescription
+
+MATERNITY CARE:
+- Prenatal visits: $25 copay per visit
+- Delivery and postpartum: 90% covered after deductible
+- C-section: 90% covered after deductible
+
+MENTAL HEALTH:
+- Outpatient therapy: $35 copay per session
+- Inpatient psychiatric care: 80% covered after deductible
+
+EXCLUSIONS:
+- Cosmetic procedures (unless medically necessary)
+- Experimental treatments
+- Services outside network (except emergency)
+- Over-the-counter medications
+- Alternative medicine (acupuncture, chiropractor beyond 12 visits)
+
+NETWORK REQUIREMENTS:
+- Must use in-network providers for coverage
+- Referrals required for specialist visits
+- Pre-authorization required for: MRI, CT scans, surgeries, hospital admissions
+- Out-of-network services not covered except emergencies
+
+CLAIMS SUBMISSION:
+- File claims within 90 days of service
+- Include itemized bill, diagnosis codes, provider information
+- Pre-authorization denial results in claim denial
+- Appeal process available within 180 days

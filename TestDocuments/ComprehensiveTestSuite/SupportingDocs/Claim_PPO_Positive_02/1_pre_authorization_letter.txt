@@ -1,0 +1,315 @@
+LIBERTY CHOICE PPO INSURANCE
+Prior Authorization Department
+P.O. Box 55443
+Dallas, TX 75201
+Phone: 1-800-555-LIBERTY (542-3789)
+Fax: 1-800-555-5432
+
+PRIOR AUTHORIZATION APPROVAL LETTER
+
+Authorization Number: PA-2024-09876
+Authorization Date: September 6, 2024
+Determination Date: September 6, 2024 (Same Day Decision)
+Authorization Valid From: September 6, 2024
+Authorization Valid Through: September 30, 2024
+
+==============================================================================
+MEMBER INFORMATION:
+==============================================================================
+
+Member Name: Sarah Martinez
+Date of Birth: August 23, 1985
+Age: 40 years
+Gender: Female
+Member ID: PPO45621-001
+Policy Number: PPO-2024-45621
+Group Number: GRP-002
+Policy Type: Liberty Choice Preferred Provider Organization (PPO)
+Policy Effective Date: March 1, 2024
+
+Member Address: 1456 Maple Drive, Austin, TX 78701
+Member Phone: (512) 555-0234
+
+==============================================================================
+REQUESTING PROVIDER INFORMATION:
+==============================================================================
+
+Provider Name: Dr. James Mitchell, MD
+Specialty: Orthopedic Surgery
+License Number: TX-MD-87654
+NPI: 1987654321
+Tax ID: 74-1234567
+Provider Address: Liberty Orthopedic Center
+                  2200 Medical Plaza
+                  Austin, TX 78701
+Provider Phone: (512) 555-7800
+Provider Fax: (512) 555-7801
+
+Network Status: IN-NETWORK (Tier 1 - Preferred Provider)
+Accepting Assignment: YES
+
+==============================================================================
+FACILITY INFORMATION:
+==============================================================================
+
+Facility Name: Liberty Orthopedic Center
+Facility Type: Ambulatory Surgical Center / Orthopedic Hospital
+Facility NPI: 1234567890
+Tax ID: 74-9876543
+Facility Address: 2200 Medical Plaza
+                  Austin, TX 78701
+Facility Phone: (512) 555-7800
+Facility Accreditation: Joint Commission Accredited
+Network Status: IN-NETWORK (Tier 1 - Preferred Facility)
+
+==============================================================================
+AUTHORIZED PROCEDURE DETAILS:
+==============================================================================
+
+DIAGNOSIS:
+Primary Diagnosis: S82.001A - Fracture of right patella, initial encounter for closed fracture
+ICD-10 Code: S82.001A
+Diagnosis Description: Displaced comminuted fracture of right patella sustained in bicycle fall
+
+Secondary Diagnosis: W19.XXXA - Unspecified fall, initial encounter
+Injury Date: September 5, 2024
+Injury Mechanism: Fall from bicycle during recreational riding
+
+REQUESTED PROCEDURE:
+Procedure: Open Reduction Internal Fixation (ORIF) of Right Patellar Fracture
+CPT Code: 27524
+Procedure Description: Open treatment of patellar fracture, with internal fixation and/or partial or complete patellectomy and soft tissue repair
+
+Additional Procedures Authorized:
+- Anesthesia services (CPT 01382)
+- Inpatient hospital care (CPT 99223, 99232)
+- X-ray imaging (CPT 73560, 73562)
+- Post-operative care within 90-day global period
+
+AUTHORIZATION DECISION: APPROVED ✓
+
+Authorized Date of Service: September 8, 2024 (scheduled surgery date)
+Authorized Location: Liberty Orthopedic Center, Austin, TX
+Authorized Provider: Dr. James Mitchell, MD (Orthopedic Surgeon)
+Authorized Anesthesia Provider: Any in-network anesthesiologist
+
+Number of Procedures Authorized: One (1) surgical procedure
+Authorization Type: Inpatient surgical procedure
+Estimated Length of Stay: 1-3 days (typical for this procedure)
+
+==============================================================================
+CLINICAL REVIEW SUMMARY:
+==============================================================================
+
+Date of Clinical Review: September 6, 2024
+Reviewed By: Dr. Patricia Reynolds, MD (Medical Director)
+License: TX-MD-54321
+Clinical Reviewer Specialty: Orthopedic Surgery
+
+CLINICAL INFORMATION REVIEWED:
+• Emergency department records from September 5, 2024
+• X-ray images of right knee (2 views) dated September 5, 2024
+• Radiology report confirming displaced comminuted patellar fracture
+• Orthopedic consultation note from Dr. James Mitchell dated September 6, 2024
+• Treatment plan and surgical recommendation
+
+MEDICAL NECESSITY DETERMINATION:
+The requested procedure - Open Reduction Internal Fixation of right patellar fracture - has been determined to be MEDICALLY NECESSARY based on the following criteria:
+
+1. CLINICAL INDICATION: Patient sustained displaced comminuted fracture of right patella with significant displacement (>3mm) and intra-articular involvement.
+
+2. CONSERVATIVE TREATMENT CONTRAINDICATED: Due to degree of displacement and comminution, non-operative treatment (casting/splinting) is unlikely to result in adequate healing and functional recovery.
+
+3. STANDARD OF CARE: Operative fixation is the accepted standard of care for displaced patellar fractures to restore articular congruity and knee extensor mechanism function.
+
+4. EVIDENCE-BASED GUIDELINES: Request meets criteria from:
+   - American Academy of Orthopaedic Surgeons (AAOS) Clinical Practice Guidelines
+   - Orthopedic Trauma Association (OTA) treatment recommendations
+   - Liberty Choice PPO Medical Policy #ORTHO-245: Patellar Fracture Treatment
+
+5. FUNCTIONAL NECESSITY: Without surgical intervention, patient faces high risk of:
+   - Permanent loss of knee extension
+   - Chronic pain
+   - Post-traumatic arthritis
+   - Significant functional disability
+   - Inability to ambulate normally
+
+6. PROVIDER QUALIFICATIONS: Dr. James Mitchell is board-certified orthopedic surgeon with extensive experience in patellar fracture repair (credentials verified).
+
+7. FACILITY APPROPRIATENESS: Liberty Orthopedic Center is accredited, in-network Tier 1 facility with appropriate equipment and staff for orthopedic procedures.
+
+CLINICAL DECISION: APPROVED for medical necessity
+
+==============================================================================
+AUTHORIZATION TERMS AND CONDITIONS:
+==============================================================================
+
+COVERAGE DETAILS:
+This authorization confirms that the requested procedure is:
+✓ Medically necessary
+✓ Covered under member's Liberty Choice PPO policy
+✓ Approved for in-network benefits
+
+BENEFIT COVERAGE:
+Policy Section: Major Surgical Procedures (Inpatient)
+Coverage Level: 85% after deductible (In-Network Tier 1)
+Member Deductible: $1,000 individual (ALREADY MET as of September 2024)
+Member Coinsurance: 15% of approved charges
+Out-of-Pocket Maximum: $5,000 individual (current balance: $1,850)
+
+FINANCIAL ESTIMATE (for member information only):
+Estimated Total Charges: $18,000 - $22,000
+Estimated Insurance Payment (85%): $15,300 - $18,700
+Estimated Member Coinsurance (15%): $2,700 - $3,300
+Note: Actual costs may vary. This is an estimate only.
+
+SERVICES COVERED UNDER THIS AUTHORIZATION:
+✓ Surgeon professional fees (Dr. James Mitchell)
+✓ Anesthesia services (in-network anesthesiologist)
+✓ Operating room facility fees
+✓ Medical supplies and orthopedic implants (K-wires, cerclage wire)
+✓ Inpatient hospital stay (up to 3 days)
+✓ Post-operative care during hospitalization
+✓ X-rays (intra-operative and post-operative)
+✓ Standard post-operative follow-up visits within 90-day global period
+✓ Post-discharge physical therapy (separate authorization may be required if >6 visits)
+
+SERVICES NOT COVERED UNDER THIS AUTHORIZATION:
+• Complications requiring additional surgery (separate authorization required)
+• Extended hospital stay beyond 3 days (must request extension)
+• Out-of-network providers (unless emergency)
+• Services unrelated to patellar fracture repair
+• Cosmetic procedures
+• Experimental or investigational treatments
+
+IMPORTANT REQUIREMENTS:
+1. Procedure must be performed on or before September 30, 2024
+2. Procedure must be performed by authorized provider: Dr. James Mitchell
+3. Procedure must be performed at authorized facility: Liberty Orthopedic Center
+4. Member must present insurance card at time of service
+5. Facility must verify eligibility and benefits prior to service
+6. Member is responsible for applicable deductible, coinsurance, and any non-covered services
+
+NOTIFICATION TO MEMBER:
+This authorization does not guarantee payment. Payment is subject to:
+- Member eligibility at time of service
+- Policy terms and conditions
+- Submission of complete and accurate claims
+- Medical necessity review of actual services provided
+- Compliance with policy requirements
+
+==============================================================================
+CHANGE OR CANCELLATION:
+==============================================================================
+
+RESCHEDULING:
+If surgery date changes, contact Prior Authorization Department at least 24 hours in advance. This authorization remains valid through September 30, 2024, for the approved procedure.
+
+CANCELLATION:
+If surgery is cancelled or no longer needed, please notify:
+Liberty Choice PPO Prior Authorization Department
+Phone: 1-800-555-5432
+Reference: Authorization PA-2024-09876
+
+==============================================================================
+CLAIMS SUBMISSION:
+==============================================================================
+
+PROVIDER CLAIMS INSTRUCTIONS:
+When submitting claims for services under this authorization:
+
+1. Include Authorization Number: PA-2024-09876 on all claim forms
+2. Submit to: Liberty Choice PPO Claims Department
+              P.O. Box 98765
+              Dallas, TX 75298
+3. Electronic Claims: Payer ID 54321
+4. Submit within 180 days of date of service
+5. Include all supporting documentation:
+   - Operative report
+   - Anesthesia records
+   - Pathology reports (if applicable)
+   - Itemized bill with CPT and ICD-10 codes
+
+MEMBER CLAIMS INSTRUCTIONS:
+Your providers should file claims on your behalf. If you need to file a claim:
+1. Download claim form from www.libertychoiceppo.com
+2. Include copy of this authorization letter
+3. Include itemized receipts and medical records
+4. Mail to address above
+
+==============================================================================
+QUESTIONS OR APPEALS:
+==============================================================================
+
+QUESTIONS ABOUT THIS AUTHORIZATION:
+Liberty Choice PPO Prior Authorization Department
+Phone: 1-800-555-LIBERTY (542-3789)
+Hours: Monday-Friday, 7:00 AM - 7:00 PM CT
+         Saturday, 8:00 AM - 4:00 PM CT
+Fax: 1-800-555-5432
+Email: priorauth@libertychoiceppo.com
+Reference: PA-2024-09876
+
+APPEALS:
+If you disagree with any aspect of this authorization decision, you have the right to appeal. To request an appeal:
+- Call: 1-800-555-APPEAL (277-325)
+- Write: Liberty Choice PPO Appeals Department
+         P.O. Box 11223
+         Dallas, TX 75211
+- Time Limit: Appeals must be filed within 180 days
+
+URGENT/EXPEDITED REVIEW:
+If you believe this decision should be expedited due to serious jeopardy to health, contact our Urgent Appeals line at 1-800-555-URGENT (874-368). Expedited decisions are made within 72 hours.
+
+==============================================================================
+NOTIFICATIONS SENT:
+==============================================================================
+
+This authorization approval has been sent to:
+✓ Member: Sarah Martinez (via mail to address on file)
+✓ Requesting Provider: Dr. James Mitchell (via fax and online portal)
+✓ Facility: Liberty Orthopedic Center (via fax and online portal)
+✓ Liberty Choice Claims Department (electronic notification)
+
+==============================================================================
+AUTHORIZATION SUMMARY:
+==============================================================================
+
+Authorization Number: PA-2024-09876
+Status: APPROVED
+Member: Sarah Martinez (PPO45621-001)
+Procedure: ORIF Right Patellar Fracture (CPT 27524)
+Provider: Dr. James Mitchell, MD
+Facility: Liberty Orthopedic Center
+Surgery Date: September 8, 2024
+Authorization Valid Through: September 30, 2024
+
+APPROVED BY:
+Dr. Patricia Reynolds, MD
+Medical Director, Prior Authorization Department
+Liberty Choice PPO Insurance
+Date: September 6, 2024
+Time: 14:35 CT
+
+Reference Number: PA-2024-09876
+Review Case ID: REV-2024-445567
+
+==============================================================================
+
+This authorization was generated electronically and is valid without signature.
+
+For verification, providers may call the Provider Services Line at 1-800-555-PROV (7768)
+or verify online at www.libertychoiceppo.com/provider-portal
+
+==============================================================================
+
+IMPORTANT: RETAIN THIS LETTER FOR YOUR RECORDS
+Present this authorization letter at time of service
+
+==============================================================================
+
+Liberty Choice PPO Insurance | www.libertychoiceppo.com
+24/7 Member Services: 1-800-555-LIBERTY (542-3789)
+Claims Inquiry: 1-800-555-CLAIM (25246)
+
+END OF AUTHORIZATION LETTER

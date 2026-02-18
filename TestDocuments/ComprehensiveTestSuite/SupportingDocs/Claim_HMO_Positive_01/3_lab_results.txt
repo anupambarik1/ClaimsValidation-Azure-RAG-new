@@ -1,0 +1,191 @@
+LABORATORY REPORT
+City Medical Center
+Clinical Laboratory Services
+1234 Medical Plaza Drive, Springfield, IL 62701
+Phone: (217) 555-4575 | Fax: (217) 555-4576
+CLIA Number: 14D1234567
+
+PATIENT INFORMATION:
+Name: Michael Thompson
+Date of Birth: May 12, 1978
+Age: 46 years
+Gender: Male
+MRN: CMC-778945
+Address: 742 Oak Avenue, Springfield, IL 62704
+Phone: (217) 555-0156
+
+INSURANCE:
+HealthGuard HMO
+Policy Number: HMO-2024-78945
+Member ID: HMO78945-001
+
+PHYSICIAN:
+Ordering Physician: Dr. Sarah Anderson, MD
+Specialty: Emergency Medicine
+NPI: 9876543210
+
+SPECIMEN INFORMATION:
+Collection Date: October 15, 2024
+Collection Time: 19:00 (7:00 PM)
+Collection Location: Emergency Department
+Collected By: Sarah Kim, RN
+Specimen Type: Whole blood (EDTA tube for CBC), Venous blood (blood culture bottles)
+
+REPORT DATE: October 15, 2024
+Report Time: 20:15 (8:15 PM)
+Lab Accession Number: LAB-2024-101578945
+
+==============================================================================
+COMPLETE BLOOD COUNT (CBC) WITH DIFFERENTIAL
+==============================================================================
+
+TEST NAME                  RESULT      REFERENCE RANGE         UNITS           FLAG
+------------------------------------------------------------------------------------
+WHITE BLOOD CELL COUNT     18.5        4.5-11.0               x10³/μL         HIGH
+RED BLOOD CELL COUNT       4.85        4.50-5.90              x10⁶/μL         Normal
+HEMOGLOBIN                 14.2        13.5-17.5              g/dL            Normal
+HEMATOCRIT                 42.8        40.0-52.0              %               Normal
+MCV (Mean Corpuscular Vol) 88.2        80.0-100.0             fL              Normal
+MCH (Mean Corpuscular Hgb) 29.3        27.0-33.0              pg              Normal
+MCHC (Mean Corp Hgb Conc)  33.2        32.0-36.0              g/dL            Normal
+RDW (RBC Distribution)     13.5        11.5-14.5              %               Normal
+PLATELET COUNT             285         150-400                x10³/μL         Normal
+MPV (Mean Platelet Volume) 9.2         7.4-10.4               fL              Normal
+
+DIFFERENTIAL (AUTOMATED WITH MANUAL REVIEW):
+------------------------------------------------------------------------------------
+NEUTROPHILS, ABSOLUTE      15,170      1,800-7,800            /μL             HIGH
+LYMPHOCYTES, ABSOLUTE      2,220       1,000-4,800            /μL             Normal
+MONOCYTES, ABSOLUTE        925         200-1,000              /μL             Normal
+EOSINOPHILS, ABSOLUTE      148         0-450                  /μL             Normal
+BASOPHILS, ABSOLUTE        37          0-200                  /μL             Normal
+
+NEUTROPHILS, PERCENT       82.0        40.0-70.0              %               HIGH
+LYMPHOCYTES, PERCENT       12.0        20.0-40.0              %               LOW
+MONOCYTES, PERCENT         5.0         2.0-10.0               %               Normal
+EOSINOPHILS, PERCENT       0.8         1.0-4.0                %               Low Normal
+BASOPHILS, PERCENT         0.2         0.0-2.0                %               Normal
+
+MANUAL DIFFERENTIAL NOTES:
+Peripheral blood smear reviewed. Marked left shift observed with increased band forms (immature neutrophils) present, consistent with acute bacterial infection. Toxic granulation and Döhle bodies noted in neutrophils. No atypical lymphocytes. No blasts identified. RBC morphology normal. Platelets adequate and appear normal.
+
+INTERPRETATION:
+Marked leukocytosis (elevated WBC) with neutrophilia and left shift. Findings are highly suggestive of acute bacterial infection. The degree of elevation and presence of immature forms (bands) support the clinical diagnosis of bacterial pneumonia.
+
+==============================================================================
+BLOOD CULTURE REPORT
+==============================================================================
+
+SPECIMEN COLLECTION:
+Set 1 - Aerobic and Anaerobic
+Collection Site: Left antecubital vein
+Collection Time: 19:05
+Collected By: Sarah Kim, RN
+Volume: 10mL per bottle (adequate)
+
+Set 2 - Aerobic and Anaerobic
+Collection Site: Right antecubital vein
+Collection Time: 19:10
+Collected By: Sarah Kim, RN
+Volume: 10mL per bottle (adequate)
+
+TOTAL BOTTLES: 4 (2 aerobic, 2 anaerobic)
+
+GRAM STAIN (Direct from blood):
+No organisms visualized on direct Gram stain examination
+
+CULTURE METHOD:
+Automated continuous monitoring blood culture system
+Incubation Temperature: 35°C
+Monitoring: Continuous for 5 days
+
+PRELIMINARY RESULTS (as of October 15, 2024 at 20:15):
+------------------------------------------------------------------------------------
+Bottle Status:
+Set 1 - Aerobic:    No growth detected (12 hours)
+Set 1 - Anaerobic:  No growth detected (12 hours)
+Set 2 - Aerobic:    No growth detected (12 hours)
+Set 2 - Anaerobic:  No growth detected (12 hours)
+
+Current Status: ALL BOTTLES NEGATIVE at 12 hours
+Cultures will be monitored for total of 5 days (120 hours)
+
+FINAL RESULTS: Pending (will be available in 72-120 hours)
+
+If bottles turn positive:
+- Organism identification will be performed
+- Antimicrobial susceptibility testing will be conducted
+- Results will be called to ordering physician immediately
+
+==============================================================================
+CLINICAL SIGNIFICANCE:
+==============================================================================
+
+The complete blood count demonstrates significant leukocytosis (WBC 18,500) with marked neutrophilia (82%) and absolute neutrophil count of 15,170. The presence of left shift (increased immature neutrophils/bands) and toxic changes in neutrophils strongly supports acute bacterial infection.
+
+These laboratory findings, in conjunction with the clinical presentation (fever, cough, shortness of breath) and radiographic evidence of right lower lobe pneumonia, are consistent with community-acquired bacterial pneumonia.
+
+Blood cultures are pending. Negative preliminary results do not exclude pneumonia, as blood cultures are positive in only 5-15% of community-acquired pneumonia cases. Continue empiric antibiotic therapy as clinically indicated.
+
+==============================================================================
+CRITICAL VALUES NOTIFICATION:
+==============================================================================
+
+CRITICAL VALUE: WBC 18.5 x10³/μL (>20 or <2 is critical threshold, but significantly elevated)
+
+Called To: Dr. Sarah Anderson, MD
+Department: Emergency Department
+Date/Time of Call: October 15, 2024 at 20:20
+Person Receiving Call: Dr. Sarah Anderson
+Read-Back Verification: Confirmed
+Action Taken: Acknowledged, patient already on antibiotics
+
+==============================================================================
+LABORATORY PERSONNEL:
+==============================================================================
+
+Medical Technologist: Sarah Kim, MT(ASCP)
+License: IL-MT-5678
+Performed Testing: October 15, 2024
+
+Technical Review: Michael Rodriguez, MT(ASCP)
+Quality Control: All QC within acceptable limits
+
+Pathologist Review: Dr. Robert Martinez, MD
+Board Certified Clinical Pathology
+American Board of Pathology
+License: IL-MD-99234
+NPI: 2233445566
+
+Electronically Signed: October 15, 2024 at 20:25
+
+==============================================================================
+BILLING INFORMATION:
+==============================================================================
+
+CPT Codes:
+85025 - Complete Blood Count (CBC) with differential - $125.00
+87040 - Blood Culture, aerobic and anaerobic (2 sets) - $180.00
+
+Total Laboratory Charges: $305.00
+
+Diagnosis Code: J18.9 (Pneumonia, unspecified)
+Insurance: HealthGuard HMO (HMO-2024-78945)
+Claim Number: CLM-HMO-001
+
+==============================================================================
+
+REPORT STATUS: FINAL (CBC), PRELIMINARY (Blood Culture - pending final at 72 hours)
+
+Quality Assurance: Completed
+Instrument Calibration: Current
+Reagent Lot Numbers: Documented
+
+Laboratory Director: Dr. Robert Martinez, MD
+CLIA Certified Laboratory
+
+This is an official laboratory report.
+Copy sent to: Dr. Sarah Anderson (Emergency Department)
+              Dr. James Wilson (Primary Care Physician)
+
+END OF REPORT

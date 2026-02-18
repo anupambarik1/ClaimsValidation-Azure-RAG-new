@@ -1,0 +1,608 @@
+ITEMIZED HOSPITAL BILL
+
+Liberty Orthopedic Center
+2200 Medical Plaza, Austin, TX 78701
+Billing Department Phone: (512) 555-7810
+Billing Fax: (512) 555-7811
+Federal Tax ID: 74-1234567
+NPI: 1234567890
+
+STATEMENT DATE: September 15, 2024
+STATEMENT NUMBER: STMT-2024-334556
+ACCOUNT NUMBER: LOC-2024-09-0892
+
+==============================================================================
+PATIENT INFORMATION:
+==============================================================================
+
+Patient Name: Sarah Martinez
+Date of Birth: August 23, 1985
+Age: 40 years
+Gender: Female
+Address: 1456 Maple Drive
+         Austin, TX 78701
+Phone: (512) 555-0234
+Email: smartinez@email.com
+SSN: XXX-XX-5678 (last 4 digits)
+Medical Record #: LOC-334556
+
+==============================================================================
+INSURANCE INFORMATION:
+==============================================================================
+
+PRIMARY INSURANCE:
+Insurance Company: Liberty Choice PPO
+Policy Number: PPO-2024-45621
+Member ID: PPO45621-001
+Group Number: GRP-002
+Policyholder Name: Sarah Martinez (Self)
+Relationship to Patient: Self
+Plan Type: Preferred Provider Organization (PPO)
+
+Insurance Address:
+Liberty Choice PPO Claims Department
+P.O. Box 88776
+Dallas, TX 75288
+
+Insurance Phone: 1-800-555-LIBERTY (542-3789)
+Claim Submission Fax: 1-800-555-5432
+
+PRIOR AUTHORIZATION: PA-2024-09876 (APPROVED)
+Claim Number: CLM-PPO-002
+
+GUARANTOR: Sarah Martinez (Same as Patient)
+
+==============================================================================
+SERVICE INFORMATION:
+==============================================================================
+
+Admission Date: September 8, 2024, 06:00
+Discharge Date: September 10, 2024, 14:30
+Length of Stay: 2 days (inpatient)
+Admission Type: Elective Surgical
+Discharge Status: Discharged to Home
+
+Attending Physician: Dr. James Mitchell, MD
+Physician NPI: 1987654321
+Specialty: Orthopedic Surgery
+
+Admitting Diagnosis: S82.001A - Displaced comminuted fracture right patella
+Discharge Diagnosis: S82.001D - Status post ORIF right patella fracture
+Principal Procedure: 27524 - Open treatment patellar fracture with internal fixation
+
+Treatment Summary: Patient underwent open reduction internal fixation (ORIF) of displaced right patellar fracture. Surgery performed on September 8, 2024. Post-operative course uncomplicated. Patient discharged home on post-op day #2 with crutches, pain medication, and physical therapy referral.
+
+==============================================================================
+ITEMIZED CHARGES:
+==============================================================================
+
+FACILITY CHARGES - LIBERTY ORTHOPEDIC CENTER:
+
+---------------------------------------------------------------------------
+OPERATING ROOM SERVICES:
+---------------------------------------------------------------------------
+
+001   09/08/24   Operating Room Time                99217     1     $4,800.00
+                 OR #3 - Orthopedic Suite
+                 Time: 2 hours 30 minutes
+                 Setup, equipment, supplies, staff
+                 Includes: OR nurse, surgical tech,
+                 environmental services
+                 
+002   09/08/24   Sterile Processing & Setup         --        1       $450.00
+                 Instrument sterilization
+                 Surgical equipment preparation
+                 Room turnover and cleaning
+
+---------------------------------------------------------------------------
+INPATIENT ROOM AND BOARD:
+---------------------------------------------------------------------------
+
+003   09/08/24   Semi-Private Room - Day 1          --        1     $1,800.00
+                 Room 412 (Orthopedic Floor)
+                 Nursing care, monitoring, supplies
+                 Medications administration
+                 Meal service
+
+004   09/09/24   Semi-Private Room - Day 2          --        1     $1,800.00
+                 Room 412 (Orthopedic Floor)
+                 Continued nursing care and monitoring
+
+---------------------------------------------------------------------------
+MEDICAL/SURGICAL SUPPLIES:
+---------------------------------------------------------------------------
+
+005   09/08/24   Orthopedic Implants - K-wires      --        2       $600.00
+                 Two 2.0mm x 150mm K-wires
+                 Stainless steel
+                 Manufacturer: Synthes/DePuy
+                 Lot #: SS20240815-A, SS20240815-B
+
+006   09/08/24   Orthopedic Implants - Wire         --        1       $300.00
+                 18-gauge cerclage wire, 60cm
+                 Stainless steel
+                 Manufacturer: Synthes/DePuy
+                 Lot #: CW18-20240820
+
+007   09/08/24   Surgical Instruments Set           --        1       $180.00
+                 Orthopedic fracture set
+                 Wire twisters, bone clamps
+                 Disposable instruments
+
+008   09/08/24   Surgical Drapes & Gowns            --        1       $120.00
+                 Sterile draping pack
+                 Surgical gowns (surgeon, assistant)
+                 Gloves, masks, caps
+
+---------------------------------------------------------------------------
+PHARMACY:
+---------------------------------------------------------------------------
+
+009   09/08/24   Cefazolin 2g IV                    J0690     1       $145.00
+                 Pre-operative antibiotic
+                 Single dose prior to incision
+
+010   09/08-09  Cefazolin 1g IV                    J0690     3       $195.00
+                 Post-operative antibiotic prophylaxis
+                 Q8h x 24 hours (3 doses)
+
+011   09/08/24   Propofol 120mg IV                  J2704     1        $85.00
+                 Anesthesia induction agent
+
+012   09/08/24   Fentanyl Injectable                J3010     5       $125.00
+                 Total: 250 mcg (5 x 50mcg units)
+                 Anesthesia and pain management
+
+013   09/08/24   Morphine Sulfate IV                J2270     10      $180.00
+                 PCA pump - Day 1
+                 Patient-controlled analgesia
+
+014   09/09/24   Morphine Sulfate IV                J2270     6       $108.00
+                 PCA pump - Day 2 (partial day)
+
+015   09/09-10  Oxycodone 5mg PO                   --        8        $24.00
+                 Oral pain medication
+                 Transition from PCA
+
+016   09/08-10  Acetaminophen 1g IV                J0131     4       $180.00
+                 Multimodal analgesia
+                 Q6h scheduled
+
+017   09/08/24   Ondansetron 4mg IV                 J2405     2        $60.00
+                 Anti-nausea medication
+
+018   09/08/24   Ketorolac 30mg IV                  J1885     1        $45.00
+                 NSAID for pain/inflammation
+
+019   09/08/24   Dexamethasone 8mg IV               J1100     1        $35.00
+                 Anti-inflammatory, antiemetic
+
+020   09/08-10  Enoxaparin 40mg Subcut             J1650     3       $225.00
+                 DVT prophylaxis
+                 Daily injections
+
+021   09/08-10  Docusate Sodium 100mg PO           --        6        $18.00
+                 Stool softener
+
+---------------------------------------------------------------------------
+LABORATORY SERVICES:
+---------------------------------------------------------------------------
+
+022   09/07/24   Complete Blood Count (CBC)         85025     1       $125.00
+                 Pre-operative lab work
+                 with differential
+
+023   09/07/24   Basic Metabolic Panel (BMP)        80048     1       $135.00
+                 Pre-operative electrolytes
+                 Renal function
+
+024   09/07/24   Coagulation Panel                  85610     1        $95.00
+                 PT/INR, PTT
+                 Pre-operative screening
+
+025   09/09/24   Complete Blood Count (CBC)         85025     1       $125.00
+                 Post-operative monitoring
+                 Check for anemia
+
+---------------------------------------------------------------------------
+DIAGNOSTIC IMAGING:
+---------------------------------------------------------------------------
+
+026   09/07/24   ECG 12-Lead                        93000     1        $150.00
+                 Pre-operative cardiac evaluation
+                 Interpretation included
+
+027   09/07/24   Chest X-Ray, 2 Views               71046     1       $285.00
+                 Pre-operative clearance
+                 PA and lateral views
+
+028   09/08/24   X-Ray Right Knee, 2 Views          73560     1       $285.00
+                 Pre-operative imaging
+                 Document fracture
+
+029   09/08/24   Fluoroscopy, Intra-operative       77002     1       $325.00
+                 Surgical guidance
+                 Fracture reduction confirmation
+                 Hardware placement verification
+
+030   09/08/24   X-Ray Right Knee, 3 Views          73562     1       $340.00
+                 Post-operative imaging
+                 Confirm reduction and hardware
+
+---------------------------------------------------------------------------
+ANESTHESIA SERVICES:
+---------------------------------------------------------------------------
+
+031   09/08/24   Anesthesia Professional Fee        01382     1     $2,250.00
+                 General endotracheal anesthesia
+                 Anesthesiologist: Dr. Robert Chen, MD
+                 NPI: 1765432109
+                 ASA Physical Status: P2
+                 Base Units: 5 | Time Units: 5
+                 Total Units: 10 x $225 = $2,250
+
+---------------------------------------------------------------------------
+SURGEON PROFESSIONAL FEES:
+---------------------------------------------------------------------------
+
+032   09/08/24   ORIF Patellar Fracture            27524     1     $6,500.00
+                 Open reduction internal fixation
+                 Surgeon: Dr. James Mitchell, MD
+                 NPI: 1987654321
+                 Includes: Pre-op evaluation,
+                 intra-operative care, immediate
+                 post-op care, 90-day global period
+
+033   09/08/24   Assistant Surgeon Fee              27524-80  1     $1,950.00
+                 Surgical assistant services
+                 Dr. Rebecca Thompson, MD
+                 NPI: 1876543210
+                 (30% of primary surgeon fee)
+
+---------------------------------------------------------------------------
+HOSPITAL PHYSICIAN SERVICES:
+---------------------------------------------------------------------------
+
+034   09/08/24   Initial Hospital Care              99223     1       $325.00
+                 Admission day evaluation
+                 High complexity
+                 Dr. James Mitchell, MD
+
+035   09/09/24   Subsequent Hospital Care           99232     1       $185.00
+                 Post-op day #1
+                 Moderate complexity
+                 Dr. James Mitchell, MD
+
+036   09/10/24   Hospital Discharge Management      99238     1       $225.00
+                 Discharge day services
+                 30+ minutes
+                 Dr. James Mitchell, MD
+
+---------------------------------------------------------------------------
+RECOVERY ROOM (PACU):
+---------------------------------------------------------------------------
+
+037   09/08/24   PACU Services                      --        1       $650.00
+                 Post-anesthesia care unit
+                 Time: 102 minutes
+                 RN monitoring, pain management
+                 Vital signs, oxygen therapy
+
+---------------------------------------------------------------------------
+PHYSICAL THERAPY:
+---------------------------------------------------------------------------
+
+038   09/09/24   PT Evaluation                      97161     1       $225.00
+                 Initial evaluation
+                 Gait training, crutch instruction
+                 Transfer training
+
+039   09/10/24   PT Treatment Session               97110     1       $125.00
+                 Therapeutic exercises
+                 Discharge mobility check
+
+---------------------------------------------------------------------------
+MISCELLANEOUS SERVICES:
+---------------------------------------------------------------------------
+
+040   09/08/24   IV Catheter Insertion              36000     2       $90.00
+                 Two peripheral IV lines
+                 18-gauge and 20-gauge
+
+041   09/08/24   Foley Catheter Insertion           51702     1       $75.00
+                 Urinary catheter placement
+                 Intra-operative
+
+042   09/08-10  IV Therapy - Fluids                --        2       $240.00
+                 Lactated Ringer's solution
+                 1200mL intra-op, 800mL post-op
+
+043   09/08-10  Medical/Surgical Supplies          --        1       $285.00
+                 Dressings, gauze, tape
+                 Ice packs, gloves, syringes
+                 Miscellaneous supplies
+
+044   09/10/24   Crutches (DME)                     E0110     1       $125.00
+                 Aluminum adjustable crutches
+                 Pair, with hand grips and pads
+
+045   09/10/24   Knee Immobilizer                   L1830     1       $185.00
+                 Canvas knee immobilizer
+                 Hook and loop closure
+                 Fits 16-24 inch thigh
+
+046   09/08-10  Sequential Compression Devices     --        2       $150.00
+                 DVT prophylaxis
+                 Pneumatic compression sleeves
+
+047   09/08-10  Oxygen Therapy                     E0424     2       $120.00
+                 Supplemental oxygen
+                 Post-operative recovery
+                 2 days
+
+---------------------------------------------------------------------------
+
+                                  TOTAL CHARGES:   $27,205.00
+
+==============================================================================
+NEGOTIATED RATE ADJUSTMENT (IN-NETWORK):
+==============================================================================
+
+Liberty Choice PPO Negotiated Rate Discount:           ($8,455.00)
+
+ADJUSTED TOTAL (Contracted Rate):                      $18,750.00
+
+==============================================================================
+PAYMENT AND INSURANCE SUMMARY:
+==============================================================================
+
+TOTAL CHARGES (List Price):                           $27,205.00
+CONTRACTUAL ADJUSTMENT (PPO Network Discount):         ($8,455.00)
+---------------------------------------------------------------------------
+SUBTOTAL (Allowed Amount):                             $18,750.00
+
+INSURANCE PROCESSING:
+Annual Deductible (In-Network): $1,000.00
+Deductible Status: ALREADY MET (prior to this claim)
+Amount Applied to Deductible: $0.00
+
+Amount Subject to Coinsurance: $18,750.00
+Insurance Coverage: 85% (In-Network PPO Benefit)
+Insurance Expected Payment (85%): $15,937.50
+
+PATIENT RESPONSIBILITY:
+Patient Coinsurance (15%): $2,812.50
+
+Out-of-Pocket Maximum: $5,000.00 (Individual)
+Out-of-Pocket Used YTD (including this claim): $2,812.50
+Out-of-Pocket Remaining: $2,187.50
+
+==============================================================================
+BILLING SUMMARY:
+==============================================================================
+
+TOTAL CHARGES:                                         $27,205.00
+PPO NETWORK DISCOUNT:                                  ($8,455.00)
+ALLOWED AMOUNT:                                        $18,750.00
+
+INSURANCE PAYMENT (Expected):                          $15,937.50
+PATIENT RESPONSIBILITY:                                 $2,812.50
+
+AMOUNT DUE FROM PATIENT:                                $2,812.50
+
+==============================================================================
+PAYMENT STATUS:
+==============================================================================
+
+CLAIM SUBMISSION:
+Claim Submitted to: Liberty Choice PPO
+Submission Date: September 15, 2024
+Submission Method: Electronic (EDI 837)
+Claim Reference Number: CLM-PPO-002
+Prior Authorization Number: PA-2024-09876
+Clearinghouse: Change Healthcare
+Status: Claim accepted and in process
+
+EXPECTED PROCESSING TIME: 30-45 days
+
+PATIENT STATEMENT STATUS:
+This is NOT a bill. This is an itemized statement of charges for your records.
+After insurance processes the claim, you will receive:
+1. Explanation of Benefits (EOB) from Liberty Choice PPO
+2. Final patient bill from Liberty Orthopedic Center
+
+ESTIMATED TIMELINE:
+- Insurance processing: 30-45 days
+- EOB sent to patient: 35-50 days
+- Final bill sent to patient: 45-60 days
+
+==============================================================================
+INSURANCE CLAIM DETAILS:
+==============================================================================
+
+CLAIM SUBMITTED TO:
+Liberty Choice PPO Claims Department
+Electronic Payer ID: 54321
+
+DIAGNOSIS CODES SUBMITTED:
+S82.001A - Fracture right patella, initial (Primary)
+S82.001D - Fracture right patella, subsequent with routine healing
+I10 - Essential hypertension
+E78.5 - Hyperlipidemia
+G89.18 - Post-operative acute pain
+
+PROCEDURE CODES SUBMITTED:
+27524 - ORIF patellar fracture (Primary procedure)
+01382 - Anesthesia for knee surgery
+99223 - Initial hospital care, high complexity
+99232 - Subsequent hospital care
+99238 - Discharge management
+73560, 73562 - X-ray imaging
+77002 - Fluoroscopy
+97161, 97110 - Physical therapy
+(Plus all associated supply and medication codes)
+
+==============================================================================
+PAYMENT OPTIONS:
+==============================================================================
+
+ONLINE PAYMENT:
+Visit: www.libertyortho.com/billing
+Account Number: LOC-2024-09-0892
+Pay by credit/debit card (Visa, MC, Discover, Amex)
+
+PHONE PAYMENT:
+Call: (512) 555-7810
+Monday-Friday, 8:00 AM - 5:00 PM CT
+Automated system available 24/7
+
+MAIL PAYMENT:
+Make check payable to: Liberty Orthopedic Center
+Mail to: Liberty Orthopedic Center
+         Billing Department
+         P.O. Box 7899
+         Austin, TX 78713
+
+IN PERSON:
+Billing Office: Main Lobby
+Hours: Monday-Friday, 8:00 AM - 4:30 PM
+
+PAYMENT PLANS:
+Interest-free payment plans available for balances >$500
+Call Financial Counseling: (512) 555-7812
+
+FINANCIAL ASSISTANCE:
+Liberty Orthopedic Center offers financial assistance for qualifying patients.
+Applications: www.libertyortho.com/financial-assistance
+Or call: (512) 555-7813
+
+==============================================================================
+INSURANCE INFORMATION FOR PATIENT:
+==============================================================================
+
+WHAT TO EXPECT:
+1. Your insurance (Liberty Choice PPO) will process this claim
+2. You will receive an Explanation of Benefits (EOB) from insurance
+3. EOB will show:
+   - Total charges
+   - Allowed amount (contracted rate)
+   - Insurance payment
+   - Your financial responsibility
+4. After insurance pays, we will send you a final bill
+
+YOUR ESTIMATED RESPONSIBILITY: $2,812.50
+This is an estimate based on your policy benefits. Actual amount may vary slightly based on insurance adjudication.
+
+QUESTIONS ABOUT YOUR INSURANCE COVERAGE:
+Contact Liberty Choice PPO Member Services: 1-800-555-LIBERTY (542-3789)
+
+QUESTIONS ABOUT THIS BILL:
+Contact Liberty Orthopedic Billing: (512) 555-7810
+
+==============================================================================
+IMPORTANT BILLING NOTES:
+==============================================================================
+
+• This facility is IN-NETWORK with Liberty Choice PPO
+• Prior authorization (PA-2024-09876) was obtained and approved
+• All services were medically necessary and covered under your policy
+• Services provided meet all policy requirements
+• Your annual deductible was already met before this service
+• You are responsible for 15% coinsurance per your PPO policy
+• This is NOT a bill - this is an itemized statement
+• Do NOT pay until you receive your final bill after insurance processing
+• Keep this statement for your records and tax purposes
+• This statement may be used for FSA/HSA reimbursement
+
+EXPLANATION OF CHARGES:
+All charges are standard and customary for orthopedic surgical procedures of this nature in the Austin, Texas area. Charges have been reduced by 31% based on Liberty Choice PPO contracted rates.
+
+MEDICAL RECORDS:
+To request copies of medical records:
+Health Information Management: (512) 555-7880
+Medical Records Request Form: www.libertyortho.com/medical-records
+
+==============================================================================
+BREAKDOWN BY CATEGORY:
+==============================================================================
+
+FACILITY FEES (Liberty Orthopedic Center):
+Operating Room: $5,250.00
+Room & Board (2 days): $3,600.00
+Medical/Surgical Supplies: $1,200.00
+Pharmacy/Medications: $1,445.00
+Laboratory Services: $480.00
+Imaging (Facility portion): $1,235.00
+PACU/Recovery: $650.00
+Physical Therapy: $350.00
+Miscellaneous (IV, DME, supplies): $1,270.00
+SUBTOTAL FACILITY: $15,480.00
+
+PROFESSIONAL FEES:
+Surgeon (Dr. Mitchell): $6,500.00
+Assistant Surgeon (Dr. Thompson): $1,950.00
+Anesthesiologist (Dr. Chen): $2,250.00
+Hospital Physician Services: $735.00
+Radiology Professional (interpretation): $0 (included)
+SUBTOTAL PROFESSIONAL: $11,435.00
+
+---------------------------------------------------------------------------
+GRAND TOTAL (before network discount): $26,915.00*
+PPO Network Discount: ($8,165.00)
+FINAL ALLOWED AMOUNT: $18,750.00
+
+*Minor rounding differences from line-item total
+
+==============================================================================
+CONTACT INFORMATION:
+==============================================================================
+
+BILLING INQUIRIES:
+Liberty Orthopedic Center - Billing Department
+Phone: (512) 555-7810
+Fax: (512) 555-7811
+Email: billing@libertyortho.com
+Hours: Monday-Friday, 8:00 AM - 5:00 PM CT
+
+CLINICAL QUESTIONS:
+Dr. James Mitchell's Office
+Phone: (512) 555-7800
+Hours: Monday-Friday, 8:00 AM - 5:00 PM
+
+INSURANCE QUESTIONS:
+Liberty Choice PPO Member Services
+Phone: 1-800-555-LIBERTY (542-3789)
+Website: www.libertychoiceppo.com
+Hours: Monday-Friday, 7:00 AM - 7:00 PM CT
+
+PATIENT ACCOUNTS:
+For payment arrangements or financial assistance
+Phone: (512) 555-7812
+Email: patientaccounts@libertyortho.com
+
+==============================================================================
+PATIENT RIGHTS:
+==============================================================================
+
+You have the right to:
+✓ Request an itemized statement (this document)
+✓ Request clarification of any charges
+✓ Request financial assistance if qualifying
+✓ Set up payment plans for outstanding balances
+✓ Request good faith estimates for services
+✓ Dispute charges you believe are incorrect
+✓ Receive timely responses to billing inquiries
+
+To dispute a charge, contact our billing department within 30 days of receiving this statement.
+
+==============================================================================
+
+STATEMENT PREPARED BY: Liberty Orthopedic Center Billing Department
+STATEMENT DATE: September 15, 2024
+PLEASE RETAIN THIS STATEMENT FOR YOUR RECORDS
+
+For your convenience, this statement is also available through our secure patient portal at www.libertyortho.com/myhealth
+
+==============================================================================
+
+END OF ITEMIZED BILL

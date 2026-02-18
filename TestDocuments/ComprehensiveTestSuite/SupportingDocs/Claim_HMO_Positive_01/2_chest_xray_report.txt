@@ -1,0 +1,155 @@
+RADIOLOGY REPORT
+City Medical Center
+Department of Diagnostic Imaging
+1234 Medical Plaza Drive, Springfield, IL 62701
+Phone: (217) 555-4570 | Fax: (217) 555-4571
+
+PATIENT INFORMATION:
+Name: Michael Thompson
+Date of Birth: May 12, 1978
+Age: 46 years
+Gender: Male
+MRN: CMC-778945
+Address: 742 Oak Avenue, Springfield, IL 62704
+
+INSURANCE:
+HealthGuard HMO
+Policy Number: HMO-2024-78945
+Member ID: HMO78945-001
+
+EXAMINATION INFORMATION:
+Exam Date: October 15, 2024
+Exam Time: 19:15 (7:15 PM)
+Accession Number: RAD-2024-10158945
+Ordering Physician: Dr. Sarah Anderson, MD (Emergency Medicine)
+Exam Location: Emergency Department
+Priority: STAT (Emergency)
+
+EXAMINATION: Chest Radiograph, PA and Lateral Views
+
+CLINICAL INDICATION:
+Cough, fever, shortness of breath, chest pain. Rule out pneumonia.
+
+COMPARISON:
+None available. No prior chest imaging on file.
+
+TECHNIQUE:
+Standard posteroanterior (PA) and lateral radiographs of the chest were obtained with the patient in standing position in the emergency department radiology suite. Adequate inspiration and positioning. No motion artifact.
+
+Technical Factors:
+- KVP: 110
+- mAs: 3.2
+- Distance: 72 inches
+- Exposure: Adequate penetration
+
+FINDINGS:
+
+LUNGS:
+RIGHT LUNG:
+- Right Lower Lobe: Dense consolidation/infiltrate present in the posterior and lateral segments of the right lower lobe. The infiltrate measures approximately 8 x 6 cm in greatest dimension. Air bronchograms are visible within the consolidated area, consistent with pneumonic process. Well-defined margins suggestive of lobar involvement.
+- Right Middle Lobe: Clear, no infiltrates
+- Right Upper Lobe: Clear, no infiltrates
+
+LEFT LUNG:
+- All lobes clear bilaterally
+- No infiltrates, consolidation, or masses identified
+- Lung volumes normal
+- No interstitial markings or edema
+
+PLEURAL SPACES:
+- No pleural effusion on either side
+- Costophrenic angles are sharp bilaterally
+- No pleural thickening or plaques
+- No pneumothorax
+
+HEART AND MEDIASTINUM:
+- Heart size is within normal limits
+- Cardiothoracic ratio: 0.45 (normal <0.50)
+- Mediastinal contours are normal
+- No mediastinal widening
+- Aortic knob normal in size and contour
+- No hilar lymphadenopathy
+- Trachea midline
+
+BONY THORAX:
+- Visualized thoracic spine shows normal alignment
+- No acute fractures identified
+- No lytic or blastic lesions
+- Ribs intact bilaterally
+- Clavicles and shoulder girdles unremarkable
+- No osseous abnormalities
+
+SOFT TISSUES:
+- Soft tissues of the chest wall are unremarkable
+- No subcutaneous emphysema
+- No masses or abnormalities
+
+VISIBLE UPPER ABDOMEN:
+- No free air under diaphragm
+- Liver edge normal
+- Gastric bubble present and normal
+
+IMPRESSION:
+
+1. RIGHT LOWER LOBE PNEUMONIA
+   Dense consolidation in the right lower lobe with air bronchograms, measuring approximately 8 x 6 cm. Findings are consistent with community-acquired bacterial pneumonia involving the posterior and lateral segments of the right lower lobe.
+
+2. NO PLEURAL EFFUSION
+   Costophrenic angles are sharp bilaterally. No evidence of parapneumonic effusion.
+
+3. NO PNEUMOTHORAX
+   No evidence of pneumothorax. Lung fields are otherwise clear except for the described RLL infiltrate.
+
+4. NORMAL HEART SIZE
+   Cardiothoracic ratio within normal limits. No cardiomegaly.
+
+RECOMMENDATIONS:
+1. Clinical correlation recommended with patient symptoms and laboratory findings
+2. Appropriate antibiotic therapy for community-acquired pneumonia
+3. Follow-up chest radiograph recommended in 4-6 weeks after completion of antibiotic therapy to document resolution of pneumonia and exclude underlying mass or other abnormality
+4. If symptoms worsen or fail to improve, consider CT chest for further evaluation
+
+COMPARISON WITH CLINICAL HISTORY:
+Radiographic findings are consistent with clinical presentation of fever, cough, shortness of breath, and pleuritic chest pain. The right lower lobe pneumonia correlates with physical exam findings of decreased breath sounds and crackles in the right lower lung field.
+
+DIAGNOSTIC CODE:
+J18.9 - Pneumonia, unspecified organism
+
+PROCEDURE CODE:
+71046 - Radiologic examination, chest; 2 views, frontal and lateral
+
+CRITICAL RESULT NOTIFICATION:
+YES - Acute pneumonia finding
+Critical result called to: Dr. Sarah Anderson, MD (Emergency Department)
+Date/Time of Call: October 15, 2024 at 19:25
+Person Receiving Call: Dr. Sarah Anderson
+Read-back Confirmed: Yes
+
+RADIOLOGIST:
+Dr. Jennifer Liu, MD
+Board Certified Diagnostic Radiology
+American Board of Radiology
+License: IL-MD-78234
+NPI: 1122334455
+
+Dictated: October 15, 2024 at 19:40
+Transcribed: October 15, 2024 at 19:42
+Electronically Signed: October 15, 2024 at 19:45
+
+REPORT STATUS: FINAL
+
+Quality Assurance Review: Completed
+Peer Review: Not required for routine chest X-ray
+Image Quality: Excellent
+
+BILLING INFORMATION:
+CPT Code: 71046
+Diagnosis Code: J18.9
+Units: 1
+Charge: $285.00
+Insurance: HealthGuard HMO (HMO-2024-78945)
+
+This report has been electronically signed and is a final report.
+Distribution: Emergency Department, Primary Care Physician (Dr. James Wilson)
+
+END OF REPORT

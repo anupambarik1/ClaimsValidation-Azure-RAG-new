@@ -1,0 +1,283 @@
+EMERGENCY DEPARTMENT RECORD
+City Medical Center
+1234 Medical Plaza Drive, Springfield, IL 62701
+Emergency Department
+Phone: (217) 555-4567 | Fax: (217) 555-4568
+Federal Tax ID: 36-1234567 | NPI: 1234567890
+
+PATIENT INFORMATION:
+Name: Michael Thompson
+Date of Birth: May 12, 1978
+Age: 46 years
+Gender: Male
+Address: 742 Oak Avenue, Springfield, IL 62704
+Phone: (217) 555-0156
+Email: mthompson@email.com
+Medical Record Number: CMC-778945
+
+INSURANCE INFORMATION:
+Primary Insurance: HealthGuard HMO
+Policy Number: HMO-2024-78945
+Member ID: HMO78945-001
+Group Number: GRP-001
+Policyholder: Michael Thompson (Self)
+Copay Collected: $250.00 (ER copay)
+
+VISIT INFORMATION:
+Visit Date: October 15, 2024
+Arrival Time: 18:45 (6:45 PM)
+Registration Time: 18:50
+Triage Time: 18:55
+Physician Evaluation: 19:10
+Discharge Time: 23:30 (11:30 PM)
+Total ED Time: 4 hours 45 minutes
+Arrival Mode: Self-transport (private vehicle)
+
+CHIEF COMPLAINT:
+"Severe cough, high fever, shortness of breath, and chest pain for 4 days"
+
+HISTORY OF PRESENT ILLNESS:
+46-year-old male Michael Thompson presents to emergency department with 4-day history of productive cough with yellow-green sputum, progressively worsening shortness of breath, and pleuritic chest pain on the right side. Patient reports fever at home measured up to 103°F. Has tried over-the-counter cough medicine (dextromethorphan) and acetaminophen without significant relief. Today developed significant dyspnea with minimal exertion (walking to bathroom) and sharp right-sided chest pain that worsens with deep breathing or coughing. Denies recent travel, sick contacts, or exposure to tuberculosis. No prior history of pneumonia.
+
+REVIEW OF SYSTEMS:
+Constitutional: Fever, chills, night sweats, fatigue, decreased appetite
+Respiratory: Cough (productive), shortness of breath, chest pain with breathing
+Cardiovascular: Denies palpitations, chest pressure
+GI: Denies nausea, vomiting, diarrhea, abdominal pain
+All other systems reviewed and negative
+
+PAST MEDICAL HISTORY:
+- Hypertension (diagnosed 2020, well-controlled on medication)
+- No history of asthma, COPD, or chronic lung disease
+- No prior pneumonia or respiratory infections requiring hospitalization
+
+MEDICATIONS (Home):
+- Lisinopril 10mg orally once daily (for hypertension)
+
+ALLERGIES:
+No known drug allergies (NKDA)
+
+SOCIAL HISTORY:
+Occupation: Software Engineer
+Smoking: Never smoked
+Alcohol: Occasional social drinking (2-3 drinks per week)
+Illicit drugs: Denies
+Lives with: Wife and two children
+Exercise: Regular (3x per week before illness)
+
+FAMILY HISTORY:
+Father: Hypertension, Type 2 Diabetes
+Mother: Hypothyroidism
+No family history of lung disease or cancer
+
+VITAL SIGNS:
+Initial (18:55):
+- Temperature: 103.2°F (39.6°C) - Oral
+- Blood Pressure: 145/88 mmHg
+- Heart Rate: 118 beats per minute
+- Respiratory Rate: 28 breaths per minute
+- Oxygen Saturation: 89% on room air
+- Pain Score: 7/10 (chest pain with breathing)
+
+After Oxygen Therapy (19:15):
+- Oxygen Saturation: 95% on 2L O2 via nasal cannula
+- Respiratory Rate: 24 breaths per minute
+
+Discharge (23:30):
+- Temperature: 100.8°F (38.2°C) - improved after acetaminophen
+- Blood Pressure: 132/82 mmHg
+- Heart Rate: 98 beats per minute
+- Respiratory Rate: 20 breaths per minute
+- Oxygen Saturation: 96% on 2L O2
+- Pain Score: 4/10
+
+PHYSICAL EXAMINATION:
+
+General Appearance:
+Ill-appearing male in moderate respiratory distress, speaking in short sentences, mild diaphoresis
+
+HEENT:
+- Head: Normocephalic, atraumatic
+- Eyes: Pupils equal, round, reactive to light
+- Ears: Tympanic membranes clear bilaterally
+- Nose: No rhinorrhea or congestion
+- Throat: No pharyngeal erythema, no tonsillar exudate
+- Neck: Supple, no lymphadenopathy, no jugular venous distension
+
+Cardiovascular:
+- Tachycardic, regular rhythm
+- S1 and S2 normal, no murmurs, rubs, or gallops
+- Peripheral pulses 2+ and symmetric
+
+Respiratory:
+- Increased work of breathing, using accessory muscles
+- Decreased breath sounds in right lower lobe
+- Crackles (rales) heard on auscultation of right lower lung field
+- Dullness to percussion over right lower lobe
+- Left lung clear to auscultation
+- No wheezing
+
+Abdomen:
+- Soft, non-tender, non-distended
+- Normal bowel sounds in all quadrants
+- No hepatosplenomegaly
+- No guarding or rebound tenderness
+
+Extremities:
+- No cyanosis, clubbing, or edema
+- Warm, well-perfused
+- Full range of motion
+
+Skin:
+- Warm, diaphoretic
+- No rashes or lesions
+- Capillary refill < 2 seconds
+
+Neurological:
+- Alert and oriented to person, place, time, situation
+- Cranial nerves II-XII intact
+- Motor strength 5/5 in all extremities
+- No focal neurological deficits
+
+DIAGNOSTIC TESTING PERFORMED:
+
+1. Chest X-Ray (2 views - PA and Lateral) - 19:15
+   Result: Right lower lobe infiltrate consistent with pneumonia
+
+2. Complete Blood Count (CBC) with Differential - 19:00
+   Result: Elevated WBC 18,500 with left shift indicating bacterial infection
+
+3. Blood Culture (Aerobic and Anaerobic, 2 sets) - 19:05, 19:10
+   Result: Pending (prelim negative at 24 hours)
+
+EMERGENCY DEPARTMENT COURSE:
+
+Patient arrived in moderate respiratory distress with hypoxemia (SpO2 89% on room air). Immediate interventions initiated:
+
+19:00 - IV access established (18-gauge in left antecubital vein)
+19:05 - Blood cultures drawn (2 sets from separate sites)
+19:10 - Normal saline 1000mL IV bolus started
+19:15 - Chest X-ray performed - shows right lower lobe pneumonia
+19:30 - Ceftriaxone 1g IV administered (broad-spectrum antibiotic)
+19:45 - Azithromycin 500mg PO administered (atypical coverage)
+20:00 - Acetaminophen 1000mg PO given for fever
+20:30 - Reassessment: Improved respiratory effort, SpO2 95% on 2L O2
+22:00 - Repeat vital signs stable, fever decreasing
+23:00 - Patient tolerating oral intake, ambulating without distress
+23:30 - Discharged home with prescriptions and instructions
+
+ASSESSMENT AND DIAGNOSIS:
+
+PRIMARY DIAGNOSIS:
+J18.9 - Community-Acquired Pneumonia, right lower lobe, unspecified organism
+
+SECONDARY DIAGNOSES:
+R05 - Acute cough
+R50.9 - Fever, unspecified
+R06.02 - Shortness of breath
+R07.1 - Chest pain on breathing (pleuritic)
+
+TREATMENT PROVIDED:
+
+Medications Administered in ED:
+1. Ceftriaxone 1 gram IV (administered at 19:30)
+2. Azithromycin 500mg PO (administered at 19:45)
+3. Acetaminophen 1000mg PO (administered at 20:00)
+4. Normal Saline 1000mL IV infusion
+5. Oxygen therapy 2L via nasal cannula (continuous)
+
+Procedures:
+1. IV catheter insertion (18g left antecubital)
+2. Continuous pulse oximetry monitoring
+3. Cardiac monitoring (due to tachycardia)
+
+DISPOSITION: DISCHARGED HOME
+
+Condition at Discharge: Improved, stable for outpatient management
+Patient Status: Ambulatory, oxygen saturation stable, respiratory distress resolved
+
+DISCHARGE MEDICATIONS:
+1. Azithromycin (Zithromax) 500mg tablets
+   Take 1 tablet by mouth once daily for 5 days
+   Quantity: 5 tablets
+   
+2. Acetaminophen (Tylenol) 650mg tablets
+   Take 1-2 tablets by mouth every 6 hours as needed for fever
+   Do not exceed 4000mg in 24 hours
+   Quantity: 30 tablets
+
+3. Continue home medication: Lisinopril 10mg once daily
+
+DISCHARGE INSTRUCTIONS:
+
+Activity:
+- Rest at home, avoid strenuous activities
+- May resume normal activities as tolerated when feeling better
+- Stay home from work until afebrile for 24 hours
+
+Diet:
+- Increase oral fluid intake (8-10 glasses of water daily)
+- Regular diet as tolerated
+- Avoid alcohol while taking antibiotics
+
+Medications:
+- Take all antibiotics exactly as prescribed
+- Complete the full 5-day course even if feeling better
+- Use acetaminophen for fever management
+- Continue blood pressure medication as usual
+
+Follow-Up:
+- Follow up with primary care physician (Dr. James Wilson) within 2-3 days
+- Appointment scheduled for October 18, 2024 at 10:00 AM
+- Repeat chest X-ray in 4-6 weeks to confirm pneumonia resolution
+
+RETURN TO EMERGENCY DEPARTMENT IF:
+- Fever over 103°F persists after 48 hours of antibiotics
+- Worsening shortness of breath or chest pain
+- Unable to keep down fluids or medications
+- Confusion or altered mental status
+- Coughing up blood
+- Lips or fingernails turning blue
+- Any other concerning symptoms
+
+PATIENT EDUCATION PROVIDED:
+✓ Nature of community-acquired pneumonia explained
+✓ Importance of completing full antibiotic course
+✓ Warning signs requiring immediate medical attention discussed
+✓ Infection control measures (handwashing, covering cough)
+✓ Expected timeline for recovery (7-10 days)
+✓ Follow-up care plan reviewed
+
+Patient verbalized understanding of all discharge instructions. Questions answered. Patient given written copy of instructions.
+
+PROCEDURE CODES:
+99285 - Emergency department visit, high severity (Level 5)
+71046 - Chest X-ray, 2 views
+85025 - Complete blood count with differential
+87040 - Blood culture, aerobic and anaerobic
+96365 - Intravenous infusion for therapy
+
+DIAGNOSIS CODES:
+J18.9 - Pneumonia, unspecified organism (PRIMARY)
+R05 - Cough
+R50.9 - Fever
+R06.02 - Shortness of breath
+R07.1 - Chest pain on breathing
+
+ATTENDING PHYSICIAN:
+Dr. Sarah Anderson, MD
+Board Certified Emergency Medicine
+License: IL-MD-45678
+NPI: 9876543210
+Electronic Signature: Dr. Sarah Anderson, MD
+Date/Time: October 15, 2024 at 23:35
+
+BILLING INFORMATION:
+Total Charges: $1,850.00
+Insurance: HealthGuard HMO (HMO-2024-78945)
+Copay Collected: $250.00 (ER copay per policy)
+Balance to Insurance: $1,600.00
+Patient Balance After Insurance Processing: To be determined by insurance
+
+Claim Submitted: October 16, 2024
+Claim Number: CLM-HMO-001

@@ -1,0 +1,408 @@
+RADIOLOGY REPORT - X-RAY IMAGING
+
+Liberty Orthopedic Center
+Department of Radiology
+2200 Medical Plaza, Austin, TX 78701
+Phone: (512) 555-7850 | Fax: (512) 555-7851
+NPI: 1234567890
+
+==============================================================================
+PATIENT INFORMATION:
+==============================================================================
+
+Patient Name: Sarah Martinez
+Date of Birth: August 23, 1985
+Age: 40 years
+Gender: Female
+Medical Record Number: LOC-334556
+Account Number: LOC-2024-09-0892
+
+Address: 1456 Maple Drive, Austin, TX 78701
+Phone: (512) 555-0234
+
+Insurance: Liberty Choice PPO
+Policy Number: PPO-2024-45621
+Member ID: PPO45621-001
+Authorization: PA-2024-09876
+
+==============================================================================
+EXAMINATION #1 - PRE-OPERATIVE X-RAYS:
+==============================================================================
+
+Examination Date: September 8, 2024
+Examination Time: 06:30
+Accession Number: RAD-2024-09-0892-PRE
+Ordering Physician: Dr. James Mitchell, MD (Orthopedic Surgery)
+NPI: 1987654321
+
+EXAMINATION: X-ray Right Knee, Pre-Operative
+CPT CODE: 73560 (Radiologic examination, knee; 1 or 2 views)
+
+CLINICAL INDICATION:
+Displaced comminuted fracture of right patella
+Pre-operative imaging prior to ORIF procedure
+ICD-10 Code: S82.001A
+
+TECHNIQUE:
+Two views of the right knee were obtained in the pre-operative holding area using portable radiographic equipment:
+- Anteroposterior (AP) view
+- Lateral view
+
+Technical Factors:
+- kVp: 65
+- mAs: 5.0
+- Focus-to-film distance: 40 inches
+- Portable X-ray unit: GE AMX-4
+- Digital radiography system
+- PACS image storage
+
+Images were acquired under standard radiation safety protocols.
+Total radiation exposure: 0.08 mGy (within acceptable limits)
+
+COMPARISON: X-rays from Emergency Department, September 5, 2024
+
+FINDINGS:
+
+RIGHT PATELLA:
+A comminuted fracture of the right patella is again identified, appearing grossly similar to prior examination from September 5, 2024.
+
+The patella demonstrates multiple fracture fragments with the following characteristics:
+- Transverse fracture line through mid-patella
+- Additional vertical fracture creating four main fragments
+- Superior pole fragment: Displaced superiorly approximately 8mm
+- Inferior pole fragment: Intact attachment to patellar tendon
+- Two central fragments with intra-articular involvement
+
+Fracture displacement: Approximately 8mm separation between superior and inferior poles
+Articular surface: Disrupted with intra-articular step-off of approximately 3-4mm
+Fracture edges: Irregular and comminuted
+
+JOINT SPACE:
+- Patellofemoral joint space: Obscured by fracture and hemarthrosis
+- Tibiofemoral joint space: Appears preserved (medial and lateral compartments)
+- No associated femoral condyle fractures
+- No associated tibial plateau fractures
+
+SOFT TISSUES:
+- Moderate joint effusion (hemarthrosis) present
+- Soft tissue swelling anterior to patella and suprapatellar region
+- Quadriceps tendon appears intact (best assessed clinically)
+- Patellar tendon appears intact (best assessed clinically)
+- No subcutaneous emphysema
+- No foreign bodies
+
+ALIGNMENT:
+- Overall lower extremity alignment maintained
+- Patellar height: Difficult to assess due to fracture (estimated Insall-Salvati ratio cannot be accurately calculated)
+- Femoral-tibial alignment: Normal, approximately 6 degrees valgus
+
+OTHER FINDINGS:
+- Femur: No fracture
+- Tibia: No fracture
+- Fibula: No fracture
+- No degenerative changes noted
+- No bone lesions
+- Hardware: None present (pre-operative)
+
+IMPRESSION:
+1. Comminuted displaced fracture of right patella with approximately 8mm separation between superior and inferior poles, unchanged from prior examination on September 5, 2024.
+
+2. Intra-articular involvement with articular step-off of 3-4mm.
+
+3. Moderate hemarthrosis (joint effusion).
+
+4. No associated fractures of femur, tibia, or fibula.
+
+5. Patient scheduled for operative fixation today - appropriate indication for surgery given degree of displacement and intra-articular involvement.
+
+RECOMMENDATIONS:
+Proceed with planned surgical intervention (ORIF).
+Post-operative imaging recommended to confirm reduction and hardware placement.
+
+==============================================================================
+EXAMINATION #2 - INTRA-OPERATIVE FLUOROSCOPY:
+==============================================================================
+
+Examination Date: September 8, 2024
+Examination Time: 07:45 - 09:30 (During surgery)
+Accession Number: RAD-2024-09-0892-FLUORO
+Radiologist: Dr. Michael Park, MD (attending radiologist on call)
+
+EXAMINATION: Intra-Operative Fluoroscopy, Right Knee
+CPT CODE: 77002 (Fluoroscopic guidance for needle placement)
+
+CLINICAL INDICATION:
+Intra-operative fluoroscopic guidance for ORIF right patellar fracture
+Real-time imaging for fracture reduction and hardware placement
+
+TECHNIQUE:
+Multiple fluoroscopic images obtained throughout the surgical procedure using C-arm fluoroscopy unit (OEC 9800 Plus). Images obtained in AP, lateral, and oblique projections to confirm:
+- Fracture reduction
+- K-wire placement
+- Cerclage wire configuration
+- Final hardware position
+
+Total fluoroscopy time: 4.2 minutes
+Radiation exposure: 1.8 mGy (within acceptable limits for fluoroscopy)
+Images saved to PACS for permanent record: 18 images
+
+FINDINGS:
+Fluoroscopic guidance used throughout procedure. Key findings documented:
+
+1. Pre-reduction images confirmed pre-operative fracture pattern
+2. Multiple images obtained during fracture reduction showing progressive alignment of fragments
+3. K-wire placement: Two parallel K-wires placed longitudinally through patella
+   - Excellent positioning in AP and lateral views
+   - No intra-articular penetration
+   - Good purchase in proximal and distal fragments
+4. Cerclage wire: Figure-of-eight configuration confirmed
+5. Final images: Anatomic reduction achieved with <2mm articular step-off
+
+Surgeon (Dr. Mitchell) satisfied with reduction and fixation before proceeding with closure.
+
+==============================================================================
+EXAMINATION #3 - POST-OPERATIVE X-RAYS:
+==============================================================================
+
+Examination Date: September 8, 2024
+Examination Time: 09:35 (Immediate post-operative)
+Accession Number: RAD-2024-09-0892-POST
+Ordering Physician: Dr. James Mitchell, MD (Orthopedic Surgery)
+
+EXAMINATION: X-ray Right Knee, Post-Operative
+CPT CODE: 73562 (Radiologic examination, knee; 3 views)
+
+CLINICAL INDICATION:
+Status post ORIF right patellar fracture
+Post-operative imaging to confirm reduction and hardware placement
+ICD-10 Code: S82.001A
+
+TECHNIQUE:
+Three views of the right knee were obtained in the operating room immediately following surgery:
+- Anteroposterior (AP) view
+- Lateral view
+- Sunrise (axial/tangential) view of patella
+
+Technical Factors:
+- kVp: 65
+- mAs: 5.0
+- Focus-to-film distance: 40 inches
+- Portable X-ray unit: GE AMX-4
+- Digital radiography system
+
+COMPARISON: Pre-operative X-rays from earlier today (September 8, 2024, 06:30)
+
+FINDINGS:
+
+FRACTURE REDUCTION:
+Excellent anatomic reduction of the previously displaced comminuted patellar fracture has been achieved. The fracture fragments are now aligned with:
+- Superior and inferior poles: No significant displacement (previously 8mm, now <1mm)
+- Articular surface: Anatomic alignment with <1mm step-off (previously 3-4mm)
+- Medial and lateral fragments: Well-aligned
+
+INTERNAL FIXATION HARDWARE:
+Two parallel 2.0mm stainless steel K-wires and one 18-gauge cerclage wire are present, forming a modified tension band construct:
+
+K-WIRES:
+- Two K-wires placed parallel to each other in longitudinal orientation
+- K-wire #1: Medial position, excellent trajectory from inferior pole through superior pole
+- K-wire #2: Lateral position, parallel to K-wire #1
+- Proximal ends: Bent and buried to prevent migration
+- Distal ends: Adequate purchase in inferior pole
+- No intra-articular penetration of K-wires
+- No cortical perforation
+- Excellent positioning in all views
+
+CERCLAGE WIRE:
+- Figure-of-eight configuration clearly visualized
+- Wire passes anterior to patella
+- Wire loops around proximal and distal K-wires creating tension band
+- Wire appears taut and well-tensioned
+- No wire breakage or loosening evident
+
+ALIGNMENT:
+- Patella: Centered in trochlear groove on sunrise view
+- Patellar height: Restored to normal (estimated Insall-Salvati ratio 1.1, within normal range 0.8-1.2)
+- Patellar tilt: Normal (no lateral tilting)
+- Femoral-tibial alignment: Normal
+
+JOINT SPACES:
+- Patellofemoral joint: Articular surfaces congruent
+- Tibiofemoral joint: Normal medial and lateral compartment joint spaces
+- No intra-articular loose bodies
+
+SOFT TISSUES:
+- Expected post-operative soft tissue swelling
+- No subcutaneous emphysema
+- No foreign bodies
+- Knee immobilizer in place (partially visualized)
+
+OTHER:
+- Femur: Intact, no fracture
+- Tibia: Intact, no fracture
+- Fibula: Intact, no fracture
+- No complications identified
+
+IMPRESSION:
+1. Status post successful open reduction internal fixation of right patellar fracture.
+
+2. Excellent anatomic reduction of fracture fragments with restoration of articular congruity (<1mm step-off).
+
+3. Internal fixation hardware (two K-wires and cerclage wire in tension band configuration) in excellent position with no evidence of intra-articular penetration or hardware complication.
+
+4. Restoration of normal patellar height (Insall-Salvati ratio 1.1).
+
+5. No immediate post-operative complications identified.
+
+6. Satisfactory surgical result.
+
+RECOMMENDATIONS:
+1. Clinical follow-up with orthopedic surgeon as scheduled
+2. Repeat X-rays at 2 weeks, 6 weeks, and 12 weeks to assess fracture healing
+3. Monitor for hardware complications (migration, breakage, loosening)
+4. Patient may require hardware removal at 12-18 months if symptomatic
+
+==============================================================================
+TECHNIQUE AND QUALITY:
+==============================================================================
+
+All examinations performed with appropriate technique and positioning.
+Image quality: Excellent
+Adequate visualization of all relevant anatomy
+Proper exposure factors used
+Radiation dose kept as low as reasonably achievable (ALARA principle)
+All images stored in PACS system for permanent record
+
+Total number of images acquired:
+- Pre-operative: 2 views
+- Intra-operative fluoroscopy: 18 saved images
+- Post-operative: 3 views
+TOTAL: 23 images
+
+==============================================================================
+RADIATION SAFETY:
+==============================================================================
+
+Patient informed of radiation exposure risks and benefits
+Radiation dose monitoring performed
+Total effective dose estimate: 0.15 mSv (well within safety guidelines)
+Lead shielding used appropriately for non-imaging areas
+All staff wore appropriate radiation protection (lead aprons, thyroid shields, dosimetry badges)
+
+==============================================================================
+RADIOLOGIST INTERPRETATION:
+==============================================================================
+
+All images reviewed and interpreted by:
+
+Dr. Michael Park, MD, FACR
+Board Certified Radiologist
+Subspecialty: Musculoskeletal Radiology
+License: TX-MD-66778
+NPI: 1543216789
+
+Date Interpreted: September 8, 2024
+Time of Interpretation: 10:45
+Report Dictated: September 8, 2024 at 10:50
+Report Transcribed: September 8, 2024 at 11:15
+
+Electronically Signed: September 8, 2024 at 11:30
+
+==============================================================================
+CRITICAL RESULTS:
+==============================================================================
+
+No critical results requiring immediate notification.
+Routine post-operative findings as expected.
+
+==============================================================================
+DISTRIBUTION:
+==============================================================================
+
+Report Sent To:
+✓ Dr. James Mitchell, MD (Ordering Physician) - Via EMR
+✓ Patient Chart (Electronic Medical Record)
+✓ Liberty Choice PPO (for claim PA-2024-09876)
+✓ PACS Archive (Images stored permanently)
+
+==============================================================================
+BILLING INFORMATION:
+==============================================================================
+
+CPT CODES:
+73560 - X-ray knee, 1-2 views (pre-operative): $285.00
+77002 - Fluoroscopic guidance (intra-operative): $325.00
+73562 - X-ray knee, 3 views (post-operative): $340.00
+
+TOTAL RADIOLOGY CHARGES: $950.00
+
+ICD-10 Diagnosis Code: S82.001A
+Authorization Number: PA-2024-09876
+Insurance: Liberty Choice PPO (In-Network)
+Expected Coverage: 85% after deductible
+Patient Responsibility: 15% coinsurance = $142.50
+
+Professional Fee (Radiologist interpretation): Included
+Technical Fee (Equipment, staff, supplies): Included
+
+==============================================================================
+FOLLOW-UP IMAGING:
+==============================================================================
+
+RECOMMENDED IMAGING SCHEDULE:
+1. X-ray right knee (2 views) at 2 weeks post-op (September 22, 2024)
+   - Assess early healing
+   - Monitor hardware position
+   
+2. X-ray right knee (2 views) at 6 weeks post-op (October 20, 2024)
+   - Assess fracture healing progression
+   - Monitor for complications
+   
+3. X-ray right knee (2 views) at 12 weeks post-op (December 1, 2024)
+   - Assess fracture union
+   - Determine if additional imaging needed
+
+4. Additional imaging as clinically indicated
+
+Future imaging may be scheduled through:
+Liberty Orthopedic Center Radiology Department
+Phone: (512) 555-7850
+Online scheduling: www.libertyortho.com
+
+==============================================================================
+PATIENT NOTIFICATION:
+==============================================================================
+
+Imaging results discussed with patient by surgical team.
+Patient understands post-operative findings.
+Patient instructed on follow-up imaging schedule.
+
+Copy of imaging CD available upon request.
+Online access to images via patient portal: www.libertyortho.com/myhealth
+
+==============================================================================
+QUALITY ASSURANCE:
+==============================================================================
+
+✓ Correct patient identification verified
+✓ Correct anatomic site imaged (right knee)
+✓ Appropriate clinical indication documented
+✓ Proper imaging technique used
+✓ Adequate image quality for diagnostic interpretation
+✓ Radiation safety protocols followed
+✓ Timely completion of examination
+✓ Prompt report turnaround time
+✓ Appropriate communication of results
+
+Peer Review Status: Not required for routine post-operative imaging
+
+==============================================================================
+
+Medical Record Number: LOC-334556
+Account Number: LOC-2024-09-0892
+Accession Numbers: RAD-2024-09-0892-PRE, RAD-2024-09-0892-FLUORO, RAD-2024-09-0892-POST
+
+END OF RADIOLOGY REPORT
+
+Images available for review in PACS.
+For questions or concerns, contact Radiology Department at (512) 555-7850.

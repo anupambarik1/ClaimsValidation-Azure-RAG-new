@@ -1,0 +1,116 @@
+EMERGENCY DEPARTMENT RECORD
+City Medical Center
+1234 Medical Plaza Drive, Springfield, IL 62701
+Emergency Department
+Phone: (217) 555-4567 | Fax: (217) 555-4568
+
+PATIENT INFORMATION:
+Name: Michael Thompson
+Date of Birth: May 12, 1978
+Age: 46 years
+Address: 742 Oak Avenue, Springfield, IL 62704
+Phone: (217) 555-0156
+MRN: CMC-778945
+
+INSURANCE INFORMATION:
+Insurance: HealthGuard HMO
+Policy Number: HMO-2024-78945
+Member ID: HMO78945-001
+Group Number: GRP-001
+Policyholder: Michael Thompson (Self)
+
+VISIT INFORMATION:
+Visit Date: October 15, 2024
+Arrival Time: 18:45 (6:45 PM)
+Discharge Time: 23:30 (11:30 PM)
+Total Time in ED: 4 hours 45 minutes
+Visit Type: Emergency
+
+CHIEF COMPLAINT: Severe cough, high fever, shortness of breath, chest pain
+
+HISTORY OF PRESENT ILLNESS:
+45-year-old male presents to ED with 4-day history of productive cough with yellow-green sputum, progressively worsening shortness of breath, and pleuritic chest pain. Reports fever at home up to 103°F. Denies recent travel or sick contacts. Has tried over-the-counter cough medicine without relief. Today developed significant dyspnea with minimal exertion and sharp right-sided chest pain with deep breathing.
+
+PAST MEDICAL HISTORY: Hypertension (controlled)
+MEDICATIONS: Lisinopril 10mg daily
+ALLERGIES: No known drug allergies
+SOCIAL HISTORY: Non-smoker, occasional alcohol use
+
+VITAL SIGNS:
+Temperature: 103.2°F (39.6°C)
+Blood Pressure: 145/88 mmHg
+Heart Rate: 118 bpm
+Respiratory Rate: 28 breaths/min
+Oxygen Saturation: 89% on room air → 95% on 2L O2 via nasal cannula
+
+PHYSICAL EXAMINATION:
+General: Ill-appearing male in moderate respiratory distress
+HEENT: No pharyngeal erythema, no sinus tenderness
+Cardiovascular: Tachycardic, regular rhythm, no murmurs
+Respiratory: Decreased breath sounds right lower lobe, crackles on auscultation, dullness to percussion RLL
+Abdomen: Soft, non-tender, non-distended
+Extremities: No edema, good perfusion
+
+DIAGNOSTIC TESTING:
+
+Chest X-Ray (2 views):
+Findings: Infiltrate in right lower lobe consistent with pneumonia. No pleural effusion. Heart size normal.
+Impression: Right lower lobe pneumonia
+
+Complete Blood Count:
+WBC: 18,500/μL (elevated, left shift)
+Hemoglobin: 14.2 g/dL
+Platelets: 285,000/μL
+
+Blood Culture:
+2 sets drawn, sent to laboratory
+Preliminary: Pending (final results in 48-72 hours)
+
+ASSESSMENT AND PLAN:
+1. Community-acquired pneumonia, right lower lobe
+2. Hypoxemia, resolved with supplemental oxygen
+3. Tachycardia secondary to fever and infection
+
+TREATMENT PROVIDED:
+- IV access established (18g left antecubital)
+- Normal saline 1000mL bolus
+- Ceftriaxone 1g IV administered
+- Azithromycin 500mg PO administered
+- Acetaminophen 1000mg PO for fever
+- Continuous pulse oximetry monitoring
+- Oxygen therapy 2L via nasal cannula
+
+DISPOSITION:
+Patient improved with IV antibiotics and fluids. Oxygen saturation stable at 96% on 2L O2. Afebrile after acetaminophen (100.8°F). Respiratory rate decreased to 20. Patient stable for discharge home with oral antibiotics.
+
+DISCHARGE MEDICATIONS:
+- Azithromycin 500mg PO daily x 5 days
+- Ceftriaxone (received IV dose in ED, continue with oral alternatives if needed)
+- Acetaminophen 650mg PO every 6 hours as needed for fever
+- Follow-up with primary care physician in 2-3 days
+
+DISCHARGE INSTRUCTIONS:
+- Rest and increase fluid intake
+- Use antipyretics for fever
+- Return to ED if worsening shortness of breath, chest pain, high fever persists
+- Complete full course of antibiotics
+- Follow up with PCP within 2-3 days
+- Chest X-ray follow-up in 4-6 weeks
+
+Diagnosis: J18.9 - Pneumonia, unspecified organism
+Procedure: 99285 - Emergency department visit, high complexity
+
+Provider: Dr. Sarah Anderson, MD
+Emergency Medicine
+License: MD-CA-45678
+Signature: [Electronically signed]
+Date/Time: October 15, 2024 23:30
+
+BILLING INFORMATION:
+Emergency room visit (Level 5): $750.00
+Chest X-ray (2 views): $285.00
+Complete blood count: $125.00
+Blood culture: $180.00
+IV antibiotics administration: $310.00
+IV fluids: $200.00
+TOTAL: $1,850.00

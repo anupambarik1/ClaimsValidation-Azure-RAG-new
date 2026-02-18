@@ -1,0 +1,84 @@
+DISCHARGE SUMMARY
+City Medical Center - Emergency Department
+
+Patient: Michael Thompson
+DOB: 05/12/1978
+MRN: CMC-778945
+Visit Date: October 15, 2024
+Admission Time: 18:45
+Discharge Time: 23:30
+
+FINAL DIAGNOSIS:
+1. Community-Acquired Pneumonia, Right Lower Lobe (J18.9)
+2. Hypoxemia, resolved with supplemental oxygen
+3. Fever secondary to pneumonia
+
+HOSPITAL COURSE:
+Mr. Thompson is a 45-year-old male who presented to the emergency department with a 4-day history of productive cough, high fever (103.2°F), shortness of breath, and pleuritic right-sided chest pain. 
+
+Initial assessment revealed an ill-appearing patient in moderate respiratory distress with tachypnea (RR 28), tachycardia (HR 118), and hypoxemia (SpO2 89% on room air). Physical examination was significant for decreased breath sounds and crackles in the right lower lung field.
+
+Diagnostic workup included:
+- Chest X-ray: Confirmed right lower lobe pneumonia with dense consolidation
+- CBC: Elevated WBC (18.5) with left shift, indicating acute bacterial infection
+- Blood cultures: Obtained and pending
+
+Treatment initiated in ED:
+- IV hydration with normal saline
+- IV ceftriaxone 1g and oral azithromycin 500mg
+- Oxygen therapy via nasal cannula
+- Antipyretic therapy (acetaminophen)
+
+Patient responded well to treatment with improvement in respiratory status, oxygen saturation, and fever. By time of discharge, patient was maintaining SpO2 96% on 2L O2, respiratory rate decreased to 20, and temperature improved to 100.8°F.
+
+Given clinical improvement and hemodynamic stability, patient deemed appropriate for outpatient management with oral antibiotics and close follow-up.
+
+DISCHARGE MEDICATIONS:
+1. Azithromycin 500mg PO daily for 5 days
+2. Acetaminophen 650mg PO every 6 hours as needed for fever
+3. Continue home medication: Lisinopril 10mg daily
+
+DISCHARGE INSTRUCTIONS:
+1. Complete full course of antibiotics (azithromycin x 5 days)
+2. Rest and increase oral fluid intake
+3. Use acetaminophen for fever management
+4. Monitor temperature - seek immediate care if fever >103°F persists after 48 hours
+5. Return to ED immediately if:
+   - Worsening shortness of breath
+   - Chest pain
+   - Confusion or altered mental status
+   - Inability to maintain oral intake
+6. Follow up with primary care physician (Dr. James Wilson) within 2-3 days
+7. Repeat chest X-ray in 4-6 weeks to confirm resolution of pneumonia
+8. May return to work when afebrile for 24 hours and clinically improved
+
+FOLLOW-UP:
+- Primary care physician appointment scheduled for October 18, 2024
+- Chest X-ray follow-up in 4-6 weeks
+- Blood culture results will be called to PCP if positive
+
+CONDITION AT DISCHARGE: Improved, stable for outpatient management
+
+PATIENT EDUCATION:
+Patient and family educated regarding:
+- Nature of pneumonia and expected course
+- Importance of completing full antibiotic course
+- Warning signs requiring immediate medical attention
+- Follow-up care plan
+
+Patient verbalized understanding of discharge instructions and had no questions at time of discharge.
+
+Attending Physician: Dr. Sarah Anderson, MD
+Emergency Medicine
+License: MD-CA-45678
+Electronically signed: October 15, 2024 23:35
+
+PROCEDURE CODES:
+99285 - Emergency department visit, high severity
+
+DIAGNOSIS CODES:
+J18.9 - Pneumonia, unspecified organism
+R05 - Cough
+R50.9 - Fever, unspecified
+R06.02 - Shortness of breath
+R07.1 - Chest pain on breathing

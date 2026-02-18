@@ -1,0 +1,38 @@
+AMERICAN HEALTH SAVINGS PLAN
+Prior Authorization Approval
+
+Authorization Number: PA-HDHP-08192024
+Approval Date: August 19, 2024
+Member: Robert Chen | Member ID: HDHP99132-001 | DOB: 3/15/1990
+Policy: HDHP-2024-99132
+
+AUTHORIZED PROCEDURE:
+Upper GI Endoscopy with Biopsy (CPT 43235)
+Provider: Dr. Emily Rodriguez, MD | NPI: 1564738291
+Facility: American Health Endoscopy Center | NPI: 1234567800
+Service Date: August 22, 2024
+STATUS: APPROVED
+
+CLINICAL JUSTIFICATION:
+34-year-old male with 6-month history of persistent GERD symptoms (heartburn, regurgitation, dysphagia, chest pain) despite maximum medical management with PPIs and lifestyle modifications. Dysphagia is red flag symptom requiring endoscopic evaluation to rule out Barrett's esophagus, stricture, or malignancy. Meets ACG guidelines for diagnostic endoscopy.
+
+MEDICAL NECESSITY: CONFIRMED
+- Failed 6 months conservative treatment
+- Development of alarm symptom (dysphagia)
+- Need to exclude complications (Barrett's, stricture, cancer)
+
+APPROVED SERVICES:
+✓ Diagnostic upper endoscopy (esophagus, stomach, duodenum)
+✓ Tissue biopsies as clinically indicated
+✓ Conscious sedation/anesthesia
+✓ Pathology analysis
+
+COVERAGE: Subject to deductible and coinsurance per HDHP policy terms
+- Deductible: $3,000 (patient has met $2,100 YTD)
+- Remaining deductible: $900
+- After deductible: 80% coverage (patient 20% coinsurance)
+
+Authorization valid through: September 22, 2024
+
+Reviewed by: Dr. Patricia Martinez, MD, Medical Director
+Phone: 1-800-555-AHSP (2477) | Fax: 1-800-555-2478

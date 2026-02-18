@@ -1,0 +1,83 @@
+SURGICAL PATHOLOGY REPORT
+
+Chicago Pathology Associates
+2100 Lab Plaza, Chicago, IL 60612
+Phone: (312) 555-PATH (7284) | CLIA: 14D0987654
+
+Patient: Robert Chen | DOB: 3/15/1990 | Gender: M | MRN: AHEC-556677
+Accession #: SP-2024-08-445678 | Received: 8/22/2024 | Reported: 8/25/2024
+Ordering Physician: Dr. Emily Rodriguez, MD | NPI: 1564738291
+Clinical History: GERD symptoms x 6 months, dysphagia. R/O Barrett's esophagus.
+
+SPECIMENS:
+A. Distal esophagus, biopsy (2 jars)
+B. Gastroesophageal junction, biopsy (2 jars)
+C. Stomach antrum, biopsy (2 jars)
+D. Stomach body, biopsy (2 jars)
+
+GROSS DESCRIPTION:
+A-D: Each specimen consists of multiple fragments of tan-pink soft tissue measuring 0.1-0.3cm in aggregate. Entirely submitted for microscopic examination.
+
+MICROSCOPIC EXAMINATION:
+
+SPECIMEN A - DISTAL ESOPHAGUS:
+The sections show squamous mucosa with reactive changes including basal cell hyperplasia, elongation of papillae, and scattered intraepithelial inflammatory cells (eosinophils 15-20 per high power field). Focal erosion with fibrinopurulent exudate present. Lamina propria shows chronic inflammation with lymphocytes and plasma cells.
+- NO intestinal metaplasia (Barrett's esophagus)
+- NO dysplasia
+- NO malignancy
+
+SPECIMEN B - GASTROESOPHAGEAL JUNCTION:
+Sections show gastric cardia-type mucosa with mild chronic inflammation. Squamous epithelium shows reactive changes. Z-line architecture preserved.
+- NO intestinal metaplasia
+- NO specialized intestinal epithelium
+- NO dysplasia
+- NO malignancy
+
+SPECIMEN C - STOMACH ANTRUM:
+The sections show antral mucosa with mild to moderate chronic inflammation characterized by lymphoplasmacytic infiltrate in lamina propria. Foveolar epithelium intact. No intestinal metaplasia.
+- NO H. pylori organisms identified (Giemsa stain negative)
+- NO atrophy
+- NO intestinal metaplasia
+- NO dysplasia or malignancy
+
+SPECIMEN D - STOMACH BODY:
+Sections show gastric body-type mucosa (oxyntic mucosa) with mild chronic inflammation. Parietal and chief cells present and normal.
+- NO H. pylori organisms (Giemsa stain negative)
+- NO atrophy
+- NO intestinal metaplasia
+- NO malignancy
+
+ANCILLARY STUDIES:
+Giemsa stain for H. pylori: NEGATIVE (Specimens C and D)
+
+DIAGNOSIS:
+
+A. DISTAL ESOPHAGUS, BIOPSY:
+   - REFLUX ESOPHAGITIS, MODERATE (with basal cell hyperplasia, elongated papillae, intraepithelial eosinophils)
+   - FOCAL EROSION
+   - NO INTESTINAL METAPLASIA (NO BARRETT'S ESOPHAGUS)
+
+B. GASTROESOPHAGEAL JUNCTION, BIOPSY:
+   - MILD CHRONIC INFLAMMATION
+   - NO INTESTINAL METAPLASIA
+   - NO SPECIALIZED COLUMNAR EPITHELIUM
+
+C. STOMACH ANTRUM, BIOPSY:
+   - CHRONIC GASTRITIS, MILD TO MODERATE
+   - HELICOBACTER PYLORI: NOT IDENTIFIED
+
+D. STOMACH BODY, BIOPSY:
+   - MILD CHRONIC GASTRITIS
+   - HELICOBACTER PYLORI: NOT IDENTIFIED
+
+COMMENT:
+The histologic findings are consistent with gastroesophageal reflux disease (GERD). There is no evidence of Barrett's esophagus (intestinal metaplasia with goblet cells) in the examined tissue. The moderate reflux esophagitis with eosinophils correlates with clinical symptoms. No H. pylori infection identified. Continued medical management for GERD is appropriate.
+
+ELECTRONICALLY SIGNED:
+Susan Lee, MD, FCAP
+Board Certified Anatomic and Clinical Pathologist
+License: IL-MD-77889 | NPI: 1098765432
+Date/Time: August 25, 2024, 16:30
+
+CPT CODES: 88305 x 4 (Level IV surgical pathology - GI biopsies)
+ICD-10: K21.9 (GERD), K29.60 (Gastritis)

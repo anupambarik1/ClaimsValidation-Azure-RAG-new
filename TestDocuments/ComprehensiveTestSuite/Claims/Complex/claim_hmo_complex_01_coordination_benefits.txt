@@ -1,0 +1,109 @@
+CLAIM SUBMISSION FORM - COMPLEX TEST CASE #1
+Claim Type: Health Insurance - HMO (Coordination of Benefits)
+Policy Number: HMO-2024-78945
+Claim Number: CLM-HMO-COMPLEX-001
+
+CLAIMANT INFORMATION:
+Name: Michael Thompson
+Date of Birth: 05/12/1978
+Policy Holder: Michael Thompson
+Member ID: HMO78945-001
+
+SECONDARY INSURANCE:
+Policy: Medicare Part B
+Medicare ID: 123-45-6789A
+Effective Date: May 1, 2024 (turned 65)
+
+CLAIM DETAILS:
+Date of Service: November 12, 2024
+Provider: Dr. Robert Chang, Cardiologist
+Provider NPI: 3456789012
+Facility: Heart & Vascular Institute
+Diagnosis Codes: I25.10 (Atherosclerotic heart disease), I48.91 (Atrial fibrillation)
+Procedure Codes: 93458 (Left heart catheterization), 93566 (Coronary angiography)
+
+DESCRIPTION OF SERVICE:
+Patient experiencing chest pain and irregular heartbeat. Underwent cardiac catheterization with coronary angiography showing 70% blockage in LAD (left anterior descending artery). Stent placement recommended but deferred pending further evaluation.
+
+CLAIM AMOUNT: $14,750.00
+
+ITEMIZED CHARGES:
+- Cardiologist fee (catheterization): $4,200.00
+- Angiography interpretation: $1,850.00
+- Catheterization lab facility fee: $6,500.00
+- Contrast media and supplies: $1,200.00
+- Recovery room (4 hours): $1,000.00
+TOTAL: $14,750.00
+
+COORDINATION OF BENEFITS COMPLEXITY:
+Michael turned 65 on May 1, 2024 and enrolled in Medicare Part B, making Medicare primary and HMO secondary. However, he continued working and maintained employer-sponsored HMO coverage.
+
+COORDINATION OF BENEFITS RULES:
+Age 65+ with Employer Coverage:
+- If employer has <20 employees: Medicare is primary
+- If employer has ≥20 employees: Employer plan is primary
+
+Michael's Employer Size: 75 employees
+Therefore: HMO is PRIMARY, Medicare is SECONDARY
+
+MEDICARE PAYMENT (Secondary):
+Medicare allowable amount: $11,200.00
+Medicare paid (as secondary): $2,240.00 (20% after HMO payment)
+EOB received from Medicare
+
+EXPECTED HMO PAYMENT (Primary):
+Total charges: $14,750.00
+HMO negotiated rate (in-network): $12,800.00
+Applied to deductible: $1,500.00 (annual deductible - now met)
+Remaining: $11,300.00
+HMO pays 90%: $10,170.00
+Patient coinsurance (10%): $1,130.00
+
+COORDINATION CALCULATION:
+HMO payment (primary): $10,170.00
+Medicare payment (secondary): $2,240.00
+Total insurance payments: $12,410.00
+Patient responsibility: $1,500 (deductible) + $1,130 (coinsurance) - $2,240 (Medicare) = $390.00
+
+COMPLEXITY FACTORS:
+1. Coordination of Benefits between employer plan and Medicare
+2. Determining primary vs secondary payer (employer size rule)
+3. Medicare allowable amounts vs HMO negotiated rates
+4. Proper claims processing sequence
+5. Patient turning 65 mid-year (dual coverage scenario)
+
+PRE-AUTHORIZATION:
+✓ Pre-authorization obtained: Auth# PA-2024-11098
+✓ Medical necessity established (abnormal stress test)
+
+SUPPORTING DOCUMENTS REQUIRED:
+✓ Pre-authorization letter
+✓ Cardiac catheterization report
+✓ Angiography images and interpretation
+✓ Pre-procedure EKG and stress test results
+✓ Medicare EOB showing secondary payment
+✓ Itemized facility bill
+✓ Proof of employer size (>20 employees)
+✓ Coordination of benefits form
+
+CLAIM STATUS: Should be APPROVED (Complex Processing)
+- Requires coordination of benefits calculation
+- HMO is correctly primary payer
+- Medicare secondary payment received
+- All documentation present
+- Pre-authorization obtained
+- In-network provider
+
+PAYMENT SUMMARY:
+Total Charges: $14,750.00
+HMO Negotiated Rate: $12,800.00
+HMO Payment (90% after deductible): $10,170.00
+Medicare Secondary Payment: $2,240.00
+Patient Responsibility: $390.00
+
+SPECIAL PROCESSING NOTES:
+- Verify employer size to confirm primary/secondary determination
+- Process as primary payer first
+- Coordinate with Medicare EOB
+- Patient credit for Medicare payment reduces out-of-pocket
+- Annual out-of-pocket max tracking: $390.00 toward $6,000 limit

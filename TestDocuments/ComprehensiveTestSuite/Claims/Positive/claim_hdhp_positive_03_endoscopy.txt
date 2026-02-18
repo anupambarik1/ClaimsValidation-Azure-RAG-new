@@ -1,0 +1,172 @@
+CLAIM SUBMISSION FORM - POSITIVE TEST CASE #3
+Claim Type: Health Insurance - American Health Savings Plan (HDHP)
+Policy Number: HDHP-2024-99132
+Policy Holder: Robert Chen
+Policy Effective Date: January 1, 2024
+Claim Number: CLM-HDHP-003
+
+POLICYHOLDER INFORMATION:
+Full Name: Robert Chen
+Date of Birth: March 15, 1990
+Age: 34 years
+Gender: Male
+Address: 2847 Riverside Drive, Chicago, IL 60614
+Phone: (312) 555-0287
+Email: rchen@email.com
+SSN: XXX-XX-9132 (last 4 digits)
+Member ID: HDHP99132-001
+Relationship to Patient: Self (Primary Policyholder)
+
+POLICY COVERAGE:
+Insurance Company: American Health Savings Plan
+Policy Type: High Deductible Health Plan (HDHP) with HSA
+Annual Deductible: $3,000 individual / $6,000 family
+Deductible Met YTD: $2,100 (before this claim)
+Out-of-Pocket Maximum: $7,000 individual / $14,000 family
+Out-of-Pocket Used YTD: $2,100 (before this claim)
+Coinsurance: 80% after deductible (patient pays 20%)
+HSA Account: Active (can use for qualified medical expenses)
+
+CLAIM DETAILS:
+Date of Service: August 22, 2024
+Provider: Dr. Emily Rodriguez, MD, FACG
+Specialty: Gastroenterology
+Provider License: IL-MD-34567
+Provider NPI: 1564738291
+Provider Address: American Health Endoscopy Center, 1800 Medical Drive, Chicago, IL 60611
+Provider Phone: (312) 555-ENDO (3636)
+Facility: American Health Endoscopy Center (In-Network)
+Facility NPI: 1234567800
+Primary Diagnosis Code: K21.9 (Gastroesophageal reflux disease without esophagitis)
+Secondary Diagnosis: R13.10 (Dysphagia, unspecified)
+Procedure Code: 43235 (Upper gastrointestinal endoscopy including esophagus, stomach, and duodenum with biopsy)
+
+
+DESCRIPTION OF SERVICE:
+Patient Robert Chen is a 34-year-old male with a 6-month history of persistent gastroesophageal reflux disease (GERD) symptoms including severe heartburn, regurgitation, difficulty swallowing (dysphagia), and non-cardiac chest pain. Conservative treatment with proton pump inhibitors (omeprazole 40mg daily) and lifestyle modifications (dietary changes, weight loss, elevation of head of bed) for 6 months was unsuccessful in controlling symptoms. Patient experienced progressive worsening with dysphagia to solids raising concern for complications such as Barrett's esophagus, esophageal stricture, or malignancy.
+
+On August 22, 2024, patient underwent diagnostic upper gastrointestinal endoscopy (esophagogastroduodenoscopy - EGD) with biopsies at American Health Endoscopy Center. Procedure performed under conscious sedation (monitored anesthesia care). Endoscopic findings revealed moderate esophagitis with erosions but no Barrett's esophagus, strictures, or masses. Multiple biopsies taken from esophagus, gastroesophageal junction, and stomach for histopathologic evaluation.
+
+Pathology results (available August 25, 2024) showed chronic inflammation consistent with GERD, intestinal metaplasia absent, no dysplasia, and negative for Helicobacter pylori. Patient tolerated procedure well without complications. Discharged home same day with medication adjustments and dietary recommendations.
+
+PRE-AUTHORIZATION:
+Pre-authorization Number: PA-HDHP-08192024
+Authorization Date: August 19, 2024
+Authorized Procedure: Diagnostic upper endoscopy with biopsy (CPT 43235)
+Authorized Facility: American Health Endoscopy Center
+Authorization Status: APPROVED
+Medical Necessity: Established (persistent GERD symptoms despite 6 months conservative therapy, dysphagia requiring evaluation for complications)
+
+NETWORK STATUS:
+Provider Network Status: IN-NETWORK
+Facility Network Status: IN-NETWORK
+Benefits Applied: In-Network HDHP benefits (80% after deductible)
+
+CLAIM AMOUNT: $2,400.00
+
+ITEMIZED CHARGES:
+1. Gastroenterologist Professional Fee (Dr. Rodriguez): $850.00
+   - CPT 43235 (Upper endoscopy with biopsy)
+   - Includes pre-procedure evaluation, procedure performance, interpretation
+   
+2. Facility Fee (American Health Endoscopy Center): $950.00
+   - Endoscopy suite use, equipment, supplies
+   - Nursing staff, recovery room monitoring
+   
+3. Anesthesia Services (Conscious Sedation): $350.00
+   - Monitored anesthesia care
+   - CPT 00740 (Anesthesia for upper GI endoscopy)
+   - Anesthesiologist: Dr. Michael Park, MD
+   
+4. Pathology Services (Chicago Pathology Associates): $250.00
+   - Tissue biopsy analysis (4 specimens)
+   - CPT 88305 x 4 (Surgical pathology, Level IV)
+   - Pathologist: Dr. Susan Lee, MD
+
+TOTAL CLAIM AMOUNT: $2,400.00
+
+EXPECTED COVERAGE CALCULATION:
+Total Charges: $2,400.00
+Annual Deductible: $3,000.00
+Deductible Met Before This Claim: $2,100.00
+Remaining Deductible: $900.00
+
+Applied to Deductible: $900.00
+After Deductible Applied: $1,500.00
+
+Patient NOW MEETS ANNUAL DEDUCTIBLE (Deductible 100% met after this claim)
+
+Amount Subject to Coinsurance: $1,500.00
+Insurance Coverage: 80% after deductible
+Insurance Payment (80% of $1,500): $1,200.00
+Patient Coinsurance (20% of $1,500): $300.00
+
+FINANCIAL SUMMARY:
+Total Claim: $2,400.00
+Patient Pays (Applied to Deductible): $900.00
+Patient Pays (Coinsurance 20%): $300.00
+Total Patient Responsibility: $1,200.00
+Insurance Payment: $1,200.00
+
+HSA ELIGIBLE: YES - All charges eligible for HSA reimbursement
+Patient can use Health Savings Account funds tax-free to pay patient responsibility
+
+Out-of-Pocket Tracking:
+Previous OOP Used: $2,100
+This Claim Patient Responsibility: $1,200
+Total OOP Used YTD: $3,300
+OOP Maximum: $7,000
+Remaining to OOP Max: $3,700
+
+SUPPORTING DOCUMENTS INCLUDED:
+✓ Pre-authorization approval letter (PA-HDHP-08192024, dated August 19, 2024)
+✓ Endoscopy operative report with findings and biopsy locations
+✓ Pathology report with histologic diagnosis (4 tissue specimens)
+✓ Pre-procedure assessment and H&P (history and physical)
+✓ Post-procedure discharge instructions and medication changes
+✓ Anesthesia record (conscious sedation documentation)
+✓ Medical records documenting 6-month failed conservative treatment
+✓ Physician notes from prior visits justifying medical necessity
+✓ Itemized facility bill with CPT and ICD-10 codes
+
+MEDICAL NECESSITY JUSTIFICATION:
+This procedure was medically necessary based on:
+1. Persistent GERD symptoms despite 6 months of appropriate medical management
+2. Development of dysphagia (difficulty swallowing) - red flag symptom requiring evaluation
+3. Need to rule out Barrett's esophagus (pre-cancerous condition)
+4. Need to rule out esophageal stricture or malignancy
+5. Failure of conservative treatment necessitating diagnostic evaluation
+6. Age-appropriate screening given chronic symptoms
+7. Meets American College of Gastroenterology (ACG) guidelines for endoscopy indication
+
+CLAIM STATUS: Should be APPROVED - All criteria met:
+✓ Pre-authorization obtained and documented (PA-HDHP-08192024)
+✓ Medically necessary procedure per ACG guidelines
+✓ Failed conservative treatment for 6 months documented
+✓ In-network provider (Dr. Rodriguez) and facility
+✓ Proper ICD-10 and CPT coding
+✓ Complete documentation of medical necessity
+✓ All required supporting documents provided
+✓ Claim submitted within 60 days of service (timely filing)
+✓ Deductible and coinsurance calculations accurate
+✓ Patient benefits verified and in force
+
+ADDITIONAL INFORMATION:
+Claim Submission Date: August 30, 2024
+Submission Method: Electronic claim via clearinghouse
+Submitting Provider: American Health Endoscopy Center Billing Department
+Contact: (312) 555-BILL (2455)
+
+PATIENT AUTHORIZATION:
+I hereby authorize payment of medical benefits to American Health Endoscopy Center and Dr. Emily Rodriguez for services rendered. I authorize release of medical information necessary to process this claim.
+
+Patient Signature: Robert Chen (Electronic authorization on file)
+Date: August 22, 2024
+
+PROVIDER CERTIFICATION:
+I certify that the services listed above were medically necessary and provided as described.
+
+Provider Signature: Dr. Emily Rodriguez, MD, FACG (Electronic signature)
+Date: August 22, 2024
+License: IL-MD-34567
+NPI: 1564738291

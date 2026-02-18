@@ -1,0 +1,334 @@
+PRESCRIPTION RECORD
+City Medical Center
+Emergency Department Pharmacy
+1234 Medical Plaza Drive, Springfield, IL 62701
+Pharmacy Phone: (217) 555-4569
+
+PRESCRIBER INFORMATION:
+Prescribing Physician: Dr. Sarah Anderson, MD
+Specialty: Emergency Medicine
+License Number: IL-MD-45678
+NPI: 9876543210
+DEA Number: AA1234567
+Phone: (217) 555-4567
+Date Prescribed: October 15, 2024
+Time Prescribed: 23:25
+
+PATIENT INFORMATION:
+Patient Name: Michael Thompson
+Date of Birth: May 12, 1978
+Age: 46 years
+Gender: Male
+Address: 742 Oak Avenue, Springfield, IL 62704
+Phone: (217) 555-0156
+Medical Record Number: CMC-778945
+
+INSURANCE INFORMATION:
+Primary Insurance: HealthGuard HMO
+Policy Number: HMO-2024-78945
+Member ID: HMO78945-001
+Rx Bin: 610020
+Rx PCN: HMO
+Rx Group: GRP001
+
+ALLERGIES:
+No Known Drug Allergies (NKDA)
+
+==============================================================================
+PRESCRIPTION #1
+==============================================================================
+
+Rx Number: RX-2024-778945-01
+Prescription Date: October 15, 2024
+
+MEDICATION:
+Drug Name: AZITHROMYCIN
+Brand Name: Zithromax
+Generic Available: Yes (Generic Prescribed)
+Strength: 500mg
+Dosage Form: Tablets
+NDC Code: 0069-3060-30
+
+DIRECTIONS FOR USE:
+Take ONE (1) tablet by mouth ONCE daily for 5 days
+
+Quantity: 5 Tablets
+Days Supply: 5 Days
+Refills: 0 (Zero)
+
+INDICATION: Treatment of Community-Acquired Pneumonia
+
+PHARMACIST COUNSELING POINTS:
+• Take at the same time each day for best results
+• May be taken with or without food
+• Complete the full 5-day course even if you feel better
+• Do not skip doses
+• If you miss a dose, take it as soon as you remember
+• Do not double up on doses
+• Store at room temperature away from moisture and heat
+
+DRUG INTERACTIONS: None with current medications (Lisinopril)
+
+SIDE EFFECTS TO REPORT:
+• Severe diarrhea or stomach pain
+• Irregular heartbeat
+• Severe skin rash
+• Difficulty breathing
+• Yellowing of skin or eyes
+
+PRESCRIPTION STATUS:
+☐ Filled at City Medical Center Pharmacy
+☑ Electronically Transmitted to: CVS Pharmacy, 890 Main Street, Springfield, IL
+   Phone: (217) 555-0177
+   Transmission Date/Time: October 15, 2024 at 23:28
+   Transmission Confirmation: CONFIRMED
+
+==============================================================================
+PRESCRIPTION #2
+==============================================================================
+
+Rx Number: RX-2024-778945-02
+Prescription Date: October 15, 2024
+
+MEDICATION:
+Drug Name: ACETAMINOPHEN
+Brand Name: Tylenol
+Generic Available: Yes (Generic Prescribed)
+Strength: 650mg
+Dosage Form: Tablets
+NDC Code: 0527-1404-01
+
+DIRECTIONS FOR USE:
+Take ONE to TWO (1-2) tablets by mouth EVERY 6 HOURS as needed for fever or pain
+Maximum: Do not exceed SIX (6) tablets in 24 hours (4000mg maximum daily dose)
+
+Quantity: 30 Tablets
+Days Supply: 15 Days (if taking maximum dose)
+Refills: 0 (Zero)
+
+INDICATION: Fever reduction and pain relief associated with pneumonia
+
+PHARMACIST COUNSELING POINTS:
+• Do not exceed 4000mg (6 tablets) in 24 hours
+• Taking more than directed can cause serious liver damage
+• Do NOT take with other products containing acetaminophen
+• Check labels of all other medications (cold/flu products often contain acetaminophen)
+• Avoid alcohol while taking this medication (increased risk of liver damage)
+• Take with food or milk if stomach upset occurs
+
+DRUG INTERACTIONS: None with current medications
+
+WARNING - ACETAMINOPHEN:
+Taking more than the recommended dose can cause serious liver damage, which may lead to liver transplant or death. Do not use with other products containing acetaminophen. Ask a doctor before use if you have liver disease or drink 3 or more alcoholic drinks daily.
+
+SIDE EFFECTS TO REPORT:
+• Unusual bleeding or bruising
+• Yellowing of skin or eyes
+• Dark urine
+• Severe stomach pain
+• Skin rash or itching
+
+PRESCRIPTION STATUS:
+☐ Filled at City Medical Center Pharmacy
+☑ Electronically Transmitted to: CVS Pharmacy, 890 Main Street, Springfield, IL
+   Phone: (217) 555-0177
+   Transmission Date/Time: October 15, 2024 at 23:28
+   Transmission Confirmation: CONFIRMED
+
+==============================================================================
+CONTINUE CURRENT MEDICATIONS:
+==============================================================================
+
+MEDICATION #3: LISINOPRIL 10mg Tablets
+Current prescription from Dr. James Wilson
+Continue taking ONE (1) tablet by mouth ONCE daily
+No changes to this medication
+Continue as previously prescribed
+
+==============================================================================
+MEDICATION RECONCILIATION:
+==============================================================================
+
+MEDICATIONS PRESCRIBED TODAY (NEW):
+1. Azithromycin 500mg - 1 tablet daily x 5 days
+2. Acetaminophen 650mg - 1-2 tablets every 6 hours as needed (max 6 tablets/day)
+
+CURRENT HOME MEDICATIONS (CONTINUE):
+3. Lisinopril 10mg - 1 tablet daily (for blood pressure)
+
+MEDICATIONS DISCONTINUED: None
+
+OVER-THE-COUNTER PRODUCTS TO AVOID:
+• Do not take additional acetaminophen (Tylenol)
+• Do not take other pain relievers without checking with doctor
+• Do not take antacids within 2 hours of azithromycin (may decrease absorption)
+
+==============================================================================
+PRESCRIPTION TRANSMISSION DETAILS:
+==============================================================================
+
+PHARMACY SELECTED BY PATIENT:
+Pharmacy Name: CVS Pharmacy
+Address: 890 Main Street, Springfield, IL 62704
+Phone: (217) 555-0177
+Pharmacy NPI: 1234567001
+NCPDP Number: 5432101
+
+ELECTRONIC PRESCRIPTION (E-Prescribe):
+Transmission Method: Surescripts Network
+Date Sent: October 15, 2024
+Time Sent: 23:28
+Status: Successfully transmitted and received by pharmacy
+
+PRESCRIPTIONS SENT:
+1. Azithromycin 500mg #5 tablets - TRANSMITTED ✓
+2. Acetaminophen 650mg #30 tablets - TRANSMITTED ✓
+
+Confirmation Numbers:
+E-Rx Confirmation #1: ESC-2024-778945-01
+E-Rx Confirmation #2: ESC-2024-778945-02
+
+PATIENT NOTIFICATION:
+Patient Michael Thompson was notified that prescriptions were sent to CVS Pharmacy at 890 Main Street. Patient instructed to pick up medications tonight if pharmacy is open, or first thing tomorrow morning. Patient confirmed pharmacy location is convenient and correct.
+
+==============================================================================
+MEDICATION COST ESTIMATE (WITH INSURANCE):
+==============================================================================
+
+AZITHROMYCIN 500mg #5:
+Retail Price (without insurance): Approximately $15-25
+With HealthGuard HMO Insurance:
+- Generic Copay: $10.00 (per HMO formulary)
+- Estimated Patient Cost: $10.00
+
+ACETAMINOPHEN 650mg #30:
+Retail Price (without insurance): Approximately $8-12
+With HealthGuard HMO Insurance:
+- Over-the-counter equivalent - May not be covered by insurance
+- Estimated Patient Cost: $8-12 (if not covered)
+- Alternative: Patient may purchase regular acetaminophen 325mg OTC for less cost
+
+TOTAL ESTIMATED OUT-OF-POCKET: $18-22
+
+Note: Actual costs may vary. Patient should present insurance card at pharmacy for accurate pricing.
+
+==============================================================================
+PHARMACIST CONSULTATION NOTES:
+==============================================================================
+
+Patient Michael Thompson was counseled on new medications by:
+Counseling Pharmacist: Amanda Roberts, PharmD
+License: IL-RPH-98765
+Date/Time: October 15, 2024 at 23:20
+
+TOPICS DISCUSSED:
+✓ Proper dosing and administration of azithromycin
+✓ Importance of completing full antibiotic course
+✓ Maximum daily dose limits for acetaminophen
+✓ Warning about acetaminophen and liver safety
+✓ Drug interactions reviewed (none with current medications)
+✓ Potential side effects discussed
+✓ Storage instructions provided
+✓ Instructions to pick up prescriptions from CVS
+✓ When to call doctor if symptoms worsen
+✓ Patient questions answered
+
+PATIENT UNDERSTANDING:
+Patient demonstrated understanding of:
+• How to take each medication
+• When to take each medication
+• Duration of antibiotic therapy
+• Maximum acetaminophen dose
+• Warning signs to report to doctor
+
+Patient verbalized no questions or concerns about medications.
+Patient provided with printed medication information sheets for both prescriptions.
+
+==============================================================================
+CLINICAL PHARMACY NOTES:
+==============================================================================
+
+DIAGNOSIS: Community-Acquired Pneumonia (CAP), Right Lower Lobe
+
+ANTIBIOTIC SELECTION:
+Azithromycin chosen for outpatient treatment of CAP per IDSA/ATS guidelines.
+Patient received initial IV ceftriaxone 1g in ED for broad coverage.
+Azithromycin provides coverage for:
+- Streptococcus pneumoniae (common CAP pathogen)
+- Atypical organisms (Mycoplasma, Chlamydia)
+- Haemophilus influenzae
+
+DURATION: 5 days is appropriate for azithromycin Z-pak equivalent dosing
+
+APPROPRIATENESS REVIEW:
+✓ No drug allergies
+✓ No contraindications to azithromycin (no QT prolongation history)
+✓ No significant drug interactions with home medication (lisinopril)
+✓ Renal function: Appears normal based on clinical presentation
+✓ Appropriate for outpatient CAP treatment
+✓ Patient meets criteria for discharge on oral antibiotics (CURB-65 score = 0)
+
+ACETAMINOPHEN:
+Appropriate for fever and pain management. Patient educated on maximum daily dose and hepatotoxicity risk. No history of liver disease. Social history: occasional alcohol use (counseled to avoid alcohol while ill).
+
+==============================================================================
+PATIENT INSTRUCTIONS REVIEWED:
+==============================================================================
+
+START MEDICATIONS:
+• Azithromycin: Start tomorrow morning, October 16, 2024
+• Acetaminophen: Use as needed for fever (temperature > 100.4°F) or pain
+
+MEDICATION TIMING:
+• Azithromycin: Take at same time each day (recommended: with breakfast)
+• Acetaminophen: As needed, but space doses at least 6 hours apart
+
+WHAT TO EXPECT:
+• Fever should improve within 48-72 hours
+• Cough may persist for 2-3 weeks but should gradually improve
+• Energy level should return to normal within 7-10 days
+
+WHEN TO CALL DOCTOR:
+• Fever persists or worsens after 72 hours on antibiotic
+• Shortness of breath worsens
+• Severe diarrhea develops (>3 watery stools per day)
+• Rash or allergic reaction symptoms
+• Any concerns about medications
+
+FOLLOW-UP:
+Scheduled with Dr. James Wilson on October 18, 2024 at 10:00 AM
+
+==============================================================================
+PRESCRIPTION RECORD COMPLETED BY:
+==============================================================================
+
+Emergency Department Pharmacist: Amanda Roberts, PharmD
+License: IL-RPH-98765
+Phone: (217) 555-4569
+Date: October 15, 2024
+Time: 23:30
+
+Attending Physician: Dr. Sarah Anderson, MD
+Electronic Signature Applied: October 15, 2024 at 23:35
+
+COPIES DISTRIBUTED:
+• Patient: Copy of prescription information and medication guides
+• Medical Record: Electronic health record documentation complete
+• CVS Pharmacy: Electronic prescriptions transmitted successfully
+• Dr. James Wilson (PCP): Notification of prescriptions sent via EHR
+
+==============================================================================
+
+PATIENT ACKNOWLEDGMENT:
+
+I, Michael Thompson, acknowledge that I have received medication counseling and understand:
+• How to take my new medications
+• Potential side effects and warnings
+• The importance of completing the full course of antibiotics
+• When to contact my doctor
+
+Patient Verbal Consent: Obtained
+Date: October 15, 2024
+Time: 23:30
+
+END OF PRESCRIPTION RECORD
