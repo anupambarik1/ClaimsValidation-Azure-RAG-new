@@ -10,7 +10,8 @@ namespace ClaimsRagBot.Infrastructure.Azure;
 /// </summary>
 public class CosmosBlobMetadataRepository : IBlobMetadataRepository
 {
-    private readonly Container _container;
+    private readonly Container _AuditTrailContainer;
+    private readonly Container _BlobMetadataContainer;
 
     public CosmosBlobMetadataRepository(IConfiguration configuration)
     {
@@ -19,30 +20,47 @@ public class CosmosBlobMetadataRepository : IBlobMetadataRepository
         var key = configuration["Azure:CosmosDB:Key"]
             ?? throw new ArgumentException("Azure:CosmosDB:Key not configured");
         
-        var databaseName = configuration["Azure:CosmosDB:DatabaseName"] ?? "ClaimsRagBot";
-        var containerName = configuration["Azure:CosmosDB:BlobMetadataContainer"] ?? "blob-metadata";
+        var databaseName = configuration["Azure:CosmosDB:DatabaseId"] ?? "ClaimsDatabase";
+        var AuditTrailContainer = configuration["Azure:CosmosDB:ContainerId"] ?? "AuditTrail";
+        var BlobMetadataContainer = configuration["Azure:CosmosDB:BlobMetadataContainer"] ?? "blob-metadata";
+        
+        Console.WriteLine($"[CosmosBlobMetadata] Connecting to database: {databaseName}");
 
         var client = new CosmosClient(endpoint, key);
-        _container = client.GetContainer(databaseName, containerName);
-        
-        Console.WriteLine($"[CosmosBlobMetadata] Connected to {databaseName}/{containerName}");
+        _AuditTrailContainer = client.GetContainer(databaseName, AuditTrailContainer);
+        _BlobMetadataContainer = client.GetContainer(databaseName, BlobMetadataContainer);
+
+        //Console.WriteLine($"[CosmosBlobMetadata] Connected to {databaseName}/{AuditTrailContainer}");
     }
 
     public async Task<BlobMetadata> SaveAsync(BlobMetadata metadata)
     {
         try
         {
-            var response = await _container.UpsertItemAsync(
+            Console.WriteLine($"[CosmosBlobMetadata] Attempting to save:");
+            Console.WriteLine($"  Id: '{metadata.Id}' (Length: {metadata.Id?.Length ?? 0})");
+            Console.WriteLine($"  DocumentId: '{metadata.DocumentId}' (Length: {metadata.DocumentId?.Length ?? 0})");
+            Console.WriteLine($"  BlobName: '{metadata.BlobName}'");
+            Console.WriteLine($"  ContainerName: '{metadata.ContainerName}'");
+            
+            // Validate required fields
+            if (string.IsNullOrWhiteSpace(metadata.Id))
+                throw new ArgumentException("Id cannot be null or empty");
+            if (string.IsNullOrWhiteSpace(metadata.DocumentId))
+                throw new ArgumentException("DocumentId cannot be null or empty");
+            
+            var response = await _BlobMetadataContainer.UpsertItemAsync(
                 metadata,
                 new PartitionKey(metadata.DocumentId)
             );
             
-            Console.WriteLine($"[CosmosBlobMetadata] Saved mapping: {metadata.DocumentId} -> {metadata.BlobName}");
+            Console.WriteLine($"[CosmosBlobMetadata] ✓ Saved mapping: {metadata.DocumentId} -> {metadata.BlobName}");
             return response.Resource;
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"[CosmosBlobMetadata] Save error: {ex.Message}");
+            Console.WriteLine($"[CosmosBlobMetadata] ✗ Save error: {ex.Message}");
+            Console.WriteLine($"[CosmosBlobMetadata] ✗ Stack trace: {ex.StackTrace}");
             throw new InvalidOperationException($"Failed to save blob metadata: {ex.Message}", ex);
         }
     }
@@ -51,15 +69,19 @@ public class CosmosBlobMetadataRepository : IBlobMetadataRepository
     {
         try
         {
-            var response = await _container.ReadItemAsync<BlobMetadata>(
-                documentId,
-                new PartitionKey(documentId)
-            );
+            // Query by DocumentId since the Cosmos DB 'id' is a GUID, not the documentId
+            var query = new QueryDefinition(
+                "SELECT * FROM c WHERE c.DocumentId = @documentId")
+                .WithParameter("@documentId", documentId);
             
-            return response.Resource;
-        }
-        catch (CosmosException ex) when (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
-        {
+            var iterator = _BlobMetadataContainer.GetItemQueryIterator<BlobMetadata>(query);
+            
+            if (iterator.HasMoreResults)
+            {
+                var response = await iterator.ReadNextAsync();
+                return response.FirstOrDefault();
+            }
+            
             Console.WriteLine($"[CosmosBlobMetadata] Not found: {documentId}");
             return null;
         }
@@ -74,7 +96,7 @@ public class CosmosBlobMetadataRepository : IBlobMetadataRepository
     {
         try
         {
-            await _container.DeleteItemAsync<BlobMetadata>(
+            await _BlobMetadataContainer.DeleteItemAsync<BlobMetadata>(
                 documentId,
                 new PartitionKey(documentId)
             );
@@ -102,7 +124,7 @@ public class CosmosBlobMetadataRepository : IBlobMetadataRepository
                 "SELECT * FROM c WHERE c.UserId = @userId AND c.DeletedAt = null"
             ).WithParameter("@userId", userId);
 
-            var iterator = _container.GetItemQueryIterator<BlobMetadata>(query);
+            var iterator = _BlobMetadataContainer.GetItemQueryIterator<BlobMetadata>(query);
             var results = new List<BlobMetadata>();
 
             while (iterator.HasMoreResults)

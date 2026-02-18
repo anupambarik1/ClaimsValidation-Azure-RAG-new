@@ -16,6 +16,7 @@ public class AzureBlobStorageService : IDocumentUploadService
     private readonly BlobContainerClient _containerClient;
     private readonly IBlobMetadataRepository? _metadataRepository;
     private readonly string _containerName;
+    private readonly string _metaDataContainerName;
     private readonly string _uploadPrefix;
     private readonly int _sasTokenExpiration;
 
@@ -27,6 +28,7 @@ public class AzureBlobStorageService : IDocumentUploadService
             ?? throw new ArgumentException("Azure:BlobStorage:ConnectionString not configured");
         
         _containerName = configuration["Azure:BlobStorage:ContainerName"] ?? "claims-documents";
+        _metaDataContainerName = "blob-metadata";
         _uploadPrefix = configuration["Azure:BlobStorage:UploadPrefix"] ?? "uploads/";
         _sasTokenExpiration = int.Parse(configuration["Azure:BlobStorage:SasTokenExpiration"] ?? "3600");
         _metadataRepository = metadataRepository;
@@ -72,7 +74,7 @@ public class AzureBlobStorageService : IDocumentUploadService
                     {
                         DocumentId = documentId,
                         BlobName = blobName,
-                        ContainerName = _containerName,
+                        ContainerName = _metaDataContainerName,
                         FileName = fileName,
                         ContentType = contentType,
                         FileSize = properties.Value.ContentLength,
