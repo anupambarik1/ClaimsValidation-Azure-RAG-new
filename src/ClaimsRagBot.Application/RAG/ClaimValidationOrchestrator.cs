@@ -10,19 +10,25 @@ public class ClaimValidationOrchestrator
     private readonly ILlmService _llmService;
     private readonly IAuditService _auditService;
     private readonly IDocumentExtractionService? _documentExtractionService;
+    private readonly ICitationValidator _citationValidator;
+    private readonly IContradictionDetector _contradictionDetector;
 
     public ClaimValidationOrchestrator(
         IEmbeddingService embeddingService,
         IRetrievalService retrievalService,
         ILlmService llmService,
         IAuditService auditService,
-        IDocumentExtractionService? documentExtractionService = null)
+        IDocumentExtractionService? documentExtractionService,
+        ICitationValidator citationValidator,
+        IContradictionDetector contradictionDetector)
     {
         _embeddingService = embeddingService;
         _retrievalService = retrievalService;
         _llmService = llmService;
         _auditService = auditService;
         _documentExtractionService = documentExtractionService;
+        _citationValidator = citationValidator;
+        _contradictionDetector = contradictionDetector;
     }
 
     public async Task<ClaimDecision> ValidateClaimAsync(ClaimRequest request)
@@ -51,10 +57,58 @@ public class ClaimValidationOrchestrator
         // Step 4: Generate decision using LLM
         var decision = await _llmService.GenerateDecisionAsync(request, clauses);
 
-        // Step 5: Apply Aflac-style business rules
+        // Step 5: GUARDRAIL - Validate citations to prevent hallucinations
+        var citationValidation = _citationValidator.ValidateLlmResponse(decision, clauses);
+        if (!citationValidation.IsValid)
+        {
+            Console.WriteLine($"[Guardrail] Citation validation failed: {string.Join(", ", citationValidation.Errors)}");
+            
+            return new ClaimDecision(
+                Status: "Manual Review",
+                Explanation: "AI response failed citation validation. " + string.Join(" ", citationValidation.Errors),
+                ClauseReferences: decision.ClauseReferences,
+                RequiredDocuments: decision.RequiredDocuments,
+                ConfidenceScore: 0.0f,
+                ValidationWarnings: citationValidation.Errors,
+                ConfidenceRationale: "Citation validation failed - potential hallucination detected"
+            );
+        }
+
+        // Step 6: GUARDRAIL - Detect contradictions
+        var contradictions = _contradictionDetector.DetectContradictions(request, decision, clauses);
+        if (_contradictionDetector.HasCriticalContradictions(contradictions))
+        {
+            Console.WriteLine($"[Guardrail] Critical contradictions detected: {contradictions.Count}");
+            
+            decision = decision with
+            {
+                Status = "Manual Review",
+                Explanation = "Critical contradictions detected. " + decision.Explanation,
+                Contradictions = contradictions,
+                ValidationWarnings = _contradictionDetector.GetContradictionSummary(contradictions)
+            };
+        }
+        else if (contradictions.Any())
+        {
+            decision = decision with
+            {
+                Contradictions = contradictions,
+                ValidationWarnings = _contradictionDetector.GetContradictionSummary(contradictions)
+            };
+        }
+
+        // Step 7: Add citation warnings if present
+        if (citationValidation.HasWarnings)
+        {
+            var warnings = decision.ValidationWarnings?.ToList() ?? new List<string>();
+            warnings.AddRange(citationValidation.Warnings ?? new List<string>());
+            decision = decision with { ValidationWarnings = warnings };
+        }
+
+        // Step 8: Apply Aflac-style business rules
         decision = ApplyBusinessRules(decision, request);
 
-        // Step 6: Audit trail (mandatory for compliance)
+        // Step 9: Audit trail (mandatory for compliance)
         await _auditService.SaveAsync(request, decision, clauses);
 
         return decision;
@@ -128,10 +182,58 @@ public class ClaimValidationOrchestrator
         Console.WriteLine($"[Orchestrator] Generating AI decision with {documentContents.Count} supporting documents");
         var decision = await _llmService.GenerateDecisionWithSupportingDocumentsAsync(request, clauses, documentContents);
 
-        // Step 6: Apply enhanced business rules
+        // Step 6: GUARDRAIL - Validate citations to prevent hallucinations
+        var citationValidation = _citationValidator.ValidateLlmResponse(decision, clauses);
+        if (!citationValidation.IsValid)
+        {
+            Console.WriteLine($"[Guardrail] Citation validation failed: {string.Join(", ", citationValidation.Errors)}");
+            
+            return new ClaimDecision(
+                Status: "Manual Review",
+                Explanation: "AI response failed citation validation. " + string.Join(" ", citationValidation.Errors),
+                ClauseReferences: decision.ClauseReferences,
+                RequiredDocuments: decision.RequiredDocuments,
+                ConfidenceScore: 0.0f,
+                ValidationWarnings: citationValidation.Errors,
+                ConfidenceRationale: "Citation validation failed with supporting documents"
+            );
+        }
+
+        // Step 7: GUARDRAIL - Detect contradictions (including document consistency)
+        var contradictions = _contradictionDetector.DetectContradictions(request, decision, clauses, documentContents);
+        if (_contradictionDetector.HasCriticalContradictions(contradictions))
+        {
+            Console.WriteLine($"[Guardrail] Critical contradictions detected with supporting docs: {contradictions.Count}");
+            
+            decision = decision with
+            {
+                Status = "Manual Review",
+                Explanation = "Critical contradictions detected in supporting documents. " + decision.Explanation,
+                Contradictions = contradictions,
+                ValidationWarnings = _contradictionDetector.GetContradictionSummary(contradictions)
+            };
+        }
+        else if (contradictions.Any())
+        {
+            decision = decision with
+            {
+                Contradictions = contradictions,
+                ValidationWarnings = _contradictionDetector.GetContradictionSummary(contradictions)
+            };
+        }
+
+        // Step 8: Add citation warnings if present
+        if (citationValidation.HasWarnings)
+        {
+            var warnings = decision.ValidationWarnings?.ToList() ?? new List<string>();
+            warnings.AddRange(citationValidation.Warnings ?? new List<string>());
+            decision = decision with { ValidationWarnings = warnings };
+        }
+
+        // Step 9: Apply enhanced business rules
         decision = ApplyBusinessRules(decision, request, hasSupportingDocuments: true);
 
-        // Step 7: Audit trail (mandatory for compliance)
+        // Step 10: Audit trail (mandatory for compliance)
         await _auditService.SaveAsync(request, decision, clauses);
 
         Console.WriteLine($"[Orchestrator] Claim validated with supporting docs - Status: {decision.Status}, Confidence: {decision.ConfidenceScore:F2}");
@@ -148,13 +250,25 @@ public class ClaimValidationOrchestrator
         const float confidenceThreshold = 0.85f;
         const float highConfidenceThreshold = 0.90f;
 
+        var missingEvidence = new List<string>();
+        string? confidenceRationale = null;
+
         // Rule 1: Low confidence → Manual Review
         if (decision.ConfidenceScore < confidenceThreshold)
         {
+            confidenceRationale = $"Confidence {decision.ConfidenceScore:F2} below threshold {confidenceThreshold}";
+            
+            if (!hasSupportingDocuments)
+                missingEvidence.Add("Supporting medical documents would increase confidence");
+            if (decision.ClauseReferences.Count < 2)
+                missingEvidence.Add("Additional policy clause references would strengthen decision");
+                
             return decision with
             {
                 Status = "Manual Review",
-                Explanation = $"Confidence below threshold ({decision.ConfidenceScore:F2} < {confidenceThreshold}). " + decision.Explanation
+                Explanation = $"Confidence below threshold ({decision.ConfidenceScore:F2} < {confidenceThreshold}). " + decision.Explanation,
+                MissingEvidence = missingEvidence,
+                ConfidenceRationale = confidenceRationale
             };
         }
 
@@ -164,9 +278,12 @@ public class ClaimValidationOrchestrator
             decision.Status == "Covered" &&
             hasSupportingDocuments)
         {
+            confidenceRationale = $"High confidence ({decision.ConfidenceScore:F2}) with supporting documents for low-value claim";
+            
             return decision with
             {
-                Explanation = $"Auto-approved: Low-value claim (${request.ClaimAmount}) with high confidence ({decision.ConfidenceScore:F2}) and supporting documentation. " + decision.Explanation
+                Explanation = $"Auto-approved: Low-value claim (${request.ClaimAmount}) with high confidence ({decision.ConfidenceScore:F2}) and supporting documentation. " + decision.Explanation,
+                ConfidenceRationale = confidenceRationale
             };
         }
 
@@ -175,29 +292,40 @@ public class ClaimValidationOrchestrator
             decision.ConfidenceScore >= confidenceThreshold && 
             decision.Status == "Covered")
         {
+            confidenceRationale = $"Good confidence ({decision.ConfidenceScore:F2}) for moderate-value claim";
+            
             return decision with
             {
-                Explanation = $"Moderate-value claim (${request.ClaimAmount}) with good confidence ({decision.ConfidenceScore:F2}). " + decision.Explanation
+                Explanation = $"Moderate-value claim (${request.ClaimAmount}) with good confidence ({decision.ConfidenceScore:F2}). " + decision.Explanation,
+                ConfidenceRationale = confidenceRationale
             };
         }
 
         // Rule 4: High amount + covered → Manual Review (even with high confidence)
         if (request.ClaimAmount > autoApprovalThreshold && decision.Status == "Covered")
         {
+            confidenceRationale = $"High-value claim (${request.ClaimAmount}) requires manual review regardless of confidence";
+            missingEvidence.Add("Specialist review required for high-value claims");
+            
             return decision with
             {
                 Status = "Manual Review",
-                Explanation = $"Amount ${request.ClaimAmount} exceeds auto-approval limit (${autoApprovalThreshold}). " + decision.Explanation
+                Explanation = $"Amount ${request.ClaimAmount} exceeds auto-approval limit (${autoApprovalThreshold}). " + decision.Explanation,
+                MissingEvidence = missingEvidence,
+                ConfidenceRationale = confidenceRationale
             };
         }
 
         // Rule 5: Exclusion clause detected → Deny or Manual Review
         if (decision.ClauseReferences.Any(c => c.Contains("Exclusion", StringComparison.OrdinalIgnoreCase)))
         {
+            confidenceRationale = "Exclusion clause detected - requires careful interpretation";
+            
             return decision with
             {
                 Status = decision.Status == "Covered" ? "Manual Review" : decision.Status,
-                Explanation = "Potential exclusion clause detected. " + decision.Explanation
+                Explanation = "Potential exclusion clause detected. " + decision.Explanation,
+                ConfidenceRationale = confidenceRationale
             };
         }
 

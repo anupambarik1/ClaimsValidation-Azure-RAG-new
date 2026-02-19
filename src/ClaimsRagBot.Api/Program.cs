@@ -1,4 +1,6 @@
 using ClaimsRagBot.Application.RAG;
+using ClaimsRagBot.Application.Security;
+using ClaimsRagBot.Application.Validation;
 using ClaimsRagBot.Core.Configuration;
 using ClaimsRagBot.Core.Interfaces;
 using ClaimsRagBot.Infrastructure.Bedrock;
@@ -12,6 +14,7 @@ using ClaimsRagBot.Infrastructure.DocumentExtraction;
 using ClaimsRagBot.Infrastructure.Azure;
 using ClaimsRagBot.Infrastructure.Tools;
 using System.Reflection;
+using System.Threading.RateLimiting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -57,20 +60,7 @@ if (cloudProvider == CloudProvider.Azure)
     
     // Azure Data Services
     builder.Services.AddSingleton<IAuditService, AzureCosmosAuditService>();
-    // Register blob metadata repository as optional - will be null if Cosmos DB not fully configured
-    builder.Services.AddSingleton<IBlobMetadataRepository>(sp =>
-    {
-        try
-        {
-            return new CosmosBlobMetadataRepository(sp.GetRequiredService<IConfiguration>());
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine($"⚠️  Blob metadata repository unavailable: {ex.Message}");
-            Console.WriteLine($"    Document download/delete by ID will not work. Run setup-cosmos-containers.ps1 to fix.");
-            return null!;
-        }
-    });
+    builder.Services.AddSingleton<IBlobMetadataRepository, CosmosBlobMetadataRepository>();
     builder.Services.AddSingleton<IDocumentUploadService, AzureBlobStorageService>();
     
     // Azure Document Processing Services
@@ -112,14 +102,48 @@ builder.Services.AddScoped<IDocumentExtractionService>(sp =>
         sp.GetRequiredService<IConfiguration>()
     ));
 
+// Guardrail services (security & validation)
+Console.WriteLine("✅ Registering guardrail services...");
+builder.Services.AddSingleton<IPiiMaskingService, PiiMaskingService>();
+builder.Services.AddSingleton<IPromptInjectionDetector, PromptInjectionDetector>();
+builder.Services.AddSingleton<ICitationValidator, CitationValidator>();
+builder.Services.AddSingleton<IContradictionDetector, ContradictionDetector>();
+Console.WriteLine("✅ All 4 guardrail services registered (PII Masking, Prompt Injection Detection, Citation Validation, Contradiction Detection)");
+
 builder.Services.AddScoped<ClaimValidationOrchestrator>(sp =>
     new ClaimValidationOrchestrator(
         sp.GetRequiredService<IEmbeddingService>(),
         sp.GetRequiredService<IRetrievalService>(),
         sp.GetRequiredService<ILlmService>(),
         sp.GetRequiredService<IAuditService>(),
-        sp.GetRequiredService<IDocumentExtractionService>()
+        sp.GetRequiredService<IDocumentExtractionService>(),
+        sp.GetRequiredService<ICitationValidator>(),
+        sp.GetRequiredService<IContradictionDetector>()
     ));
+
+// Configure rate limiting (guardrail)
+builder.Services.AddRateLimiter(options =>
+{
+    options.GlobalLimiter = PartitionedRateLimiter.Create<HttpContext, string>(context =>
+        RateLimitPartition.GetFixedWindowLimiter(
+            partitionKey: context.Request.Headers.Host.ToString(),
+            factory: partition => new FixedWindowRateLimiterOptions
+            {
+                PermitLimit = 100,
+                Window = TimeSpan.FromMinutes(1),
+                QueueProcessingOrder = QueueProcessingOrder.OldestFirst,
+                QueueLimit = 10
+            }));
+    
+    options.OnRejected = async (context, token) =>
+    {
+        context.HttpContext.Response.StatusCode = 429;
+        await context.HttpContext.Response.WriteAsync(
+            "Too many requests. Please try again later.", token);
+    };
+});
+
+Console.WriteLine("✅ Rate limiting configured: 100 requests per minute per host");
 
 // Configure CORS for testing
 builder.Services.AddCors(options =>
@@ -165,6 +189,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("AllowAll");
+app.UseRateLimiter();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();

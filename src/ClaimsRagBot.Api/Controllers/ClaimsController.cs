@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ClaimsRagBot.Api.Controllers;
 
 /// <summary>
-/// Claims validation API endpoints
+/// Claims validation API endpoints with security guardrails
 /// </summary>
 [ApiController]
 [Route("api/[controller]")]
@@ -15,25 +15,31 @@ public class ClaimsController : ControllerBase
 {
     private readonly ClaimValidationOrchestrator _orchestrator;
     private readonly IAuditService _auditService;
+    private readonly IPromptInjectionDetector _promptDetector;
+    private readonly IPiiMaskingService _piiMasking;
     private readonly ILogger<ClaimsController> _logger;
 
     public ClaimsController(
         ClaimValidationOrchestrator orchestrator,
         IAuditService auditService,
+        IPromptInjectionDetector promptDetector,
+        IPiiMaskingService piiMasking,
         ILogger<ClaimsController> logger)
     {
         _orchestrator = orchestrator;
         _auditService = auditService;
+        _promptDetector = promptDetector;
+        _piiMasking = piiMasking;
         _logger = logger;
     }
 
     /// <summary>
-    /// Validates a claim request using AI-powered RAG system
+    /// Validates a claim request using AI-powered RAG system with security guardrails
     /// </summary>
     /// <param name="request">The claim validation request containing policy details</param>
     /// <returns>A claim decision with approval status, reasoning, and relevant policy clauses</returns>
     /// <response code="200">Returns the claim decision</response>
-    /// <response code="400">If the request is invalid</response>
+    /// <response code="400">If the request is invalid or contains malicious content</response>
     /// <response code="500">If an internal error occurs</response>
     [HttpPost("validate")]
     [ProducesResponseType(typeof(ClaimDecision), StatusCodes.Status200OK)]
@@ -43,30 +49,87 @@ public class ClaimsController : ControllerBase
     {
         try
         {
+            // GUARDRAIL: Input validation
+            if (request == null)
+            {
+                return BadRequest(new { error = "Request body is required" });
+            }
+
+            if (string.IsNullOrWhiteSpace(request.ClaimDescription))
+            {
+                return BadRequest(new { error = "Claim description is required" });
+            }
+
+            // GUARDRAIL: Prompt injection detection
+            var validationResult = _promptDetector.ValidateClaimDescription(request.ClaimDescription);
+            if (!validationResult.IsValid)
+            {
+                _logger.LogWarning(
+                    "Potential security threat detected in claim description for policy {PolicyNumber}: {Threats}",
+                    request.PolicyNumber,
+                    string.Join(", ", validationResult.Errors)
+                );
+
+                return BadRequest(new
+                {
+                    error = "Invalid claim description",
+                    details = validationResult.Errors,
+                    message = "Your input contains potentially malicious content. Please review and resubmit."
+                });
+            }
+
+            // GUARDRAIL: Log any warnings (non-blocking)
+            if (validationResult.HasWarnings)
+            {
+                _logger.LogInformation(
+                    "Validation warnings for policy {PolicyNumber}: {Warnings}",
+                    request.PolicyNumber,
+                    string.Join(", ", validationResult.Warnings ?? new List<string>())
+                );
+            }
+
+            // GUARDRAIL: Detect and log PII
+            var piiTypes = _piiMasking.DetectPiiTypes(request.ClaimDescription);
+            if (piiTypes.Any())
+            {
+                _logger.LogWarning(
+                    "PII detected in claim description for policy {PolicyNumber}: {PiiTypes}",
+                    request.PolicyNumber,
+                    string.Join(", ", piiTypes.Select(kvp => $"{kvp.Key}({kvp.Value})"))
+                );
+            }
+
             _logger.LogInformation(
                 "Validating claim for policy {PolicyNumber}, amount: ${Amount}",
-                request.PolicyNumber,
+                _piiMasking.MaskPolicyNumber(request.PolicyNumber),
                 request.ClaimAmount
             );
 
             var decision = await _orchestrator.ValidateClaimAsync(request);
 
+            // GUARDRAIL: Redact PII from explanation before returning to client
+            var maskedDecision = decision with
+            {
+                Explanation = _piiMasking.RedactPhiFromExplanation(decision.Explanation)
+            };
+
             _logger.LogInformation(
                 "Claim validated: {PolicyNumber}, Status: {Status}, Confidence: {Confidence:F2}",
-                request.PolicyNumber,
-                decision.Status,
-                decision.ConfidenceScore
+                _piiMasking.MaskPolicyNumber(request.PolicyNumber),
+                maskedDecision.Status,
+                maskedDecision.ConfidenceScore
             );
 
-            return Ok(decision);
+            return Ok(maskedDecision);
         }
         catch (Exception ex)
         {
-            _logger.LogError(ex, "Error validating claim for policy {PolicyNumber}", request.PolicyNumber);
+            _logger.LogError(ex, "Error validating claim for policy {PolicyNumber}", 
+                _piiMasking.MaskPolicyNumber(request.PolicyNumber));
             
-            // Provide more detailed error message for common AWS issues
+            // GUARDRAIL: Don't leak sensitive error details
             var errorMessage = ex.Message;
-            if (ex.InnerException != null)
+            if (ex.InnerException != null && !errorMessage.Contains("credentials"))
             {
                 errorMessage += $" Details: {ex.InnerException.Message}";
             }
