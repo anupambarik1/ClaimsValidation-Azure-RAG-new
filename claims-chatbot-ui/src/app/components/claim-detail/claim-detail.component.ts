@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ClaimsApiService } from '../../services/claims-api.service';
-import { ClaimAuditRecord, ClaimDecisionUpdate } from '../../models/claim.model';
+import { ClaimAuditRecord, ClaimDecisionUpdate, BlobMetadata } from '../../models/claim.model';
 
 @Component({
   selector: 'app-claim-detail',
@@ -18,6 +18,8 @@ export class ClaimDetailComponent implements OnInit {
   loading: boolean = false;
   errorMessage: string = '';
   successMessage: string = '';
+  documents: BlobMetadata[] = [];
+  loadingDocuments: boolean = false;
 
   // Specialist decision form
   showDecisionForm: boolean = false;
@@ -55,13 +57,29 @@ export class ClaimDetailComponent implements OnInit {
     this.claimsApiService.getClaimById(this.claimId).subscribe({
       next: (claim) => {
         this.claim = claim;
-        this.decisionUpdate.newStatus = claim.decisionStatus;
         this.loading = false;
+        
+        // Always try to load documents for the claim
+        this.loadDocuments();
       },
       error: (error) => {
         this.errorMessage = 'Failed to load claim details. Please try again.';
         console.error('Error loading claim:', error);
         this.loading = false;
+      }
+    });
+  }
+
+  loadDocuments(): void {
+    this.loadingDocuments = true;
+    this.claimsApiService.getClaimDocuments(this.claimId).subscribe({
+      next: (docs) => {
+        this.documents = docs;
+        this.loadingDocuments = false;
+      },
+      error: (error) => {
+        console.error('[ClaimDetail] Error loading documents:', error);
+        this.loadingDocuments = false;
       }
     });
   }
@@ -119,6 +137,39 @@ export class ClaimDetailComponent implements OnInit {
 
   goBack(): void {
     this.router.navigate(['/claims']);
+  }
+
+  formatFileSize(bytes: number): string {
+    if (bytes === 0) return '0 Bytes';
+    const k = 1024;
+    const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+    const i = Math.floor(Math.log(bytes) / Math.log(k));
+    return Math.round(bytes / Math.pow(k, i) * 100) / 100 + ' ' + sizes[i];
+  }
+
+  getFileIcon(contentType: string): string {
+    if (contentType.includes('pdf')) return '📄';
+    if (contentType.includes('image')) return '🖼️';
+    if (contentType.includes('text')) return '📝';
+    return '📎';
+  }
+
+  viewDocument(doc: BlobMetadata): void {
+    this.loading = true;
+    this.errorMessage = '';
+
+    this.claimsApiService.getDocumentUrl(doc.documentId).subscribe({
+      next: (response) => {
+        this.loading = false;
+        // Open document in new tab
+        window.open(response.url, '_blank');
+      },
+      error: (error) => {
+        this.loading = false;
+        this.errorMessage = `Failed to load document: ${doc.fileName}`;
+        console.error('Error getting document URL:', error);
+      }
+    });
   }
 
   getStatusClass(status: string): string {

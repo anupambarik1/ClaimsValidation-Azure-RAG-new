@@ -4,7 +4,7 @@ namespace ClaimsRagBot.Core.Interfaces;
 
 public interface IAuditService
 {
-    Task SaveAsync(ClaimRequest request, ClaimDecision decision, List<PolicyClause> clauses);
+    Task SaveAsync(ClaimRequest request, ClaimDecision decision, List<PolicyClause> clauses, List<string>? documentIds = null);
     Task<ClaimAuditRecord?> GetByClaimIdAsync(string claimId);
     Task<List<ClaimAuditRecord>> GetByPolicyNumberAsync(string policyNumber);
     Task<List<ClaimAuditRecord>> GetAllClaimsAsync(string? statusFilter = null);

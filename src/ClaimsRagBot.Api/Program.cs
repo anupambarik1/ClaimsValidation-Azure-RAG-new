@@ -164,8 +164,7 @@ var healthCheck = new StartupHealthCheck(builder.Configuration);
 var healthResult = await healthCheck.ValidateServicesAsync(
     app.Services.GetRequiredService<IRetrievalService>(),
     app.Services.GetRequiredService<IEmbeddingService>(),
-    app.Services.GetRequiredService<ILlmService>(),
-    app.Services.GetRequiredService<IAuditService>()
+    app.Services.GetRequiredService<ILlmService>()
 );
 Console.WriteLine(new string('=', 60) + "\n");
 

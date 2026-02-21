@@ -174,7 +174,7 @@ public class ClaimValidationOrchestrator
                 ConfidenceScore: 0.0f
             );
             
-            await _auditService.SaveAsync(request, manualReviewDecision, clauses);
+            await _auditService.SaveAsync(request, manualReviewDecision, clauses, supportingDocumentIds);
             return manualReviewDecision;
         }
 
@@ -234,7 +234,7 @@ public class ClaimValidationOrchestrator
         decision = ApplyBusinessRules(decision, request, hasSupportingDocuments: true);
 
         // Step 10: Audit trail (mandatory for compliance)
-        await _auditService.SaveAsync(request, decision, clauses);
+        await _auditService.SaveAsync(request, decision, clauses, supportingDocumentIds);
 
         Console.WriteLine($"[Orchestrator] Claim validated with supporting docs - Status: {decision.Status}, Confidence: {decision.ConfidenceScore:F2}");
 

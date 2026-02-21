@@ -55,6 +55,11 @@ public record ClaimAuditRecord(
     List<string> RequiredDocuments,
     
     /// <summary>
+    /// IDs of uploaded supporting documents associated with this claim
+    /// </summary>
+    List<string>? DocumentIds = null,
+    
+    /// <summary>
     /// Specialist notes when decision was reviewed/updated
     /// </summary>
     string? SpecialistNotes = null,

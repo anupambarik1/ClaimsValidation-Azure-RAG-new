@@ -210,4 +210,49 @@ public class AzureBlobStorageService : IDocumentUploadService
             return false;
         }
     }
+
+    public async Task<string> GetSecureDownloadUrlAsync(string documentId, int expirationMinutes = 60)
+    {
+        try
+        {
+            // Get blob metadata
+            var metadata = await _metadataRepository!.GetByDocumentIdAsync(documentId);
+            if (metadata == null)
+            {
+                throw new FileNotFoundException($"Document not found: {documentId}");
+            }
+
+            var blobClient = _containerClient.GetBlobClient(metadata.BlobName);
+            
+            // Check if blob exists
+            if (!await blobClient.ExistsAsync())
+            {
+                throw new FileNotFoundException($"Blob not found: {metadata.BlobName}");
+            }
+
+            // Generate SAS token
+            var sasBuilder = new BlobSasBuilder
+            {
+                BlobContainerName = _containerName,
+                BlobName = metadata.BlobName,
+                Resource = "b", // blob resource
+                StartsOn = DateTimeOffset.UtcNow.AddMinutes(-5), // Start 5 minutes ago to account for clock skew
+                ExpiresOn = DateTimeOffset.UtcNow.AddMinutes(expirationMinutes)
+            };
+
+            // Set permissions
+            sasBuilder.SetPermissions(BlobSasPermissions.Read);
+
+            // Generate SAS URI
+            var sasUri = blobClient.GenerateSasUri(sasBuilder);
+            
+            Console.WriteLine($"[BlobStorage] Generated SAS URL for: {documentId}, expires in {expirationMinutes} minutes");
+            return sasUri.ToString();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[BlobStorage] Error generating SAS URL: {ex.Message}");
+            throw new InvalidOperationException($"Failed to generate secure download URL: {ex.Message}", ex);
+        }
+    }
 }

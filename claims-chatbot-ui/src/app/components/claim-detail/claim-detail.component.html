@@ -61,6 +61,52 @@
       </div>
     </div>
 
+    <!-- Loading Documents -->
+    <div class="info-card" *ngIf="loadingDocuments">
+      <h3>📄 Documents</h3>
+      <div class="loading-text">
+        Loading claim documents...
+      </div>
+    </div>
+
+    <!-- Supporting Documents (All Uploaded Files) -->
+    <div class="info-card" *ngIf="documents.length > 0">
+      <h3>📎 Supporting Documents ({{ documents.length }})</h3>
+      <p class="section-note">Documents uploaded with this claim</p>
+      
+      <div class="documents-grid">
+        <div class="document-card" *ngFor="let doc of documents; let i = index">
+          <div class="document-header">
+            <span class="doc-number">#{{ i + 1 }}</span>
+            <div class="document-icon">
+              {{ getFileIcon(doc.contentType) }}
+            </div>
+          </div>
+          <div class="document-info">
+            <div class="document-name" [title]="doc.fileName">{{ doc.fileName }}</div>
+            <div class="document-meta">
+              <span class="document-size">{{ formatFileSize(doc.fileSize) }}</span>
+              <span class="document-date">{{ formatDate(doc.uploadedAt) }}</span>
+            </div>
+            <div class="document-id">
+              <small>ID: {{ doc.documentId.substring(0, 8) }}...</small>
+            </div>
+          </div>
+          <button class="view-btn" (click)="viewDocument(doc)" title="View Document">
+            👁️ View
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- No Documents Message -->
+    <div class="info-card" *ngIf="!loadingDocuments && documents.length === 0">
+      <h3>📄 Documents</h3>
+      <div class="no-documents">
+        No documents were attached to this claim submission.
+      </div>
+    </div>
+
     <!-- AI Decision Card -->
     <div class="info-card">
       <h3>AI Validation Result</h3>
@@ -98,7 +144,7 @@
     </div>
 
     <!-- Specialist Action Section -->
-    <div class="action-card">
+    <div class="action-card" *ngIf="claim">
       <div class="action-header">
         <h3>Specialist Decision</h3>
         <button 

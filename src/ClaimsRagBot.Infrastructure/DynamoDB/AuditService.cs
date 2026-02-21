@@ -42,7 +42,7 @@ public class AuditService : IAuditService
         }
     }
 
-    public async Task SaveAsync(ClaimRequest request, ClaimDecision decision, List<PolicyClause> clauses)
+    public async Task SaveAsync(ClaimRequest request, ClaimDecision decision, List<PolicyClause> clauses, List<string>? documentIds = null)
     {
         var auditRecord = new Dictionary<string, AttributeValue>
         {
@@ -67,6 +67,15 @@ public class AuditService : IAuditService
                 S = JsonSerializer.Serialize(clauses.Select(c => new { c.ClauseId, c.Score })) 
             }
         };
+
+        // Add document IDs if provided
+        if (documentIds != null && documentIds.Any())
+        {
+            auditRecord["DocumentIds"] = new AttributeValue 
+            { 
+                L = documentIds.Select(id => new AttributeValue { S = id }).ToList() 
+            };
+        }
 
         try
         {

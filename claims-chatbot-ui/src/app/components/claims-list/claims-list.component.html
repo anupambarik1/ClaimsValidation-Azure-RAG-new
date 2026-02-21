@@ -43,6 +43,7 @@
           <th>Explanation</th>
           <th>Timestamp</th>
           <th>Specialist Review</th>
+          <th>Documents</th>
           <th>Actions</th>
         </tr>
       </thead>
@@ -65,6 +66,17 @@
             </span>
             <span *ngIf="!claim.specialistId" class="pending-badge">
               Pending
+            </span>
+          </td>
+          <td class="documents-cell">
+            <span *ngIf="claim.documentIds && claim.documentIds.length > 0" 
+                  class="documents-badge"
+                  [title]="claim.documentIds.length + ' document(s)'">
+              📎 {{ claim.documentIds.length }}
+            </span>
+            <span *ngIf="!claim.documentIds || claim.documentIds.length === 0" 
+                  class="no-documents-badge">
+              —
             </span>
           </td>
           <td>

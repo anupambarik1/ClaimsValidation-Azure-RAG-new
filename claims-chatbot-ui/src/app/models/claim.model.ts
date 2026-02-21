@@ -30,6 +30,7 @@ export interface ClaimAuditRecord {
   confidenceScore: number;
   clauseReferences: string[];
   requiredDocuments: string[];
+  documentIds?: string[];  // IDs of uploaded supporting documents
   
   // Additional fields from inserted data
   claimantName?: string;
@@ -47,6 +48,27 @@ export interface ClaimDecisionUpdate {
   newStatus: string;
   specialistNotes: string;
   specialistId: string;
+}
+
+export interface BlobMetadata {
+  id: string;
+  documentId: string;
+  blobName: string;
+  containerName: string;
+  fileName: string;
+  contentType: string;
+  fileSize: number;
+  userId: string;
+  uploadedAt: string;
+  deletedAt?: string;
+}
+
+export interface DocumentUrlResponse {
+  documentId: string;
+  url: string;
+  fileName: string;
+  contentType: string;
+  expiresAt: string;
 }
 
 export interface FinalizeClaimRequest {

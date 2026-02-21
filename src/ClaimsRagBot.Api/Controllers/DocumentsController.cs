@@ -259,6 +259,58 @@ public class DocumentsController : ControllerBase
         else
             return "ManualEntry";
     }
+
+    /// <summary>
+    /// Get a secure download URL for a document
+    /// </summary>
+    [HttpGet("{documentId}/url")]
+    public async Task<ActionResult<DocumentUrlResponse>> GetDocumentUrl(string documentId)
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(documentId))
+            {
+                return BadRequest(new { error = "DocumentId is required" });
+            }
+
+            _logger.LogInformation("Generating secure URL for document: {DocumentId}", documentId);
+
+            var url = await _uploadService.GetSecureDownloadUrlAsync(documentId, expirationMinutes: 60);
+            var metadata = await _uploadService.GetDocumentAsync(documentId);
+
+            // Extract filename from S3Key or BlobName
+            string fileName = "document";
+            if (!string.IsNullOrEmpty(metadata.S3Key))
+            {
+                fileName = Path.GetFileName(metadata.S3Key);
+            }
+            else if (!string.IsNullOrEmpty(metadata.BlobName))
+            {
+                fileName = Path.GetFileName(metadata.BlobName);
+            }
+
+            var response = new DocumentUrlResponse
+            {
+                DocumentId = documentId,
+                Url = url,
+                FileName = fileName,
+                ContentType = metadata.ContentType,
+                ExpiresAt = DateTime.UtcNow.AddMinutes(60)
+            };
+
+            return Ok(response);
+        }
+        catch (FileNotFoundException ex)
+        {
+            _logger.LogWarning("Document not found: {DocumentId}", documentId);
+            return NotFound(new { error = "Document not found", details = ex.Message });
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error generating document URL for: {DocumentId}", documentId);
+            return StatusCode(500, new { error = "Failed to generate document URL", details = ex.Message });
+        }
+    }
 }
 
 // Request/Response DTOs
@@ -278,3 +330,12 @@ public record SubmitDocumentResponse(
     string ValidationStatus,
     string NextAction
 );
+
+public class DocumentUrlResponse
+{
+    public string DocumentId { get; set; } = string.Empty;
+    public string Url { get; set; } = string.Empty;
+    public string FileName { get; set; } = string.Empty;
+    public string ContentType { get; set; } = string.Empty;
+    public DateTime ExpiresAt { get; set; }
+}

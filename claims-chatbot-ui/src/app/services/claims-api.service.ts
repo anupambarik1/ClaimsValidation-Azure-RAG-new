@@ -11,7 +11,9 @@ import {
   ClaimExtractionResult,
   DocumentType,
   ClaimDecisionUpdate,
-  FinalizeClaimRequest
+  FinalizeClaimRequest,
+  BlobMetadata,
+  DocumentUrlResponse
 } from '../models/claim.model';
 
 @Injectable({
@@ -96,5 +98,15 @@ export class ClaimsApiService {
   // Update claim decision by specialist
   updateClaimDecision(claimId: string, update: ClaimDecisionUpdate): Observable<any> {
     return this.http.put<any>(`${this.baseUrl}/claims/${claimId}/decision`, update);
+  }
+
+  // Get all documents associated with a claim
+  getClaimDocuments(claimId: string): Observable<BlobMetadata[]> {
+    return this.http.get<BlobMetadata[]>(`${this.baseUrl}/claims/${claimId}/documents`);
+  }
+
+  // Get secure download URL for a document
+  getDocumentUrl(documentId: string): Observable<DocumentUrlResponse> {
+    return this.http.get<DocumentUrlResponse>(`${this.baseUrl}/documents/${documentId}/url`);
   }
 }

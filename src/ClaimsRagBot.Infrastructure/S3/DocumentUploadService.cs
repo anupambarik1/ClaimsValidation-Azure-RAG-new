@@ -226,4 +226,32 @@ public class DocumentUploadService : IDocumentUploadService
             return false;
         }
     }
+
+    public async Task<string> GetSecureDownloadUrlAsync(string documentId, int expirationMinutes = 60)
+    {
+        try
+        {
+            // Get document info to find S3 key
+            var document = await GetDocumentAsync(documentId);
+            
+            // Generate presigned URL
+            var request = new GetPreSignedUrlRequest
+            {
+                BucketName = _bucketName,
+                Key = document.S3Key,
+                Expires = DateTime.UtcNow.AddMinutes(expirationMinutes),
+                Verb = HttpVerb.GET
+            };
+            
+            var url = _s3Client.GetPreSignedURL(request);
+            
+            Console.WriteLine($"[S3] Generated presigned URL for: {documentId}, expires in {expirationMinutes} minutes");
+            return url;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[S3] Error generating presigned URL: {ex.Message}");
+            throw new InvalidOperationException($"Failed to generate secure download URL: {ex.Message}", ex);
+        }
+    }
 }

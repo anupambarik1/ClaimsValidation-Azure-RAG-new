@@ -222,7 +222,10 @@ public class ClaimsController : ControllerBase
             
             var claims = await _auditService.GetAllClaimsAsync(status);
             
-            return Ok(claims);
+            // Additional filter to exclude HealthCheck test records (defensive)
+            var filteredClaims = claims.Where(c => c.DecisionStatus != "HealthCheck").ToList();
+            
+            return Ok(filteredClaims);
         }
         catch (Exception ex)
         {
@@ -253,6 +256,14 @@ public class ClaimsController : ControllerBase
             {
                 return NotFound(new { message = $"Claim {id} not found" });
             }
+
+            // Log claim description details for debugging
+            _logger.LogInformation(
+                "Claim {ClaimId} - Description Length: {Length}, Has Description: {HasDescription}",
+                id,
+                claim.ClaimDescription?.Length ?? 0,
+                !string.IsNullOrEmpty(claim.ClaimDescription)
+            );
 
             return Ok(claim);
         }
@@ -376,6 +387,58 @@ public class ClaimsController : ControllerBase
         {
             _logger.LogError(ex, "Error updating claim {ClaimId}", id);
             return StatusCode(500, new { error = "Error updating claim", details = ex.Message });
+        }
+    }
+
+    /// <summary>
+    /// Get all documents associated with a claim
+    /// </summary>
+    /// <param name="id">The claim ID</param>
+    /// <returns>List of document metadata for the claim</returns>
+    /// <response code="200">Returns list of documents</response>
+    /// <response code="404">If the claim is not found</response>
+    [HttpGet("{id}/documents")]
+    [ProducesResponseType(typeof(List<BlobMetadata>), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<List<BlobMetadata>>> GetClaimDocuments(string id)
+    {
+        try
+        {
+            _logger.LogInformation("Retrieving documents for claim: {ClaimId}", id);
+            
+            var claim = await _auditService.GetByClaimIdAsync(id);
+            if (claim == null)
+            {
+                _logger.LogWarning("Claim not found: {ClaimId}", id);
+                return NotFound(new { message = $"Claim {id} not found" });
+            }
+
+            _logger.LogInformation("Claim {ClaimId} has DocumentIds: {HasDocs}, Count: {Count}", 
+                id, 
+                claim.DocumentIds != null, 
+                claim.DocumentIds?.Count ?? 0);
+
+            if (claim.DocumentIds == null || !claim.DocumentIds.Any())
+            {
+                _logger.LogInformation("No documents found for claim: {ClaimId}", id);
+                return Ok(new List<BlobMetadata>());
+            }
+
+            _logger.LogInformation("Document IDs for claim {ClaimId}: {DocumentIds}", 
+                id, 
+                string.Join(", ", claim.DocumentIds));
+
+            // Get document metadata from blob repository
+            var blobRepository = HttpContext.RequestServices.GetRequiredService<IBlobMetadataRepository>();
+            var documents = await blobRepository.GetByDocumentIdsAsync(claim.DocumentIds);
+            
+            _logger.LogInformation("Retrieved {Count} documents for claim: {ClaimId}", documents.Count, id);
+            return Ok(documents);
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError(ex, "Error retrieving documents for claim {ClaimId}", id);
+            return StatusCode(500, new { error = "Error retrieving claim documents", details = ex.Message });
         }
     }
 }

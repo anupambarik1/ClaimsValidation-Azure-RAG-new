@@ -10,11 +10,12 @@
 ## Table of Contents
 
 1. [Overview](#overview)
-2. [The 9 Core Guardrails](#the-9-core-guardrails)
-3. [Guardrail Details](#guardrail-details)
-4. [Business Rule Guardrails](#business-rule-guardrails)
-5. [Architecture Benefits](#architecture-benefits)
-6. [Quick Reference](#quick-reference)
+2. [Guardrails by Category](#guardrails-by-category)
+3. [The 9 Core Guardrails](#the-9-core-guardrails)
+4. [Guardrail Details](#guardrail-details)
+5. [Business Rule Guardrails](#business-rule-guardrails)
+6. [Architecture Benefits](#architecture-benefits)
+7. [Quick Reference](#quick-reference)
 
 ---
 
@@ -33,19 +34,63 @@ The Claims RAG Bot system implements **9 comprehensive guardrails** providing en
 
 ---
 
+## Guardrails by Category
+
+The 9 guardrails are organized into 3 strategic layers providing defense-in-depth security:
+
+### 🛡️ INPUT GUARDRAILS (Pre-Processing Security)
+**Purpose:** Validate and sanitize all inputs before they reach AI systems
+
+| # | Guardrail | Function | Risk Mitigated |
+|---|-----------|----------|----------------|
+| 1 | **Prompt Injection Detector** | Scans for malicious patterns | Adversarial attacks, AI manipulation |
+| 6 | **Rate Limiting Middleware** | Throttles API requests | DoS attacks, service abuse |
+| 8 | **API Security Layer** | Multi-layer input validation | Invalid data, injection attacks |
+| 2 | **PII Masking Service** (Input) | Detects sensitive data | Privacy violations, HIPAA/GDPR non-compliance |
+
+**Benefits:** Prevents 90%+ of attacks before they consume resources or reach AI systems
+
+---
+
+### ⚙️ PROCESSING GUARDRAILS (AI/RAG Pipeline Controls)
+**Purpose:** Ensure AI decisions are accurate, evidence-based, and consistent
+
+| # | Guardrail | Function | Risk Mitigated |
+|---|-----------|----------|----------------|
+| 7 | **Orchestrator Integration** | 9-step validation pipeline | Incomplete validation, logic errors |
+| 9 | **Enhanced LLM Prompts** | Embedded AI instructions | Hallucinations, off-topic responses |
+| 3 | **Citation Validator** | Verifies policy evidence | AI hallucinations, ungrounded claims |
+| 4 | **Contradiction Detector** | Checks consistency | Logic errors, conflicting assessments |
+
+**Benefits:** Ensures AI decisions are explainable, traceable, and policy-grounded
+
+---
+
+### 📤 OUTPUT GUARDRAILS (Response Quality & Compliance)
+**Purpose:** Structure and sanitize AI outputs before delivery to users
+
+| # | Guardrail | Function | Risk Mitigated |
+|---|-----------|----------|----------------|
+| 5 | **Enhanced Decision Model** | Structured response format | Unstructured data, missing info |
+| 2 | **PII Masking Service** (Output) | Redacts sensitive data | Data leakage, privacy violations |
+
+**Benefits:** Guarantees compliant, structured, and privacy-safe responses
+
+---
+
 ## The 9 Core Guardrails
 
-| # | Guardrail | Location | Purpose |
-|---|-----------|----------|---------|
-| 1 | Prompt Injection Detector | `Security/PromptInjectionDetector.cs` | Scans for malicious patterns before LLM processing |
-| 2 | PII Masking Service | `Security/PiiMaskingService.cs` | Detects & masks sensitive data (HIPAA/GDPR) |
-| 3 | Citation Validator | `Validation/CitationValidator.cs` | Prevents AI hallucinations via policy evidence |
-| 4 | Contradiction Detector | `Validation/ContradictionDetector.cs` | Detects inconsistencies across 5 dimensions |
-| 5 | Enhanced Decision Model | `Core/Models/ClaimDecision.cs` | Forces structured, explainable responses |
-| 6 | Rate Limiting Middleware | `Api/Program.cs` | Prevents DoS and service abuse |
-| 7 | Orchestrator Integration | `RAG/ClaimValidationOrchestrator.cs` | 9-step validation pipeline |
-| 8 | API Security Layer | `Api/Controllers/ClaimsController.cs` | Multi-layer input validation |
-| 9 | Enhanced LLM Prompts | System prompts to Azure OpenAI | Embedded guardrails in AI instructions |
+| # | Guardrail | Category | Location | Purpose |
+|---|-----------|----------|----------|---------|
+| 1 | Prompt Injection Detector | 🛡️ INPUT | `Security/PromptInjectionDetector.cs` | Scans for malicious patterns before LLM processing |
+| 2 | PII Masking Service | 🛡️ INPUT + 📤 OUTPUT | `Security/PiiMaskingService.cs` | Detects & masks sensitive data (HIPAA/GDPR) |
+| 3 | Citation Validator | ⚙️ PROCESSING | `Validation/CitationValidator.cs` | Prevents AI hallucinations via policy evidence |
+| 4 | Contradiction Detector | ⚙️ PROCESSING | `Validation/ContradictionDetector.cs` | Detects inconsistencies across 5 dimensions |
+| 5 | Enhanced Decision Model | 📤 OUTPUT | `Core/Models/ClaimDecision.cs` | Forces structured, explainable responses |
+| 6 | Rate Limiting Middleware | 🛡️ INPUT | `Api/Program.cs` | Prevents DoS and service abuse |
+| 7 | Orchestrator Integration | ⚙️ PROCESSING | `RAG/ClaimValidationOrchestrator.cs` | 9-step validation pipeline |
+| 8 | API Security Layer | 🛡️ INPUT | `Api/Controllers/ClaimsController.cs` | Multi-layer input validation |
+| 9 | Enhanced LLM Prompts | ⚙️ PROCESSING | System prompts to Azure OpenAI | Embedded guardrails in AI instructions |
 
 ---
 

@@ -92,6 +92,39 @@ public class CosmosBlobMetadataRepository : IBlobMetadataRepository
         }
     }
 
+    public async Task<List<BlobMetadata>> GetByDocumentIdsAsync(List<string> documentIds)
+    {
+        try
+        {
+            if (documentIds == null || !documentIds.Any())
+            {
+                return new List<BlobMetadata>();
+            }
+
+            // Query for all documents with matching IDs
+            var query = new QueryDefinition(
+                "SELECT * FROM c WHERE ARRAY_CONTAINS(@documentIds, c.DocumentId)")
+                .WithParameter("@documentIds", documentIds);
+            
+            var iterator = _BlobMetadataContainer.GetItemQueryIterator<BlobMetadata>(query);
+            var results = new List<BlobMetadata>();
+            
+            while (iterator.HasMoreResults)
+            {
+                var response = await iterator.ReadNextAsync();
+                results.AddRange(response);
+            }
+            
+            Console.WriteLine($"[CosmosBlobMetadata] Retrieved {results.Count} documents out of {documentIds.Count} requested");
+            return results;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"[CosmosBlobMetadata] Get multiple error: {ex.Message}");
+            throw new InvalidOperationException($"Failed to get blob metadata: {ex.Message}", ex);
+        }
+    }
+
     public async Task<bool> DeleteAsync(string documentId)
     {
         try

@@ -207,6 +207,26 @@
   font-weight: 500;
 }
 
+.documents-cell {
+  text-align: center;
+}
+
+.documents-badge {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: help;
+}
+
+.no-documents-badge {
+  color: #9e9e9e;
+  font-size: 1rem;
+}
+
 .view-btn {
   padding: 0.4rem 1rem;
   background-color: #1976d2;

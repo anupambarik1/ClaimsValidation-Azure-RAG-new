@@ -41,7 +41,8 @@ export class ClaimsListComponent implements OnInit {
 
     this.claimsApiService.getAllClaims().subscribe({
       next: (claims) => {
-        this.claims = claims;
+        // Filter out HealthCheck test records
+        this.claims = claims.filter(claim => claim.decisionStatus !== 'HealthCheck');
         this.filterClaims();
         this.loading = false;
       },

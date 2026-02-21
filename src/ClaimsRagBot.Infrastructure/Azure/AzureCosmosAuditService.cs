@@ -29,7 +29,7 @@ public class AzureCosmosAuditService : IAuditService
         Console.WriteLine($"[CosmosDB] Connected to {databaseId}/{containerId}");
     }
 
-    public async Task SaveAsync(ClaimRequest request, ClaimDecision decision, List<PolicyClause> retrievedClauses)
+    public async Task SaveAsync(ClaimRequest request, ClaimDecision decision, List<PolicyClause> retrievedClauses, List<string>? documentIds = null)
     {
         var claimId = Guid.NewGuid().ToString();
         var auditRecord = new ClaimAuditRecord(
@@ -42,7 +42,8 @@ public class AzureCosmosAuditService : IAuditService
             Explanation: decision.Explanation,
             ConfidenceScore: decision.ConfidenceScore,
             ClauseReferences: decision.ClauseReferences,
-            RequiredDocuments: decision.RequiredDocuments
+            RequiredDocuments: decision.RequiredDocuments,
+            DocumentIds: documentIds
         );
 
         // Create Cosmos document with lowercase 'id' for compatibility
@@ -58,7 +59,8 @@ public class AzureCosmosAuditService : IAuditService
             auditRecord.Explanation,
             auditRecord.ConfidenceScore,
             auditRecord.ClauseReferences,
-            auditRecord.RequiredDocuments
+            auditRecord.RequiredDocuments,
+            auditRecord.DocumentIds
         };
 
         try
@@ -126,10 +128,13 @@ public class AzureCosmosAuditService : IAuditService
     {
         try
         {
+            // Always exclude HealthCheck test records from dashboard
             QueryDefinition queryDefinition = statusFilter == null
-                ? new QueryDefinition("SELECT * FROM c")
-                : new QueryDefinition("SELECT * FROM c WHERE c.DecisionStatus = @statusFilter")
-                    .WithParameter("@statusFilter", statusFilter);
+                ? new QueryDefinition("SELECT * FROM c WHERE c.DecisionStatus != @healthcheck")
+                    .WithParameter("@healthcheck", "HealthCheck")
+                : new QueryDefinition("SELECT * FROM c WHERE c.DecisionStatus = @statusFilter AND c.DecisionStatus != @healthcheck")
+                    .WithParameter("@statusFilter", statusFilter)
+                    .WithParameter("@healthcheck", "HealthCheck");
                 
             var iterator = _container.GetItemQueryIterator<CosmosAuditRecord>(queryDefinition);
             var records = new List<ClaimAuditRecord>();
@@ -157,6 +162,8 @@ public class AzureCosmosAuditService : IAuditService
             if (existingRecord == null)
                 return false;
 
+            Console.WriteLine($"[CosmosDB] Updating claim {claimId}, existing DocumentIds: {existingRecord.DocumentIds?.Count ?? 0}");
+
             var updatedRecord = existingRecord with
             {
                 DecisionStatus = newStatus,
@@ -178,13 +185,14 @@ public class AzureCosmosAuditService : IAuditService
                 updatedRecord.ConfidenceScore,
                 updatedRecord.ClauseReferences,
                 updatedRecord.RequiredDocuments,
+                updatedRecord.DocumentIds,
                 updatedRecord.SpecialistNotes,
                 updatedRecord.SpecialistId,
                 updatedRecord.ReviewedAt
             };
 
             await _container.UpsertItemAsync(cosmosDoc, new PartitionKey(existingRecord.PolicyNumber));
-            Console.WriteLine($"[CosmosDB] Updated claim: {claimId}");
+            Console.WriteLine($"[CosmosDB] Updated claim: {claimId}, preserved DocumentIds: {updatedRecord.DocumentIds?.Count ?? 0}");
             return true;
         }
         catch (CosmosException ex)
@@ -207,6 +215,7 @@ public class AzureCosmosAuditService : IAuditService
             doc.ConfidenceScore,
             doc.ClauseReferences,
             doc.RequiredDocuments,
+            doc.DocumentIds,
             doc.SpecialistNotes,
             doc.SpecialistId,
             doc.ReviewedAt
@@ -230,6 +239,7 @@ public class CosmosAuditRecord
     public float ConfidenceScore { get; set; }
     public List<string> ClauseReferences { get; set; } = new();
     public List<string> RequiredDocuments { get; set; } = new();
+    public List<string>? DocumentIds { get; set; }
     public string? SpecialistNotes { get; set; }
     public string? SpecialistId { get; set; }
     public DateTime? ReviewedAt { get; set; }

@@ -11,7 +11,7 @@ export class ChatService {
 
   constructor() {
     // Add welcome message
-    this.addBotMessage('Hello! I\'m your Claims Assistant. I can help you validate claims and process claim documents. How can I assist you today?');
+    this.addBotMessage('Welcome to the Claims Assistant! 👋\n\nI\'m here to help you with claim processing and validation. Use the tabs above to get started, or type your questions below.');
   }
 
   addUserMessage(content: string, type: ChatMessage['type'] = 'text', data?: any): void {
