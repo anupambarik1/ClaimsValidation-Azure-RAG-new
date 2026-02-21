@@ -77,8 +77,9 @@ public class AzureCosmosAuditService : IAuditService
     {
         try
         {
-            var query = $"SELECT * FROM c WHERE c.ClaimId = '{claimId}'";
-            var iterator = _container.GetItemQueryIterator<CosmosAuditRecord>(query);
+            var queryDefinition = new QueryDefinition("SELECT * FROM c WHERE c.ClaimId = @claimId")
+                .WithParameter("@claimId", claimId);
+            var iterator = _container.GetItemQueryIterator<CosmosAuditRecord>(queryDefinition);
             
             while (iterator.HasMoreResults)
             {
@@ -101,8 +102,9 @@ public class AzureCosmosAuditService : IAuditService
     {
         try
         {
-            var query = $"SELECT * FROM c WHERE c.PolicyNumber = '{policyNumber}'";
-            var iterator = _container.GetItemQueryIterator<CosmosAuditRecord>(query);
+            var queryDefinition = new QueryDefinition("SELECT * FROM c WHERE c.PolicyNumber = @policyNumber")
+                .WithParameter("@policyNumber", policyNumber);
+            var iterator = _container.GetItemQueryIterator<CosmosAuditRecord>(queryDefinition);
             var records = new List<ClaimAuditRecord>();
             
             while (iterator.HasMoreResults)
@@ -124,11 +126,12 @@ public class AzureCosmosAuditService : IAuditService
     {
         try
         {
-            var query = statusFilter == null 
-                ? "SELECT * FROM c" 
-                : $"SELECT * FROM c WHERE c.DecisionStatus = '{statusFilter}'";
+            QueryDefinition queryDefinition = statusFilter == null
+                ? new QueryDefinition("SELECT * FROM c")
+                : new QueryDefinition("SELECT * FROM c WHERE c.DecisionStatus = @statusFilter")
+                    .WithParameter("@statusFilter", statusFilter);
                 
-            var iterator = _container.GetItemQueryIterator<CosmosAuditRecord>(query);
+            var iterator = _container.GetItemQueryIterator<CosmosAuditRecord>(queryDefinition);
             var records = new List<ClaimAuditRecord>();
             
             while (iterator.HasMoreResults)

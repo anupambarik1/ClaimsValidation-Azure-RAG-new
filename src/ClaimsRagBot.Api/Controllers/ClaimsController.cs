@@ -90,7 +90,7 @@ public class ClaimsController : ControllerBase
 
             // GUARDRAIL: Detect and log PII
             var piiTypes = _piiMasking.DetectPiiTypes(request.ClaimDescription);
-            if (piiTypes.Any())
+            if (piiTypes?.Any() == true)
             {
                 _logger.LogWarning(
                     "PII detected in claim description for policy {PolicyNumber}: {PiiTypes}",
@@ -127,17 +127,10 @@ public class ClaimsController : ControllerBase
             _logger.LogError(ex, "Error validating claim for policy {PolicyNumber}", 
                 _piiMasking.MaskPolicyNumber(request.PolicyNumber));
             
-            // GUARDRAIL: Don't leak sensitive error details
-            var errorMessage = ex.Message;
-            if (ex.InnerException != null && !errorMessage.Contains("credentials"))
-            {
-                errorMessage += $" Details: {ex.InnerException.Message}";
-            }
-            
+            // GUARDRAIL: Don't leak sensitive error details to client
             return StatusCode(500, new 
             { 
                 error = "Internal server error during claim validation",
-                details = errorMessage,
                 timestamp = DateTime.UtcNow
             });
         }
